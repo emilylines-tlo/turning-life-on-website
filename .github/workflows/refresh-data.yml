@@ -1,0 +1,51 @@
+# Keeps the website's event and group data up to date automatically.
+#
+# GitHub runs this on a schedule. It asks Four Norms for the latest data,
+# saves it into the data/ folder, and commits the change if anything differs.
+# Committing triggers a rebuild, so the live site updates on its own.
+#
+# You can also run it by hand: open the Actions tab in GitHub, pick
+# "Refresh Four Norms data", and click "Run workflow".
+
+name: Refresh Four Norms data
+
+on:
+  schedule:
+    # Twice a day, at 7am and 7pm UK time (about 2am and 2pm US Eastern).
+    - cron: "0 7,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch latest data from Four Norms
+        env:
+          FOURNORMS_API_KEY: ${{ secrets.FOURNORMS_API_KEY }}
+        run: python3 scripts/fetch-fournorms.py
+
+      - name: Commit the new data if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "No changes - nothing to commit."
+          else
+            git add data/
+            git commit -m "Refresh Four Norms data"
+            git push
+            echo "Data updated."
+          fi

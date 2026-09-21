@@ -1,0 +1,635 @@
+{
+  "count": 24,
+  "events": [
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzA3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--748212c351609966c843e61080ec8208984d4bd9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Why%20GND%20COver%20(1200%20x%20400%20px).png",
+      "description": "Loneliness is quietly becoming one of our biggest public health challenges \u2014 even as we stay more 'connected' than ever. \r\n\r\nCome hear Dr. Kate Storm explore why Good Neighbor Day matters, what's really driving isolation, and simple ways we can rebuild community.\r\n\r\nRegistration for this event is appreciated but not required.\r\n\r\nThis event is part of a larger series of events celebrating \"Good Neighbor Week\" in Stow, MA. See Randall Library website for more details.  You do not need to be a Stow resident to participate.",
+      "end_time": "2026-09-24T10:00:00-04:00",
+      "external_link": "https://www.stow-ma.gov/982/Good-Neighbor-Week-2026",
+      "featured": false,
+      "host_name": "Turning Life On | Reconnect Nashoba Valley",
+      "host_url": "https://www.fournorms.com/turning-life-on/reconnect-nashoba-valley",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world.json",
+        "web_url": "https://www.fournorms.com/events/reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world",
+      "start_time": "2026-09-24T09:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Why Good Neighbor Day? Rebuilding Connection in a Disconnected World",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjA0NiwicHVyIjoiYmxvYl9pZCJ9fQ==--9a826d90fb50c7421fc94ab2c13e257adf35f1ce/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Zoom%20Events%20Headers%20(1).png",
+      "description": "NY Times reporter, Natasha Singer, will join SFCxUS to talk about her upcoming book \"CODING KIDS: Big Tech's Battle to Remake Public Schools.\"  Natasha has been covering tech industry influence in schools since 2014, including stories on how Google took over the classroom; how tech giants are racing to train teachers on A.I. and embed their A.I. chatbots in schools; how some schools are pulling back on Chromebooks; how A.I. deepfakes harm teen girls; and how teachers, students and their parents are fighting back. ",
+      "end_time": "2026-09-24T13:00:00-04:00",
+      "external_link": "https://wwnorton.com/books/9780393881943",
+      "featured": false,
+      "host_name": "Smartphone Free Childhood US",
+      "host_url": "https://www.fournorms.com/smartphone-free-childhood-us",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools.json",
+        "web_url": "https://www.fournorms.com/events/smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools",
+      "start_time": "2026-09-24T12:00:00-04:00",
+      "tags": [
+        "Ed Tech"
+      ],
+      "title": "Coding Kids: Big Tech's Battle to Remake Public Schools",
+      "virtual": true,
+      "virtual_link": "https://us06web.zoom.us/j/87271798449?pwd=ieCrIzoQxXqI26I764KioVYarPrUl7.1"
+    },
+    {
+      "cover_image_url": null,
+      "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\n\r\n",
+      "end_time": "2026-09-25T10:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | Tech-Wise Arlington",
+      "host_url": "https://www.fournorms.com/turning-life-on/tech-wise-arlington",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat.json",
+        "web_url": "https://www.fournorms.com/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat",
+      "start_time": "2026-09-25T09:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Tech-Wise Arlington - Monthly Coffee Chat",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--70ad7f37db6550662e7e1fbfeb0f518bdf6ce599/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
+      "description": "This event is for parents and youth of all ages. \r\n\r\nIn many high-performing communities, young people absorb a powerful\u2014and often unintentional\u2014message: that their worth is tied to grades, accolades, and productivity. The result is rising rates of anxiety, burnout, and disconnection, even among kids who are doing everything \u201cright.\u201d \r\n\r\nThis event introduces the concept of mattering\u2014the idea that young people thrive when they feel seen, valued, and connected, not just evaluated.\r\n\r\nSpeaker Stephanie Malia Krauss is an educator and author of How We Thrive: Caring for Kids and Ourselves in a Changing World and Whole Child, Whole Life. Drawing on research and real-world experience, she offers parents, educators, and young people practical ways to push back against achievement culture and create conditions where youth\u2014and the adults who support them\u2014can truly flourish.\r\n\r\nBring friends and family.\r\n\r\n",
+      "end_time": "2026-09-30T19:30:00-04:00",
+      "external_link": null,
+      "featured": true,
+      "host_name": "Turning Life On | ThinkGive",
+      "host_url": "https://www.fournorms.com/turning-life-on/thinkgive",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture.json",
+        "web_url": "https://www.fournorms.com/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture",
+      "start_time": "2026-09-30T18:00:00-04:00",
+      "tags": [],
+      "title": "Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--e7ca44818b30876efafbf4c3a0cfddd08795c354/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2026-10-01T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b",
+      "start_time": "2026-10-01T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--fc08544c5552c2e3fc50ad1cc42ddccf64099d70/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
+      "description": "This event is for parents and youth of all ages.\r\n\r\nIn many high-performing communities, young people absorb a powerful\u2014and often unintentional\u2014message: that their worth is tied to grades, accolades, and productivity. The result is rising rates of anxiety, burnout, and disconnection, even among kids who are doing everything \u201cright.\u201d\r\n\r\nThis event introduces the concept of mattering\u2014the idea that young people thrive when they feel seen, valued, and connected, not just evaluated.\r\n\r\nSpeaker Stephanie Malia Krauss is an educator and author of How We Thrive: Caring for Kids and Ourselves in a Changing World and Whole Child, Whole Life. Drawing on research and real-world experience, she offers parents, educators, and young people practical ways to push back against achievement culture and create conditions where youth\u2014and the adults who support them\u2014can truly flourish.\r\n\r\nBring friends and family.",
+      "end_time": "2026-10-01T20:30:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | ThinkGive",
+      "host_url": "https://www.fournorms.com/turning-life-on/thinkgive",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6.json",
+        "web_url": "https://www.fournorms.com/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6",
+      "start_time": "2026-10-01T19:00:00-04:00",
+      "tags": [],
+      "title": "Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjcyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b3217bfcefa48b51ba10b0e3afdf2eff5d8df871/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "With so much going on across the state and the country, there is no better time than now to advocate for district-level changes. We'll walk you through how to build your network and how to advocate for change right in your own community. \r\nYou don't have to be an expert to have an impact. Providing a supportive environment for parents, educators, and professionals to share their struggles and successes is what really matters. When parents realize they are not alone, they can create reasonable norms to adopt in their families, in their schools, and in their communities.",
+      "end_time": "2026-10-05T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-building-101.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-building-101"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-building-101",
+      "start_time": "2026-10-05T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Building 101",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjgzOSwicHVyIjoiYmxvYl9pZCJ9fQ==--98ab4be4486821b1ad8678f3e9e2380c92f1d931/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOls4MDAsMjUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--8dc1b429ac2855bcb42e462cb8237a7133f483dc/IMG_8648.jpeg",
+      "description": "Come join an evening of community connection alongside a local author and expert Dr. Meredith Elkins. Whether you have parenting anxiety or are actually parenting a child with anxiety, this event will explore both experiences. Join Meredith in a conversation with a panel of educators and parents surrounding her book Parenting Anxiety: Breaking the Cycle of Worry and Raising Resilient Kids. No RSVP required. Feel free to read the book ahead of the event or copies will be available the next night of the event as well.",
+      "end_time": "2026-10-06T20:00:00-04:00",
+      "external_link": null,
+      "featured": true,
+      "host_name": "Turning Life On | South Shore Digital Wellness",
+      "host_url": "https://www.fournorms.com/turning-life-on/south-shore-digital-wellness",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/south-shore-digital-wellness-parentin-anxiety-and-us-an-evening-of-community-and-conversation.json",
+        "web_url": "https://www.fournorms.com/events/south-shore-digital-wellness-parentin-anxiety-and-us-an-evening-of-community-and-conversation"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "south-shore-digital-wellness-parentin-anxiety-and-us-an-evening-of-community-and-conversation",
+      "start_time": "2026-10-06T18:30:00-04:00",
+      "tags": [
+        "Delay Social Media",
+        "Independence And Play"
+      ],
+      "title": "Parenting, Anxiety and Us : An Evening of Community and Conversation",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ1OCwicHVyIjoiYmxvYl9pZCJ9fQ==--1382bc736a7bc47383cf147f830fd0f5e36547ef/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2026-10-16T12:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-3f8e8331-58b2-455c-a227-8b423aac2c11.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-3f8e8331-58b2-455c-a227-8b423aac2c11"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-3f8e8331-58b2-455c-a227-8b423aac2c11",
+      "start_time": "2026-10-16T10:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjcyNiwicHVyIjoiYmxvYl9pZCJ9fQ==--0d03c6b4c3e6510b605c5b52b9b2cfd54c802269/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Most districts don\u2019t have a clear, current, community-informed way to think through their own technology direction \u2014 decisions get made department by department, often without anyone connecting healthy defaults, social media practices, grade-band device rules, and AI policy into a single, coherent picture. A TAC doesn\u2019t need formal authority to close that gap; it just needs a standing seat and a real line to the Superintendent.\r\n\r\nWe will talk about how to advocate for one in your district, the strategies you can use and the changes you can advocate for through the TAC. Let's do this!",
+      "end_time": "2026-10-19T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-tech-advisory-committees.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-tech-advisory-committees"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-tech-advisory-committees",
+      "start_time": "2026-10-19T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Tech Advisory Committees",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwNywicHVyIjoiYmxvYl9pZCJ9fQ==--1b9d2da5139f165e85a9eef8f0022929f16065a1/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2026-11-05T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-84749293-4ebd-41ae-9d23-e4d481068d49.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-84749293-4ebd-41ae-9d23-e4d481068d49"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-84749293-4ebd-41ae-9d23-e4d481068d49",
+      "start_time": "2026-11-05T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--44a68d8304f5df4b298fb19de8ae8822b5bcfeb4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2026-11-20T12:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6",
+      "start_time": "2026-11-20T10:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg5OCwicHVyIjoiYmxvYl9pZCJ9fQ==--a5d2a9455864d56c3c725a9794a83129ba2ad1c3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2026-12-03T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-3ebe9cbc-4a25-49fd-a38a-b3f05298c432.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-3ebe9cbc-4a25-49fd-a38a-b3f05298c432"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-3ebe9cbc-4a25-49fd-a38a-b3f05298c432",
+      "start_time": "2026-12-03T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2026-12-18T12:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-ac0c3127-dd34-447b-b1a6-2acea920375c.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-ac0c3127-dd34-447b-b1a6-2acea920375c"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-ac0c3127-dd34-447b-b1a6-2acea920375c",
+      "start_time": "2026-12-18T10:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-01-07T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-63d47ae7-6725-44b6-8d88-f4a56f410d9e.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-63d47ae7-6725-44b6-8d88-f4a56f410d9e"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-63d47ae7-6725-44b6-8d88-f4a56f410d9e",
+      "start_time": "2027-01-07T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2027-01-15T12:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-732bd8cd-75bd-4bae-a47c-9780a11dcddb.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-732bd8cd-75bd-4bae-a47c-9780a11dcddb"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-732bd8cd-75bd-4bae-a47c-9780a11dcddb",
+      "start_time": "2027-01-15T10:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-02-04T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-a0682041-06f9-413c-ac6d-eba8d9fdd83f.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-a0682041-06f9-413c-ac6d-eba8d9fdd83f"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-a0682041-06f9-413c-ac6d-eba8d9fdd83f",
+      "start_time": "2027-02-04T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2027-02-26T12:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-df205d63-391d-452c-91af-358b17dc2598.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-df205d63-391d-452c-91af-358b17dc2598"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-df205d63-391d-452c-91af-358b17dc2598",
+      "start_time": "2027-02-26T10:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-03-04T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-5bc66ebf-e46e-4b4b-b7ed-f2746cc3aabf.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-5bc66ebf-e46e-4b4b-b7ed-f2746cc3aabf"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-5bc66ebf-e46e-4b4b-b7ed-f2746cc3aabf",
+      "start_time": "2027-03-04T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2027-03-19T12:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-47b3b017-a480-4542-8650-7304bd91f1cf.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-47b3b017-a480-4542-8650-7304bd91f1cf"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-47b3b017-a480-4542-8650-7304bd91f1cf",
+      "start_time": "2027-03-19T10:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-04-01T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-d7d5d041-52c7-4948-a468-dc392871a22f.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-d7d5d041-52c7-4948-a468-dc392871a22f"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-d7d5d041-52c7-4948-a468-dc392871a22f",
+      "start_time": "2027-04-01T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
+      "end_time": "2027-04-23T12:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-ce93b4ba-768d-4dfc-a5ab-6c890827fad1.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-ce93b4ba-768d-4dfc-a5ab-6c890827fad1"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-meetup-ce93b4ba-768d-4dfc-a5ab-6c890827fad1",
+      "start_time": "2027-04-23T10:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Meetup ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-05-06T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-5d6278cf-193c-43c1-a491-4f6a0c19d740.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-5d6278cf-193c-43c1-a491-4f6a0c19d740"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-5d6278cf-193c-43c1-a491-4f6a0c19d740",
+      "start_time": "2027-05-06T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--b238c4dfe9e9e61d3a5a392d12ee6a1a54cc78a2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
+      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
+      "end_time": "2027-06-03T13:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-1208b94d-3e8f-4956-b32a-cdc5e41a566f.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-1208b94d-3e8f-4956-b32a-cdc5e41a566f"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-coalition-call-1208b94d-3e8f-4956-b32a-cdc5e41a566f",
+      "start_time": "2027-06-03T12:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Coalition Call",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    }
+  ],
+  "updated": "2026-09-21T17:15:50+00:00"
+}

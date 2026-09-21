@@ -105,6 +105,29 @@ footer p,footer li{font-size:15px;color:#4a4f52;line-height:1.8}
 footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 .flist{list-style:none}
 .disc{font-size:11.5px;color:#7d8285;line-height:1.6;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+.evfilters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.evfilter{font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);border-radius:2px;padding:9px 18px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.evfilter:hover{border-color:var(--teal);color:var(--teal)}
+.evfilter.is-on{background:var(--teal);border-color:var(--teal);color:#fff}
+.evlist{display:grid;gap:18px}
+.ev{display:grid;grid-template-columns:104px 1fr;gap:24px;background:var(--mist);border-radius:4px;padding:24px;align-items:start}
+.ev-date{text-align:center;background:#fff;border-radius:3px;padding:12px 8px;border-top:3px solid var(--orange)}
+.ev-mon{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+.ev-day{font-family:'Poppins',sans-serif;font-size:32px;font-weight:600;color:var(--slate);line-height:1.1}
+.ev-yr{font-size:12px;color:#7d8285}
+.ev h3{font-size:21px;margin:0 0 8px}
+.ev h3 a{color:var(--ink)} .ev h3 a:hover{color:var(--teal)}
+.ev-meta{font-family:'Poppins',sans-serif;font-size:13.5px;color:var(--teal);font-weight:500;margin-bottom:10px}
+.ev-meta .sep{color:var(--line);margin:0 8px}
+.ev-desc{font-size:15.5px;color:#4a4f52;margin:0 0 14px}
+.ev-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.ev-tag{font-size:11.5px;font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#5c6468;background:#fff;border:1px solid var(--line);border-radius:2px;padding:4px 9px}
+.ev-badge{display:inline-block;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:2px;margin-left:8px;vertical-align:2px}
+.ev-badge.online{background:#e4f1f1;color:var(--teal-d)}
+.ev-badge.feat{background:#fbe9d6;color:var(--orange-d)}
+.evnote{font-size:16px;color:#5c6468}
+.evstamp{font-size:12.5px;color:#8a8f92;margin-top:26px}
+@media (max-width:620px){.ev{grid-template-columns:1fr;gap:16px}.ev-date{width:104px}}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -142,7 +165,19 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
     <div class="wrap inner"><span class="tblock lg">Connect and learn</span><span class="subhero">Join us for events designed to strengthen our community and share what works.</span></div>
   </section>
   <section class="s">
-    <div class="wrap"><div class="embed"><span class="ico">&#128197;</span><span class="lab">Upcoming events (Four Norms feed embed)</span></div></div>
+    <div class="wrap">
+      <div class="kick">Upcoming</div>
+      <h2>What's coming up</h2>
+      <div class="evfilters" id="evfilters" hidden>
+        <button class="evfilter is-on" data-mode="all" type="button">All events</button>
+        <button class="evfilter" data-mode="in_person" type="button">In person</button>
+        <button class="evfilter" data-mode="virtual" type="button">Online</button>
+      </div>
+      <div id="evlist" class="evlist" aria-live="polite">
+        <p class="evnote">Loading events&hellip;</p>
+      </div>
+      <p class="evstamp" id="evstamp"></p>
+    </div>
   </section>
 
 </main>
@@ -178,5 +213,129 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 </footer>
 <script>
 document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+</script>
+<script>
+/* Events list.
+   Reads data/events.json, which is refreshed from Four Norms automatically.
+   The browser cannot call the Four Norms API directly (it sends no CORS
+   headers), so the data is fetched ahead of time and saved into this site. */
+(function(){
+  var listEl = document.getElementById('evlist');
+  var stampEl = document.getElementById('evstamp');
+  var filtersEl = document.getElementById('evfilters');
+  var all = [];
+  var mode = 'all';
+
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function esc(t){
+    return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function when(ev){
+    var d = new Date(ev.start_time);
+    if (isNaN(d)) return {mon:'', day:'', yr:'', time:''};
+    return {
+      mon: MONTHS[d.getMonth()],
+      day: d.getDate(),
+      yr: d.getFullYear(),
+      time: d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'})
+    };
+  }
+
+  function trim(text, max){
+    var t = String(text || '').replace(/\s+/g, ' ').trim();
+    if (t.length <= max) return t;
+    return t.slice(0, max).replace(/\s+\S*$/, '') + '\u2026';
+  }
+
+  function link(ev){
+    return (ev.links && ev.links.web_url) || ev.external_link || ev.virtual_link || '';
+  }
+
+  function card(ev){
+    var w = when(ev);
+    var href = link(ev);
+    var title = esc(ev.title);
+    var where = ev.virtual ? 'Online' : (ev.location_name ? esc(ev.location_name) : 'In person');
+
+    var meta = w.time ? w.time : '';
+    if (where) meta += (meta ? '<span class="sep">|</span>' : '') + where;
+    if (ev.host_name) meta += '<span class="sep">|</span>' + esc(ev.host_name);
+
+    var tags = (ev.tags || []).slice(0, 4).map(function(t){
+      return '<span class="ev-tag">' + esc(t) + '</span>';
+    }).join('');
+
+    return '<article class="ev">' +
+      dateBlock(w) +
+      '<div>' +
+        '<h3>' + (href ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + title + '</a>' : title) + '</h3>' +
+        '<div class="ev-meta">' + meta + '</div>' +
+        (ev.description ? '<p class="ev-desc">' + esc(trim(ev.description, 230)) + '</p>' : '') +
+        (tags ? '<div class="ev-tags">' + tags + '</div>' : '') +
+        (href ? '<a class="btn btn-orange btn-sm" href="' + esc(href) + '" target="_blank" rel="noopener">Event details</a>' : '') +
+      '</div>' +
+    '</article>';
+  }
+
+  function dateBlock(w){
+    return '<div class="ev-date">' +
+        '<div class="ev-mon">' + w.mon + '</div>' +
+        '<div class="ev-day">' + w.day + '</div>' +
+        '<div class="ev-yr">' + w.yr + '</div>' +
+      '</div>';
+  }
+
+  function render(){
+    var shown = all.filter(function(ev){
+      if (mode === 'virtual') return ev.virtual;
+      if (mode === 'in_person') return !ev.virtual;
+      return true;
+    });
+
+    if (!shown.length){
+      listEl.innerHTML = '<p class="evnote">No events to show here right now. ' +
+        '<a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
+        'Check the Community Portal</a> for the latest.</p>';
+      return;
+    }
+    listEl.innerHTML = shown.map(card).join('');
+  }
+
+  fetch('data/events.json', {cache: 'no-cache'})
+    .then(function(r){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function(d){
+      all = (d.events || []).filter(function(ev){
+        return new Date(ev.start_time) >= new Date(Date.now() - 864e5);
+      });
+      filtersEl.hidden = false;
+      render();
+      if (d.updated){
+        stampEl.textContent = 'Event listings come from the Turning Life On Community Portal. Last updated ' +
+          new Date(d.updated).toLocaleDateString([], {month:'long', day:'numeric', year:'numeric'}) + '.';
+      }
+    })
+    .catch(function(){
+      listEl.innerHTML = '<p class="evnote">Our events list could not be loaded just now. ' +
+        'Please see the <a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
+        'Community Portal</a> for upcoming events.</p>';
+    });
+
+  filtersEl.addEventListener('click', function(e){
+    var b = e.target.closest('.evfilter');
+    if (!b) return;
+    mode = b.dataset.mode;
+    filtersEl.querySelectorAll('.evfilter').forEach(function(x){
+      x.classList.toggle('is-on', x === b);
+    });
+    render();
+  });
+})();
 </script>
 </body></html>
