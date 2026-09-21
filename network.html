@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
 :root{
   --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
@@ -105,6 +106,24 @@ footer p,footer li{font-size:15px;color:#4a4f52;line-height:1.8}
 footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 .flist{list-style:none}
 .disc{font-size:11.5px;color:#7d8285;line-height:1.6;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+.zipbox{background:var(--mist);border-radius:4px;padding:22px 24px;margin-bottom:22px}
+.zipform label{display:block;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--slate);margin-bottom:10px}
+.zipfields{display:flex;flex-wrap:wrap;gap:10px}
+.zipfields input{font-family:'Mulish',sans-serif;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:2px;width:190px;background:#fff;color:var(--ink)}
+.zipfields input:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+.zipclear{background:#fff;border:1px solid var(--line);color:var(--slate)}
+.zipclear:hover{border-color:var(--teal);color:var(--teal)}
+.zipresult{font-size:15px;color:#4a4f52;margin:12px 0 0;min-height:1px}
+.zipresult.err{color:var(--orange-d)}
+.map{height:460px;border-radius:4px;border:1px solid var(--line);background:var(--mist);display:flex;align-items:center;justify-content:center}
+.map .leaflet-container{font-family:'Mulish',sans-serif}
+.mapnote{font-size:15px;color:#5c6468}
+.pop-nm{font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--slate);display:block}
+.pop-loc{font-size:13px;color:#5c6468;display:block;margin-top:2px}
+.pop-approx{font-size:12px;color:#8a8f92;display:block;margin-top:4px;font-style:italic}
+.dir a.near{outline:2px solid var(--teal);outline-offset:-2px}
+.dir .dist{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:#5c6468;text-decoration:none;font-size:13px;margin-top:4px}
+.evstamp{font-size:12.5px;color:#8a8f92;margin-top:22px}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -149,30 +168,29 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
     <div class="wrap">
       <div class="kick">Communities across New England</div>
       <h2 style="margin-bottom:20px">Discover how communities are making a difference</h2>
-      <div class="embed"><span class="ico">&#128506;</span><span class="lab">Interactive coalition communities map (Google My Maps embed)</span></div>
+      <div class="zipbox">
+        <form id="zipform" class="zipform" novalidate>
+          <label for="zipinput">Find a group near you</label>
+          <div class="zipfields">
+            <input id="zipinput" name="zip" type="text" inputmode="numeric" autocomplete="postal-code"
+                   maxlength="5" placeholder="Your ZIP code" aria-describedby="zipresult">
+            <button class="btn btn-teal btn-sm" type="submit">Search</button>
+            <button class="btn btn-sm zipclear" type="button" id="zipclear" hidden>Show all</button>
+          </div>
+        </form>
+        <p class="zipresult" id="zipresult" role="status"></p>
+      </div>
+      <div id="map" class="map" role="region" aria-label="Map of coalition communities">
+        <p class="mapnote">Loading map&hellip;</p>
+      </div>
     </div>
   </section>
   <section class="s mist">
     <div class="wrap">
       <div class="kick">Directory</div>
       <h2 style="margin-bottom:22px">Explore local communities</h2>
-      <div class="dir">
-        <a href="#">Arlington, MA<span>Smartphone Sense</span></a>
-        <a href="#">Braintree, MA<span>BrainFree Braintree</span></a>
-        <a href="#">Concord, MA<span>TLO Concord</span></a>
-        <a href="#">Kingston, MA<span>Community Hub</span></a>
-        <a href="#">Lexington, MA<span>Lex Kids be Kids</span></a>
-        <a href="#">Lincoln, MA<span>LincolnWait</span></a>
-        <a href="#">Malden, MA<span>Reconnect Malden</span></a>
-        <a href="#">Nashoba Valley<span>ReConnect</span></a>
-        <a href="#">Nashua, NH<span>Grow Nashua</span></a>
-        <a href="#">Reading, MA<span>TLO Reading</span></a>
-        <a href="#">South Shore<span>SS Digital Wellness</span></a>
-        <a href="#">State College, PA<span>PA Turning Life On</span></a>
-        <a href="#">Sudbury, MA<span>Digital Balance</span></a>
-        <a href="#">Western MA<span>ReConnect Western MA</span></a>
-        <a href="#">Winchester, MA<span>Let Kids Be Kids</span></a>
-      </div>
+      <div class="dir" id="dir"><p class="mapnote">Loading communities&hellip;</p></div>
+      <p class="evstamp" id="dirstamp"></p>
     </div>
   </section>
 
@@ -209,5 +227,195 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 </footer>
 <script>
 document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+/* Coalition communities map, ZIP search and directory.
+   All three read data/groups.json, which is refreshed from Four Norms.
+   The ZIP-to-location table is only downloaded if someone actually searches. */
+(function(){
+  var mapEl = document.getElementById('map');
+  var dirEl = document.getElementById('dir');
+  var stampEl = document.getElementById('dirstamp');
+  var form = document.getElementById('zipform');
+  var input = document.getElementById('zipinput');
+  var resultEl = document.getElementById('zipresult');
+  var clearBtn = document.getElementById('zipclear');
+
+  var groups = [];
+  var map = null;
+  var markers = [];
+  var hereMarker = null;
+  var zipTable = null;
+
+  function esc(t){
+    return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function place(g){
+    return g.state ? g.city + ', ' + g.state : g.city;
+  }
+
+  /* Straight-line distance in miles between two points on the globe. */
+  function milesBetween(lat1, lon1, lat2, lon2){
+    var R = 3958.8, rad = Math.PI / 180;
+    var dLat = (lat2 - lat1) * rad, dLon = (lon2 - lon1) * rad;
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1*rad) * Math.cos(lat2*rad) * Math.sin(dLon/2) * Math.sin(dLon/2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  }
+
+  function buildMap(){
+    mapEl.innerHTML = '';
+    map = L.map('map', {scrollWheelZoom: false}).setView([42.3, -71.4], 8);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var icon = L.divIcon({
+      className: '',
+      html: '<div style="width:16px;height:16px;background:#3f9b9b;border:2px solid #fff;' +
+            'border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>',
+      iconSize: [16, 16], iconAnchor: [8, 16], popupAnchor: [0, -14]
+    });
+
+    var pts = [];
+    groups.forEach(function(g){
+      if (typeof g.lat !== 'number' || typeof g.lon !== 'number') return;
+      var body = '<span class="pop-nm">' + esc(g.display_name || g.name) + '</span>' +
+                 '<span class="pop-loc">' + esc(place(g)) + '</span>';
+      if (g.web_url) {
+        body += '<a href="' + esc(g.web_url) + '" target="_blank" rel="noopener">Visit this community</a>';
+      }
+      if (g.approx_location) {
+        body += '<span class="pop-approx">Covers a wider area; pin is approximate.</span>';
+      }
+      markers.push(L.marker([g.lat, g.lon], {icon: icon, title: g.display_name || g.name})
+        .addTo(map).bindPopup(body));
+      pts.push([g.lat, g.lon]);
+    });
+
+    if (pts.length) map.fitBounds(pts, {padding: [40, 40], maxZoom: 10});
+  }
+
+  function renderDirectory(near){
+    var list = groups.slice();
+    if (near){
+      list.forEach(function(g){
+        g._miles = (typeof g.lat === 'number')
+          ? milesBetween(near[0], near[1], g.lat, g.lon) : Infinity;
+      });
+      list.sort(function(a, b){ return a._miles - b._miles; });
+    }
+
+    if (!list.length){
+      dirEl.innerHTML = '<p class="mapnote">Our community list could not be loaded just now. ' +
+        '<a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
+        'Visit the Community Portal</a>.</p>';
+      return;
+    }
+
+    dirEl.innerHTML = list.map(function(g, i){
+      var href = g.web_url || 'https://papa.fournorms.com/turning-life-on';
+      var dist = (near && isFinite(g._miles))
+        ? '<span class="dist">' + Math.round(g._miles) + ' miles away</span>' : '';
+      return '<a href="' + esc(href) + '"' + (g.web_url ? ' target="_blank" rel="noopener"' : '') +
+             (near && i < 3 ? ' class="near"' : '') + '>' +
+             esc(place(g)) + '<span>' + esc(g.display_name || g.name) + '</span>' + dist +
+             '</a>';
+    }).join('');
+  }
+
+  function loadZipTable(){
+    if (zipTable) return Promise.resolve(zipTable);
+    return fetch('data/zip-coords.json')
+      .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function(d){ zipTable = d; return d; });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var zip = (input.value || '').trim();
+    resultEl.className = 'zipresult';
+
+    if (!/^\d{5}$/.test(zip)){
+      resultEl.className = 'zipresult err';
+      resultEl.textContent = 'Please enter a 5-digit ZIP code.';
+      return;
+    }
+
+    resultEl.textContent = 'Searching\u2026';
+    loadZipTable().then(function(table){
+      var here = table[zip];
+      if (!here){
+        resultEl.className = 'zipresult err';
+        resultEl.textContent = 'We could not find that ZIP code. Please check and try again.';
+        return;
+      }
+
+      renderDirectory(here);
+      clearBtn.hidden = false;
+
+      var nearest = groups.slice().sort(function(a, b){
+        return milesBetween(here[0], here[1], a.lat, a.lon) -
+               milesBetween(here[0], here[1], b.lat, b.lon);
+      })[0];
+      var miles = nearest ? Math.round(milesBetween(here[0], here[1], nearest.lat, nearest.lon)) : null;
+
+      if (nearest && miles <= 40){
+        resultEl.textContent = 'Your closest community is ' + (nearest.display_name || nearest.name) +
+          ' in ' + place(nearest) + ', about ' + miles + ' miles away. ' +
+          'The list below is sorted by distance from you.';
+      } else if (nearest){
+        resultEl.textContent = 'There is no community very close to you yet \u2014 the nearest is ' +
+          (nearest.display_name || nearest.name) + ' in ' + place(nearest) + ', about ' + miles +
+          ' miles away. Starting one where you live is exactly how the others began.';
+      }
+
+      if (map){
+        if (hereMarker) map.removeLayer(hereMarker);
+        hereMarker = L.circleMarker(here, {
+          radius: 8, color: '#e8821e', weight: 3, fillColor: '#e8821e', fillOpacity: .35
+        }).addTo(map).bindPopup('Your ZIP code area');
+        if (nearest) map.fitBounds([here, [nearest.lat, nearest.lon]], {padding: [60, 60], maxZoom: 10});
+      }
+    }).catch(function(){
+      resultEl.className = 'zipresult err';
+      resultEl.textContent = 'The search is unavailable just now. Please browse the full list below.';
+    });
+  });
+
+  clearBtn.addEventListener('click', function(){
+    input.value = '';
+    resultEl.textContent = '';
+    resultEl.className = 'zipresult';
+    clearBtn.hidden = true;
+    renderDirectory(null);
+    if (hereMarker){ map.removeLayer(hereMarker); hereMarker = null; }
+    if (map && markers.length){
+      map.fitBounds(markers.map(function(m){ return m.getLatLng(); }), {padding: [40, 40], maxZoom: 10});
+    }
+  });
+
+  fetch('data/groups.json', {cache: 'no-cache'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function(d){
+      groups = (d.groups || []).filter(function(g){ return g.city; });
+      renderDirectory(null);
+      if (window.L) buildMap();
+      else mapEl.innerHTML = '<p class="mapnote">The map could not load. The full list of communities is below.</p>';
+      if (d.updated){
+        stampEl.textContent = 'Community information comes from the Turning Life On Community Portal. ' +
+          'Last updated ' + new Date(d.updated).toLocaleDateString([], {month:'long', day:'numeric', year:'numeric'}) + '.';
+      }
+    })
+    .catch(function(){
+      mapEl.innerHTML = '<p class="mapnote">The map could not load just now.</p>';
+      renderDirectory(null);
+    });
+})();
 </script>
 </body></html>
