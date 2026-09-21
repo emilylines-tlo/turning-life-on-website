@@ -128,6 +128,23 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 .evnote{font-size:16px;color:#5c6468}
 .evstamp{font-size:12.5px;color:#8a8f92;margin-top:26px}
 @media (max-width:620px){.ev{grid-template-columns:1fr;gap:16px}.ev-date{width:104px}}
+.zipbox{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px 24px;margin:26px 0 0}
+.zipform label{display:block;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--slate);margin-bottom:10px}
+.zipfields{display:flex;flex-wrap:wrap;gap:10px}
+.zipfields input{font-family:'Mulish',sans-serif;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:2px;width:190px;background:#fff;color:var(--ink)}
+.zipfields input:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+.zipresult{font-size:15px;color:#4a4f52;margin:12px 0 0}
+.zipresult.err{color:var(--orange-d)}
+.nearblock{margin-top:28px}
+.nearblock h3{font-size:19px;margin-bottom:14px}
+.nearlist{display:grid;gap:12px;margin-bottom:6px}
+.nearrow{background:#fff;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0 3px 3px 0;padding:15px 18px}
+.nearrow.ev{border-left-color:var(--orange)}
+.nearrow .t{font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;color:var(--ink)}
+.nearrow .t a{color:var(--ink)} .nearrow .t a:hover{color:var(--teal)}
+.nearrow .m{font-size:14px;color:#5c6468;margin-top:4px}
+.nearrow .m b{color:var(--teal);font-weight:600}
+.nearnote{font-size:14.5px;color:#5c6468;margin-top:12px}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -163,6 +180,25 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 
   <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1751988271935-517YEVO3PHNDL0GQP0EY/unsplash-image-WLlW03JZGBE.jpg');min-height:400px">
     <div class="wrap inner"><span class="tblock lg">Connect and learn</span><span class="subhero">Join us for events designed to strengthen our community and share what works.</span></div>
+  </section>
+  <section class="s mist">
+    <div class="wrap">
+      <div class="kick">Near you</div>
+      <h2>What's happening near you</h2>
+      <p class="read">Enter your ZIP code to see the communities closest to you and what they have coming up.</p>
+      <div class="zipbox">
+        <form id="nearform" class="zipform" novalidate>
+          <label for="nearzip">Your ZIP code</label>
+          <div class="zipfields">
+            <input id="nearzip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code"
+                   maxlength="5" placeholder="e.g. 01742" aria-describedby="nearstatus">
+            <button class="btn btn-teal btn-sm" type="submit">Show me</button>
+          </div>
+        </form>
+        <p class="zipresult" id="nearstatus" role="status"></p>
+      </div>
+      <div id="nearresult"></div>
+    </div>
   </section>
   <section class="s">
     <div class="wrap">
@@ -214,6 +250,7 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 <script>
 document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
 </script>
+<script src="assets/nearby.js"></script>
 <script>
 /* Events list.
    Reads data/events.json, which is refreshed from Four Norms automatically.
@@ -228,11 +265,7 @@ document.getElementById('menubtn').addEventListener('click',function(){document.
 
   var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-  function esc(t){
-    return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
-  }
+  var esc = TLO.esc;
 
   function when(ev){
     var d = new Date(ev.start_time);
@@ -316,6 +349,7 @@ document.getElementById('menubtn').addEventListener('click',function(){document.
       });
       filtersEl.hidden = false;
       render();
+      document.dispatchEvent(new CustomEvent('tlo:events', {detail: all}));
       if (d.updated){
         stampEl.textContent = 'Event listings come from the Turning Life On Community Portal. Last updated ' +
           new Date(d.updated).toLocaleDateString([], {month:'long', day:'numeric', year:'numeric'}) + '.';
@@ -335,6 +369,152 @@ document.getElementById('menubtn').addEventListener('click',function(){document.
       x.classList.toggle('is-on', x === b);
     });
     render();
+  });
+})();
+</script>
+
+<script>
+/* "What's happening near you".
+   Four Norms events carry no coordinates. When a local community hosts an
+   event, we place it at that community's location; events run centrally by TLO
+   or by a partner have no location, so they are shown separately rather than
+   pretended to be nearby. */
+(function(){
+  var RADIUS = 60; // miles
+
+  var form = document.getElementById('nearform');
+  var input = document.getElementById('nearzip');
+  var statusEl = document.getElementById('nearstatus');
+  var outEl = document.getElementById('nearresult');
+
+  var events = null;
+  var groups = null;
+
+  document.addEventListener('tlo:events', function(e){ events = e.detail; });
+  TLO.loadJSON('data/groups.json')
+    .then(function(d){ groups = (d.groups || []).filter(function(g){
+      return g.city && typeof g.lat === 'number';
+    }); })
+    .catch(function(){ groups = []; });
+
+  function dateLabel(iso){
+    var d = new Date(iso);
+    if (isNaN(d)) return '';
+    return d.toLocaleDateString([], {weekday:'short', month:'short', day:'numeric'}) +
+           ', ' + d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+  }
+
+  function eventLink(ev){
+    return (ev.links && ev.links.web_url) || ev.external_link || ev.virtual_link || '';
+  }
+
+  function rowEvent(ev, extra){
+    var href = eventLink(ev);
+    var title = TLO.esc(ev.title);
+    return '<div class="nearrow ev">' +
+      '<div class="t">' + (href
+        ? '<a href="' + TLO.esc(href) + '" target="_blank" rel="noopener">' + title + '</a>'
+        : title) + '</div>' +
+      '<div class="m">' + dateLabel(ev.start_time) + (extra ? ' &middot; ' + extra : '') + '</div>' +
+    '</div>';
+  }
+
+  function block(title, inner){
+    return '<div class="nearblock"><h3>' + title + '</h3><div class="nearlist">' + inner + '</div></div>';
+  }
+
+  function show(here){
+    if (!events || !groups){
+      statusEl.className = 'zipresult err';
+      statusEl.textContent = 'Still loading. Please try again in a moment.';
+      return;
+    }
+
+    var ranked = TLO.byDistance(groups.slice(), here);
+    var nearGroups = ranked.filter(function(g){ return g._miles <= RADIUS; });
+    var nearest = ranked[0];
+
+    // Distance to each community, so an event can inherit its host's distance.
+    var milesBySlug = {};
+    var nameBySlug = {};
+    ranked.forEach(function(g){
+      if (g.slug){ milesBySlug[g.slug] = g._miles; nameBySlug[g.slug] = g.display_name || g.name; }
+    });
+
+    var localEvents = events.filter(function(ev){
+      return ev.host_slug && milesBySlug[ev.host_slug] <= RADIUS;
+    }).sort(function(a, b){ return new Date(a.start_time) - new Date(b.start_time); });
+
+    var onlineEvents = events.filter(function(ev){ return ev.virtual; }).slice(0, 4);
+    var unlocated = events.filter(function(ev){ return !ev.virtual && !ev.host_slug; }).length;
+
+    // Headline
+    if (nearest && nearest._miles <= RADIUS){
+      statusEl.className = 'zipresult';
+      statusEl.innerHTML = 'Your closest community is <b>' + TLO.esc(nearest.display_name || nearest.name) +
+        '</b> in ' + TLO.esc(TLO.place(nearest)) + ', ' + TLO.distancePhrase(nearest._miles) + '.';
+    } else if (nearest){
+      statusEl.className = 'zipresult';
+      statusEl.innerHTML = 'There is no community near you yet. The closest is <b>' +
+        TLO.esc(nearest.display_name || nearest.name) + '</b> in ' + TLO.esc(TLO.place(nearest)) +
+        ', ' + TLO.distancePhrase(nearest._miles) + ' \u2014 starting one where you live is ' +
+        'exactly how the others began.';
+    }
+
+    var html = '';
+
+    if (nearGroups.length){
+      html += block('Communities within ' + RADIUS + ' miles',
+        nearGroups.slice(0, 5).map(function(g){
+          var href = g.web_url || 'network.html';
+          var ext = g.web_url ? ' target="_blank" rel="noopener"' : '';
+          return '<div class="nearrow">' +
+            '<div class="t"><a href="' + TLO.esc(href) + '"' + ext + '>' +
+              TLO.esc(g.display_name || g.name) + '</a></div>' +
+            '<div class="m">' + TLO.esc(TLO.place(g)) + ' &middot; <b>' +
+              TLO.milesLabel(g._miles) + ' away</b></div>' +
+          '</div>';
+        }).join(''));
+    }
+
+    if (localEvents.length){
+      html += block('Events hosted near you', localEvents.map(function(ev){
+        return rowEvent(ev, TLO.esc(nameBySlug[ev.host_slug] || '') +
+          ' &middot; <b>' + TLO.milesLabel(milesBySlug[ev.host_slug]) + ' away</b>');
+      }).join(''));
+    } else if (nearGroups.length){
+      html += '<p class="nearnote">None of the communities near you have an in-person event ' +
+              'on the calendar just now. Their pages above are the best place to keep an eye out.</p>';
+    }
+
+    if (onlineEvents.length){
+      html += block('Online, and open to everyone',
+        onlineEvents.map(function(ev){ return rowEvent(ev, 'Online'); }).join(''));
+    }
+
+    if (unlocated && nearGroups.length){
+      html += '<p class="nearnote">' + unlocated + ' further in-person event' +
+        (unlocated === 1 ? '' : 's') + ' ' + (unlocated === 1 ? 'does' : 'do') +
+        ' not have a location listed yet. You will find ' +
+        (unlocated === 1 ? 'it' : 'them') + ' in the full list below.</p>';
+    }
+
+    outEl.innerHTML = html;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var zip = (input.value || '').trim();
+    outEl.innerHTML = '';
+    statusEl.className = 'zipresult';
+    statusEl.textContent = 'Looking\u2026';
+
+    TLO.lookupZip(zip).then(show).catch(function(err){
+      statusEl.className = 'zipresult err';
+      statusEl.textContent = (err && err.message === 'bad-zip')
+        ? 'Please enter a 5-digit ZIP code.'
+        : 'We could not find that ZIP code. Please check and try again.';
+    });
   });
 })();
 </script>

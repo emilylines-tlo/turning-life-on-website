@@ -83,6 +83,14 @@ def fetch_events():
             pass
 
         host = e.get("host") or {}
+        # An event carries no coordinates of its own. When a local group hosts
+        # it, host.url ends with that group's slug, which lets the website place
+        # the event at the group's location. Events hosted centrally by TLO or
+        # by a partner organisation have no local location at all.
+        host_slug = None
+        if host.get("type") == "Group" and host.get("url"):
+            host_slug = host["url"].rstrip("/").rsplit("/", 1)[-1] or None
+
         events.append({
             "slug": e.get("slug"),
             "title": e.get("title"),
@@ -98,6 +106,8 @@ def fetch_events():
             "featured": bool(e.get("featured")),
             "host_name": host.get("name"),
             "host_url": host.get("url"),
+            "host_type": host.get("type"),
+            "host_slug": host_slug,
             "tags": [t.get("name") if isinstance(t, dict) else t
                      for t in (e.get("tags") or [])],
             "links": e.get("links"),
