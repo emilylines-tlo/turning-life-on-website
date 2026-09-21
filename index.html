@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
 :root{
   --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
@@ -105,8 +106,33 @@ footer p,footer li{font-size:15px;color:#4a4f52;line-height:1.8}
 footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 .flist{list-style:none}
 .disc{font-size:11.5px;color:#7d8285;line-height:1.6;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+.homemap{height:320px;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.homemap .leaflet-container{font-family:'Mulish',sans-serif}
+.mapnote{font-size:15px;color:#5c6468}
+.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
+.stat{background:#fff;border-radius:4px;padding:26px;border-top:4px solid var(--orange)}
+.stat .fig{font-family:'Poppins',sans-serif;font-size:44px;font-weight:700;line-height:1;color:var(--slate);margin-bottom:12px}
+.stat p{font-size:16px;margin:0 0 14px}
+.stat cite{font-style:normal;font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:500;color:#6d7377;display:block}
+.stat cite a{color:#6d7377;text-decoration:underline}
+.stat cite a:hover{color:var(--teal)}
+.issues{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
+.issue{border-top:3px solid var(--teal);padding-top:20px;display:flex;flex-direction:column}
+.issue h3{font-size:21px;margin-bottom:10px}
+.issue p{font-size:16px;margin-bottom:18px}
+.issue .btn{margin-top:auto;align-self:flex-start}
+.capgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
+.cap{background:var(--mist);border-radius:4px;padding:26px;display:flex;flex-direction:column}
+.cap h3{font-size:22px;margin-bottom:10px}
+.cap p{font-size:16px;margin-bottom:18px}
+.cap .btn{margin-top:auto;align-self:flex-start}
+.creds{list-style:none;margin-top:18px;display:grid;gap:14px}
+.creds li{font-size:16.5px;color:#33373a;padding-left:22px;position:relative;line-height:1.6}
+.creds li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:9px;background:var(--teal);border-radius:50%}
+.creds li b{color:var(--slate)}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
+  .statgrid,.issues,.capgrid{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
   .bar{height:auto;padding:14px 0;flex-wrap:wrap}
   nav ul{display:none} nav.open ul{display:flex;flex-direction:column;width:100%;gap:12px;margin-top:12px}
@@ -114,7 +140,6 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style></head><body>
-<div class="review">Structure &amp; copy mock-up &middot; <b>matched to the live TLO branding</b> &middot; keep these files together so the page links work</div>
 <header>
   <div class="wrap bar">
     <a class="logo" href="index.html">
@@ -143,17 +168,18 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
       <span class="tblock sm">empowering communities to</span><br>
       <span class="tblock lg">keep tech in check</span>
       <div class="btns">
-        <a class="btn btn-orange" href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Join Us</a>
+        <a class="btn btn-orange" href="network.html">Find your community</a>
         <a class="btn btn-orange" href="about.html">Learn More</a>
       </div>
     </div>
   </section>
+
   <section class="s">
     <div class="wrap twocol">
       <div>
         <h2>A statewide movement rooted in local action</h2>
-        <p><a class="tlolink" href="about.html">Turning Life On</a> is a Massachusetts 501(c)(3) that helps local leaders start and sustain grassroots digital-wellness movements, with playbooks, funding, networking, and expert resources.</p>
-        <p>We work alongside parents, educators, school leaders, and professionals across Massachusetts and beyond to shift the norms around technology, so children grow up with room to learn, play, and connect in the real world.</p>
+        <p><a class="tlolink" href="about.html">Turning Life On</a> is a 501(c)(3) and Massachusetts-based coalition of parents and caregivers interested in, or already leading, local efforts to shift the norms around technology. Whether you are a seasoned advocate, just getting started, or simply looking for information, we are here for you.</p>
+        <p>We support that work with playbooks, funding, networking, and expert resources. Together, we are building room for kids to learn, play, and connect in the real world.</p>
         <div class="btns">
           <a class="btn btn-orange" href="take-action.html">Take Action</a>
           <a class="btn btn-orange" href="resources.html">Explore Resources</a>
@@ -161,58 +187,137 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
       </div>
       <div class="mapteaser">
         <div class="topbar">Coalition Communities</div>
-        <div class="mapimg">
-          <span class="pin" style="top:38%;left:30%"></span><span class="pin" style="top:30%;left:46%"></span>
-          <span class="pin" style="top:44%;left:52%"></span><span class="pin" style="top:34%;left:60%"></span>
-          <span class="pin" style="top:55%;left:42%"></span><span class="pin" style="top:62%;left:64%"></span>
-        </div>
+        <div id="homemap" class="homemap"><p class="mapnote">Loading map&hellip;</p></div>
         <div class="foot"><a class="btn btn-teal btn-sm" href="network.html">See the full network</a></div>
       </div>
     </div>
   </section>
+
+  <section class="s mist">
+    <div class="wrap">
+      <div class="kick">The research</div>
+      <h2>The evidence is clear. Now is the time to act.</h2>
+      <div class="statgrid">
+        <div class="stat">
+          <div class="fig">77%</div>
+          <p>of high school students use social media several times a day or more &mdash; frequent use that is linked to higher rates of bullying, persistent sadness, and suicide risk.</p>
+          <cite><a href="https://www.cdc.gov/yrbs/results/2023-yrbs-results.html" target="_blank" rel="noopener">CDC Youth Risk Behavior Survey, 2023</a></cite>
+        </div>
+        <div class="stat">
+          <div class="fig">31%</div>
+          <p>higher odds of depression for children who own a smartphone by age 12, alongside 40% higher odds of obesity and 62% higher odds of insufficient sleep. The earlier the phone arrives, the greater the risk.</p>
+          <cite><a href="https://www.chop.edu/news/childrens-hospital-philadelphia-study-links-smartphone-ownership-childhood-increased-risk" target="_blank" rel="noopener">Pediatrics, December 2025 &middot; Children's Hospital of Philadelphia</a></cite>
+        </div>
+        <div class="stat">
+          <div class="fig">77%</div>
+          <p>of U.S. adults now support banning phones during class, up from 68% just two years ago. Public opinion has moved, and quickly.</p>
+          <cite><a href="https://www.pewresearch.org/short-reads/2026/07/29/more-americans-now-support-than-oppose-all-day-school-cellphone-bans/" target="_blank" rel="noopener">Pew Research Center, 2026</a></cite>
+        </div>
+        <div class="stat">
+          <div class="fig">44&rarr;32%</div>
+          <p>the fall in high school seniors who gather with friends in person almost every day, between 2010 and 2022. Childhood has moved indoors and online.</p>
+          <cite><a href="https://monitoringthefuture.org/" target="_blank" rel="noopener">Monitoring the Future, University of Michigan</a></cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="kick">What we're working on</div>
+      <h2>The issues</h2>
+      <div class="issues">
+        <div class="issue">
+          <h3>Slow Tech</h3>
+          <p>Delaying harmful tech and resisting addictive design features. We support families, communities, and schools with resources and community pacts to delay smartphones until 9th grade and social media until 16.</p>
+          <a class="btn btn-orange btn-sm" href="resources.html">Explore resources</a>
+        </div>
+        <div class="issue">
+          <h3>Distraction Free Schools and Intentional EdTech</h3>
+          <p>Our kids deserve a learning environment that is free of distraction, safe, and effective. We work with parents, educators, and lawmakers to get there.</p>
+          <a class="btn btn-orange btn-sm" href="take-action.html">Take action</a>
+        </div>
+        <div class="issue">
+          <h3>Reconnecting our communities</h3>
+          <p>Through screen-free and play-based events and educational opportunities. Taking tech away does not solve the problem on its own &mdash; we need to recreate the spaces and moments that bring people together without a device in the way.</p>
+          <a class="btn btn-orange btn-sm" href="events.html">See what's on</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="s teal">
     <div class="wrap">
-      <div class="kick">Get involved</div>
+      <div class="kick">Who we work with</div>
       <h2>Three ways to join the movement</h2>
       <div class="pathgrid">
         <div class="path">
           <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748654701511-Q4YIOWY6DD5SSZ0OTKC6/unsplash-image-20YP7NENJzk.jpg')"></div>
           <h3>Community Leads</h3>
-          <p>You know your community best. We give you the playbooks, funding, and fellow leads to turn that knowledge into lasting change.</p>
-          <a class="btn btn-orange btn-sm" href="take-action.html">Lead the movement</a>
+          <p>You know your community best. We give you the playbooks, funding, and connections to turn that knowledge into lasting change.</p>
+          <a class="btn btn-orange btn-sm" href="network.html">Lead the movement</a>
+        </div>
+        <div class="path">
+          <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748438031423-HEFKW7GXKGR62B9GVQ2P/unsplash-image-Ym301WfcEkE.jpg')"></div>
+          <h3>Parents &amp; Caregivers</h3>
+          <p>Not ready to lead? Stay informed, find resources, and take small steps toward a more intentional family tech life.</p>
+          <a class="btn btn-orange btn-sm" href="resources.html">Find your next step</a>
         </div>
         <div class="path">
           <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg')"></div>
           <h3>Partners</h3>
-          <p>Professionals in mental health, education, and medicine help us co-create resources and reach more families. When we join forces, our impact grows.</p>
-          <a class="btn btn-orange btn-sm" href="take-action.html">Explore partnership</a>
-        </div>
-        <div class="path">
-          <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748438031423-HEFKW7GXKGR62B9GVQ2P/unsplash-image-Ym301WfcEkE.jpg')"></div>
-          <h3>Supporters</h3>
-          <p>Not ready to lead? That is more than enough. Stay informed, find resources, and take small steps toward a more intentional family tech life.</p>
-          <a class="btn btn-orange btn-sm" href="take-action.html">Find your next step</a>
+          <p>Professionals in mental health, education, medicine, and technology help us co-create resources and reach more families. When we join forces, our impact grows.</p>
+          <a class="btn btn-orange btn-sm" href="mailto:info@turninglifeon.org?subject=Partnering%20with%20Turning%20Life%20On">Explore partnership</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="s spot">
+
+  <section class="s">
     <div class="wrap">
-      <h2>Community Spotlight</h2>
-      <div class="townrow">
-        <div class="town"><div class="nm">Arlington, MA</div><a href="network.html">Smartphone Sense on Facebook</a></div>
-        <div class="town"><div class="nm">Braintree, MA</div><a href="network.html">BrainFree Braintree Hub</a></div>
-        <div class="town"><div class="nm">Concord, MA</div><a href="network.html">TLO Concord Hub</a></div>
-        <div class="town"><div class="nm">Lexington, MA</div><a href="network.html">Lex Kids be Kids Hub</a></div>
+      <div class="kick">How we get there</div>
+      <h2>Supporting our Community Leads</h2>
+      <div class="capgrid">
+        <div class="cap">
+          <h3>Networking</h3>
+          <p>Monthly coalition calls, info sessions, and in-person meetups connect our leads to a statewide network of advocates. They share what works, build relationships, and back each other up &mdash; so one community's breakthrough becomes everyone's.</p>
+          <a class="btn btn-orange btn-sm" href="events.html">Join a coalition call</a>
+        </div>
+        <div class="cap">
+          <h3>Partnerships</h3>
+          <p>We work alongside local and national organizations, legislators, the Attorney General's Office, and the Governor's Office to match local action to state policy. Strong ties to leading professionals let us co-create resources and connect those experts directly to communities.</p>
+        </div>
+        <div class="cap">
+          <h3>Funding</h3>
+          <p>As a 501(c)(3), we continually grow our base of annual philanthropic support so we can award grants to communities &mdash; money that lets local leaders fund their own initiatives.</p>
+          <a class="btn btn-orange btn-sm" href="support.html">Support this work</a>
+        </div>
       </div>
-      <div class="more"><a class="btn btn-orange" href="network.html">Join Our Community</a></div>
     </div>
   </section>
-  <svg class="wave" viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 C200,40 400,0 600,18 C800,36 1000,4 1200,22" fill="none" stroke="#e8821e" stroke-width="4"/></svg>
+
   <section class="s mist">
     <div class="wrap">
+      <div class="kick">Why communities turn to us</div>
+      <h2>We are the movement</h2>
+      <p class="lede read">Turning Life On didn't show up yesterday. Since 2017 we have grown into a statewide network of more than a dozen Massachusetts communities.</p>
+      <p class="read">Nearly a decade in, we have built what cannot be replicated overnight:</p>
+      <ul class="creds">
+        <li><b>Direct lines to policymakers</b> &mdash; the Massachusetts Attorney General's Office, the State House, and the Governor's Office.</li>
+        <li><b>Leadership with a track record</b> &mdash; our board has chaired the Distraction Free Schools Policy Project and sits on the board of Smartphone Free Childhood U.S.</li>
+        <li><b>National partnerships</b> &mdash; Fairplay, The Anxious Generation, the Four Norms Coalition, and Culture Reframed bring the latest research and strategy to our local leads.</li>
+        <li><b>Playbooks built from Massachusetts experience</b> &mdash; tested in real MA districts, not adapted from somewhere else.</li>
+        <li><b>Funding that goes straight to the ground</b> &mdash; every dollar we have raised has supported local groups directly, and we are pursuing more to reach more communities.</li>
+        <li><b>An experienced in-state network</b> &mdash; our community leads understand the particular challenges and opportunities in Massachusetts, and how to make the most of them.</li>
+      </ul>
+      <p class="read" style="margin-top:22px">A statewide coalition moves faster. When one Massachusetts community solves a problem, every other community benefits. If you are in Massachusetts and ready to make a difference, we are the coalition built to go the distance with you.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap">
       <div class="kick">In their words</div>
-      <h2>Why communities turn to us</h2>
+      <h2>What people say about us</h2>
       <div class="quotes" style="margin-top:8px">
         <div class="quote"><p>When few were talking about the impact of screens on children's well-being, Turning Life On was already leading the way. We are inspired by their leadership.</p><div class="who">Dr. Sharon Maxwell, Polestar Parenting</div></div>
         <div class="quote"><p>It's less about turning screens off. TLO is about turning on relationships, curiosity, senses, support, and activism, and letting tech take a back seat to life.</p><div class="who">Jean Rogers, M.S.Ed., Screen Time Action Network at Fairplay</div></div>
@@ -255,5 +360,52 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
 </footer>
 <script>
 document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/nearby.js"></script>
+<script>
+/* Home map teaser: the pins only, with the full directory on the Network page. */
+(function(){
+  var el = document.getElementById('homemap');
+  if (!el) return;
+
+  TLO.loadJSON('data/groups.json').then(function(d){
+    var groups = (d.groups || []).filter(function(g){
+      return g.city && typeof g.lat === 'number' && typeof g.lon === 'number';
+    });
+    if (!groups.length || !window.L){
+      el.innerHTML = '<p class="mapnote">See our communities on the Network page.</p>';
+      return;
+    }
+
+    el.innerHTML = '';
+    var map = L.map('homemap', {
+      scrollWheelZoom: false, dragging: false, zoomControl: false,
+      doubleClickZoom: false, boxZoom: false, keyboard: false, touchZoom: false
+    });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var icon = L.divIcon({
+      className: '',
+      html: '<div style="width:14px;height:14px;background:#3f9b9b;border:2px solid #fff;' +
+            'border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.35)"></div>',
+      iconSize: [14, 14], iconAnchor: [7, 14], popupAnchor: [0, -12]
+    });
+
+    var pts = [];
+    groups.forEach(function(g){
+      L.marker([g.lat, g.lon], {icon: icon, title: g.display_name || g.name})
+        .addTo(map)
+        .bindPopup('<b>' + TLO.esc(g.display_name || g.name) + '</b><br>' + TLO.esc(TLO.place(g)));
+      pts.push([g.lat, g.lon]);
+    });
+    map.fitBounds(pts, {padding: [30, 30], maxZoom: 9});
+  }).catch(function(){
+    el.innerHTML = '<p class="mapnote">See our communities on the Network page.</p>';
+  });
+})();
 </script>
 </body></html>
