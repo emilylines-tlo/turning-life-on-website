@@ -166,10 +166,77 @@ def fetch_groups():
     return True
 
 
+# Resource library items that must NOT appear on the public website.
+# Add a slug here to hide an item; it stays in Four Norms either way.
+# Both entries below are fundraising documents.
+LIBRARY_EXCLUDE = {
+    "tlo-turning-life-on-grant-application",
+    "tlo-25-26-concord-carlisle-tech-series-proposal",
+}
+
+
+def fetch_library():
+    """Public resource library. Public endpoint, but we send the key anyway so
+    this keeps working if Four Norms later requires one."""
+    res = get(f"/organizations/{ORG}/library", {"limit": "100"})
+    if not res:
+        return False
+
+    now = datetime.now(timezone.utc)
+    items = []
+    for row in res.get("data", []):
+        slug = row.get("slug")
+        if not slug or slug in LIBRARY_EXCLUDE:
+            continue
+
+        # The list response omits the download link, so each item's own
+        # endpoint is fetched to pick up resource_url.
+        detail = get(f"/organizations/{ORG}/library/{slug}") or {}
+        d = detail.get("data") or detail or {}
+
+        url = d.get("resource_url") or ""
+        links = d.get("links") or row.get("links") or {}
+        if not url:
+            # Nothing to download; send people to the item's page instead.
+            url = links.get("web_url") or ""
+        if not url:
+            print(f"  skipped library item with no link: {slug}")
+            continue
+
+        items.append({
+            "slug": slug,
+            "title": (d.get("title") or row.get("title") or "").strip(),
+            "description": (d.get("description") or row.get("description") or "").strip(),
+            "url": url,
+            "tags": [t.get("name") if isinstance(t, dict) else t
+                     for t in (d.get("tags") or row.get("tags") or [])],
+            "credit": d.get("credit"),
+            "publisher": d.get("publisher"),
+        })
+
+    items.sort(key=lambda x: x["title"].lower())
+
+    tags = []
+    for it in items:
+        for t in it["tags"]:
+            if t not in tags:
+                tags.append(t)
+    tags.sort()
+
+    write("library.json", {
+        "updated": now.isoformat(timespec="seconds"),
+        "count": len(items),
+        "tags": tags,
+        "items": items,
+    })
+    return True
+
+
 def main():
     print("Fetching from Four Norms...")
     ok_events = fetch_events()
-    fetch_groups()  # Allowed to fail while we have no key.
+    fetch_groups()   # Allowed to fail while we have no key.
+    fetch_library()
 
     if not ok_events:
         print("Events fetch failed - stopping so the site keeps its last good data.")
