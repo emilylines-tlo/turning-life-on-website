@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 8,
   "items": [
     {
       "credit": {
@@ -97,6 +97,24 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "Guidelines to manage device use in your home. We've also included a parent script so you can explain the why. Have a conversation but remember you set the rules.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-tlo-digital-device-family-plan",
+      "tags": [
+        "Guide"
+      ],
+      "title": "TLO Digital Device Family Plan",
+      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzE2NCwicHVyIjoiYmxvYl9pZCJ9fQ==--c0f273a2635137ee5f1b2e9c4fa2a81c08005fbb/Family%20Media%20Plan%202025.pdf"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "Attending a fair or other event - looking for a fun visual to introduce TLO to your community. This is it!",
       "publisher": {
         "name": "Turning Life On",
@@ -134,5 +152,5 @@
     "Printable",
     "Research And Reference"
   ],
-  "updated": "2026-09-21T19:03:38+00:00"
+  "updated": "2026-09-22T07:05:10+00:00"
 }
