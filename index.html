@@ -5,329 +5,381 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
 :root{
   --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
   --orange:#e8821e; --orange-d:#cf7316; --mist:#f1f1ef; --line:#e4e3de; --maxw:1180px;
+  --soft:#7fb3b3; --body:#4a5663; --cream:#faf8f4; --sand:#efe9df;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Mulish',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:600;line-height:1.15;color:var(--ink)}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:600;line-height:1.14;color:var(--slate)}
 a{color:var(--teal);text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
-.read{max-width:780px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
 .review{background:var(--slate);color:#e9eef1;font-size:13px;text-align:center;padding:7px 16px}
 .review b{color:#fff;font-weight:600}
+.review a{color:#ffd9b0}
+
+/* ---- header (repo pattern) ---- */
 header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:3px solid var(--teal)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:96px}
-.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer}
-.logo .word{font-family:'Poppins',sans-serif;font-weight:700;font-size:27px;letter-spacing:.01em}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:92px}
+.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer;flex:none}
+.logo .word{font-family:'Poppins',sans-serif;font-weight:700;font-size:26px;letter-spacing:.01em;white-space:nowrap}
 .logo .word .a{color:var(--slate)} .logo .word .b{color:var(--teal)}
 .logo .word .pw{font-size:18px;vertical-align:middle;margin:0 1px}
-.logo .tag{font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.18em;color:var(--teal);margin-top:5px}
-nav ul{display:flex;align-items:center;gap:26px;list-style:none}
-.navlink{font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;color:var(--slate);padding:4px 0;position:relative}
+.logo .tag{font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:.18em;color:var(--teal);margin-top:5px;white-space:nowrap}
+nav ul{display:flex;align-items:center;gap:24px;list-style:none}
+.navlink{font-family:'Poppins',sans-serif;font-size:15.5px;font-weight:500;color:var(--slate);padding:4px 0;white-space:nowrap}
 .navlink:hover{color:var(--teal)}
-.navlink.active::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--slate)}
+.navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
 .menubtn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:9px 13px;cursor:pointer;font-size:15px;color:var(--slate)}
-.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:17px;font-weight:500;padding:15px 30px;border-radius:2px;cursor:pointer;border:0;transition:background .18s}
-.btn-orange{background:var(--orange);color:#fff} .btn-orange:hover{background:var(--orange-d)}
-.btn-teal{background:var(--teal);color:#fff} .btn-teal:hover{background:var(--teal-d)}
-.btn-sm{font-size:15px;padding:11px 22px}
-.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.phero{position:relative;background-size:cover;background-position:center;min-height:540px;display:flex;align-items:center}
-.phero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.12)}
-.phero .inner{position:relative;z-index:2;width:100%}
-.tblock{display:inline-block;background:var(--teal);color:#fff;padding:14px 26px;font-family:'Poppins',sans-serif;font-weight:600}
-.tblock.sm{font-size:30px} .tblock.lg{font-size:54px;margin-top:14px}
-.phero .btns{margin-top:30px} .phero .btns .btn{box-shadow:0 2px 14px rgba(0,0,0,.18)}
-.subhero{display:inline-block;background:var(--teal);color:#fff;padding:16px 26px;max-width:600px;font-size:19px;font-weight:400;margin-top:14px;font-family:'Mulish',sans-serif}
-section.s{padding:78px 0}
-section.s.mist{background:var(--mist)}
-section.s.teal{background:var(--teal);color:#fff}
-section.s.teal h2,section.s.teal h3{color:#fff}
-.kick{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
-section.s.teal .kick{color:#cfeaea}
-.s h2{font-size:clamp(30px,4vw,46px);margin-bottom:18px}
-.s h3{font-size:24px;margin-bottom:10px}
-.s p{font-size:17px;margin-bottom:16px;color:#33373a}
-section.s.teal p{color:rgba(255,255,255,.95)}
-.s p:last-child{margin-bottom:0}
-.lede{font-size:19px}
-.tlolink{color:var(--teal);font-weight:700;text-decoration:underline}
-.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
-.mapteaser{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
-.mapteaser .topbar{background:#222;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;padding:12px 16px}
-.mapteaser .mapimg{height:300px;background:linear-gradient(135deg,#dbe7e2,#e9efe8);position:relative}
-.mapteaser .pin{position:absolute;width:14px;height:14px;background:var(--teal);border:2px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.mapteaser .foot{padding:16px;text-align:center}
-.pathgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
-.path .photo{height:230px;background-size:cover;background-position:center;background-color:#5fb0b0;border-radius:2px}
-.path h3{margin-top:22px;font-size:28px;color:#fff}
-.path p{margin-top:10px;font-size:16px;color:rgba(255,255,255,.95)}
-.path .btn{margin-top:20px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.card{background:var(--mist);border-radius:4px;padding:30px}
-.card .tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
-.card h3{font-size:22px} .card p{font-size:16px;margin:10px 0 18px}
-.spot{text-align:center}
-.spot h2{font-size:clamp(34px,5vw,52px);color:var(--ink);margin-bottom:34px}
-.townrow{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
-.town{background:var(--mist);border-radius:3px;padding:30px 18px}
-.town .nm{font-family:'Poppins',sans-serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:14px}
-.town a{display:block;color:var(--orange);text-decoration:underline;font-size:15px;margin-bottom:8px}
-.spot .more{margin-top:30px}
-.wave{display:block;width:100%;height:40px;margin-top:10px}
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.member{background:var(--mist);border-radius:4px;padding:26px}
-.member .name{font-family:'Poppins',sans-serif;font-size:21px;font-weight:600;color:var(--slate)}
-.member .role{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:5px 0 12px}
-.member p{font-size:15px;margin:0}
-.flag{color:var(--orange);font-style:italic;font-size:14px}
-.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dir a{background:var(--mist);border-radius:3px;padding:18px;color:var(--slate);font-family:'Poppins',sans-serif;font-weight:500;font-size:16px}
-.dir a:hover{background:#e7e7e3}
-.dir a span{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:var(--orange);text-decoration:underline;font-size:14px;margin-top:6px}
-.embed{border:1px dashed var(--teal);border-radius:4px;background:#eef5f5;padding:46px 24px;text-align:center;color:var(--teal-d)}
-.embed .lab{font-family:'Poppins',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.embed .ico{font-size:32px;display:block;margin-bottom:10px}
-.imgrow{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.imgrow .pic{height:320px;background-size:cover;background-position:center;background-color:#cfe0db;border-radius:4px}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.quote{background:#fff;border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:24px;box-shadow:0 1px 0 var(--line)}
-.quote p{font-size:17px;color:var(--ink);font-style:italic;margin-bottom:12px}
-.quote .who{font-family:'Poppins',sans-serif;font-style:normal;font-size:13.5px;font-weight:500;color:var(--teal)}
-footer{background:var(--mist);border-top:3px solid var(--teal);padding:54px 0 32px}
-footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:34px}
-footer h4{font-size:18px;color:var(--slate);margin-bottom:12px}
-footer p,footer li{font-size:15px;color:#4a4f52;line-height:1.8}
-footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
-.flist{list-style:none}
-.disc{font-size:11.5px;color:#7d8285;line-height:1.6;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
-.homemap{height:320px;background:var(--mist);display:flex;align-items:center;justify-content:center}
-.homemap .leaflet-container{font-family:'Mulish',sans-serif}
-.mapnote{font-size:15px;color:#5c6468}
-.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
-.stat{background:#fff;border-radius:4px;padding:26px;border-top:4px solid var(--orange)}
-.stat .fig{font-family:'Poppins',sans-serif;font-size:44px;font-weight:700;line-height:1;color:var(--slate);margin-bottom:12px}
-.stat p{font-size:16px;margin:0 0 14px}
-.stat cite{font-style:normal;font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:500;color:#6d7377;display:block}
-.stat cite a{color:#6d7377;text-decoration:underline}
-.stat cite a:hover{color:var(--teal)}
-.issues{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
-.issue{border-top:3px solid var(--teal);padding-top:20px;display:flex;flex-direction:column}
-.issue h3{font-size:21px;margin-bottom:10px}
-.issue p{font-size:16px;margin-bottom:18px}
-.issue .btn{margin-top:auto;align-self:flex-start}
-.capgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
-.cap{background:var(--mist);border-radius:4px;padding:26px;display:flex;flex-direction:column}
-.cap h3{font-size:22px;margin-bottom:10px}
-.cap p{font-size:16px;margin-bottom:18px}
-.cap .btn{margin-top:auto;align-self:flex-start}
-.creds{list-style:none;margin-top:18px;display:grid;gap:14px}
-.creds li{font-size:16.5px;color:#33373a;padding-left:22px;position:relative;line-height:1.6}
-.creds li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:9px;background:var(--teal);border-radius:50%}
-.creds li b{color:var(--slate)}
-@media (max-width:900px){
-  .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
-  .statgrid,.issues,.capgrid{grid-template-columns:1fr}
-  .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
-  .bar{height:auto;padding:14px 0;flex-wrap:wrap}
-  nav ul{display:none} nav.open ul{display:flex;flex-direction:column;width:100%;gap:12px;margin-top:12px}
-  .menubtn{display:block} .tblock.lg{font-size:38px}
+
+.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;padding:15px 30px;border-radius:2px;cursor:pointer;border:2px solid transparent;transition:background .18s,color .18s;white-space:nowrap}
+.btn-orange{background:var(--orange);color:#fff;border-color:var(--orange)} .btn-orange:hover{background:var(--orange-d);border-color:var(--orange-d)}
+.btn-line{background:transparent;color:var(--slate);border-color:var(--slate)} .btn-line:hover{background:var(--slate);color:#fff}
+.btn-white{background:#fff;color:var(--teal-d);border-color:#fff} .btn-white:hover{background:var(--slate);color:#fff;border-color:var(--slate)}
+.btn-sm{font-size:14.5px;padding:10px 20px}
+.btns{display:flex;flex-wrap:wrap;gap:14px 26px;margin-top:30px;align-items:center}
+.textlink{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;color:var(--slate);border-bottom:2px solid var(--soft);padding-bottom:3px}
+.textlink:hover{border-color:var(--slate)}
+
+section.s{padding:88px 0}
+.s h2{font-size:clamp(30px,4vw,46px);max-width:20ch}
+.s .lede{margin-top:18px;font-size:19px;color:var(--body);max-width:50ch}
+
+/* ---- photo slots ----
+   Each <figure class="ph"> shows its photo when assets/img/<file> exists.
+   If the file is missing, a warm placeholder shows the shot description instead. */
+.ph{position:relative;margin:0;overflow:hidden;background:var(--sand)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ph .shot{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:22px;
+  background:linear-gradient(160deg,#f3e6d4 0%,#e9d9c4 55%,#dccbb5 100%);color:#6b5a45}
+.ph .shot b{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;color:#8a6e4c}
+.ph .shot span{font-size:14.5px;line-height:1.45;max-width:40ch}
+.ph.has-img .shot{display:none}
+
+/* ---- announcement ---- */
+.announce{background:var(--teal-d);color:#e6f3f3;font-size:14.5px;padding:11px 16px;text-align:center}
+.announce b{color:#fff;font-weight:600}
+.announce a{color:#ffd9b0;font-weight:600;border-bottom:1px solid rgba(255,217,176,.5)}
+
+/* ---- hero: words left, one big warm photograph right ---- */
+.hero{background:var(--cream)}
+.herogrid{display:grid;grid-template-columns:1fr 1.05fr;min-height:600px}
+.herotext{padding:86px 56px 86px max(32px,calc((100vw - var(--maxw))/2 + 32px));display:flex;flex-direction:column;justify-content:center}
+.hero .eyebrow{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;color:var(--teal)}
+.hero h1{font-size:clamp(40px,5.4vw,66px);font-weight:700;letter-spacing:-.02em;margin-top:16px;max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero .say{margin-top:24px;font-size:19.5px;color:var(--body);max-width:40ch}
+.hero .ph{min-height:420px}
+.issuechips{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px}
+.issuechips a{font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);padding:8px 15px;border-radius:999px}
+.issuechips a:hover{border-color:var(--teal);color:var(--teal-d)}
+
+/* ---- the four issues ---- */
+.issuegrid{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.issue{display:flex;flex-direction:column;scroll-margin-top:120px;border-top:5px solid var(--teal);padding-top:22px}
+.issue#t-free{border-top-color:var(--slate)} .issue#t-screens{border-top-color:var(--orange)} .issue#t-ai{border-top-color:var(--soft)}
+.issue .tag{margin-top:0;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--teal)}
+.issue h3{font-size:22px;margin-top:6px}
+.issue .why{margin-top:10px;font-size:16px;color:var(--body)}
+.issue .good{margin-top:16px;padding:16px 18px;background:#eef6f5;border-radius:4px}
+.issue .good b{display:inline-block;font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#fff;background:var(--teal);padding:3px 10px;border-radius:999px;margin-bottom:9px}
+.issue .good p{font-size:15px;color:var(--slate);line-height:1.5}
+.issue .src{margin-top:10px;font-size:12.5px;color:#8a939c;line-height:1.4}
+.issue .more{margin-top:auto;padding-top:16px;align-self:flex-start;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:var(--orange-d)}
+.issue .more:hover{color:var(--slate)}
+
+/* ---- where are you stuck ---- */
+.stuck{background:var(--mist)}
+.stuckgrid{margin-top:46px;display:grid;grid-template-columns:.85fr 1.15fr;gap:8px;align-items:stretch}
+.choices{display:flex;flex-direction:column;gap:8px}
+.choice{text-align:left;font-family:'Mulish',sans-serif;background:#fff;border:0;border-radius:4px;border-left:6px solid transparent;padding:22px 24px;font-size:17px;color:var(--slate);cursor:pointer;line-height:1.35;transition:border-color .12s,background .12s}
+.choice:hover{border-left-color:var(--soft)}
+.choice[aria-selected="true"]{background:var(--slate);color:#fff;border-left-color:var(--orange);font-weight:600}
+.response{background:var(--teal);color:#fff;padding:46px;border-radius:4px;display:flex;flex-direction:column}
+.response h3{font-size:clamp(25px,3vw,35px);color:#fff;max-width:18ch}
+.response p{margin-top:18px;font-size:17.5px;color:#e2f2f1;max-width:48ch}
+.response .proof{margin-top:auto;padding-top:24px;font-size:15px;color:#fff;border-top:1px solid rgba(255,255,255,.3)}
+.response .btn{margin-top:26px;align-self:flex-start}
+.behind{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.behind div{padding-top:14px;border-top:3px solid var(--teal)}
+.behind div:nth-child(2){border-color:var(--orange)} .behind div:nth-child(3){border-color:var(--soft)}
+.behind b{display:block;font-family:'Poppins',sans-serif;font-size:17px;font-weight:600;color:var(--slate)}
+.behind span{display:block;margin-top:6px;font-size:15.5px;color:var(--body)}
+
+/* ---- the coalition: a real gathering, and the towns ---- */
+.coalition .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.coalition .ph{aspect-ratio:5/4}
+.coalition blockquote p{font-family:'Poppins',sans-serif;font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.28;color:var(--slate)}
+.coalition cite{display:block;margin-top:16px;font-style:normal;font-size:14px;color:#8a939c}
+.coalition h3{margin-top:40px;font-size:20px}
+.towns{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.towns span{background:var(--mist);padding:7px 14px;border-radius:999px;font-size:14.5px;color:var(--slate)}
+.coalition .freq{margin-top:16px;font-size:15.5px;color:var(--body)}
+
+/* ---- join ---- */
+.join{background:var(--cream)}
+.joingrid{margin-top:46px;display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.tierq{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;color:var(--slate)}
+.tiers{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.tier{text-align:left;font-family:'Mulish',sans-serif;background:#fff;border:2px solid var(--line);border-radius:4px;padding:22px;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:border-color .12s,background .12s}
+.tier:hover{border-color:var(--soft)}
+.tier[aria-selected="true"]{border-color:var(--teal);background:#f1f8f7}
+.tier .badge{align-self:flex-start;background:var(--teal);color:#fff;font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;padding:3px 11px;border-radius:999px}
+.tier h3{font-size:21px}
+.tier p{font-size:15.5px;color:var(--body)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field.wide{grid-column:1/-1}
+.field label{font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--slate)}
+.field label i{font-style:normal;font-weight:400;color:#8a939c}
+.field input,.field textarea{border:1px solid var(--line);background:#fff;color:var(--ink);padding:14px 16px;font-family:'Mulish',sans-serif;font-size:16px;min-width:0;border-radius:4px}
+.field textarea{resize:vertical;min-height:100px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--teal)}
+.form .submit{grid-column:1/-1;justify-self:start;margin-top:4px}
+.form .note{grid-column:1/-1;font-size:14.5px;color:#77818b}
+.about{grid-column:1/-1;display:none;background:#eef6f5;border-radius:4px;padding:12px 16px;font-size:15px;color:var(--slate)}
+.about.on{display:block}
+.about b{font-weight:700}
+
+/* ---- donate ---- */
+.donate{background:var(--slate);color:#dfe6ec}
+.donate .grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.donate .ph{min-height:440px}
+.donate .text{padding:80px 56px}
+.donate h2{color:#fff;font-size:clamp(28px,3.6vw,42px);max-width:16ch}
+.donate .lede{color:#b3c1cd;margin-top:18px;font-size:18px;max-width:42ch}
+.gifts{margin-top:28px;display:flex;flex-direction:column;gap:8px;max-width:440px}
+.gift{border:1px solid #4c5b6b;border-radius:4px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.gift b{font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;color:var(--orange)}
+.gift span{font-size:15.5px;color:#c9d4dd}
+
+/* ---- footer (repo pattern) ---- */
+footer{background:#24323f;color:#c8d3dc;padding:56px 0 40px;font-size:15px}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+footer a{color:#c8d3dc} footer a:hover{color:#fff}
+.flist{list-style:none;display:flex;flex-direction:column;gap:9px}
+.disc{margin-top:38px;padding-top:22px;border-top:1px solid #465866;font-size:12.5px;color:#8d9caa;line-height:1.55}
+
+@media (max-width:1060px){
+  nav ul{gap:16px} .navlink{font-size:14.5px}
+  .issuegrid{grid-template-columns:repeat(2,1fr)}
 }
+@media (max-width:900px){
+  .herogrid,.stuckgrid,.coalition .grid,.joingrid,.donate .grid,footer .cols,.behind{grid-template-columns:1fr}
+  .herotext{padding:56px 32px}
+  .hero .ph{min-height:300px;order:-1}
+  .donate .text{padding:56px 32px}
+  .donate .ph{min-height:260px}
+  .bar{height:auto;padding:14px 0;flex-wrap:wrap}
+  nav ul{display:none} nav.open ul{display:flex;flex-direction:column;align-items:flex-start;width:100%;gap:12px;margin-top:12px}
+  .menubtn{display:block}
+  section.s{padding:60px 0}
+  .response{padding:30px}
+}
+@media (max-width:600px){ .issuegrid{grid-template-columns:1fr} .form{grid-template-columns:1fr} .wrap{padding:0 20px} .herotext{padding:48px 20px} }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style></head><body>
+
 <header>
   <div class="wrap bar">
     <a class="logo" href="index.html">
-      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>ON</span></div>
+      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
       <div class="tag">KEEP TECH IN CHECK</div>
     </a>
     <nav id="nav">
       <button class="menubtn" id="menubtn" aria-label="Toggle menu">Menu</button>
       <ul>
-        <li><a class="navlink active" href="index.html">Home</a></li>
-        <li><a class="navlink" href="about.html">About Us</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
         <li><a class="navlink" href="take-action.html">Take Action</a></li>
-        <li><a class="navlink" href="resources.html">Resources</a></li>
         <li><a class="navlink" href="network.html">Network</a></li>
+        <li><a class="navlink" href="resources.html">Resources</a></li>
         <li><a class="navlink" href="events.html">Events</a></li>
-        <li><a class="navlink" href="support.html">Support</a></li>
-        <li><a class="navlink" href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+        <li><a class="btn btn-line btn-sm" href="support.html">Donate</a></li>
+        <li><a class="btn btn-orange btn-sm" href="index.html#join">Talk with us</a></li>
       </ul>
     </nav>
   </div>
 </header>
-<main>
 
-  <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748438031423-HEFKW7GXKGR62B9GVQ2P/unsplash-image-Ym301WfcEkE.jpg')">
-    <div class="wrap inner">
-      <span class="tblock sm">empowering communities to</span><br>
-      <span class="tblock lg">keep tech in check</span>
+<div class="announce" id="announce" hidden></div>
+
+<!-- hero -->
+<section class="hero">
+  <div class="herogrid">
+    <div class="herotext">
+      <p class="eyebrow">Your community, backed by ours.</p>
+      <h1>Technology is <em>reshaping childhood.</em></h1>
+      <p class="say">If you are working on this in your town, we meet you where you are &mdash; with people, funding, resources and experience to help you move forward.</p>
       <div class="btns">
-        <a class="btn btn-orange" href="network.html">Find your community</a>
-        <a class="btn btn-orange" href="about.html">Learn More</a>
+        <a class="btn btn-orange" href="#stuck">Tell us where you're stuck</a>
+        <a class="textlink" href="#issues">See the issues</a>
+      </div>
+      <div class="issuechips" aria-label="The issues">
+        <a href="#t-phones">Smartphones &amp; social</a>
+        <a href="#t-free">Phone-free schools</a>
+        <a href="#t-screens">Screens in schools</a>
+        <a href="#t-ai">AI &amp; childhood</a>
       </div>
     </div>
-  </section>
+    <figure class="ph">
+      <img src="assets/img/hero.jpg" alt="Children playing together outdoors in afternoon light">
+      <div class="shot"><b>Photo &middot; assets/img/hero.jpg</b><span>Kids playing together outside, afternoon light. Unposed, mid-laugh, nobody looking at the camera.</span></div>
+    </figure>
+  </div>
+</section>
 
-  <section class="s">
-    <div class="wrap twocol">
+<!-- the four issues -->
+<section class="s" id="issues">
+  <div class="wrap">
+    <h2>Keep tech in check.</h2>
+    <p class="lede">A question of when, how much, and who benefits. Here is where each one stands, and what communities across Massachusetts are doing about it.</p>
+
+    <div class="issuegrid">
+      <article class="issue" id="t-phones">
+        <p class="tag">Smartphones &amp; social</p>
+        <h3>Our attention is the product.</h3>
+        <p class="why">Phones displace face-to-face time, because the apps on them earn money by holding attention.</p>
+        <div class="good"><b>Good news</b><p>Meta settled with state attorneys general for $17.1 billion over designing its apps to addict young users. Massachusetts gets at least $366 million.</p></div>
+        <p class="src">Massachusetts Attorney General, August 2026</p>
+        <a class="more" href="resources.html">Read the case &rarr;</a>
+      </article>
+
+      <article class="issue" id="t-free">
+        <p class="tag">Phone-free schools</p>
+        <h3>The school day works better without them.</h3>
+        <p class="why">Bell-to-bell policies give teachers back the room, and give kids back each other at lunch.</p>
+        <div class="good"><b>Good news</b><p>More than thirty states now require phone-free school days. Massachusetts has passed a bill in both chambers &mdash; the two versions have yet to be reconciled.</p></div>
+        <p class="src">Stateline, March 2026 &middot; Boston Globe, September 2026</p>
+        <a class="more" href="take-action.html">Where the bill stands &rarr;</a>
+      </article>
+
+      <article class="issue" id="t-screens">
+        <p class="tag">Screens in schools</p>
+        <h3>A decade of promises, a decade of decline.</h3>
+        <p class="why">Devices arrived in classrooms on a promise of better learning. Reading scores are down in 83% of districts compared with a decade ago.</p>
+        <div class="good"><b>Good news</b><p>Districts are pulling back. Cambridge told families this September that technology should not replace relationships, physical activity, reading, writing and creative work, and tightened its device guidance to match.</p></div>
+        <p class="src">Cambridge Public Schools, September 2026 &middot; Stanford Educational Opportunity Project, 2026</p>
+        <a class="more" href="resources.html">Read more &rarr;</a>
+      </article>
+
+      <article class="issue" id="t-ai">
+        <p class="tag">AI &amp; childhood</p>
+        <h3>Powerful, and not yet safe for kids.</h3>
+        <p class="why">Using AI well takes the judgment to check what comes back, which is exactly what children are still building.</p>
+        <div class="good"><b>Good news</b><p>Cambridge now blocks generative AI from pre-K through 5th grade. Three in four US parents support pausing it in schools.</p></div>
+        <p class="src">Cambridge Public Schools, September 2026 &middot; YouGov for the Institute for Family Studies, July 2026</p>
+        <a class="more" href="resources.html">Read more &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- where are you stuck -->
+<section class="s stuck" id="stuck">
+  <div class="wrap">
+    <h2>Where are you feeling stuck?</h2>
+    <p class="lede">You do not need a polished plan or more capacity before reaching out. Pick what is closest, and we will take it from there.</p>
+    <div class="stuckgrid">
+      <div class="choices" role="tablist" aria-label="Where you are feeling stuck">
+        <button class="choice" role="tab" data-k="alone" aria-selected="true">I'm carrying too much of this alone.</button>
+        <button class="choice" role="tab" data-k="school" aria-selected="false">We've hit a wall with our school.</button>
+        <button class="choice" role="tab" data-k="rebuild" aria-selected="false">We're building everything from scratch.</button>
+        <button class="choice" role="tab" data-k="start" aria-selected="false">I care deeply, but don't know where to start.</button>
+      </div>
+      <div class="response">
+        <h3 id="r-title"></h3>
+        <p id="r-copy"></p>
+        <p class="proof" id="r-proof"></p>
+        <a class="btn btn-white" href="#join" id="r-cta"></a>
+      </div>
+    </div>
+    <div class="behind">
+      <div><b>People beside you</b><span>A fellow lead, an experienced mentor, or a whole room that understands the work.</span></div>
+      <div><b>Practical backing</b><span>Funding for events, speakers you could not book alone, and a nonprofit behind your name.</span></div>
+      <div><b>Work you can use</b><span>Playbooks, letters and event plans already tested in other towns.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- the coalition -->
+<section class="s coalition" id="coalition">
+  <div class="wrap grid">
+    <figure class="ph">
+      <img src="assets/img/gathering.jpg" alt="Parents around a table at a Turning Life On gathering">
+      <div class="shot"><b>Photo &middot; gathering.jpg</b><span>Best if it's ours: parents around a table at a coalition meeting, a full parent night, or the Town Day booth.</span></div>
+    </figure>
+    <div>
+      <blockquote>
+        <p>&ldquo;When few were talking about the impact of screens on children's well-being, Turning Life On was already leading the way. We are inspired by their leadership.&rdquo;</p>
+        <cite>Dr. Sharon Maxwell, Polestar Parenting</cite>
+      </blockquote>
+      <h3>Find your people</h3>
+      <div class="towns" id="towns"></div>
+      <p class="freq">We meet on a call every month and in person several times a year. <a href="network.html">See the map &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- join -->
+<section class="s join" id="join">
+  <div class="wrap">
+    <h2>You bring the concern. We'll help carry what comes next.</h2>
+    <p class="lede">Tell us a little about where your community is today. A person will come back to you with the part that actually helps.</p>
+    <div class="joingrid">
       <div>
-        <h2>A statewide movement rooted in local action</h2>
-        <p><a class="tlolink" href="about.html">Turning Life On</a> is a 501(c)(3) and Massachusetts-based coalition of parents and caregivers interested in, or already leading, local efforts to shift the norms around technology. Whether you are a seasoned advocate, just getting started, or simply looking for information, we are here for you.</p>
-        <p>We support that work with playbooks, funding, networking, and expert resources. Together, we are building room for kids to learn, play, and connect in the real world.</p>
-        <div class="btns">
-          <a class="btn btn-orange" href="take-action.html">Take Action</a>
-          <a class="btn btn-orange" href="resources.html">Explore Resources</a>
+        <p class="tierq">How involved do you want to be?</p>
+        <div class="tiers" role="tablist" aria-label="How involved do you want to be">
+          <button class="tier" role="tab" data-t="supporter" aria-selected="true">
+            <h3>Stay in the loop</h3>
+            <p>A short monthly email, events near you, and a heads-up when there is a petition or a legislator worth contacting.</p>
+          </button>
+          <button class="tier" role="tab" data-t="advocate" aria-selected="false">
+            <span class="badge">Join our meetings</span>
+            <h3>Get involved</h3>
+            <p>Come to the coalition gatherings, get on the list, and work with us on what happens in your own town.</p>
+          </button>
         </div>
       </div>
-      <div class="mapteaser">
-        <div class="topbar">Coalition Communities</div>
-        <div id="homemap" class="homemap"><p class="mapnote">Loading map&hellip;</p></div>
-        <div class="foot"><a class="btn btn-teal btn-sm" href="network.html">See the full network</a></div>
+      <form class="form" id="joinform" novalidate>
+        <div class="about" id="about"></div>
+        <div class="field"><label for="fn">First name</label><input id="fn" name="fn" type="text" autocomplete="given-name"></div>
+        <div class="field"><label for="ln">Last name</label><input id="ln" name="ln" type="text" autocomplete="family-name"></div>
+        <div class="field"><label for="em">Email</label><input id="em" name="em" type="email" autocomplete="email"></div>
+        <div class="field"><label for="tn">Town</label><input id="tn" name="tn" type="text"></div>
+        <div class="field wide"><label for="nt">What's going on? <i>Optional</i></label><textarea id="nt" name="nt"></textarea></div>
+        <button class="btn btn-orange submit" type="submit" id="joinbtn">Keep me in the loop</button>
+        <p class="note">A person reads every one of these. No automated sequence, and nothing shared with anyone else.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- donate -->
+<section class="donate" id="donate">
+  <div class="grid">
+    <figure class="ph">
+      <img src="assets/img/donate.jpg" alt="A full room at a parent night">
+      <div class="shot"><b>Photo &middot; donate.jpg</b><span>A full room at a parent night or speaker event, seen from the back of the audience.</span></div>
+    </figure>
+    <div class="text">
+      <h2>Money turns a good idea into an evening people show up to.</h2>
+      <p class="lede">Donations pay for rooms, materials and speakers in towns across Massachusetts. We are a registered 501(c)(3), so your gift is tax deductible.</p>
+      <div class="gifts">
+        <div class="gift"><b>$50</b><span>Materials for a parent night</span></div>
+        <div class="gift"><b>$250</b><span>The room, and childcare so people can come</span></div>
+        <div class="gift"><b>$1,000</b><span>A speaker in a town that could not otherwise book one</span></div>
       </div>
+      <div class="btns"><a class="btn btn-orange" href="support.html">Donate</a></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="s mist">
-    <div class="wrap">
-      <div class="kick">The research</div>
-      <h2>The evidence is clear. Now is the time to act.</h2>
-      <div class="statgrid">
-        <div class="stat">
-          <div class="fig">77%</div>
-          <p>of high school students use social media several times a day or more &mdash; frequent use that is linked to higher rates of bullying, persistent sadness, and suicide risk.</p>
-          <cite><a href="https://www.cdc.gov/yrbs/results/2023-yrbs-results.html" target="_blank" rel="noopener">CDC Youth Risk Behavior Survey, 2023</a></cite>
-        </div>
-        <div class="stat">
-          <div class="fig">31%</div>
-          <p>higher odds of depression for children who own a smartphone by age 12, alongside 40% higher odds of obesity and 62% higher odds of insufficient sleep. The earlier the phone arrives, the greater the risk.</p>
-          <cite><a href="https://www.chop.edu/news/childrens-hospital-philadelphia-study-links-smartphone-ownership-childhood-increased-risk" target="_blank" rel="noopener">Pediatrics, December 2025 &middot; Children's Hospital of Philadelphia</a></cite>
-        </div>
-        <div class="stat">
-          <div class="fig">77%</div>
-          <p>of U.S. adults now support banning phones during class, up from 68% just two years ago. Public opinion has moved, and quickly.</p>
-          <cite><a href="https://www.pewresearch.org/short-reads/2026/07/29/more-americans-now-support-than-oppose-all-day-school-cellphone-bans/" target="_blank" rel="noopener">Pew Research Center, 2026</a></cite>
-        </div>
-        <div class="stat">
-          <div class="fig">44&rarr;32%</div>
-          <p>the fall in high school seniors who gather with friends in person almost every day, between 2010 and 2022. Childhood has moved indoors and online.</p>
-          <cite><a href="https://monitoringthefuture.org/" target="_blank" rel="noopener">Monitoring the Future, University of Michigan</a></cite>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s">
-    <div class="wrap">
-      <div class="kick">What we're working on</div>
-      <h2>The issues</h2>
-      <div class="issues">
-        <div class="issue">
-          <h3>Slow Tech</h3>
-          <p>Delaying harmful tech and resisting addictive design features. We support families, communities, and schools with resources and community pacts to delay smartphones until 9th grade and social media until 16.</p>
-          <a class="btn btn-orange btn-sm" href="resources.html">Explore resources</a>
-        </div>
-        <div class="issue">
-          <h3>Distraction Free Schools and Intentional EdTech</h3>
-          <p>Our kids deserve a learning environment that is free of distraction, safe, and effective. We work with parents, educators, and lawmakers to get there.</p>
-          <a class="btn btn-orange btn-sm" href="take-action.html">Take action</a>
-        </div>
-        <div class="issue">
-          <h3>Reconnecting our communities</h3>
-          <p>Through screen-free and play-based events and educational opportunities. Taking tech away does not solve the problem on its own &mdash; we need to recreate the spaces and moments that bring people together without a device in the way.</p>
-          <a class="btn btn-orange btn-sm" href="events.html">See what's on</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s teal">
-    <div class="wrap">
-      <div class="kick">Who we work with</div>
-      <h2>Three ways to join the movement</h2>
-      <div class="pathgrid">
-        <div class="path">
-          <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748654701511-Q4YIOWY6DD5SSZ0OTKC6/unsplash-image-20YP7NENJzk.jpg')"></div>
-          <h3>Community Leads</h3>
-          <p>You know your community best. We give you the playbooks, funding, and connections to turn that knowledge into lasting change.</p>
-          <a class="btn btn-orange btn-sm" href="network.html">Lead the movement</a>
-        </div>
-        <div class="path">
-          <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748438031423-HEFKW7GXKGR62B9GVQ2P/unsplash-image-Ym301WfcEkE.jpg')"></div>
-          <h3>Parents &amp; Caregivers</h3>
-          <p>Not ready to lead? Stay informed, find resources, and take small steps toward a more intentional family tech life.</p>
-          <a class="btn btn-orange btn-sm" href="resources.html">Find your next step</a>
-        </div>
-        <div class="path">
-          <div class="photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg')"></div>
-          <h3>Partners</h3>
-          <p>Professionals in mental health, education, medicine, and technology help us co-create resources and reach more families. When we join forces, our impact grows.</p>
-          <a class="btn btn-orange btn-sm" href="mailto:info@turninglifeon.org?subject=Partnering%20with%20Turning%20Life%20On">Explore partnership</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s">
-    <div class="wrap">
-      <div class="kick">How we get there</div>
-      <h2>Supporting our Community Leads</h2>
-      <div class="capgrid">
-        <div class="cap">
-          <h3>Networking</h3>
-          <p>Monthly coalition calls, info sessions, and in-person meetups connect our leads to a statewide network of advocates. They share what works, build relationships, and back each other up &mdash; so one community's breakthrough becomes everyone's.</p>
-          <a class="btn btn-orange btn-sm" href="events.html">Join a coalition call</a>
-        </div>
-        <div class="cap">
-          <h3>Partnerships</h3>
-          <p>We work alongside local and national organizations, legislators, the Attorney General's Office, and the Governor's Office to match local action to state policy. Strong ties to leading professionals let us co-create resources and connect those experts directly to communities.</p>
-        </div>
-        <div class="cap">
-          <h3>Funding</h3>
-          <p>As a 501(c)(3), we continually grow our base of annual philanthropic support so we can award grants to communities &mdash; money that lets local leaders fund their own initiatives.</p>
-          <a class="btn btn-orange btn-sm" href="support.html">Support this work</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s mist">
-    <div class="wrap">
-      <div class="kick">Why communities turn to us</div>
-      <h2>We are the movement</h2>
-      <p class="lede read">Turning Life On didn't show up yesterday. Since 2017 we have grown into a statewide network of more than a dozen Massachusetts communities.</p>
-      <p class="read">Nearly a decade in, we have built what cannot be replicated overnight:</p>
-      <ul class="creds">
-        <li><b>Direct lines to policymakers</b> &mdash; the Massachusetts Attorney General's Office, the State House, and the Governor's Office.</li>
-        <li><b>Leadership with a track record</b> &mdash; our board has chaired the Distraction Free Schools Policy Project and sits on the board of Smartphone Free Childhood U.S.</li>
-        <li><b>National partnerships</b> &mdash; Fairplay, The Anxious Generation, the Four Norms Coalition, and Culture Reframed bring the latest research and strategy to our local leads.</li>
-        <li><b>Playbooks built from Massachusetts experience</b> &mdash; tested in real MA districts, not adapted from somewhere else.</li>
-        <li><b>Funding that goes straight to the ground</b> &mdash; every dollar we have raised has supported local groups directly, and we are pursuing more to reach more communities.</li>
-        <li><b>An experienced in-state network</b> &mdash; our community leads understand the particular challenges and opportunities in Massachusetts, and how to make the most of them.</li>
-      </ul>
-      <p class="read" style="margin-top:22px">A statewide coalition moves faster. When one Massachusetts community solves a problem, every other community benefits. If you are in Massachusetts and ready to make a difference, we are the coalition built to go the distance with you.</p>
-    </div>
-  </section>
-
-  <section class="s">
-    <div class="wrap">
-      <div class="kick">In their words</div>
-      <h2>What people say about us</h2>
-      <div class="quotes" style="margin-top:8px">
-        <div class="quote"><p>When few were talking about the impact of screens on children's well-being, Turning Life On was already leading the way. We are inspired by their leadership.</p><div class="who">Dr. Sharon Maxwell, Polestar Parenting</div></div>
-        <div class="quote"><p>It's less about turning screens off. TLO is about turning on relationships, curiosity, senses, support, and activism, and letting tech take a back seat to life.</p><div class="who">Jean Rogers, M.S.Ed., Screen Time Action Network at Fairplay</div></div>
-        <div class="quote"><p>Her presentations are not only informative with the latest science and research, but include strategies for families to negotiate complex social situations.</p><div class="who">Laurel Zolfonoon, Head of School, Concord Montessori School</div></div>
-        <div class="quote"><p>TLO is an awesome initiative, and all in attendance felt very reinforced and informed with what you shared.</p><div class="who">Dot Butler, Winchester Coalition for a Safer Community</div></div>
-      </div>
-    </div>
-  </section>
-
-</main>
 <footer>
   <div class="wrap">
     <div class="cols">
@@ -352,59 +404,163 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
           <li><a href="support.html">Support</a></li>
           <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal &#8599;</a></li>
         </ul>
       </div>
     </div>
     <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2025 Turning Life On.</p>
   </div>
 </footer>
-<script>
-document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="assets/nearby.js"></script>
 <script>
-/* Home map teaser: the pins only, with the full directory on the Network page. */
+document.getElementById('menubtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+
+/* Photo slots: show the photo if the file exists, otherwise keep the placeholder. */
+[].slice.call(document.querySelectorAll('.ph img')).forEach(function(img){
+  function ok(){ img.parentNode.classList.add('has-img'); }
+  function bad(){ img.remove(); }
+  if (img.complete) { img.naturalWidth ? ok() : bad(); }
+  else { img.addEventListener('load', ok); img.addEventListener('error', bad); }
+});
+
+
+/* Announcement bar and town list come from the same Four Norms data as the rest
+   of the site, so neither needs updating by hand. */
 (function(){
-  var el = document.getElementById('homemap');
-  if (!el) return;
+  var MONTHS = ['January','February','March','April','May','June','July',
+                'August','September','October','November','December'];
 
+  /* Next upcoming event, in the bar under the header. */
+  TLO.loadJSON('data/events.json').then(function(d){
+    var next = (d.events || []).filter(function(e){
+      return new Date(e.start_time) >= new Date();
+    }).sort(function(a,b){ return new Date(a.start_time) - new Date(b.start_time); })[0];
+    if (!next) return;
+
+    var when = new Date(next.start_time);
+    var title = next.title.length > 64
+      ? next.title.slice(0, 64).replace(/\s+\S*$/, '') + '\u2026'
+      : next.title;
+    var bar = document.getElementById('announce');
+    bar.innerHTML = '<b>Next up:</b> ' + TLO.esc(title) + ', ' +
+      MONTHS[when.getMonth()] + ' ' + when.getDate() +
+      '. <a href="events.html">See what\u2019s on &rarr;</a>';
+    bar.hidden = false;
+  }).catch(function(){ /* bar stays hidden */ });
+
+  /* The towns with a community in them. */
   TLO.loadJSON('data/groups.json').then(function(d){
-    var groups = (d.groups || []).filter(function(g){
-      return g.city && typeof g.lat === 'number' && typeof g.lon === 'number';
+    var el = document.getElementById('towns');
+    if (!el) return;
+    var seen = {}, towns = [];
+    (d.groups || []).forEach(function(g){
+      if (!g.city) return;
+      var label = g.state && g.state !== 'MA' ? g.city + ', ' + g.state : g.city;
+      if (!seen[label]){ seen[label] = 1; towns.push(label); }
     });
-    if (!groups.length || !window.L){
-      el.innerHTML = '<p class="mapnote">See our communities on the Network page.</p>';
-      return;
-    }
-
-    el.innerHTML = '';
-    var map = L.map('homemap', {
-      scrollWheelZoom: false, dragging: false, zoomControl: false,
-      doubleClickZoom: false, boxZoom: false, keyboard: false, touchZoom: false
-    });
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-    var icon = L.divIcon({
-      className: '',
-      html: '<div style="width:14px;height:14px;background:#3f9b9b;border:2px solid #fff;' +
-            'border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.35)"></div>',
-      iconSize: [14, 14], iconAnchor: [7, 14], popupAnchor: [0, -12]
-    });
-
-    var pts = [];
-    groups.forEach(function(g){
-      L.marker([g.lat, g.lon], {icon: icon, title: g.display_name || g.name})
-        .addTo(map)
-        .bindPopup('<b>' + TLO.esc(g.display_name || g.name) + '</b><br>' + TLO.esc(TLO.place(g)));
-      pts.push([g.lat, g.lon]);
-    });
-    map.fitBounds(pts, {padding: [30, 30], maxZoom: 9});
+    towns.sort();
+    if (!towns.length) return;
+    el.innerHTML = towns.map(function(t){
+      return '<span>' + TLO.esc(t) + '</span>';
+    }).join('');
   }).catch(function(){
-    el.innerHTML = '<p class="mapnote">See our communities on the Network page.</p>';
+    document.getElementById('towns').innerHTML =
+      '<span>See the map for our communities</span>';
+  });
+})();
+
+/* "Where are you feeling stuck?" -- edit the wording here. */
+(function(){
+  var DATA = {
+    alone: {
+      pick: "I'm carrying too much of this alone.",
+      t: "A person who understands the weight of it.",
+      c: "Sometimes you need advice. Sometimes you need help sharing the load. Sometimes you just need to be heard by someone who does not need the backstory. We will connect you with fellow advocates who understand, and help from there.",
+      p: "<b>In practice:</b> leads talk on a monthly call and meet in person several times a year.",
+      cta: "Talk with someone who gets it"
+    },
+    school: {
+      pick: "We've hit a wall with our school.",
+      t: "Experience from people who have faced the same wall.",
+      c: "Connect with Community Leads who have navigated school policies, parent outreach, presentations and difficult meetings. Borrow what worked, learn what did not, and adapt it for your district.",
+      p: "<b>In practice:</b> a letter written for one district has since been adapted by others.",
+      cta: "Talk through your school"
+    },
+    rebuild: {
+      pick: "We're building everything from scratch.",
+      t: "The work that already exists across the coalition.",
+      c: "Shared playbooks, event plans, speakers, outreach language and lessons learned, so your energy goes into progress rather than reinvention.",
+      p: "<b>In practice:</b> a parent-night format built in one town has since been run in others.",
+      cta: "Tell us what you're building"
+    },
+    start: {
+      pick: "I care deeply, but don't know where to start.",
+      t: "One manageable next step, chosen with you.",
+      c: "We will listen to what is happening in your town, connect you with a nearby example, and help you choose a first move that fits your capacity. You do not have to become the leader overnight.",
+      p: "<b>In practice:</b> most people begin with a single conversation and nothing else.",
+      cta: "Find your first step"
+    }
+  };
+
+  var current = 'alone';
+  var title=document.getElementById('r-title'), copy=document.getElementById('r-copy'),
+      proof=document.getElementById('r-proof'), cta=document.getElementById('r-cta');
+  var choices=[].slice.call(document.querySelectorAll('.choice'));
+  function show(k){ var d=DATA[k]; current=k; title.textContent=d.t; copy.textContent=d.c; proof.innerHTML=d.p; cta.textContent=d.cta; }
+  choices.forEach(function(b){
+    b.addEventListener('click',function(){
+      choices.forEach(function(o){o.setAttribute('aria-selected','false');});
+      b.setAttribute('aria-selected','true'); show(b.dataset.k);
+    });
+  });
+  show('alone');
+
+  /* Tiers */
+  var tiers=[].slice.call(document.querySelectorAll('.tier')), joinbtn=document.getElementById('joinbtn');
+  function setTier(t){
+    tiers.forEach(function(o){ o.setAttribute('aria-selected', o.dataset.t===t ? 'true' : 'false'); });
+    joinbtn.textContent = t==='advocate' ? 'Start a conversation' : 'Keep me in the loop';
+  }
+  tiers.forEach(function(t){ t.addEventListener('click',function(){ setTier(t.dataset.t); }); });
+
+  /* The matcher hands its answer to the form, so the visitor never has to repeat herself. */
+  cta.addEventListener('click',function(e){
+    e.preventDefault();
+    setTier('advocate');
+    var about=document.getElementById('about');
+    about.innerHTML='You told us: <b></b> Someone who has been there will read this.';
+    about.querySelector('b').textContent=DATA[current].pick;
+    about.classList.add('on');
+    document.getElementById('join').scrollIntoView({behavior:'smooth',block:'start'});
+    setTimeout(function(){ document.getElementById('fn').focus({preventScroll:true}); }, 600);
+  });
+
+  /* Interim: the form opens an email to the team. When the sign-up route is
+     settled this handler is the only thing that changes. */
+  document.getElementById('joinform').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v = function(id){ return (document.getElementById(id).value || '').trim(); };
+    var tier = document.querySelector('.tier[aria-selected="true"]');
+    var kind = tier && tier.dataset.t === 'advocate' ? 'Get involved' : 'Stay in the loop';
+
+    if (!v('em')){ document.getElementById('em').focus(); return; }
+
+    var lines = [
+      'How involved: ' + kind,
+      'Name: ' + v('fn') + ' ' + v('ln'),
+      'Email: ' + v('em'),
+      'Town: ' + v('tn'),
+      '',
+      v('nt')
+    ];
+    var stuck = document.getElementById('about');
+    if (stuck && stuck.classList.contains('on')){
+      lines.unshift('Where they are stuck: ' + stuck.textContent.replace('You told us: ','').replace(' Someone who has been there will read this.',''));
+    }
+    window.location.href = 'mailto:info@turninglifeon.org' +
+      '?subject=' + encodeURIComponent('Website: ' + kind) +
+      '&body=' + encodeURIComponent(lines.join('\n'));
   });
 })();
 </script>

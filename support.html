@@ -98,13 +98,16 @@ section.s.teal p{color:rgba(255,255,255,.95)}
 .quote{background:#fff;border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:24px;box-shadow:0 1px 0 var(--line)}
 .quote p{font-size:17px;color:var(--ink);font-style:italic;margin-bottom:12px}
 .quote .who{font-family:'Poppins',sans-serif;font-style:normal;font-size:13.5px;font-weight:500;color:var(--teal)}
-footer{background:var(--mist);border-top:3px solid var(--teal);padding:54px 0 32px}
-footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:34px}
-footer h4{font-size:18px;color:var(--slate);margin-bottom:12px}
-footer p,footer li{font-size:15px;color:#4a4f52;line-height:1.8}
-footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
-.flist{list-style:none}
-.disc{font-size:11.5px;color:#7d8285;line-height:1.6;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+footer{background:#24323f;color:#c8d3dc;padding:56px 0 40px;font-size:15px}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+footer p,footer li{font-size:15px;color:#c8d3dc;line-height:1.7}
+footer a{color:#c8d3dc} footer a:hover{color:#fff}
+.flist{list-style:none;display:flex;flex-direction:column;gap:9px}
+.disc{margin-top:38px;padding-top:22px;border-top:1px solid #465866;font-size:12.5px;color:#8d9caa;line-height:1.55}
+.btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
+.btn-line:hover{background:var(--slate);color:#fff}
+.navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -123,14 +126,13 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
     <nav id="nav">
       <button class="menubtn" id="menubtn" aria-label="Toggle menu">Menu</button>
       <ul>
-        <li><a class="navlink" href="index.html">Home</a></li>
-        <li><a class="navlink" href="about.html">About Us</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
         <li><a class="navlink" href="take-action.html">Take Action</a></li>
-        <li><a class="navlink" href="resources.html">Resources</a></li>
         <li><a class="navlink" href="network.html">Network</a></li>
+        <li><a class="navlink" href="resources.html">Resources</a></li>
         <li><a class="navlink" href="events.html">Events</a></li>
-        <li><a class="navlink active" href="support.html">Support</a></li>
-        <li><a class="navlink" href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+        <li><a class="btn btn-line btn-sm active" href="support.html">Donate</a></li>
+        <li><a class="btn btn-orange btn-sm" href="index.html#join">Talk with us</a></li>
       </ul>
     </nav>
   </div>
@@ -183,6 +185,7 @@ footer a{color:var(--teal)} footer a:hover{color:var(--teal-d)}
           <li><a href="support.html">Support</a></li>
           <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal &#8599;</a></li>
         </ul>
       </div>
     </div>
