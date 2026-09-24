@@ -1,60 +1,6 @@
 {
-  "count": 24,
+  "count": 22,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzA3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--748212c351609966c843e61080ec8208984d4bd9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Why%20GND%20COver%20(1200%20x%20400%20px).png",
-      "description": "Loneliness is quietly becoming one of our biggest public health challenges \u2014 even as we stay more 'connected' than ever. \r\n\r\nCome hear Dr. Kate Storm explore why Good Neighbor Day matters, what's really driving isolation, and simple ways we can rebuild community.\r\n\r\nRegistration for this event is appreciated but not required.\r\n\r\nThis event is part of a larger series of events celebrating \"Good Neighbor Week\" in Stow, MA. See Randall Library website for more details.  You do not need to be a Stow resident to participate.",
-      "end_time": "2026-09-24T10:00:00-04:00",
-      "external_link": "https://www.stow-ma.gov/982/Good-Neighbor-Week-2026",
-      "featured": false,
-      "host_name": "Turning Life On | Reconnect Nashoba Valley",
-      "host_slug": "reconnect-nashoba-valley",
-      "host_type": "Group",
-      "host_url": "https://www.fournorms.com/turning-life-on/reconnect-nashoba-valley",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world.json",
-        "web_url": "https://www.fournorms.com/events/reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "reconnect-nashoba-valley-why-good-neighbor-day-rebuilding-connection-in-a-disconnected-world",
-      "start_time": "2026-09-24T09:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Why Good Neighbor Day? Rebuilding Connection in a Disconnected World",
-      "virtual": false,
-      "virtual_link": null
-    },
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjA0NiwicHVyIjoiYmxvYl9pZCJ9fQ==--9a826d90fb50c7421fc94ab2c13e257adf35f1ce/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Zoom%20Events%20Headers%20(1).png",
-      "description": "NY Times reporter, Natasha Singer, will join SFCxUS to talk about her upcoming book \"CODING KIDS: Big Tech's Battle to Remake Public Schools.\"  Natasha has been covering tech industry influence in schools since 2014, including stories on how Google took over the classroom; how tech giants are racing to train teachers on A.I. and embed their A.I. chatbots in schools; how some schools are pulling back on Chromebooks; how A.I. deepfakes harm teen girls; and how teachers, students and their parents are fighting back. ",
-      "end_time": "2026-09-24T13:00:00-04:00",
-      "external_link": "https://wwnorton.com/books/9780393881943",
-      "featured": false,
-      "host_name": "Smartphone Free Childhood US",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/smartphone-free-childhood-us",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools.json",
-        "web_url": "https://www.fournorms.com/events/smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "smartphone-free-childhood-us-coding-kids-big-tech-s-battles-to-remake-public-schools",
-      "start_time": "2026-09-24T12:00:00-04:00",
-      "tags": [
-        "Ed Tech"
-      ],
-      "title": "Coding Kids: Big Tech's Battle to Remake Public Schools",
-      "virtual": true,
-      "virtual_link": "https://us06web.zoom.us/j/87271798449?pwd=ieCrIzoQxXqI26I764KioVYarPrUl7.1"
-    },
     {
       "cover_image_url": null,
       "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\n\r\n",
@@ -679,5 +625,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-09-24T07:05:03+00:00"
+  "updated": "2026-09-24T19:04:18+00:00"
 }
