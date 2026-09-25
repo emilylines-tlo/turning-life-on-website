@@ -2,35 +2,6 @@
   "count": 22,
   "events": [
     {
-      "cover_image_url": null,
-      "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\n\r\n",
-      "end_time": "2026-09-25T10:00:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On | Tech-Wise Arlington",
-      "host_slug": "tech-wise-arlington",
-      "host_type": "Group",
-      "host_url": "https://www.fournorms.com/turning-life-on/tech-wise-arlington",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat.json",
-        "web_url": "https://www.fournorms.com/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat",
-      "start_time": "2026-09-25T09:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Tech-Wise Arlington - Monthly Coffee Chat",
-      "virtual": false,
-      "virtual_link": null
-    },
-    {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--70ad7f37db6550662e7e1fbfeb0f518bdf6ce599/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
       "description": "This event is for parents and youth of all ages. \r\n\r\nIn many high-performing communities, young people absorb a powerful\u2014and often unintentional\u2014message: that their worth is tied to grades, accolades, and productivity. The result is rising rates of anxiety, burnout, and disconnection, even among kids who are doing everything \u201cright.\u201d \r\n\r\nThis event introduces the concept of mattering\u2014the idea that young people thrive when they feel seen, valued, and connected, not just evaluated.\r\n\r\nSpeaker Stephanie Malia Krauss is an educator and author of How We Thrive: Caring for Kids and Ourselves in a Changing World and Whole Child, Whole Life. Drawing on research and real-world experience, she offers parents, educators, and young people practical ways to push back against achievement culture and create conditions where youth\u2014and the adults who support them\u2014can truly flourish.\r\n\r\nBring friends and family.\r\n\r\n",
       "end_time": "2026-09-30T19:30:00-04:00",
@@ -217,6 +188,29 @@
       "title": "Tech Advisory Committees",
       "virtual": true,
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": null,
+      "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\nPlanned for the last Friday of each month at 9am.",
+      "end_time": "2026-10-30T10:00:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | Tech-Wise Arlington",
+      "host_slug": "tech-wise-arlington",
+      "host_type": "Group",
+      "host_url": "https://www.fournorms.com/turning-life-on/tech-wise-arlington",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-38b7c16a-5fc3-4dca-847b-99c8fa60fedb.json",
+        "web_url": "https://www.fournorms.com/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-38b7c16a-5fc3-4dca-847b-99c8fa60fedb"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-38b7c16a-5fc3-4dca-847b-99c8fa60fedb",
+      "start_time": "2026-10-30T09:00:00-04:00",
+      "tags": [],
+      "title": "Tech-Wise Arlington - Monthly Coffee Chat",
+      "virtual": false,
+      "virtual_link": null
     },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwNywicHVyIjoiYmxvYl9pZCJ9fQ==--1b9d2da5139f165e85a9eef8f0022929f16065a1/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
@@ -625,5 +619,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-09-25T07:05:03+00:00"
+  "updated": "2026-09-25T19:03:59+00:00"
 }
