@@ -1,5 +1,5 @@
 {
-  "count": 35,
+  "count": 39,
   "items": [
     {
       "credit": {
@@ -321,7 +321,9 @@
       },
       "slug": "tlo-how-students-get-around-filters-and-what-to-tell-it",
       "tags": [
-        "Guide"
+        "Distraction Free Schools",
+        "For advocates",
+        "For parents"
       ],
       "title": "How Students get around Filters and What to tell IT",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it"
@@ -350,6 +352,24 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "We strongly recommend that advocates start by asking questions and building a relationship with district leadership. Informally request information that will inform which digital products your child is exposed to. IF districts refuse to share, a public records request might be your next step. Read this carefully and only choose to request the items that you plan to act on. Remember: requesting internal communication is likely to come across as abrasive so use it sparingly.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-ma-public-records-request",
+      "tags": [
+        "For advocates"
+      ],
+      "title": "MA Public Records Request",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-ma-public-records-request"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "Updated Sept 2026 - quick briefing on what the settlement says, what it misses, and what it means for advocacy efforts.",
       "publisher": {
         "name": "Turning Life On",
@@ -369,6 +389,25 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "A playbook for local advocates: why an AI pause matters, what New York City and Los Angeles have done, and the emails, public comment scripts and answers you need to make the ask.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-pause-ai-in-your-district",
+      "tags": [
+        "AI",
+        "For advocates"
+      ],
+      "title": "Pause AI in Your District",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-pause-ai-in-your-district"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "EdTech Policy Priorities for Massachusetts with corresponding playbooks",
       "publisher": {
         "name": "Turning Life On",
@@ -377,7 +416,9 @@
       },
       "slug": "tlo-policy-priorities",
       "tags": [
-        "Research And Reference"
+        "Distraction Free Schools",
+        "Research And Reference",
+        "For advocates"
       ],
       "title": "Policy Priorities",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities"
@@ -620,6 +661,25 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "Nine common objections from administrators, and what you can say. Plus the questions to ask about any EdTech tool. From the Advocate's Toolkit.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-when-they-say-no-answers-to-common-pushback",
+      "tags": [
+        "Distraction Free Schools",
+        "For advocates"
+      ],
+      "title": "When They Say No: Answers to Common Pushback",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-when-they-say-no-answers-to-common-pushback"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "A two-page update on the phone-free schools and social media bills at the State House: what's on the table, why it's stalled, what Turning Life On supports, and how to help in 10 minutes or less. Last updated September 28, 2026.",
       "publisher": {
         "name": "Turning Life On",
@@ -707,6 +767,28 @@
       ],
       "title": "Why Wait",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "Most schools ask for your consent to your child's internet and device use, often buried in an annual form. Here's how to find it, give it with conditions, decline it, or take it back. Includes letter templates.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-your-consent-counts",
+      "tags": [
+        "Distraction Free Schools",
+        "Printable",
+        "Guide",
+        "For advocates",
+        "For parents"
+      ],
+      "title": "Your Consent Counts",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts"
     }
   ],
   "tags": [
@@ -723,5 +805,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-09-29T07:07:04+00:00"
+  "updated": "2026-09-29T19:05:47+00:00"
 }
