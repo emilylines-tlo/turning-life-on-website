@@ -1,5 +1,5 @@
 {
-  "count": 29,
+  "count": 35,
   "items": [
     {
       "credit": {
@@ -18,7 +18,7 @@
         "Research And Reference"
       ],
       "title": "A Holistic Approach to Keeping Tech in Check",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1OCwicHVyIjoiYmxvYl9pZCJ9fQ==--88694b8c4733ba5d458b04d5eebce35b4466e870/TLO_Holistic_Approach.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-a-holistic-approach-to-keeping-tech-in-check"
     },
     {
       "credit": {
@@ -33,10 +33,12 @@
       },
       "slug": "tlo-advocate-toolkit",
       "tags": [
-        "Guide"
+        "Playbook",
+        "Guide",
+        "For advocates"
       ],
       "title": "Advocate Toolkit",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzMzMywicHVyIjoiYmxvYl9pZCJ9fQ==--541271a2355acb18a6eabaee0e635587b722c536/Advocate%20Toolkit%20Final%20(1).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit"
     },
     {
       "credit": {
@@ -55,7 +57,7 @@
         "Research And Reference"
       ],
       "title": "Black Tier 1: Next steps on healthy defaults on school devices",
-      "url": "https://drive.google.com/file/d/1piSrLQ_NJerHoScvg0B-5P_rZchCWoGM/view?usp=drive_link"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-black-tier-1-next-steps-on-healthy-defaults-on-school-devices"
     },
     {
       "credit": {
@@ -74,7 +76,7 @@
         "Research And Reference"
       ],
       "title": "Black Tier 3: Digital Product Standards",
-      "url": "https://drive.google.com/file/d/1RuN3VSOZSfoYD2RC07u47jKOA0WA4rW3/view?usp=drive_link"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-black-tier-3-digital-product-standards"
     },
     {
       "credit": {
@@ -93,7 +95,7 @@
         "Research And Reference"
       ],
       "title": "Blue Tier 1: Social Media Use Policy Playbook",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--75730e798cd65ec94af3159f5ea388dce97bbd5a/TLO_Blue_P1_Social_Media_Use_Policy.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-social-media-use-policy-playbook"
     },
     {
       "credit": {
@@ -112,7 +114,7 @@
         "Research And Reference"
       ],
       "title": "Blue Tier 2: Tiered access to screens by grade band playbook",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--db0a986e116af4ceb99d86e1cd97bf8b688edcda/TLO_Blue_P2_Tiered_Access_by_Grade_Band.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tiered-access-to-screens-by-grade-band-playbook"
     },
     {
       "credit": {
@@ -131,7 +133,7 @@
         "Research And Reference"
       ],
       "title": "Blue Tier 3: Tech Advisory Committee Playbook",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1MCwicHVyIjoiYmxvYl9pZCJ9fQ==--8a8e611058e14716c05a5d3a2ba39fdaeddcde81/TLO_Blue_P3_Tech_Advisory_Committee.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tech-advisory-council-playbook"
     },
     {
       "credit": {
@@ -150,7 +152,29 @@
         "Research And Reference"
       ],
       "title": "Blue Tier: Pick up the pace playbooks: Social Media Use Policy \u00b7 Tiered Access to Screens by Grade Band \u00b7 Tech AdvisoryCommittee (TAC)",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0NSwicHVyIjoiYmxvYl9pZCJ9fQ==--757a3ee1847ffe43070a83761799957784e08725/TLO_Blue_Tier_Playbook.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "A step-by-step guide for community leads: how to share the Turning Life On community pact with families at your school, reach whole grades, and keep the momentum going.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-bring-the-pact-to-your-community",
+      "tags": [
+        "Playbook",
+        "Smartphones",
+        "Guide",
+        "Social Media",
+        "For advocates"
+      ],
+      "title": "Bring the Pact to Your Community",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-bring-the-pact-to-your-community"
     },
     {
       "credit": {
@@ -169,7 +193,7 @@
         "Research And Reference"
       ],
       "title": "Creating a Family Mission Statement and Core Values",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTA2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--bec0dbf76798494d6dd9c4ee65e86dcff6f44a03/Creating%20a%20Family%20Mission%20Statement%20and%20Core%20Values.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-creating-a-family-mission-statement-and-core-values"
     },
     {
       "credit": {
@@ -187,7 +211,7 @@
         "Printable"
       ],
       "title": "Event signup",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--14c0dbec9bb64159db21c70ecc735d69e713d7cc/Event%20Signup.zip"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-event-signup"
     },
     {
       "credit": {
@@ -206,7 +230,7 @@
         "Research And Reference"
       ],
       "title": "Full Black: Next Steps on Defaults and Digital Product Standards Playbooks",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--6882db1991e2c8cd82ca00f816e0522dc139c31b/TLO_Black_Tier_Playbook.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks"
     },
     {
       "credit": {
@@ -225,7 +249,7 @@
         "Research And Reference"
       ],
       "title": "Green Tier 1: Ditch \"Free\" Screen-time",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0NywicHVyIjoiYmxvYl9pZCJ9fQ==--24fea8118006f24c21e1dff630a747f44e7fccf9/TLO_Green_P1_Ditch_Free_Screen_Time%20(1).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-1-ditch-free-screen-time"
     },
     {
       "credit": {
@@ -244,7 +268,7 @@
         "Research And Reference"
       ],
       "title": "Green Tier 2: Phone-free Schools Policy",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0OCwicHVyIjoiYmxvYl9pZCJ9fQ==--a246556210839ee30727f7be2482f95a0fd21934/TLO_Green_P2_Phone_Free_School_Day.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-2-phone-free-schools-policy"
     },
     {
       "credit": {
@@ -263,7 +287,7 @@
         "Research And Reference"
       ],
       "title": "Green Tier 3: Healthy Defaults on School Devices",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--00f0d055486e9f541a7e4236c1e9832b5ac22f13/TLO_Green_P3_Healthy_Defaults.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-3-healthy-defaults-on-school-devices"
     },
     {
       "credit": {
@@ -282,7 +306,7 @@
         "Research And Reference"
       ],
       "title": "Green Tier: Ditch \"Free\" Screen Time \u00b7 Phone-Free School Day \u00b7 Healthy Defaults on School Devices Playbook",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM0NiwicHVyIjoiYmxvYl9pZCJ9fQ==--53cb10caea430eb15e535454bd89855790a52d34/TLO_Green_Tier_Playbook.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook"
     },
     {
       "credit": {
@@ -300,7 +324,7 @@
         "Guide"
       ],
       "title": "How Students get around Filters and What to tell IT",
-      "url": "https://drive.google.com/file/d/1OBVFHrzxfah0GMAOgn5WtsMC7GkFs5wf/view?usp=sharing"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it"
     },
     {
       "credit": {
@@ -319,7 +343,26 @@
         "Research And Reference"
       ],
       "title": "Key Terms in EdTech",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzMzNCwicHVyIjoiYmxvYl9pZCJ9fQ==--979d69b8347259d7cbb139b5ec90ce590df38a24/TLO_Key_Terms.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-key-terms-in-edtech"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "Updated Sept 2026 - quick briefing on what the settlement says, what it misses, and what it means for advocacy efforts.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-meta-settlement-briefing",
+      "tags": [
+        "Guide",
+        "Research And Reference"
+      ],
+      "title": "Meta Settlement Briefing",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-meta-settlement-briefing"
     },
     {
       "credit": {
@@ -337,7 +380,29 @@
         "Research And Reference"
       ],
       "title": "Policy Priorities",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzMzMiwicHVyIjoiYmxvYl9pZCJ9fQ==--4a4d6b08a46a958945b0746ada54aa36efa50938/TLO_Policy_Priorities.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "Busy kids don't miss their screens. The science of face-to-face connection, conversation and free play, plus the Big Rocks, easy everyday ideas and ways to bring your community together.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-reconnecting-in-real-life-matters",
+      "tags": [
+        "Guide",
+        "Research And Reference",
+        "Free-play",
+        "For advocates",
+        "For parents"
+      ],
+      "title": "Reconnecting in Real Life Matters",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters"
     },
     {
       "credit": {
@@ -351,9 +416,15 @@
         "url": "https://www.fournorms.com/turning-life-on"
       },
       "slug": "tlo-screen-time-recommendations-by-stage",
-      "tags": [],
+      "tags": [
+        "Smartphones",
+        "Social Media",
+        "Free-play",
+        "For advocates",
+        "For parents"
+      ],
       "title": "Screen Time Recommendations by Stage",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1NiwicHVyIjoiYmxvYl9pZCJ9fQ==--b945bd83dcb59f9cf2c818dc8e3216dce0adbd43/TLO_Screen_Time_Recommendations.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-screen-time-recommendations-by-stage"
     },
     {
       "credit": {
@@ -368,11 +439,16 @@
       },
       "slug": "tlo-slow-tech-at-home-a-family-guide",
       "tags": [
+        "Smartphones",
         "Printable",
-        "Guide"
+        "Guide",
+        "Social Media",
+        "Free-play",
+        "For advocates",
+        "For parents"
       ],
       "title": "Slow Tech at Home: A Family Guide",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1OSwicHVyIjoiYmxvYl9pZCJ9fQ==--00133fcf0fabe9556c2bf04dd2a5cf20d8050af2/TLO_Slow_Tech_at_Home%20(1).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide"
     },
     {
       "credit": {
@@ -390,7 +466,7 @@
         "Printable"
       ],
       "title": "Sticker Survey",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE3OSwicHVyIjoiYmxvYl9pZCJ9fQ==--1cac76c792775b695df994d751b3def3bb12cab7/event%20printable%20-%20survey.png"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-sticker-survey"
     },
     {
       "credit": {
@@ -408,7 +484,7 @@
         "Guide"
       ],
       "title": "TLO Community Lead Guiding Principles",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTA5OCwicHVyIjoiYmxvYl9pZCJ9fQ==--ab1fd9cc12248e271d25801a9bb3bb72a16c3368/The%20Turning%20Life%20On%20Approach.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-ambassador-guiding-principals"
     },
     {
       "credit": {
@@ -423,11 +499,16 @@
       },
       "slug": "tlo-tlo-digital-device-family-plan",
       "tags": [
+        "Smartphones",
         "Printable",
-        "Guide"
+        "Guide",
+        "Social Media",
+        "Free-play",
+        "For advocates",
+        "For parents"
       ],
       "title": "TLO Family Media Plan",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--6efdad334e351ee5da920028d4ff46b9ac8c5021/TLO_Family_Media_Plan%20(2).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan"
     },
     {
       "credit": {
@@ -445,7 +526,7 @@
         "Printable"
       ],
       "title": "TLO Printable",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE2OCwicHVyIjoiYmxvYl9pZCJ9fQ==--ccf5cb60a27711e8f8e8d3d6831d4cf9d3b674f1/Intro%20to%20TLO%20(1).png"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-printable"
     },
     {
       "credit": {
@@ -460,10 +541,14 @@
       },
       "slug": "tlo-values-based-parenting",
       "tags": [
-        "Guide"
+        "Smartphones",
+        "Guide",
+        "Social Media",
+        "Free-play",
+        "For parents"
       ],
       "title": "Values-Based Parenting",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1NywicHVyIjoiYmxvYl9pZCJ9fQ==--224f5c76d637fad644c22a996e74abc711ef15f5/TLO_Values_Based_Parenting.pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-values-based-parenting"
     },
     {
       "credit": {
@@ -478,11 +563,39 @@
       },
       "slug": "tlo-what-is-addictive-design",
       "tags": [
+        "Distraction Free Schools",
+        "Smartphones",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "Social Media",
+        "For advocates",
+        "For parents"
       ],
       "title": "What Is Addictive Design?",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1NCwicHVyIjoiYmxvYl9pZCJ9fQ==--17ea56fa5db69f79fa1705f1154e2db6a4b64b52/TLO_What_Is_Addictive_Design%20(1).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "Powerful, and unsafe for kids. What AI is, from chatbots and companions to AI built into everyday apps, what the research says, why it matters for kids, and what families, schools and communities can do about it.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-what-parents-need-to-know-about-ai",
+      "tags": [
+        "AI",
+        "Legislation",
+        "Guide",
+        "Research And Reference",
+        "For advocates",
+        "For parents"
+      ],
+      "title": "What Parents Need to Know About AI",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai"
     },
     {
       "credit": {
@@ -500,7 +613,28 @@
         "Printable"
       ],
       "title": "When should kids...",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE3NywicHVyIjoiYmxvYl9pZCJ9fQ==--d1fe6282ea21c6d930c8ba9ec93c3588bb83509e/event%20printable%20-%20apps.png"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-when-should-kids"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "A two-page update on the phone-free schools and social media bills at the State House: what's on the table, why it's stalled, what Turning Life On supports, and how to help in 10 minutes or less. Last updated September 28, 2026.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-where-massachusetts-stands-phone-free-schools-and-social-media",
+      "tags": [
+        "Legislation",
+        "Guide",
+        "Research And Reference",
+        "For advocates"
+      ],
+      "title": "Where Massachusetts Stands: Phone-Free Schools and Social Media",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media"
     },
     {
       "credit": {
@@ -515,11 +649,18 @@
       },
       "slug": "tlo-where-we-stand-on-tech",
       "tags": [
+        "AI",
+        "Distraction Free Schools",
+        "Smartphones",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "Social Media",
+        "Free-play",
+        "For advocates",
+        "For parents"
       ],
       "title": "Where We Stand on Tech",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM1NSwicHVyIjoiYmxvYl9pZCJ9fQ==--af1452b412ab51135d47ce27d05c2022ce107aea/TLO_Where_We_Stand_on_Tech%20(2).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech"
     },
     {
       "credit": {
@@ -534,17 +675,53 @@
       },
       "slug": "tlo-why-distraction-free-learning-matters",
       "tags": [
+        "Distraction Free Schools",
+        "Smartphones",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "For parents"
       ],
       "title": "Why Distraction-Free Learning Matters",
-      "url": "https://www.fournorms.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzM2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--c05a33202014e336f8a3c7c1d1c789e8a39e47b2/TLO_Why_Distraction_Free_Learning_Matters%20(1).pdf"
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "More childhood before the smartphone. Why so many families are choosing to wait on smartphones until high school and social media until 16, what to say when safety comes up, and how to make waiting easier, together.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-why-wait",
+      "tags": [
+        "Smartphones",
+        "Guide",
+        "Research And Reference",
+        "Social Media",
+        "For advocates",
+        "For parents"
+      ],
+      "title": "Why Wait",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait"
     }
   ],
   "tags": [
+    "AI",
+    "Distraction Free Schools",
+    "For advocates",
+    "For parents",
+    "Free-play",
     "Guide",
+    "Legislation",
+    "Playbook",
     "Printable",
-    "Research And Reference"
+    "Research And Reference",
+    "Smartphones",
+    "Social Media"
   ],
-  "updated": "2026-09-28T19:05:45+00:00"
+  "updated": "2026-09-29T07:07:04+00:00"
 }
