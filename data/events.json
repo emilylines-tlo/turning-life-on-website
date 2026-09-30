@@ -1,5 +1,5 @@
 {
-  "count": 22,
+  "count": 23,
   "events": [
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--70ad7f37db6550662e7e1fbfeb0f518bdf6ce599/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
@@ -211,6 +211,34 @@
       "title": "Tech-Wise Arlington - Monthly Coffee Chat",
       "virtual": false,
       "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQ4NCwicHVyIjoiYmxvYl9pZCJ9fQ==--8a8f6281d0d199523a92b8b760c07d6ba9134896/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/YAP.png",
+      "description": "Community Screenings of Your Attention Please or Screenagers Gen:AI. \r\n\r\nTLO is offering groups registered on Four Norms under the TLO umbrella the opportunity to screen two popular movies in their communities. Our plan is to promote all screenings through one flyer and event page with RSVPs collected through individual group accounts on Four Norms. The goal is to capture as many people across MA as possible \r\n\r\nDepending on timing and availability, TLO Founder Adrienne Principe will be available to answer questions after the screenings. \r\n\r\nThis session is to discuss the two options, decide on potential dates and locations, and update groups on how we plan to promote the events and what you can do to help. Our goal is to minimize the amount of work for our groups while maximizing impact. \r\n\r\nif you're interested in hosting a community screening, please complete this form: https://docs.google.com/forms/d/e/1FAIpQLSd_0ket21ABTYGkF1suwQ5ttjalutEt5lAm3a_yq8ANiCGU-w/viewform?usp=header:  and/or reach out with questions to adrienne@turninglifeon.org",
+      "end_time": "2026-11-02T13:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_slug": null,
+      "host_type": "Organization",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-community-screenings-how-to-gen-ai-and-your-attention-please.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-community-screenings-how-to-gen-ai-and-your-attention-please"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-community-screenings-how-to-gen-ai-and-your-attention-please",
+      "start_time": "2026-11-02T12:00:00-05:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Ed Tech"
+      ],
+      "title": "Community Screenings How To: Gen:AI and Your Attention Please",
+      "virtual": true,
+      "virtual_link": "https://meet.google.com/rih-ceub-dth?pli=1https://meet.google.com/rih-ceub-dth?pli=1"
     },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTkwNywicHVyIjoiYmxvYl9pZCJ9fQ==--1b9d2da5139f165e85a9eef8f0022929f16065a1/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
@@ -619,5 +647,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-09-30T07:07:05+00:00"
+  "updated": "2026-09-30T19:06:59+00:00"
 }
