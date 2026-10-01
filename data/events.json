@@ -1,35 +1,6 @@
 {
-  "count": 22,
+  "count": 21,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--e7ca44818b30876efafbf4c3a0cfddd08795c354/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/download-1.png",
-      "description": "This call is for community leads in MA to share strategies, wins and challenges to leverage collective action in MA. Whether you're a seasoned community lead already in the thick of it or just starting out, we are here to support each other!\r\n",
-      "end_time": "2026-10-01T13:00:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-coalition-call-34bc1f41-dac3-41a8-b248-d24f5710637b",
-      "start_time": "2026-10-01T12:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Coalition Call",
-      "virtual": true,
-      "virtual_link": "https://meet.google.com/rih-ceub-dth"
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--fc08544c5552c2e3fc50ad1cc42ddccf64099d70/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
       "description": "This event is for parents and youth of all ages.\r\n\r\nIn many high-performing communities, young people absorb a powerful\u2014and often unintentional\u2014message: that their worth is tied to grades, accolades, and productivity. The result is rising rates of anxiety, burnout, and disconnection, even among kids who are doing everything \u201cright.\u201d\r\n\r\nThis event introduces the concept of mattering\u2014the idea that young people thrive when they feel seen, valued, and connected, not just evaluated.\r\n\r\nSpeaker Stephanie Malia Krauss is an educator and author of How We Thrive: Caring for Kids and Ourselves in a Changing World and Whole Child, Whole Life. Drawing on research and real-world experience, she offers parents, educators, and young people practical ways to push back against achievement culture and create conditions where youth\u2014and the adults who support them\u2014can truly flourish.\r\n\r\nBring friends and family.",
@@ -624,5 +595,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-01T07:07:13+00:00"
+  "updated": "2026-10-01T19:05:11+00:00"
 }
