@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The community pact &middot; Turning Life On</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.doc{max-width:760px}
+.doc h2{font-size:clamp(26px,3.2vw,36px);margin-top:44px}
+.doc h2:first-of-type{margin-top:0}
+.doc h3{font-size:20px;margin-top:30px}
+.doc p{font-size:17px;color:var(--body);margin-top:14px}
+.doc p b{color:var(--slate)}
+.doc ul{margin-top:14px;padding-left:22px;display:grid;gap:9px}
+.doc li{font-size:17px;color:var(--body)}
+.doc ol{margin-top:14px;padding-left:22px;display:grid;gap:9px}
+.doc .meta{font-size:14.5px;color:#8a939c;margin-top:8px}
+.doc .pending{background:var(--mist);border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:16px 20px;margin-top:20px;font-size:15.5px;color:var(--slate)}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!--SHELL:nav-->
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="../index.html" aria-label="Turning Life On, home">
+      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
+      <div class="tag">KEEP TECH IN CHECK</div>
+    </a>
+    <nav id="nav">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul>
+        <li><a class="navlink" href="../index.html">Home</a></li>
+        <li><a class="navlink" href="../about.html">About</a></li>
+        <li><a class="navlink" href="../communities.html">Communities</a></li>
+        <li><a class="navlink" href="../learn.html">Learn</a></li>
+        <li><a class="navlink" href="../get-involved.html">Get Involved</a></li>
+        <li><a class="navlink" href="../attend.html">Attend</a></li>
+        <li><a class="btn btn-line btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></li>
+        <li><a class="btn btn-orange btn-sm" href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--/SHELL:nav-->
+
+<main id="main">
+<section class="s"><div class="wrap doc">
+  <div class="kick">Slow tech at home</div>
+  <h2>The community pact</h2>
+  <p>More childhood before the phone. The pact is a promise among families in the same grade to wait on smartphones until high school and social media until 16. Waiting is so much easier when you're not the only family doing it.</p>
+  <div class="pending">The statewide pact is being built on Four Norms. This address is reserved for it, so any link you share now will keep working once it's live.</div>
+  <p>In the meantime, add your name below and we'll tell you the moment it opens.</p>
+  <div data-joinform style="margin-top:28px">
+    <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll let you know when the pact opens.</p></noscript>
+  </div>
+</div></section>
+</main>
+
+<!--SHELL:footer-->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Turning Life On</h4>
+        <p>A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+        <p style="margin-top:14px"><a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="flist">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../communities.html">Communities</a></li>
+          <li><a href="../learn.html">Learn</a></li>
+          <li><a href="../get-involved.html">Get Involved</a></li>
+          <li><a href="../attend.html">Attend</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="flist">
+          <li>Concord, Massachusetts</li>
+          <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+          <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+          <li><a href="../privacy/">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
+  </div>
+</footer>
+<!--/SHELL:footer-->
+
+<script src="../assets/nearby.js"></script>
+<script src="../assets/join.js"></script>
+<script>
+document.getElementById("menubtn").addEventListener("click",function(){
+  var nav=document.getElementById("nav"); nav.classList.toggle("open");
+  this.setAttribute("aria-expanded", nav.classList.contains("open"));
+});
+</script>
+</body></html>

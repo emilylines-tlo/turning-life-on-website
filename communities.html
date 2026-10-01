@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us &mdash; Turning Life On</title>
+<title>Our Network &mdash; Turning Life On</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="assets/site.css">
 <style>
 :root{
@@ -109,6 +110,24 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 .btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
 .btn-line:hover{background:var(--slate);color:#fff}
 .navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
+.zipbox{background:var(--mist);border-radius:4px;padding:22px 24px;margin-bottom:22px}
+.zipform label{display:block;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--slate);margin-bottom:10px}
+.zipfields{display:flex;flex-wrap:wrap;gap:10px}
+.zipfields input{font-family:'Mulish',sans-serif;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:2px;width:190px;background:#fff;color:var(--ink)}
+.zipfields input:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+.zipclear{background:#fff;border:1px solid var(--line);color:var(--slate)}
+.zipclear:hover{border-color:var(--teal);color:var(--teal)}
+.zipresult{font-size:15px;color:#4a4f52;margin:12px 0 0;min-height:1px}
+.zipresult.err{color:var(--orange-d)}
+.map{height:460px;border-radius:4px;border:1px solid var(--line);background:var(--mist);display:flex;align-items:center;justify-content:center}
+.map .leaflet-container{font-family:'Mulish',sans-serif}
+.mapnote{font-size:15px;color:#5c6468}
+.pop-nm{font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--slate);display:block}
+.pop-loc{font-size:13px;color:#5c6468;display:block;margin-top:2px}
+.pop-approx{font-size:12px;color:#8a8f92;display:block;margin-top:4px;font-style:italic}
+.dir a.near{outline:2px solid var(--teal);outline-offset:-2px}
+.dir .dist{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:#5c6468;text-decoration:none;font-size:13px;margin-top:4px}
+.evstamp{font-size:12.5px;color:#8a8f92;margin-top:22px}
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -129,8 +148,8 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
       <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <ul>
         <li><a class="navlink" href="index.html">Home</a></li>
-        <li><a class="navlink active" href="about.html">About</a></li>
-        <li><a class="navlink" href="communities.html">Communities</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
+        <li><a class="navlink active" href="communities.html">Communities</a></li>
         <li><a class="navlink" href="learn.html">Learn</a></li>
         <li><a class="navlink" href="get-involved.html">Get Involved</a></li>
         <li><a class="navlink" href="attend.html">Attend</a></li>
@@ -143,52 +162,40 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--/SHELL:nav-->
 <main>
 
-  <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg');min-height:420px">
+  <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1751987933156-SO6MGBTJGZ7DZAUDGAD3/unsplash-image-Zyx1bK9mqmA.jpg');min-height:420px">
     <div class="wrap inner">
-      <span class="tblock lg">we are the movement</span>
-      <span class="subhero">We empower communities through collaboration, resources, and real conversations.</span>
-    </div>
-  </section>
-  <section class="s">
-    <div class="wrap read">
-      <div class="kick">Who we are</div>
-      <h2>We grew up here</h2>
-      <p>Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology. What sets us apart is where we came from: we didn't parachute into Massachusetts, we grew up here.</p>
-      <p>Since 2017, that grassroots start has become a network of experienced, in-state community leads who know the particular challenges and opportunities in Massachusetts districts and towns, because they have lived them. Our playbooks are tested in real Massachusetts communities, not adapted from somewhere else, and nearly a decade of local work has built direct lines to the people who make policy here, including the Massachusetts Attorney General's Office, the State House, and the Governor's Office.</p>
-      <p>We support all of this with playbooks, funding, networking, and expert resources, and every dollar we raise goes straight to local groups on the ground. Together, we are building room for kids to learn, play, and connect in the real world.</p>
-    </div>
-  </section>
-  <section class="s mist">
-    <div class="wrap imgrow">
-      <div>
-        <div class="kick">Our philosophy</div>
-        <h2>A continuum, not a switch</h2>
-        <p>Technology use exists on a continuum, from constant, compulsive engagement to complete disconnection. Our goal is to help families, schools, and communities move toward a healthier, more intentional, age-appropriate relationship with tech, wherever they are starting from.</p>
-        <p><strong>We are not anti-tech.</strong> We recognize what technology makes possible, and we meet people where they are, supporting any step toward balance.</p>
-      </div>
-      <div class="pic" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg')"></div>
+      <span class="tblock lg">Find your community</span>
+      <span class="subhero">Our communities bring together local parents, educators, and professionals. Together, we inspire positive change.</span>
+      <div class="btns"><a class="btn btn-orange" href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Get Involved</a></div>
     </div>
   </section>
   <section class="s">
     <div class="wrap">
-      <div class="kick">Our team</div>
-      <h2>Led by parents and advocates</h2>
-      <p class="lede" style="max-width:62ch;margin-bottom:28px">Turning Life On is led by parents and advocates who do this work in their own communities, too.</p>
-      <div class="team">
-        <div class="member"><div class="name">Adrienne Principe</div><div class="role">Founder</div><p>A certified Child and Teen Coach with a background in media, communication, and political science. A founding member of the Screens in Schools Working Group and an active voice for the Distraction Free Schools Movement in MA.</p></div>
-        <div class="member"><div class="name">Jennifer Henderson</div><div class="role">Vice President &middot; Policy &amp; Advocacy</div><p>A certified Digital Wellbeing coach who co-chairs the Distraction Free Schools Policy Project, with the goal of phone-free schools across MA, and serves on the board of Smartphone Free Childhood U.S.</p></div>
-        <div class="member"><div class="name">Jeff Miller</div><div class="role">Treasurer</div><p>An advocate for Wait Until 8th and phone-free schools in Arlington, MA. He serves on nonprofit boards including Smartphone Free Childhood U.S. and the Arlington Libraries Foundation.</p></div>
-        <div class="member"><div class="name">Wendi Hoffer</div><div class="role">Director of Community Engagement</div><p>A passionate advocate for a more human, less digital childhood, based in Lexington, MA, with a personal focus on cyberbullying and tech's impact on mental health. <span class="flag">[Full bio to be finalized from current site.]</span></p></div>
+      <div class="kick">Communities across New England and beyond</div>
+      <h2 style="margin-bottom:20px">Discover how communities are making a difference</h2>
+      <div class="zipbox">
+        <form id="zipform" class="zipform" novalidate>
+          <label for="zipinput">Find a group near you</label>
+          <div class="zipfields">
+            <input id="zipinput" name="zip" type="text" inputmode="numeric" autocomplete="postal-code"
+                   maxlength="5" placeholder="Your ZIP code" aria-describedby="zipresult">
+            <button class="btn btn-teal btn-sm" type="submit">Search</button>
+            <button class="btn btn-sm zipclear" type="button" id="zipclear" hidden>Show all</button>
+          </div>
+        </form>
+        <p class="zipresult" id="zipresult" role="status"></p>
+      </div>
+      <div id="map" class="map" role="region" aria-label="Map of coalition communities">
+        <p class="mapnote">Loading map&hellip;</p>
       </div>
     </div>
   </section>
   <section class="s mist">
-    <div class="wrap read">
-      <div class="kick">Our story</div>
-      <h2>How we began</h2>
-      <p class="flag" style="margin-bottom:14px">Draft placeholder, built only from verifiable facts. To be confirmed and expanded by the board.</p>
-      <p>Turning Life On began with a worry shared by many parents: technology was arriving earlier and taking up more of childhood than felt right. What started as local conversations grew into a coalition of parents, educators, and professionals working community by community to change the norms around tech.</p>
-      <p>Today, Turning Life On supports leaders across Massachusetts and New England, giving them the resources, funding, and connections to build movements that fit their own communities. The work is local, the support is shared, and the goal is the same everywhere: more room for kids to simply be kids.</p>
+    <div class="wrap">
+      <div class="kick">Directory</div>
+      <h2 style="margin-bottom:22px">Explore local communities</h2>
+      <div class="dir" id="dir"><p class="mapnote">Loading communities&hellip;</p></div>
+      <p class="evstamp" id="dirstamp"></p>
     </div>
   </section>
 
@@ -233,5 +240,168 @@ document.getElementById('menubtn').addEventListener('click',function(){
   var nav=document.getElementById('nav'); nav.classList.toggle('open');
   this.setAttribute('aria-expanded', nav.classList.contains('open'));
 });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/nearby.js"></script>
+<script>
+/* Coalition communities map, ZIP search and directory.
+   All three read data/groups.json, which is refreshed from Four Norms.
+   The ZIP-to-location table is only downloaded if someone actually searches. */
+(function(){
+  var mapEl = document.getElementById('map');
+  var dirEl = document.getElementById('dir');
+  var stampEl = document.getElementById('dirstamp');
+  var form = document.getElementById('zipform');
+  var input = document.getElementById('zipinput');
+  var resultEl = document.getElementById('zipresult');
+  var clearBtn = document.getElementById('zipclear');
+
+  var groups = [];
+  var map = null;
+  var markers = [];
+  var hereMarker = null;
+
+  var esc = TLO.esc;
+  var place = TLO.place;
+  var milesBetween = TLO.miles;
+
+  function buildMap(){
+    mapEl.innerHTML = '';
+    map = L.map('map', {scrollWheelZoom: false}).setView([42.3, -71.4], 8);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var icon = L.divIcon({
+      className: '',
+      html: '<div style="width:16px;height:16px;background:#3f9b9b;border:2px solid #fff;' +
+            'border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>',
+      iconSize: [16, 16], iconAnchor: [8, 16], popupAnchor: [0, -14]
+    });
+
+    var pts = [];
+    groups.forEach(function(g){
+      if (typeof g.lat !== 'number' || typeof g.lon !== 'number') return;
+      var body = '<span class="pop-nm">' + esc(g.display_name || g.name) + '</span>' +
+                 '<span class="pop-loc">' + esc(place(g)) + '</span>';
+      if (g.web_url) {
+        body += '<a href="' + esc(g.web_url) + '" target="_blank" rel="noopener">Visit this community</a>';
+      }
+      if (g.approx_location) {
+        body += '<span class="pop-approx">Covers a wider area; pin is approximate.</span>';
+      }
+      markers.push(L.marker([g.lat, g.lon], {icon: icon, title: g.display_name || g.name})
+        .addTo(map).bindPopup(body));
+      pts.push([g.lat, g.lon]);
+    });
+
+    if (pts.length) map.fitBounds(pts, {padding: [40, 40], maxZoom: 10});
+  }
+
+  function renderDirectory(near){
+    var list = groups.slice();
+    if (near){
+      list.forEach(function(g){
+        g._miles = (typeof g.lat === 'number')
+          ? milesBetween(near[0], near[1], g.lat, g.lon) : Infinity;
+      });
+      list.sort(function(a, b){ return a._miles - b._miles; });
+    }
+
+    if (!list.length){
+      dirEl.innerHTML = '<p class="mapnote">Our community list could not be loaded just now. ' +
+        '<a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
+        'Visit the Community Portal</a>.</p>';
+      return;
+    }
+
+    dirEl.innerHTML = list.map(function(g, i){
+      var href = g.web_url || 'https://papa.fournorms.com/turning-life-on';
+      var dist = (near && isFinite(g._miles))
+        ? '<span class="dist">' + TLO.milesLabel(g._miles) + ' away</span>' : '';
+      return '<a href="' + esc(href) + '"' + (g.web_url ? ' target="_blank" rel="noopener"' : '') +
+             (near && i < 3 ? ' class="near"' : '') + '>' +
+             esc(place(g)) + '<span>' + esc(g.display_name || g.name) + '</span>' + dist +
+             '</a>';
+    }).join('');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var zip = (input.value || '').trim();
+    resultEl.className = 'zipresult';
+
+    if (!/^\d{5}$/.test(zip)){
+      resultEl.className = 'zipresult err';
+      resultEl.textContent = 'Please enter a 5-digit ZIP code.';
+      return;
+    }
+
+    resultEl.textContent = 'Searching\u2026';
+    TLO.lookupZip(zip).then(function(here){
+      renderDirectory(here);
+      clearBtn.hidden = false;
+
+      var nearest = groups.slice().sort(function(a, b){
+        return milesBetween(here[0], here[1], a.lat, a.lon) -
+               milesBetween(here[0], here[1], b.lat, b.lon);
+      })[0];
+      var miles = nearest ? Math.round(milesBetween(here[0], here[1], nearest.lat, nearest.lon)) : null;
+
+      if (nearest && miles <= 40){
+        resultEl.textContent = 'Your closest community is ' + (nearest.display_name || nearest.name) +
+          ' in ' + place(nearest) + ', ' + TLO.distancePhrase(miles) + '. ' +
+          'The list below is sorted by distance from you.';
+      } else if (nearest){
+        resultEl.textContent = 'There is no community very close to you yet \u2014 the nearest is ' +
+          (nearest.display_name || nearest.name) + ' in ' + place(nearest) + ', ' + TLO.distancePhrase(miles) +
+          '. Starting one where you live is exactly how the others began.';
+      }
+
+      if (map){
+        if (hereMarker) map.removeLayer(hereMarker);
+        hereMarker = L.circleMarker(here, {
+          radius: 8, color: '#e8821e', weight: 3, fillColor: '#e8821e', fillOpacity: .35
+        }).addTo(map).bindPopup('Your ZIP code area');
+        if (nearest) map.fitBounds([here, [nearest.lat, nearest.lon]], {padding: [60, 60], maxZoom: 10});
+      }
+    }).catch(function(err){
+      resultEl.className = 'zipresult err';
+      resultEl.textContent = (err && err.message === 'unknown-zip')
+        ? 'We could not find that ZIP code. Please check and try again.'
+        : 'The search is unavailable just now. Please browse the full list below.';
+    });
+  });
+
+  clearBtn.addEventListener('click', function(){
+    input.value = '';
+    resultEl.textContent = '';
+    resultEl.className = 'zipresult';
+    clearBtn.hidden = true;
+    renderDirectory(null);
+    if (hereMarker){ map.removeLayer(hereMarker); hereMarker = null; }
+    if (map && markers.length){
+      map.fitBounds(markers.map(function(m){ return m.getLatLng(); }), {padding: [40, 40], maxZoom: 10});
+    }
+  });
+
+  fetch('data/groups.json', {cache: 'no-cache'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function(d){
+      groups = (d.groups || []).filter(function(g){ return g.city; });
+      renderDirectory(null);
+      if (window.L) buildMap();
+      else mapEl.innerHTML = '<p class="mapnote">The map could not load. The full list of communities is below.</p>';
+      if (d.updated){
+        stampEl.textContent = 'Community information comes from the Turning Life On Community Portal. ' +
+          'Last updated ' + new Date(d.updated).toLocaleDateString([], {month:'long', day:'numeric', year:'numeric'}) + '.';
+      }
+    })
+    .catch(function(){
+      mapEl.innerHTML = '<p class="mapnote">The map could not load just now.</p>';
+      renderDirectory(null);
+    });
+})();
 </script>
 </body></html>
