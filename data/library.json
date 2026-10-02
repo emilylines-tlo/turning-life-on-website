@@ -1,5 +1,5 @@
 {
-  "count": 39,
+  "count": 40,
   "items": [
     {
       "credit": {
@@ -231,6 +231,25 @@
       ],
       "title": "Full Black: Next Steps on Defaults and Digital Product Standards Playbooks",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
+      "description": "A printable sign for events funded by a Turning Life On Community Grant, with a space for your group's name and a donation QR code.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-grant-event-sign",
+      "tags": [
+        "Printable",
+        "For advocates"
+      ],
+      "title": "Grant Event Sign",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-grant-event-sign"
     },
     {
       "credit": {
@@ -805,5 +824,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-10-02T07:06:59+00:00"
+  "updated": "2026-10-02T19:06:10+00:00"
 }
