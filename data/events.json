@@ -1,29 +1,6 @@
 {
-  "count": 21,
+  "count": 20,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--fc08544c5552c2e3fc50ad1cc42ddccf64099d70/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
-      "description": "This event is for parents and youth of all ages.\r\n\r\nIn many high-performing communities, young people absorb a powerful\u2014and often unintentional\u2014message: that their worth is tied to grades, accolades, and productivity. The result is rising rates of anxiety, burnout, and disconnection, even among kids who are doing everything \u201cright.\u201d\r\n\r\nThis event introduces the concept of mattering\u2014the idea that young people thrive when they feel seen, valued, and connected, not just evaluated.\r\n\r\nSpeaker Stephanie Malia Krauss is an educator and author of How We Thrive: Caring for Kids and Ourselves in a Changing World and Whole Child, Whole Life. Drawing on research and real-world experience, she offers parents, educators, and young people practical ways to push back against achievement culture and create conditions where youth\u2014and the adults who support them\u2014can truly flourish.\r\n\r\nBring friends and family.",
-      "end_time": "2026-10-01T20:30:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On | ThinkGive",
-      "host_slug": "thinkgive",
-      "host_type": "Group",
-      "host_url": "https://www.fournorms.com/turning-life-on/thinkgive",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6.json",
-        "web_url": "https://www.fournorms.com/events/thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "thinkgive-mattering-in-a-high-pressure-world-helping-teens-thrive-beyond-achievement-culture-dd5d791a-0f00-4d9d-ba91-0afb30a9d8e6",
-      "start_time": "2026-10-01T19:00:00-04:00",
-      "tags": [],
-      "title": "Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture",
-      "virtual": false,
-      "virtual_link": null
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjcyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b3217bfcefa48b51ba10b0e3afdf2eff5d8df871/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
       "description": "With so much going on across the state and the country, there is no better time than now to advocate for district-level changes. We'll walk you through how to build your network and how to advocate for change right in your own community. \r\nYou don't have to be an expert to have an impact. Providing a supportive environment for parents, educators, and professionals to share their struggles and successes is what really matters. When parents realize they are not alone, they can create reasonable norms to adopt in their families, in their schools, and in their communities.",
@@ -595,5 +572,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-01T19:05:11+00:00"
+  "updated": "2026-10-02T07:06:58+00:00"
 }
