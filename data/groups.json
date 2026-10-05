@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 20,
   "groups": [
     {
       "affiliation": null,
@@ -124,6 +124,17 @@
     },
     {
       "affiliation": null,
+      "city": "Needham",
+      "display_name": null,
+      "lat": 42.2781042,
+      "lon": -71.2323292,
+      "name": "Schools Beyond Screen Needham",
+      "slug": "schools-beyond-screen-needham",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/schools-beyond-screen-needham"
+    },
+    {
+      "affiliation": null,
       "city": "Northampton",
       "display_name": null,
       "lat": 42.3213098,
@@ -211,5 +222,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-10-04T21:21:20+00:00"
+  "updated": "2026-10-05T07:11:15+00:00"
 }
