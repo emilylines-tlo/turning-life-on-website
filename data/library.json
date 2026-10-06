@@ -91,8 +91,11 @@
       },
       "slug": "tlo-social-media-use-policy-playbook",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Blue"
       ],
       "title": "Blue Tier 1: Social Media Use Policy Playbook",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-social-media-use-policy-playbook"
@@ -102,7 +105,7 @@
         "name": "Turning Life On",
         "source_url": ""
       },
-      "description": "This priority sets a grade-band framework for school-issued devices\r\nincluding hands-on, print-based instruction in the earliest grades,\r\nshared cart-based devices in middle school, and one-to-one devices\r\nonly in high school with real caregiver opt-in and safeguards. It pairs\r\nnaturally with Healthy Defaults and the Social Media Use Policy, but\r\nit doesn\u2019t require either one: a district can adopt this on its own.",
+      "description": "This priority sets a grade-band framework for school-issued devices including hands-on, print-based instruction in the earliest grades, shared cart-based devices in middle school, and one-to-one devices only in high school with real caregiver opt-in and safeguards. It pairs naturally with Healthy Defaults and the Social Media Use Policy, but it doesn\u2019t require either one: a district can adopt this on its own.",
       "publisher": {
         "name": "Turning Life On",
         "type": "Organization",
@@ -110,8 +113,11 @@
       },
       "slug": "tlo-tiered-access-to-screens-by-grade-band-playbook",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Blue"
       ],
       "title": "Blue Tier 2: Tiered access to screens by grade band playbook",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tiered-access-to-screens-by-grade-band-playbook"
@@ -121,7 +127,7 @@
         "name": "Turning Life On",
         "source_url": ""
       },
-      "description": "A Tech Advisory Committee is a standing parent and community\r\nvoice researching and recommending how the district approaches\r\ntechnology. It gives families a real, standing voice in the district\u2019s\r\ntechnology direction.",
+      "description": "A Tech Advisory Committee is a standing parent and community voice researching and recommending how the district approaches\r\ntechnology. It gives families a real, standing voice in the district\u2019s technology direction.",
       "publisher": {
         "name": "Turning Life On",
         "type": "Organization",
@@ -129,8 +135,11 @@
       },
       "slug": "tlo-tech-advisory-council-playbook",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Blue"
       ],
       "title": "Blue Tier 3: Tech Advisory Committee Playbook",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tech-advisory-council-playbook"
@@ -140,7 +149,7 @@
         "name": "Turning Life On",
         "source_url": ""
       },
-      "description": "Blue tier priorities ask a bit more of a district than\r\nGreen: they touch handbooks, device management, and vendor review. They can be adopted locally, on a district's own timeline.",
+      "description": "Blue tier priorities ask a bit more of a district than Green: they touch handbooks, device management, and vendor review. They can be adopted locally, on a district's own timeline.",
       "publisher": {
         "name": "Turning Life On",
         "type": "Organization",
@@ -148,8 +157,11 @@
       },
       "slug": "tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Blue"
       ],
       "title": "Blue Tier: Pick up the pace playbooks: Social Media Use Policy \u00b7 Tiered Access to Screens by Grade Band \u00b7 Tech AdvisoryCommittee (TAC)",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac"
@@ -264,8 +276,10 @@
       },
       "slug": "tlo-green-tier-1-ditch-free-screen-time",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates"
       ],
       "title": "Green Tier 1: Ditch \"Free\" Screen-time",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-1-ditch-free-screen-time"
@@ -284,7 +298,9 @@
       "slug": "tlo-green-tier-2-phone-free-schools-policy",
       "tags": [
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Green"
       ],
       "title": "Green Tier 2: Phone-free Schools Policy",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-2-phone-free-schools-policy"
@@ -294,7 +310,7 @@
         "name": "Turning Life On",
         "source_url": ""
       },
-      "description": "This priority asks districts to work with IT to enable a set of settings\r\nmost schools already have access to. These include downtime hours,\r\nafter-hours restrictions, and blocked full YouTube access, allowing\r\nonly teacher-embedded videos.",
+      "description": "This priority asks districts to work with IT to enable a set of settings most schools already have access to. These include downtime hours, after-hours restrictions, and blocked full YouTube access, allowing only teacher-embedded videos.",
       "publisher": {
         "name": "Turning Life On",
         "type": "Organization",
@@ -303,7 +319,9 @@
       "slug": "tlo-green-tier-3-healthy-defaults-on-school-devices",
       "tags": [
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates",
+        "Green"
       ],
       "title": "Green Tier 3: Healthy Defaults on School Devices",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-3-healthy-defaults-on-school-devices"
@@ -321,8 +339,10 @@
       },
       "slug": "tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates"
       ],
       "title": "Green Tier: Ditch \"Free\" Screen Time \u00b7 Phone-Free School Day \u00b7 Healthy Defaults on School Devices Playbook",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook"
@@ -360,8 +380,10 @@
       },
       "slug": "tlo-key-terms-in-edtech",
       "tags": [
+        "Playbook",
         "Guide",
-        "Research And Reference"
+        "Research And Reference",
+        "For advocates"
       ],
       "title": "Key Terms in EdTech",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-key-terms-in-edtech"
@@ -812,10 +834,12 @@
   ],
   "tags": [
     "AI",
+    "Blue",
     "Distraction Free Schools",
     "For advocates",
     "For parents",
     "Free-play",
+    "Green",
     "Guide",
     "Legislation",
     "Playbook",
@@ -824,5 +848,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-10-05T07:11:15+00:00"
+  "updated": "2026-10-06T07:07:20+00:00"
 }

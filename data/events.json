@@ -1,35 +1,6 @@
 {
-  "count": 20,
+  "count": 21,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjcyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b3217bfcefa48b51ba10b0e3afdf2eff5d8df871/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
-      "description": "With so much going on across the state and the country, there is no better time than now to advocate for district-level changes. We'll walk you through how to build your network and how to advocate for change right in your own community. \r\nYou don't have to be an expert to have an impact. Providing a supportive environment for parents, educators, and professionals to share their struggles and successes is what really matters. When parents realize they are not alone, they can create reasonable norms to adopt in their families, in their schools, and in their communities.",
-      "end_time": "2026-10-05T13:00:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-building-101.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-building-101"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-coalition-building-101",
-      "start_time": "2026-10-05T12:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Coalition Building 101",
-      "virtual": true,
-      "virtual_link": "https://meet.google.com/rih-ceub-dth"
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjgzOSwicHVyIjoiYmxvYl9pZCJ9fQ==--98ab4be4486821b1ad8678f3e9e2380c92f1d931/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOls4MDAsMjUwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--8dc1b429ac2855bcb42e462cb8237a7133f483dc/IMG_8648.jpeg",
       "description": "Come join an evening of community connection alongside a local author and expert Dr. Meredith Elkins. Whether you have parenting anxiety or are actually parenting a child with anxiety, this event will explore both experiences. Join Meredith in a conversation with a panel of educators and parents surrounding her book Parenting Anxiety: Breaking the Cycle of Worry and Raising Resilient Kids. No RSVP required. Feel free to read the book ahead of the event or copies will be available the next night of the event as well.",
@@ -115,6 +86,35 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     },
     {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMywicHVyIjoiYmxvYl9pZCJ9fQ==--e81557fa2fc50c76b73e6b7b4f88da9861e61c96/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Cover%20for%20Four%20Norms.png",
+      "description": "Join local parents, teens, and experts for\r\nan honest, practical, judgment-free conversation about kids and technology. Bring your questions,\r\nconcerns, and experiences. Leave with ideas, resources, and strategies you can actually use at\r\nhome.",
+      "end_time": "2026-10-20T20:30:00-04:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | Reconnect Nashoba Valley",
+      "host_slug": "reconnect-nashoba-valley",
+      "host_type": "Group",
+      "host_url": "https://www.fournorms.com/turning-life-on/reconnect-nashoba-valley",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/reconnect-nashoba-valley-raising-kids-in-a-digital-world.json",
+        "web_url": "https://www.fournorms.com/events/reconnect-nashoba-valley-raising-kids-in-a-digital-world"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "reconnect-nashoba-valley-raising-kids-in-a-digital-world",
+      "start_time": "2026-10-20T19:00:00-04:00",
+      "tags": [
+        "Delay Smartphones",
+        "Delay Social Media",
+        "Phone Free Schools",
+        "Independence And Play",
+        "Ed Tech"
+      ],
+      "title": "Raising Kids in a Digital World ",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
       "cover_image_url": null,
       "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\nPlanned for the last Friday of each month at 9am.",
       "end_time": "2026-10-30T10:00:00-04:00",
@@ -193,6 +193,29 @@
       "title": "Coalition Call",
       "virtual": true,
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NSwicHVyIjoiYmxvYl9pZCJ9fQ==--ab1ca907efd114f722751c651c6c4e452d83f19a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/GUW%20image%20(1).png",
+      "description": "This event is for parents and youth of all ages.\r\n\r\nReady to keep exploring what it means to help teens thrive among the pressures of academics, athletics, and social media? A panel of experts in education, child development, and mental health \u2014 along with teens sharing hard-won lessons of their own \u2014 will pick up where the first event left off, with practical, grounded ideas for parents and teens.\r\n\r\nBring friends and family.",
+      "end_time": "2026-11-05T19:30:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | ThinkGive",
+      "host_slug": "thinkgive",
+      "host_type": "Group",
+      "host_url": "https://www.fournorms.com/turning-life-on/thinkgive",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/thinkgive-panel-discussion-from-pressure-to-purpose.json",
+        "web_url": "https://www.fournorms.com/events/thinkgive-panel-discussion-from-pressure-to-purpose"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "thinkgive-panel-discussion-from-pressure-to-purpose",
+      "start_time": "2026-11-05T18:00:00-05:00",
+      "tags": [],
+      "title": "Panel Discussion: From Pressure to Purpose",
+      "virtual": false,
+      "virtual_link": null
     },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--44a68d8304f5df4b298fb19de8ae8822b5bcfeb4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
@@ -572,5 +595,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-05T07:11:11+00:00"
+  "updated": "2026-10-06T07:07:19+00:00"
 }
