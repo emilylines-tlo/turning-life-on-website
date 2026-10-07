@@ -1,0 +1,85 @@
+{
+  "note": "Communities not yet registered on Four Norms. Hand maintained. Delete a row once its group appears in the Four Norms data, or it will show twice.",
+  "communities": [
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Boston",
+      "state": "MA",
+      "lat": 42.3588,
+      "lon": -71.0578,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": "Reconnect Malden",
+      "display_name": "Reconnect Malden",
+      "city": "Malden",
+      "state": "MA",
+      "lat": 42.4268,
+      "lon": -71.0684,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Medfield",
+      "state": "MA",
+      "lat": 42.1866,
+      "lon": -71.3055,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Needham",
+      "state": "MA",
+      "lat": 42.2803,
+      "lon": -71.2361,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Watertown",
+      "state": "MA",
+      "lat": 42.3653,
+      "lon": -71.1843,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Wellesley",
+      "state": "MA",
+      "lat": 42.2965,
+      "lon": -71.2926,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Westborough",
+      "state": "MA",
+      "lat": 42.2694,
+      "lon": -71.613,
+      "web_url": null,
+      "registered": false
+    },
+    {
+      "name": null,
+      "display_name": null,
+      "city": "Woburn",
+      "state": "MA",
+      "lat": 42.4793,
+      "lon": -71.1523,
+      "web_url": null,
+      "registered": false
+    }
+  ]
+}

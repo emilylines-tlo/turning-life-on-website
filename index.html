@@ -13,6 +13,7 @@
 .herotext{padding:80px 56px 80px max(32px,calc((100vw - var(--maxw))/2 + 32px));display:flex;flex-direction:column;justify-content:center}
 .hero .eyebrow{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;color:var(--teal)}
 .hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.02em;margin-top:14px;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--teal)}
 .hero .say{margin-top:22px;font-size:19px;color:var(--body);max-width:46ch}
 .hero .say b{color:var(--slate);font-weight:600;display:block;margin-top:12px}
 .hero .ph{min-height:400px}
@@ -122,11 +123,13 @@
     <div class="herogrid">
       <div class="herotext">
         <p class="eyebrow">Your community, backed by ours.</p>
-        <h1>It's not about turning screens off. It's about turning life on.</h1>
+        <h1>It's not about turning screens off. It's about <em>turning life on</em>.</h1>
         <p class="say">Let's do it together. Whether you're leading a group in your community, stuck on what comes next, or worried and wondering where to start, we'll meet you where you are with people, funding, resources and experience.
           <b>We don't have to let technology reshape childhood.</b></p>
         <div class="btns">
           <a class="btn btn-orange" href="#stuck">Tell us where you're stuck</a>
+        </div>
+        <div class="btns" style="margin-top:16px">
           <a class="textlink" href="#issues">See the issues</a>
           <a class="textlink" href="mailto:adrienne@turninglifeon.org">Contact us</a>
         </div>
@@ -142,20 +145,20 @@
     <div class="wrap">
       <div class="kick">What we're working on</div>
       <h2>The Issues</h2>
-      <p class="lede">Most parents we meet don't want to get rid of technology. They want it to stop running the show. Here's where we put our energy.</p>
+      <p class="lede">Most parents don't want to get rid of technology. They want it to stop running the show. Here's where we put our energy.</p>
       <div class="issuegrid">
         <article class="issue" id="slow-tech">
           <h3>Slow tech at home</h3>
-          <p class="say"><i>More childhood before the phone.</i>We help families wait on smartphones until high school and social media until 16. It's a lot easier when the other families in your kid's grade are waiting too, and that's what our community pact is for.</p>
+          <p class="say"><i>More childhood before the phone.</i>We help families wait on smartphones until high school and social media until 16. It's a lot easier when other families in your kid's grade are waiting too, and that's what our community pact is for.</p>
           <div class="go"><a href="pact/">Sign and share the pact &rarr;</a><a href="learn.html">Why wait? &rarr;</a></div>
         </article>
         <article class="issue" id="distraction-free">
           <h3>Distraction-free learning</h3>
-          <p class="say"><i>School should be the easy part.</i>Kids deserve a school day where they can focus, and classroom tech that's safe and actually helps them learn.</p>
+          <p class="say"><i>School should be the easy part.</i>Kids deserve a school day where they can focus, and classroom tech that's safe and actually helps them learn. We're advocating for phone-free school days and more intentional tech use in education, when it's necessary and appropriate.</p>
           <div class="go"><a href="get-involved.html">Pass phone-free schools now &rarr;</a><a href="learn.html">Learn more &rarr;</a></div>
         </article>
         <article class="issue" id="ai">
-          <h3>AI and childhood</h3>
+          <h3>AI in Childhood</h3>
           <p class="say"><i>Powerful, and unsafe for kids.</i>Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing. Until AI tools are independently proven safe, effective, equitable and private, they don't belong with students.</p>
           <div class="go"><a href="learn.html">What parents need to know &rarr;</a></div>
         </article>
@@ -188,9 +191,9 @@
       <h2>You don't have to know everything. You just have to care.</h2>
       <p class="lede">Leading a local group can feel lonely, especially when the school stops answering your emails. Here's what's behind you.</p>
       <div class="backs">
-        <div class="back"><b>People</b><span>A monthly coalition call, info sessions and in-person meetups with advocates across Massachusetts. Somebody in this network has already hit the wall you're hitting.</span></div>
-        <div class="back"><b>Partnerships</b><span>We work with the Attorney General's Office, the State House and the Governor's Office, plus national groups and professionals who can speak at your events.</span></div>
-        <div class="back"><b>Funding</b><span>As a 501(c)(3), we raise money and give it to local groups so good ideas don't stall for lack of a room or a speaker.</span></div>
+        <div class="back"><b>People</b><span>A monthly coalition call, info sessions and in-person meetups with advocates across Massachusetts. Somebody in this network has already hit the wall you're hitting.</span><a class="btn btn-orange btn-sm" style="margin-top:16px" href="attend.html">Attend an event</a></div>
+        <div class="back"><b>Partnerships</b><span>We work with the Attorney General's Office, the State House and the Governor's Office, plus national groups and professionals who can speak at your events.</span><a class="btn btn-orange btn-sm" style="margin-top:16px" href="mailto:info@turninglifeon.org?subject=Partnering%20with%20Turning%20Life%20On">Partner with us</a></div>
+        <div class="back"><b>Funding</b><span>As a 501(c)(3), we raise money and give it to local groups so good ideas don't stall for lack of a room or a speaker.</span><a class="btn btn-orange btn-sm" style="margin-top:16px" href="community-grants/">Learn more about funding</a></div>
       </div>
     </div>
   </section>
@@ -225,8 +228,9 @@
 
       <div class="changing">
         <h3>What's changing</h3>
-        <p>Meta agreed to a settlement of up to $17.1 billion with state attorneys general over designing its apps to hook young users. Massachusetts is guaranteed about $366 million, and the Attorney General's Office has confirmed some of it will support phone-free school initiatives. <span class="when">(August 2026, pending court approval)</span></p>
+        <p>Big tech is losing in the courthouse and the statehouse. Juries in California and New Mexico found against Meta this year, Texas settled separately for more than $1 billion, and Meta has now settled with a bipartisan group of attorneys general over designing its apps to hook young users. Massachusetts Attorney General Campbell said the protections in that settlement are a floor, not a ceiling. Momentum is on our side. <span class="when">(August 2026, pending court approval)</span></p>
         <p>Both the Massachusetts House and Senate have voted for bell-to-bell phone-free schools, but the final bill is stuck in conference committee. <a href="get-involved.html">Take action &rarr;</a></p>
+        <p>New York City and Los Angeles have both paused generative AI in schools. Massachusetts should do the same.</p>
       </div>
       <p class="verified">All statistics verified September 2026.</p>
     </div>
@@ -269,7 +273,7 @@
       <div>
         <div class="kick">We share experience and connections</div>
         <h2>You won't be starting from scratch</h2>
-        <p class="lede">Parents in communities across Massachusetts, from Arlington to Western Massachusetts, are already doing this work.</p>
+        <p class="lede">Parents in more than 20 Massachusetts communities, from Arlington to Western Massachusetts, are already doing this work.</p>
         <div class="btns">
           <a class="btn btn-orange btn-sm" href="communities.html">See the map</a>
           <a class="textlink" href="communities.html">Find your community</a>
@@ -312,9 +316,9 @@
         <div class="gifts">
           <div class="gift"><b>$50</b><span>covers materials for a parent night</span></div>
           <div class="gift"><b>$250</b><span>covers the room for a community event</span></div>
-          <div class="gift"><b>$1,000</b><span>brings a speaker to a community that couldn't book one on its own</span></div>
+          <div class="gift"><b>$1,000</b><span>helps bring a speaker to a community that couldn't book one on its own</span></div>
         </div>
-        <div class="btns"><a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></div>
+        <div class="btns"><a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a><a class="btn btn-white" href="community-grants/">Apply for a grant</a></div>
       </div>
     </div>
   </section>

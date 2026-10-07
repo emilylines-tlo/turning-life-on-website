@@ -66,6 +66,31 @@ window.TLO = (function(){
     return items.sort(function(a, b){ return a._miles - b._miles; });
   }
 
+
+  /* The full community list: everything Four Norms returns, plus the
+     hand-maintained rows in data/communities-extra.json for groups that are
+     real but not registered on Four Norms yet. A supplement row is dropped
+     automatically once a matching community appears in the live data, so the
+     same place never shows twice. */
+  function loadCommunities(){
+    return Promise.all([
+      loadJSON('data/groups.json').catch(function(){ return {groups: []}; }),
+      loadJSON('data/communities-extra.json').catch(function(){ return {communities: []}; })
+    ]).then(function(res){
+      var live = (res[0].groups || []).filter(function(g){ return g.city; });
+      live.forEach(function(g){ g.registered = true; });
+
+      var seen = {};
+      live.forEach(function(g){ seen[(g.city + '|' + (g.state || '')).toLowerCase()] = true; });
+
+      var extra = (res[1].communities || []).filter(function(c){
+        return c.city && !seen[(c.city + '|' + (c.state || '')).toLowerCase()];
+      });
+
+      return live.concat(extra);
+    });
+  }
+
   function loadJSON(path){
     return fetch(path, {cache: 'no-cache'}).then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -74,5 +99,6 @@ window.TLO = (function(){
   }
 
   return {esc: esc, miles: miles, milesLabel: milesLabel, distancePhrase: distancePhrase, lookupZip: lookupZip, place: place,
+          loadCommunities: loadCommunities,
           byDistance: byDistance, loadJSON: loadJSON};
 })();

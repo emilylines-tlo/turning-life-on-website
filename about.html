@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us &mdash; Turning Life On</title>
+<title>About Us &middot; Turning Life On</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -72,13 +72,6 @@ section.s.teal p{color:rgba(255,255,255,.95)}
 .card{background:var(--mist);border-radius:4px;padding:30px}
 .card .tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
 .card h3{font-size:22px} .card p{font-size:16px;margin:10px 0 18px}
-.spot{text-align:center}
-.spot h2{font-size:clamp(34px,5vw,52px);color:var(--ink);margin-bottom:34px}
-.townrow{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
-.town{background:var(--mist);border-radius:3px;padding:30px 18px}
-.town .nm{font-family:'Poppins',sans-serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:14px}
-.town a{display:block;color:var(--orange);text-decoration:underline;font-size:15px;margin-bottom:8px}
-.spot .more{margin-top:30px}
 .wave{display:block;width:100%;height:40px;margin-top:10px}
 .team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .member{background:var(--mist);border-radius:4px;padding:26px}
@@ -109,6 +102,25 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 .btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
 .btn-line:hover{background:var(--slate);color:#fff}
 .navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
+.s h2 em{font-style:normal;color:var(--teal)}
+.read p{font-size:17px;color:var(--body);margin-top:16px}
+.read p b{color:var(--slate)}
+.watch{background:var(--mist);border-radius:4px;padding:16px 20px}
+.await{font-style:italic;color:var(--orange-d);font-size:14.5px}
+.creds{list-style:none;margin-top:26px;display:grid;gap:14px;max-width:900px}
+.creds li{font-size:16.5px;color:var(--body);padding-left:22px;position:relative;line-height:1.6}
+.creds li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:9px;background:var(--teal);border-radius:50%}
+.creds li b{color:var(--slate)}
+.photo-wide{margin-top:34px;aspect-ratio:16/8;border-radius:4px}
+.pull{margin-top:30px;border-left:4px solid var(--orange);padding-left:22px}
+.pull p{font-family:'Poppins',sans-serif;font-weight:600;font-size:20px;line-height:1.35;color:var(--slate)}
+.pull cite{display:block;margin-top:12px;font-style:normal;font-size:14px;color:#8a939c}
+.newsgrid{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.newsgrid article{background:#fff;border-radius:4px;padding:22px}
+.newsgrid b{font-family:'Poppins',sans-serif;font-size:16.5px;color:var(--slate);display:block}
+.newsgrid em{display:block;font-style:normal;font-size:13px;color:var(--teal);margin-top:4px}
+.newsgrid span{display:block;margin-top:10px;font-size:15px;color:var(--body)}
+@media (max-width:900px){ .newsgrid{grid-template-columns:1fr} }
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -141,54 +153,107 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
   </div>
 </header>
 <!--/SHELL:nav-->
-<main>
+<main id="main">
 
-  <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg');min-height:420px">
-    <div class="wrap inner">
-      <span class="tblock lg">we are the movement</span>
-      <span class="subhero">We empower communities through collaboration, resources, and real conversations.</span>
+  <section class="s cream">
+    <div class="wrap">
+      <h2>We <em>are</em> the movement.</h2>
+      <p class="lede">Parents, educators and professionals across Massachusetts, working together so kids can learn, play and connect in the real world.</p>
+      <div class="btns"><a class="btn btn-orange" href="#join">Join the movement</a></div>
     </div>
   </section>
+
   <section class="s">
     <div class="wrap read">
       <div class="kick">Who we are</div>
-      <h2>We grew up here</h2>
-      <p>Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology. What sets us apart is where we came from: we didn't parachute into Massachusetts, we grew up here.</p>
-      <p>Since 2017, that grassroots start has become a network of experienced, in-state community leads who know the particular challenges and opportunities in Massachusetts districts and towns, because they have lived them. Our playbooks are tested in real Massachusetts communities, not adapted from somewhere else, and nearly a decade of local work has built direct lines to the people who make policy here, including the Massachusetts Attorney General's Office, the State House, and the Governor's Office.</p>
-      <p>We support all of this with playbooks, funding, networking, and expert resources, and every dollar we raise goes straight to local groups on the ground. Together, we are building room for kids to learn, play, and connect in the real world.</p>
+      <h2>We <em>grew up</em> here</h2>
+      <p>Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology. What sets us apart is where we came from: we didn't parachute into Massachusetts, we grew up here. Since 2017, our grassroots start has become a network of experienced, in-state community leads who know the unique challenges and opportunities in Massachusetts communities and districts because we've lived them.</p>
+      <p>We back local groups with playbooks, funding, connections and expert support, so more kids get room to learn, play and connect in the real world.</p>
+      <p class="watch">Watch: <b>It Happens Here: Concord's Push To Revolutionize Kids And Phones</b>, October 2018. A WBZ-4 interview detailing how we started. <em class="await">Link to come.</em></p>
     </div>
   </section>
+
   <section class="s mist">
-    <div class="wrap imgrow">
-      <div>
-        <div class="kick">Our philosophy</div>
-        <h2>A continuum, not a switch</h2>
-        <p>Technology use exists on a continuum, from constant, compulsive engagement to complete disconnection. Our goal is to help families, schools, and communities move toward a healthier, more intentional, age-appropriate relationship with tech, wherever they are starting from.</p>
-        <p><strong>We are not anti-tech.</strong> We recognize what technology makes possible, and we meet people where they are, supporting any step toward balance.</p>
-      </div>
-      <div class="pic" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg')"></div>
+    <div class="wrap">
+      <div class="kick">Why communities turn to us</div>
+      <h2>Nearly a <em>decade</em> of groundwork</h2>
+      <p class="lede">Here's how our experience supports your work.</p>
+      <ul class="creds">
+        <li><b>Direct lines to decision-makers.</b> We work with the Massachusetts Attorney General's Office, the State House and the Governor's Office, and were invited to join Governor Healey for her announcement of new social media protections for kids in May 2026.</li>
+        <li><b>Leaders who've done this work.</b> Our board includes a founding member of the Children's Screen Time Action Network's Screens in Schools Working Group, a former co-lead of the Distraction Free Schools Policy Project, a founding member and former co-lead of Smartphone Free Childhood U.S., and a Smartphone Free Childhood U.S. board member. Our leaders have founded local groups in Arlington, Concord, Lexington and the Nashoba Valley, and have experience in education, technology, communication and non-profits.</li>
+        <li><b>National partners.</b> Fairplay, The Anxious Generation, the Four Norms Leadership Circle and Culture Reframed, to name a few, work with us to bring the latest research and strategy to our local leads.</li>
+        <li><b>Playbooks built here.</b> Tested in real Massachusetts districts, not adapted from somewhere else.</li>
+        <li><b>Funding for local groups.</b> We raise money so community leads can pay for rooms, speakers and events, and we're dedicated to growing our philanthropic base to support even more communities.</li>
+        <li><b>A network of experienced leads.</b> People who know the challenges in Massachusetts, and the openings too.</li>
+      </ul>
+      <p class="lede" style="margin-top:24px">A statewide coalition moves faster. When one community figures something out, every other community benefits.</p>
+
+      <figure class="ph photo-wide">
+        <img src="assets/img/healey.jpg" alt="Turning Life On board members with Governor Maura Healey">
+        <div class="shot"><b>Photo &middot; assets/img/healey.jpg</b><span>Governor Healey's social media press conference, May 2026.</span></div>
+        <figcaption>Turning Life On was invited to join Governor Maura Healey for her announcement of new social media protections for kids, May 2026. From left: Jeff Miller, Emily Lines, Wendi Hoffer, Adrienne Principe, Governor Healey, Erica Walsh (Winchester), Katie O'Connor (Winchester) and Jackie Berry (Sudbury).</figcaption>
+      </figure>
     </div>
   </section>
+
+  <section class="s" id="join">
+    <div class="wrap">
+      <div class="kick">Join us</div>
+      <h2><em>Ready</em> when you are.</h2>
+      <p class="lede">If you're in Massachusetts and want to make a difference where you live, we're the coalition built to go the distance with you.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="communities.html#find">Find a group near you</a>
+        <a class="textlink" href="communities.html#start">Start one in your community</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s mist">
+    <div class="wrap read">
+      <div class="kick">What we believe</div>
+      <h2>A continuum, not a switch</h2>
+      <p>Technology use exists on a continuum, from constant, compulsive engagement to complete disconnection. Our goal is to help families, schools, and communities move toward a healthier, more intentional, and age-appropriate relationship with tech, regardless of where they are starting from.</p>
+      <p><b>We are not anti-tech.</b> We recognize what technology makes possible, and we meet people where they are, supporting any step toward balance.</p>
+      <div class="btns">
+        <a class="btn btn-orange btn-sm" href="learn.html#start-here">Learn more about where we stand</a>
+        <a class="btn btn-line btn-sm" href="learn.html#start-here">A holistic approach to keeping tech in check</a>
+      </div>
+      <blockquote class="pull">
+        <p>&ldquo;It's less about turning screens off. TLO is about turning on relationships, curiosity, senses, support, and activism. It's about letting tech take a back seat to life and raising children in the real world.&rdquo;</p>
+        <cite>Jean Rogers, M.S.Ed., Director, Screen Time Action Network at Fairplay</cite>
+      </blockquote>
+    </div>
+  </section>
+
   <section class="s">
     <div class="wrap">
       <div class="kick">Our team</div>
-      <h2>Led by parents and advocates</h2>
-      <p class="lede" style="max-width:62ch;margin-bottom:28px">Turning Life On is led by parents and advocates who do this work in their own communities, too.</p>
-      <div class="team">
-        <div class="member"><div class="name">Adrienne Principe</div><div class="role">Founder</div><p>A certified Child and Teen Coach with a background in media, communication, and political science. A founding member of the Screens in Schools Working Group and an active voice for the Distraction Free Schools Movement in MA.</p></div>
-        <div class="member"><div class="name">Jennifer Henderson</div><div class="role">Vice President &middot; Policy &amp; Advocacy</div><p>A certified Digital Wellbeing coach who co-chairs the Distraction Free Schools Policy Project, with the goal of phone-free schools across MA, and serves on the board of Smartphone Free Childhood U.S.</p></div>
-        <div class="member"><div class="name">Jeff Miller</div><div class="role">Treasurer</div><p>An advocate for Wait Until 8th and phone-free schools in Arlington, MA. He serves on nonprofit boards including Smartphone Free Childhood U.S. and the Arlington Libraries Foundation.</p></div>
-        <div class="member"><div class="name">Wendi Hoffer</div><div class="role">Director of Community Engagement</div><p>A passionate advocate for a more human, less digital childhood, based in Lexington, MA, with a personal focus on cyberbullying and tech's impact on mental health. <span class="flag">[Full bio to be finalized from current site.]</span></p></div>
-      </div>
+      <h2>Led by parents who do this work in their own <em>Massachusetts</em> communities, too</h2>
+      <p class="evstamp" style="margin-top:18px">Bios and headshots go here, from the board review document.</p>
     </div>
   </section>
+
   <section class="s mist">
-    <div class="wrap read">
-      <div class="kick">Our story</div>
-      <h2>How we began</h2>
-      <p class="flag" style="margin-bottom:14px">Draft placeholder, built only from verifiable facts. To be confirmed and expanded by the board.</p>
-      <p>Turning Life On began with a worry shared by many parents: technology was arriving earlier and taking up more of childhood than felt right. What started as local conversations grew into a coalition of parents, educators, and professionals working community by community to change the norms around tech.</p>
-      <p>Today, Turning Life On supports leaders across Massachusetts and New England, giving them the resources, funding, and connections to build movements that fit their own communities. The work is local, the support is shared, and the goal is the same everywhere: more room for kids to simply be kids.</p>
+    <div class="wrap">
+      <div class="kick">We get noticed</div>
+      <h2>In the news</h2>
+      <div class="newsgrid">
+        <article><b>Massachusetts Senate</b><em>July 2026</em><span>Adrienne's statement supporting S.3164, the Senate's bill to switch off addictive social media features for kids, appears alongside Jonathan Haidt, Fairplay and Common Sense Media.</span></article>
+        <article><b>Massachusetts Attorney General's Office</b><em>August 2026</em><span>Adrienne is quoted in AG Campbell's announcement of the landmark Meta settlement.</span></article>
+        <article><b>The Concord Bridge</b><em>June 2026</em><span>Public comments made by Emily Lines and other parents in the Concord-based group Intentional Tech Coalition, asking the district to reexamine cell phone and technology policies.</span></article>
+        <article><b>Governor's Office</b><em>May 2026</em><span>Turning Life On was invited to join Governor Healey at her press conference announcing new social media protections for kids.</span></article>
+        <article><b>NBC10 Boston</b><em>May 2026</em><span>"Mass. educators grapple with tech in the classroom." Founder Adrienne talks with Munashe Kwangwari about how much technology belongs in Massachusetts classrooms.</span></article>
+      </div>
+      <p class="evstamp">Showing the newest five. Each becomes a link once we have its address, and older coverage from The Christian Science Monitor, The Lexington Observer, The Wall Street Journal, Your Arlington and WBZ-TV sits behind them.</p>
+    </div>
+  </section>
+
+  <section class="s cream">
+    <div class="wrap">
+      <h2>You bring the concern. We'll help carry what comes next.</h2>
+      <div data-joinform style="margin-top:32px;max-width:720px">
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a>.</p></noscript>
+      </div>
     </div>
   </section>
 
@@ -228,7 +293,15 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
   </div>
 </footer>
 <!--/SHELL:footer-->
+<script src="assets/nearby.js"></script>
+<script src="assets/join.js"></script>
 <script>
+[].slice.call(document.querySelectorAll('.ph img')).forEach(function(img){
+  function ok(){ img.parentNode.classList.add('has-img'); }
+  function bad(){ img.remove(); }
+  if (img.complete) { img.naturalWidth ? ok() : bad(); }
+  else { img.addEventListener('load', ok); img.addEventListener('error', bad); }
+});
 document.getElementById('menubtn').addEventListener('click',function(){
   var nav=document.getElementById('nav'); nav.classList.toggle('open');
   this.setAttribute('aria-expanded', nav.classList.contains('open'));

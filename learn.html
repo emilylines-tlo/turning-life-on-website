@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources &mdash; Turning Life On</title>
+<title>Resources &middot; Turning Life On</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -75,9 +75,6 @@ section.s.teal p{color:rgba(255,255,255,.95)}
 .spot{text-align:center}
 .spot h2{font-size:clamp(34px,5vw,52px);color:var(--ink);margin-bottom:34px}
 .townrow{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
-.town{background:var(--mist);border-radius:3px;padding:30px 18px}
-.town .nm{font-family:'Poppins',sans-serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:14px}
-.town a{display:block;color:var(--orange);text-decoration:underline;font-size:15px;margin-bottom:8px}
 .spot .more{margin-top:30px}
 .wave{display:block;width:100%;height:40px;margin-top:10px}
 .team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
@@ -124,6 +121,33 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 .mapnote{font-size:15px;color:#5c6468}
 .evstamp{font-size:12.5px;color:#8a8f92;margin-top:26px}
 @media (max-width:760px){.libgrid{grid-template-columns:1fr}}
+.s h2 em{font-style:normal;color:var(--teal)}
+.sub{font-size:21px;margin:34px 0 0}
+.guides{margin-top:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.guide{background:var(--mist);border-radius:4px;padding:24px}
+.guide b{font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate)}
+.guide span{display:block;margin-top:8px;font-size:15.5px;color:var(--body)}
+.issuetabs{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
+.issuetab{font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);border-radius:2px;padding:11px 20px;cursor:pointer}
+.issuetab:hover{border-color:var(--teal);color:var(--teal-d)}
+.issuetab.is-on{background:var(--teal);border-color:var(--teal);color:#fff}
+.issuepanel{margin-top:26px;background:#fff;border-radius:4px;padding:28px;max-width:860px}
+.issuepanel .one{font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:var(--teal-d)}
+.issuepanel p{font-size:16.5px;color:var(--body);margin-top:10px}
+.docs{margin-top:18px;list-style:none;display:grid;gap:9px}
+.docs li{font-size:16px;color:var(--slate);padding-left:20px;position:relative}
+.docs li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.recordings{margin-top:32px;display:grid;gap:18px}
+.recordings article{background:var(--mist);border-radius:4px;padding:24px}
+.recordings b{font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate)}
+.recordings span{display:block;margin-top:8px;font-size:15.5px;color:var(--body)}
+.recordings .await{display:inline-block;margin-top:12px;font-style:italic;font-size:14px;color:var(--orange-d)}
+.media{margin-top:16px;list-style:none;display:grid;gap:12px;max-width:900px}
+.media li{font-size:16.5px;color:var(--body);padding-left:20px;position:relative}
+.media li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.media b{color:var(--slate)}
+.photo-wide{margin-top:30px;aspect-ratio:16/8;border-radius:4px}
+@media (max-width:900px){ .guides{grid-template-columns:1fr} }
 @media (max-width:900px){
   .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
   .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
@@ -156,19 +180,147 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
   </div>
 </header>
 <!--/SHELL:nav-->
-<main>
+<main id="main">
 
-  <section class="phero" style="background-image:url('https://images.squarespace-cdn.com/content/v1/680a5143f13eff19b6de7100/1748439264258-7AJ98H20USIE2Y8W7S6I/unsplash-image-k2UQ0DKctl4.jpg');min-height:380px">
-    <div class="wrap inner"><span class="tblock lg">Tools for change</span><span class="subhero">A curated, evidence-based library for keeping tech in check, growing over time.</span></div>
-  </section>
-  <section class="s">
+  <section class="s cream">
     <div class="wrap">
-      <p class="lede read" style="margin-bottom:28px">Browse by what you need. Everything here is free to download and share, and new resources are added regularly.</p>
-      <div class="libfilters" id="libfilters" hidden></div>
-      <div class="libgrid" id="libgrid" aria-live="polite">
-        <p class="mapnote">Loading resources&hellip;</p>
+      <h2>Learn</h2>
+      <p class="lede">You don't need to read every study to make good decisions for your family. We've done the digging and turned it into short, clear guides, whether you have five minutes or a free evening.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="#start-here">Start here</a>
+        <a class="textlink" href="#by-issue">Explore the issues</a>
       </div>
+    </div>
+  </section>
+
+  <section class="s" id="start-here">
+    <div class="wrap">
+      <div class="kick">Start here</div>
+      <h2>New to this? <em>Begin</em> with the basics</h2>
+      <div class="guides">
+        <div class="guide"><b>Where We Stand on Tech</b><span>Our platform: where we stand on phones, social media, gaming, school tech and AI, with age-by-age guidance.</span></div>
+        <div class="guide"><b>Screen Time Recommendations by Stage</b><span>What your child is developing at each age, and how to support it.</span></div>
+        <div class="guide"><b>Values-Based Parenting</b><span>Five practices that help kids build an inner compass for a digital world.</span></div>
+        <div class="guide"><b>A Holistic Approach to Keeping Tech in Check</b><span>Developed with Emerson Health, this guide looks at six pillars of digital wellness.</span></div>
+      </div>
+      <p class="evstamp">Each guide gets a "Read it" button as soon as we have its link.</p>
+    </div>
+  </section>
+
+  <section class="s mist" id="by-issue">
+    <div class="wrap">
+      <div class="kick">Explore the issues</div>
+      <h2>Info by issue</h2>
+      <div class="issuetabs" role="tablist" aria-label="The four issues">
+        <button class="issuetab is-on" role="tab" aria-selected="true" data-i="slow">Slow Tech</button>
+        <button class="issuetab" role="tab" aria-selected="false" data-i="school">Distraction-free learning</button>
+        <button class="issuetab" role="tab" aria-selected="false" data-i="ai">AI in Childhood</button>
+        <button class="issuetab" role="tab" aria-selected="false" data-i="reconnect">Reconnecting our communities</button>
+      </div>
+
+      <div class="issuepanel" data-i="slow">
+        <p class="one">More childhood before the phone.</p>
+        <p>Why so many families are choosing to wait on smartphones until high school and social media until 16, and what the research says about why it matters.</p>
+        <ul class="docs"><li>Slow Tech at Home</li><li>What is addictive design?</li><li>Why wait?</li><li>Family Media Plan</li></ul>
+      </div>
+      <div class="issuepanel" data-i="school" hidden>
+        <p class="one">School should be the easy part.</p>
+        <p>Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p>
+        <ul class="docs"><li>Why distraction-free learning matters</li><li>Where Massachusetts stands</li><li>Dr. Jared Cooney Horvath's U.S. Senate testimony, January 2026 (video)</li></ul>
+      </div>
+      <div class="issuepanel" data-i="ai" hidden>
+        <p class="one">Powerful, and unsafe for kids.</p>
+        <p>Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p>
+        <ul class="docs"><li>What Parents Need to Know About AI</li><li>Where we stand on AI</li></ul>
+      </div>
+      <div class="issuepanel" data-i="reconnect" hidden>
+        <p class="one">Busy kids don't miss their screens.</p>
+        <p>When kids' days are full of people, play and things they love, screens lose their pull.</p>
+        <ul class="docs"><li>Why Reconnecting in Real Life Matters</li><li>Sherry Turkle, Artificial Intimacy</li></ul>
+      </div>
+      <p class="evstamp">Each item becomes a link as soon as we have its address.</p>
+    </div>
+  </section>
+
+  <section class="s" id="recordings">
+    <div class="wrap">
+      <div class="kick">Event recordings</div>
+      <h2>Missed it? <em>Watch</em> it here</h2>
+      <p class="lede">Talks and panels from Turning Life On and our communities.</p>
+      <div class="recordings">
+        <article><b>The Homework Machine: AI and the future of our schools</b>
+          <span>MIT Professor Justin Reich, director of the MIT Teaching Systems Lab and host of the podcast <i>The Homework Machine</i>, on what generative AI is doing to teaching, learning and the classrooms our kids walk into. Introduced by TLO board member Jeff Miller. Recorded May 13, 2026, at the Griffin Museum in Winchester.</span>
+          <em class="await">Watch link to come from Jeff (WinCAM)</em></article>
+        <article><b>Keeping Tech in Check with Culture Reframed</b>
+          <span>A Culture Reframed webinar with digital wellness experts Julia Storm and Adrienne Principe, moderated by Dr. Mandy Sanchez. It covers how screens affect kids' social and emotional well-being, how to be "smart, not scared," how to keep kids safe online, and practical ways to keep tech in check at home and in your community. July 2025.</span></article>
+        <article><b>Goodnow Community Read: The Anxious Generation</b>
+          <span>A panel discussion of Jonathan Haidt's book for the Goodnow Library's community read in Sudbury, with Adrienne Principe, Sudbury Officer Kim Mangano, psychiatrist Dr. Allison Baker, and Gabriela Nguyen, founder of APPstinence. February 11, 2025.</span></article>
+        <article><b>Solutions to the Social Dilemma</b>
+          <span>A panel and town hall on what it means to be digitally healthy, and the concrete steps families can take. It opens with teen advocate Aliza Goldie Kopans, co-author of the "Dear Parents" report, followed by a panel with Dr. Criscillia Benford, Dr. Gail Dines of Culture Reframed, Dr. Sharon Maxwell, Chelsea Maxwell, Helena Rampersaud and Jay Vidyarthi. Hosted by Adrienne Principe and psychotherapist Teodora Pavkovic. October 2020.</span></article>
+      </div>
+      <p class="evstamp">More recordings coming soon.</p>
+    </div>
+  </section>
+
+  <section class="s mist">
+    <div class="wrap">
+      <div class="kick">Books &amp; films</div>
+      <h2>For your nightstand, your book club, or your next parent night</h2>
+
+      <figure class="ph photo-wide">
+        <img src="assets/img/your-attention-please.jpg" alt="Eight people on stage after a screening of Your Attention Please">
+        <div class="shot"><b>Photo &middot; assets/img/your-attention-please.jpg</b><span>After a screening of Your Attention Please, with the writer and director.</span></div>
+        <figcaption>After a screening of <i>Your Attention Please</i>. From left: Lauren Feeney (Lexington Observer), Emily Lines, Kerriann Ostlund (Lexington Pediatrics), Adrienne Principe, writer Jack Lemay and director Sara Robin, Wendi Hoffer and Jeff Miller.</figcaption>
+      </figure>
+
+      <h3 class="sub">Watch</h3>
+      <ul class="media">
+        <li><b>Your Attention Please</b> (2026). Parents, Gen Z reformers and tech whistleblowers push back against the attention economy. It's hopeful, not doom and gloom, and it's made by Boston filmmakers.</li>
+        <li><b>The AI Doc: Or How I Became an Apocaloptimist</b> (2026, PG-13, Netflix). An expectant father interviews tech leaders and experts to understand what AI could mean for his child's future.</li>
+        <li><b>Childhood 2.0</b> (2020, free on YouTube). Parents, kids and experts on what growing up online really looks like.</li>
+        <li><b>The Social Dilemma</b> (2020, Netflix). Former tech insiders explain how social media is designed to hook us.</li>
+        <li><b>Adolescence</b> (2025, Netflix, rated TV-MA). A gripping drama about a teenage boy and the online world his parents couldn't see. For parents to watch first. It's intense.</li>
+        <li><b>Can't Look Away</b> (2025, Bloomberg). Families and lawyers take on social media companies over harm to kids.</li>
+      </ul>
+
+      <h3 class="sub">Read</h3>
+      <ul class="media">
+        <li><b>The Anxious Generation</b> by Jonathan Haidt. How the shift to a phone-based childhood changed kids' mental health, and four norms to turn it around.</li>
+        <li><b>Artificial Intimacy: Who We Become When We Talk to Machines</b> by Sherry Turkle (new, September 2026). What happens when chatbots stand in for human connection.</li>
+        <li><b>Reclaiming Conversation: The Power of Talk in a Digital Age</b> by Sherry Turkle. Why face-to-face conversation is where empathy grows.</li>
+        <li><b>The Big Disconnect</b> by Catherine Steiner-Adair, EdD. How technology is changing family relationships, told through kids' own voices.</li>
+        <li><b>The Cyber Effect</b> by Mary Aiken, PhD. A cyberpsychologist on how online life shapes behavior, especially kids'.</li>
+        <li><b>Generations</b> and <b>iGen</b> by Jean Twenge, PhD. The data behind how each generation, and especially today's kids, is growing up differently.</li>
+        <li><b>The Shallows: What the Internet Is Doing to Our Brains</b> by Nicholas Carr. How constant connection changes the way we read, think and remember.</li>
+        <li><b>Stolen Focus: Why You Can't Pay Attention, and How to Think Deeply Again</b> by Johann Hari. Why attention is harder than ever, and what we can do about it.</li>
+      </ul>
+
+      <h3 class="sub">Listen</h3>
+      <ul class="media">
+        <li><b>Your Undivided Attention</b> from the Center for Humane Technology. Conversations about building technology that serves people instead of exploiting them.</li>
+      </ul>
+      <p class="evstamp">Titles become links once we have the affiliate addresses. The commission disclosure goes here at the same time.</p>
+    </div>
+  </section>
+
+  <section class="s" id="library">
+    <div class="wrap">
+      <div class="kick">From our library</div>
+      <h2>Printables and guides</h2>
+      <div class="libfilters" id="libfilters" hidden></div>
+      <div class="libgrid" id="libgrid" aria-live="polite"><p class="mapnote">Loading resources&hellip;</p></div>
       <p class="evstamp" id="libstamp"></p>
+    </div>
+  </section>
+
+  <section class="s cream">
+    <div class="wrap">
+      <div class="kick">Join the movement</div>
+      <h2>Ready to do something with what you've learned?</h2>
+      <p class="lede">Whether it's one conversation with a teacher or starting a group in your community, there's a first step that fits.</p>
+      <div data-joinform style="margin-top:32px;max-width:720px">
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a>.</p></noscript>
+      </div>
     </div>
   </section>
 
@@ -209,6 +361,30 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 </footer>
 <!--/SHELL:footer-->
 <script>
+
+/* The four issue tabs. */
+(function(){
+  var tabs = [].slice.call(document.querySelectorAll('.issuetab'));
+  var panels = [].slice.call(document.querySelectorAll('.issuepanel'));
+  if (!tabs.length) return;
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(o){
+        var on = o === t;
+        o.classList.toggle('is-on', on);
+        o.setAttribute('aria-selected', String(on));
+      });
+      panels.forEach(function(pn){ pn.hidden = pn.dataset.i !== t.dataset.i; });
+    });
+  });
+})();
+/* Photo slots. */
+[].slice.call(document.querySelectorAll('.ph img')).forEach(function(img){
+  function ok(){ img.parentNode.classList.add('has-img'); }
+  function bad(){ img.remove(); }
+  if (img.complete) { img.naturalWidth ? ok() : bad(); }
+  else { img.addEventListener('load', ok); img.addEventListener('error', bad); }
+});
 document.getElementById('menubtn').addEventListener('click',function(){
   var nav=document.getElementById('nav'); nav.classList.toggle('open');
   this.setAttribute('aria-expanded', nav.classList.contains('open'));

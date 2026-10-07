@@ -20,6 +20,16 @@
   function markup(id){
     return '' +
     '<form class="joinform" id="' + id + '" novalidate>' +
+      '<p class="tierq">How involved do you want to be?</p>' +
+      '<div class="tiers">' +
+        '<button class="tier" type="button" data-t="loop" aria-pressed="false">' +
+          '<b>Stay in the loop</b>' +
+          '<span>A short monthly email, events near you, and a heads-up when there\'s a pact to sign or a legislator worth calling.</span></button>' +
+        '<button class="tier" type="button" data-t="involved" aria-pressed="false">' +
+          '<b>Get involved</b>' +
+          '<span>Join the coalition calls and work with us on what happens in your community.</span></button>' +
+      '</div>' +
+      '<span class="err" data-tiererr hidden></span>' +
       '<div class="field"><label for="' + id + '-fn">First name</label>' +
         '<input id="' + id + '-fn" name="fn" type="text" autocomplete="given-name" required>' +
         '<span class="err" hidden></span></div>' +
@@ -36,16 +46,6 @@
         '<select id="' + id + '-grp" name="grp"><option value="">Choose your community</option></select></div>' +
       '<div class="field wide"><label for="' + id + '-nt">What\'s going on? <i>Optional</i></label>' +
         '<textarea id="' + id + '-nt" name="nt"></textarea></div>' +
-      '<p class="tierq">How involved do you want to be?</p>' +
-      '<div class="tiers">' +
-        '<button class="tier" type="button" data-t="loop" aria-pressed="false">' +
-          '<b>Stay in the loop</b>' +
-          '<span>A short monthly email, events near you, and a heads-up when there\'s a pact to sign or a legislator worth calling.</span></button>' +
-        '<button class="tier" type="button" data-t="involved" aria-pressed="false">' +
-          '<b>Get involved</b>' +
-          '<span>Join the coalition calls and work with us on what happens in your community.</span></button>' +
-      '</div>' +
-      '<span class="err" data-tiererr hidden></span>' +
       '<button class="btn btn-orange submit" type="submit">Keep me posted</button>' +
       '<p class="note">A person reads every one of these. No automated sequence, and we never share your info. ' +
         '<a href="' + PRIVACY + '">Privacy policy</a></p>' +
