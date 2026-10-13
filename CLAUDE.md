@@ -54,8 +54,9 @@ GitHub Actions (twice daily)
 - `data/groups.json` — coalition communities (map, directory, town chips)
 - `data/library.json` — resource library
 - `data/communities-extra.json` — **the one hand-maintained file in `data/`.**
-  Massachusetts groups not yet registered on Four Norms, and each group's own
-  website keyed by Four Norms slug. The fetch script never touches it.
+  Massachusetts groups not yet registered on Four Norms, each group's own
+  website keyed by Four Norms slug, and a `hide` list of Four Norms slugs
+  never shown on the site. The fetch script never touches it.
 - `data/zip-coords.json` — US ZIP centroids from the 2023 Census gazetteer,
   used for the "near you" searches. Loaded only when someone searches.
 
@@ -172,8 +173,6 @@ git push
   cannot do this. Swapping it is `submitSignup` in `assets/join.js`.
 - **Per-issue pages.** The home page describes four issues; none has its own
   page yet, and the links point at existing pages instead.
-- **Home page video.** The hero plays `assets/video/hero.mp4` behind the text.
-  The file does not exist yet; until it does, the hero is plain brand blue.
 - **Smartphone Alternatives page.** Not built yet; links point at
   turninglifeon.org/smartphone-alternatives.
 - **Team headshots and partner logos.** Initials and partner names stand in

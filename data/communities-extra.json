@@ -1,5 +1,8 @@
 {
-  "note": "Hand maintained, unlike the other files in data/. 'communities' lists Massachusetts groups not yet registered under Turning Life On on Four Norms; delete a row once its group appears in groups.json, or it is hidden automatically when a group with the same city arrives. 'websites' gives a group's own website, keyed by its Four Norms slug, for groups whose own site is not in the Four Norms data. Source: Wireframe v4, October 2026.",
+  "note": "Hand maintained, unlike the other files in data/. 'communities' lists Massachusetts groups not yet registered under Turning Life On on Four Norms; delete a row once its group appears in groups.json, or it is hidden automatically when a group with the same city arrives. 'hide' lists Four Norms slugs that are never shown on the site (for example an organization that isn't a local community). 'websites' gives a group's own website, keyed by its Four Norms slug, for groups whose own site is not in the Four Norms data. Source: Wireframe v4, October 2026.",
+  "hide": [
+    "thinkgive"
+  ],
   "websites": {
     "tech-wise-arlington": "https://techwisearlington.org/",
     "intentional-tech-coalition-concord": "https://intentionaltechcoalition.org/itc-homepage.html",

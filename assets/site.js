@@ -40,3 +40,12 @@
     show(0);
   });
 })();
+
+/* Respect "reduce motion": keep background video still. */
+(function(){
+  var v = document.querySelector('video.hero-bg');
+  if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    v.removeAttribute('autoplay');
+    v.pause();
+  }
+})();

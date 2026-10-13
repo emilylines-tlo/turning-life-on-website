@@ -109,6 +109,11 @@ section.s.teal p{color:rgba(255,255,255,.94)}
 .quote::after{content:"";position:absolute;left:44px;bottom:-16px;border-width:16px 16px 0 0;border-style:solid;border-color:var(--teal-l) transparent transparent}
 .quote p{font-family:'Poppins',sans-serif;font-size:19px;line-height:1.5;color:var(--slate)}
 .quote .who{display:block;margin-top:12px;font-family:'Mulish',sans-serif;font-size:15px;color:var(--teal-d);font-weight:700}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;align-items:start}
+.quotes.two{grid-template-columns:repeat(2,1fr)}
+.quotes .quote{margin-top:0;max-width:none}
+.quotes .quote p{font-size:17px}
+@media (max-width:980px){ .quotes,.quotes.two{grid-template-columns:1fr} }
 
 /* ---- boxed note ---- */
 .box{border:2px solid var(--teal);background:#fff;padding:30px 32px;margin-top:40px}

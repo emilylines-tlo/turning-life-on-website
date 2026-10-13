@@ -84,7 +84,8 @@ window.TLO = (function(){
 
      Each community gets two links where we have them: fournorms_url, its page
      on Four Norms, and website, its own site (from the "websites" table in
-     communities-extra.json, keyed by Four Norms slug). */
+     communities-extra.json, keyed by Four Norms slug). Slugs listed under
+     "hide" in that file are never shown. */
   var STATE = 'MA';
   function loadCommunities(){
     return Promise.all([
@@ -92,7 +93,10 @@ window.TLO = (function(){
       loadJSON('data/communities-extra.json').catch(function(){ return {communities: [], websites: {}}; })
     ]).then(function(res){
       var sites = res[1].websites || {};
-      var live = (res[0].groups || []).filter(function(g){ return g.city && g.state === STATE; });
+      var hide = res[1].hide || [];
+      var live = (res[0].groups || []).filter(function(g){
+        return g.city && g.state === STATE && hide.indexOf(g.slug) === -1;
+      });
       live.forEach(function(g){
         g.registered = true;
         g.fournorms_url = g.web_url || null;
