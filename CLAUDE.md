@@ -183,4 +183,5 @@ git push
   stale, and send Jeff Miller (Tech-Wise Arlington) changes for an accuracy
   pass. Never change a verdict to suit a discount code. Jeff's build brief is
   internal and stays out of this repo.
-- **Team headshots.** Initials stand in until headshots arrive.
+- **Team headshots** live in `assets/img/team/` as 400px squares. Jennifer
+  Henderson still shows initials until her photo arrives.
