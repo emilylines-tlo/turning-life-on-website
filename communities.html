@@ -63,10 +63,14 @@
 .steps li::before{content:counter(step);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-family:'Poppins',sans-serif;font-weight:600;margin-bottom:14px}
 .steps b{display:block;font-family:'Poppins',sans-serif;font-size:17px;color:var(--slate);margin-bottom:6px}
 .steps p{font-size:15.5px}
-.partners{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.partners li{border:1px solid var(--line);padding:12px 18px;font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:500;color:var(--slate);background:#fff}
-.partners a{color:var(--slate);text-decoration:none}
-.partners a:hover{color:var(--teal-d)}
+.partners{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:30px}
+.partners li{background:#fff;border:1px solid var(--line)}
+.partners li.dark{background:var(--slate);border-color:var(--slate)}
+.partners a{display:flex;align-items:center;justify-content:center;height:110px;padding:18px}
+.partners img{max-width:100%;max-height:64px;object-fit:contain}
+.partners a:hover{box-shadow:inset 0 0 0 2px var(--teal)}
+@media (max-width:980px){ .partners{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:640px){ .partners{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:1120px){ .dir{grid-template-columns:repeat(3,1fr)} }
 @media (max-width:980px){ .dir{grid-template-columns:repeat(2,1fr)} .steps{grid-template-columns:1fr 1fr} }
 @media (max-width:640px){ .dir,.steps{grid-template-columns:1fr} }
@@ -218,23 +222,23 @@
       <div class="kick">Our partners</div>
       <h2>in <em>good</em> company</h2>
       <p class="lede">We're proud to work alongside organizations that share our mission:</p>
-      <!-- Shown as names until logo permissions are confirmed; each links to the partner's own site. -->
+      <!-- Logos used with each partner's permission. White logos sit on a dark tile. -->
       <ul class="partners">
-        <li><a href="https://fairplayforkids.org/" target="_blank" rel="noopener">Fairplay and its Screen Time Action Network</a></li>
-        <li><a href="https://www.anxiousgeneration.com/" target="_blank" rel="noopener">The Anxious Generation</a></li>
-        <li><a href="https://www.fournorms.com/" target="_blank" rel="noopener">Four Norms</a></li>
-        <li><a href="https://culturereframed.org/" target="_blank" rel="noopener">Culture Reframed</a></li>
-        <li><a href="https://smartphonefreechildhoodus.com/" target="_blank" rel="noopener">Smartphone Free Childhood U.S.</a></li>
-        <li>the Distraction-Free Schools Policy Project</li>
-        <li><a href="https://everyschool.org/" target="_blank" rel="noopener">EverySchool</a></li>
-        <li><a href="https://www.phonefreeschoolsmovement.org/" target="_blank" rel="noopener">the Phone Free Schools Movement</a></li>
-        <li><a href="https://www.letsgrowbrainpower.com/" target="_blank" rel="noopener">Let's Grow Brain Power</a></li>
-        <li><a href="http://www.polestarparenting.com" target="_blank" rel="noopener">Polestar Parenting</a></li>
-        <li><a href="http://beccaschmillfdn.org" target="_blank" rel="noopener">Becca Schmill Foundation</a></li>
-        <li><a href="http://thescreentimeconsultant.com" target="_blank" rel="noopener">The Screen Time Consultant</a></li>
-        <li><a href="https://www.awayfortheday.org/" target="_blank" rel="noopener">Screenagers: Away for the Day</a></li>
-        <li><a href="https://www.marccenter.org/outcomes-research" target="_blank" rel="noopener">Massachusetts Aggression Reduction Center</a></li>
-        <li><a href="https://durablehuman.com/category/durable-human-blog/" target="_blank" rel="noopener">The Durable Human</a></li>
+        <li><a href="https://fairplayforkids.org/" target="_blank" rel="noopener"><img src="assets/img/partners/fairplay.svg" alt="Fairplay and its Screen Time Action Network" loading="lazy"></a></li>
+        <li><a href="https://www.anxiousgeneration.com/" target="_blank" rel="noopener"><img src="assets/img/partners/anxious-generation.svg" alt="The Anxious Generation" loading="lazy"></a></li>
+        <li><a href="https://www.fournorms.com/" target="_blank" rel="noopener"><img src="assets/img/partners/four-norms.png" alt="Four Norms" loading="lazy"></a></li>
+        <li><a href="https://culturereframed.org/" target="_blank" rel="noopener"><img src="assets/img/partners/culture-reframed.svg" alt="Culture Reframed" loading="lazy"></a></li>
+        <li class="dark"><a href="https://smartphonefreechildhoodus.com/" target="_blank" rel="noopener"><img src="assets/img/partners/sfc-us.png" alt="Smartphone Free Childhood U.S." loading="lazy"></a></li>
+        <li><a href="https://www.distractionfreeschools.org/" target="_blank" rel="noopener"><img src="assets/img/partners/dfspp.png" alt="the Distraction-Free Schools Policy Project" loading="lazy"></a></li>
+        <li><a href="https://everyschool.org/" target="_blank" rel="noopener"><img src="assets/img/partners/everyschool.png" alt="EverySchool" loading="lazy"></a></li>
+        <li class="dark"><a href="https://www.phonefreeschoolsmovement.org/" target="_blank" rel="noopener"><img src="assets/img/partners/phone-free-schools-white.png" alt="the Phone Free Schools Movement" loading="lazy"></a></li>
+        <li><a href="https://www.letsgrowbrainpower.com/" target="_blank" rel="noopener"><img src="assets/img/partners/lets-grow-brain-power.png" alt="Let&#39;s Grow Brain Power" loading="lazy"></a></li>
+        <li><a href="http://www.polestarparenting.com" target="_blank" rel="noopener"><img src="assets/img/partners/polestar-parenting.png" alt="Polestar Parenting" loading="lazy"></a></li>
+        <li><a href="http://beccaschmillfdn.org" target="_blank" rel="noopener"><img src="assets/img/partners/becca-schmill.png" alt="Becca Schmill Foundation" loading="lazy"></a></li>
+        <li class="dark"><a href="http://thescreentimeconsultant.com" target="_blank" rel="noopener"><img src="assets/img/partners/screen-time-consultant.svg" alt="The Screen Time Consultant" loading="lazy"></a></li>
+        <li class="dark"><a href="https://www.awayfortheday.org/" target="_blank" rel="noopener"><img src="assets/img/partners/away-for-the-day.png" alt="Screenagers: Away for the Day" loading="lazy"></a></li>
+        <li><a href="https://www.marccenter.org/outcomes-research" target="_blank" rel="noopener"><img src="assets/img/partners/marc.png" alt="Massachusetts Aggression Reduction Center" loading="lazy"></a></li>
+        <li><a href="https://durablehuman.com/category/durable-human-blog/" target="_blank" rel="noopener"><img src="assets/img/partners/durable-human.png" alt="The Durable Human" loading="lazy"></a></li>
       </ul>
       <figure class="quote" style="margin-top:44px">
           <p>&ldquo;When few were talking about the impact of screens on children&rsquo;s well-being, Turning Life On was already leading the way! We are inspired by their leadership and proud to share their vision.&rdquo;</p>

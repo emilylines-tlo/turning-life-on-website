@@ -139,6 +139,9 @@ Then open http://localhost:8000. Stop it with Ctrl-C.
 - Fonts are Poppins (headings) and Mulish (body). Brand colors: orange
   `#F67800`, blue `#339797`, light grey `#F5F5F5`. Italics show in blue.
   Headings are lower case where the wireframe has them that way.
+- **Partner logos** live in `assets/img/partners/`, used with each partner's
+  permission and never recolored. Logos published only in white sit on a dark
+  tile (`<li class="dark">`).
 - **Photos are kept small**: resize to at most 1000px on the long side before
   adding them to `assets/img/`.
 
@@ -175,5 +178,4 @@ git push
   page yet, and the links point at existing pages instead.
 - **Smartphone Alternatives page.** Not built yet; links point at
   turninglifeon.org/smartphone-alternatives.
-- **Team headshots and partner logos.** Initials and partner names stand in
-  until headshots and logo permissions arrive.
+- **Team headshots.** Initials stand in until headshots arrive.
