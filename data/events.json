@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 23,
   "events": [
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ1OCwicHVyIjoiYmxvYl9pZCJ9fQ==--1382bc736a7bc47383cf147f830fd0f5e36547ef/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
@@ -213,6 +213,56 @@
       "start_time": "2026-11-05T18:00:00-05:00",
       "tags": [],
       "title": "Panel Discussion: From Pressure to Purpose",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--a560195490290f87e163a33de3ac3e2c4d9ae1ab/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTAseyJjcm9wIjoibG93In1dfSwicHVyIjoidmFyaWF0aW9uIn19--6d0d4700af244310fff8c0c1f327e2d49a78870b/fournorms-banner-wellesley-1200x400.png",
+      "description": "The Wellesley Mothers Forum Presents: \r\n\r\nDr. Jared Cooney Horvath, Inside the Learning Brain.\r\n\r\nTechnology in kids' lives is changing fast. Learn what the science says you can do about it, from kindergarten through high school:\r\n- Practical ways to support kids' learning and well-being, including about technology. \r\n- How kids' brains grow and learn\r\n- Good stress vs. bad stress\r\n\r\nThis event is also happening in Concord on Tuesday, Nov. 17, 7pm, at Concord Middle School. Visit the event page to register for that event.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this. \r\n\r\nLocal groups hosts: \r\nBeyond Screens Wellesley\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington",
+      "end_time": "2026-11-16T21:00:00-05:00",
+      "external_link": "https://www.turninglifeon.org/jch",
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_slug": null,
+      "host_type": "Organization",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain",
+      "start_time": "2026-11-16T19:00:00-05:00",
+      "tags": [
+        "Ed Tech"
+      ],
+      "title": "Speaker Series: Wellesley Mothers Forum presents Dr. Jared Cooney Horvath - Inside the Learning Brain",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MSwicHVyIjoiYmxvYl9pZCJ9fQ==--73cf022cce96a4d9e56b6d4c65b35d48e85306d2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/fournorms-banner-concord-1200x400.png",
+      "description": "Dr. Jared Cooney Horvath, Inside the Learning Brain.\r\n\r\nTechnology in kids' lives is changing fast. Learn what the science says you can do about it, from kindergarten through high school:\r\n- Practical ways to support kids' learning and well-being, including about technology.\r\n- How kids' brains grow and learn\r\n- Good stress vs. bad stress\r\n\r\nThis event is also happening in Wellesley on  Monday, Nov. 16, 7pm. Visit the event page to register.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nLocal groups hosts:\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington\r\nBeyond Screens Wellesley",
+      "end_time": "2026-11-17T21:00:00-05:00",
+      "external_link": "https://www.turninglifeon.org/jch",
+      "featured": false,
+      "host_name": "Turning Life On",
+      "host_slug": null,
+      "host_type": "Organization",
+      "host_url": "https://www.fournorms.com/turning-life-on",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain.json",
+        "web_url": "https://www.fournorms.com/events/turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain",
+      "start_time": "2026-11-17T19:00:00-05:00",
+      "tags": [
+        "Ed Tech"
+      ],
+      "title": "Speaker Series: Dr. Jared Cooney Horvath - Inside the Learning Brain",
       "virtual": false,
       "virtual_link": null
     },
@@ -594,5 +644,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-13T07:14:16+00:00"
+  "updated": "2026-10-13T22:34:55+00:00"
 }
