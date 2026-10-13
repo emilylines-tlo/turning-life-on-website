@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartphone Alternatives &middot; Turning Life On</title>
+<meta name="description" content="Start with the simplest device that works. Home phones, watches, basic phones and controlled smartphones for kids, with prices, verdicts and dated sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+/* Smartphone Alternatives. Content and research: Tech-Wise Arlington.
+   Page-only rules are prefixed alt-. Feature colours mark only the gap between
+   what a device promises and what it delivers; most values stay plain. */
+:root{ --alt-good:#2c6e6e; --alt-warn:#9a5a0e; --alt-bad:#b42318 }
+.alt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.alt-chips span,.alt-chips a{font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;padding:6px 12px;border:1px solid rgba(255,255,255,.55);color:#fff;text-decoration:none}
+.alt-chips a:hover{background:rgba(255,255,255,.15)}
+
+/* router */
+.alt-router{margin-top:30px}
+.alt-router .tablist{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.alt-router [role="tab"]{text-align:left;background:#fff;border:2px solid var(--line);padding:16px 18px;cursor:pointer;font-family:'Mulish',sans-serif;display:flex;flex-direction:column;gap:6px;color:var(--body);font-size:14.5px}
+.alt-router [role="tab"] b{font-family:'Poppins',sans-serif;font-size:16px;color:var(--slate)}
+.alt-router [role="tab"]:hover{border-color:var(--teal)}
+.alt-router [role="tab"][aria-selected="true"]{border-color:var(--teal);background:var(--teal-l)}
+.alt-answer{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);padding:28px 30px;margin-top:14px;max-width:860px}
+.alt-answer .alt-label{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--alt-good)}
+.alt-answer h3{font-size:22px;margin:6px 0 10px}
+.alt-answer p{margin-top:10px}
+.alt-stat{margin:18px 0 0;padding:16px 20px;background:var(--mist);font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate);line-height:1.45}
+
+/* ladder */
+.alt-ladder{list-style:none;display:grid;gap:14px;margin-top:32px}
+.alt-ladder li{display:grid;grid-template-columns:52px 1fr 220px;gap:18px;align-items:start;background:#fff;border:1px solid var(--line);border-top:5px solid var(--teal);padding:20px 22px}
+.alt-ladder li.alt-high{border-top-color:var(--alt-warn)}
+.alt-ladder .n{font-family:'Poppins',sans-serif;font-size:30px;font-weight:600;line-height:1;color:var(--teal-d)}
+.alt-ladder li.alt-high .n{color:var(--alt-warn)}
+.alt-ladder h3{font-size:19px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.alt-tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--alt-good)}
+.alt-high .alt-tag{color:var(--alt-warn)}
+.alt-ladder p{font-size:15.5px;margin-top:6px}
+.alt-ladder .ex{font-size:14.5px;color:var(--muted)}
+.alt-ladder .price{font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;color:var(--slate);text-align:right;font-variant-numeric:tabular-nums}
+.alt-order{font-size:14.5px;color:var(--muted);margin-top:14px}
+.alt-past{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.alt-past .kick{grid-column:1/-1;margin:0;color:var(--muted)}
+.alt-past h4{font-size:16px;color:var(--body)}
+.alt-past h4 span{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--alt-bad);margin-left:8px}
+.alt-past p{font-size:15.5px;margin-top:6px}
+.alt-test{margin-top:40px;background:var(--mist);border-left:4px solid var(--teal);padding:22px 26px;max-width:860px}
+.alt-test .kick{margin-bottom:6px}
+.alt-test p{font-family:'Poppins',sans-serif;font-size:19px;line-height:1.45;color:var(--slate)}
+
+/* devices */
+.alt-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;align-items:center}
+.alt-filter{font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:500;padding:9px 16px;border:1px solid #cfd4d6;background:#fff;color:var(--slate);cursor:pointer}
+.alt-filter:hover{border-color:var(--teal)}
+.alt-filter[aria-pressed="true"]{background:var(--teal-d);border-color:var(--teal-d);color:#fff}
+.alt-count{font-size:14px;color:var(--muted);margin-left:6px}
+.alt-within{font-size:15px;color:var(--body);margin-top:14px;font-style:italic}
+.alt-group{margin-top:40px}
+.alt-group h3{font-size:22px}
+.alt-group h3 span{font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);margin-right:8px}
+.alt-groupnote{font-size:15.5px;margin-top:4px}
+.alt-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.alt-card{background:#fff;border:1px solid #e3e6e6;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.alt-card.alt-wide{grid-column:1/-1}
+.alt-card h4{font-size:19px}
+.alt-verdict{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.alt-v-good{color:var(--alt-good)} .alt-v-plain{color:var(--slate)} .alt-v-warn{color:var(--alt-warn)} .alt-v-bad{color:var(--alt-bad)}
+.alt-money{display:flex;flex-wrap:wrap;gap:6px 28px}
+.alt-money dt{font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.alt-money dd{font-family:'Poppins',sans-serif;font-size:17px;font-weight:600;color:var(--slate);font-variant-numeric:tabular-nums}
+.alt-note{font-family:'Mulish',sans-serif;font-size:13.5px;font-weight:400;color:var(--muted)}
+.alt-take{font-size:16.5px;color:var(--ink)}
+.alt-feats div{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dotted #d3d8d9;font-size:15px}
+.alt-feats dt{color:var(--body)}
+.alt-feats dd{font-weight:700;color:var(--body);text-align:right}
+dd.alt-good{color:var(--alt-good)} dd.alt-warn{color:var(--alt-warn)} dd.alt-bad{color:var(--alt-bad)}
+.alt-know{font-size:15px}
+.alt-know b{color:var(--slate)}
+.alt-watch{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.alt-watch li{font-size:15px;color:var(--body);padding-left:16px;position:relative}
+.alt-watch li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--alt-warn)}
+.alt-watch b{color:var(--slate)}
+.alt-chip{align-self:flex-start;font-family:'Poppins',sans-serif;font-size:12px;font-weight:500;padding:4px 10px;background:var(--teal-l);color:var(--alt-good)}
+.alt-code{font-size:14.5px;color:var(--body);background:var(--mist);padding:8px 12px}
+.alt-card .src{margin-top:auto}
+.alt-none{margin-top:30px}
+
+/* group chats */
+.alt-dark{background:var(--slate);color:#fff}
+.alt-dark h2,.alt-dark .kick{color:#fff}
+.alt-dark .kick{opacity:.85}
+.alt-dark p,.alt-dark li{color:rgba(255,255,255,.92)}
+.alt-dark ol{margin-top:18px;padding-left:22px;display:grid;gap:10px;max-width:760px}
+.alt-dark li b{color:#fff}
+
+.alt-lend{margin-top:28px;background:var(--teal-l);padding:22px 26px;max-width:760px}
+.alt-lend h3{font-size:19px}
+.alt-lend p{margin-top:6px}
+@media (max-width:980px){
+  .alt-router .tablist{grid-template-columns:1fr 1fr}
+  .alt-ladder li{grid-template-columns:44px 1fr}
+  .alt-ladder .price{grid-column:2;text-align:left}
+}
+@media (max-width:760px){
+  .alt-grid,.alt-watch,.alt-past{grid-template-columns:1fr}
+  .alt-router .tablist{grid-template-columns:1fr}
+}
+</style>
+</head><body>
+<!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="../index.html" aria-label="Turning Life On, home">
+      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
+      <div class="tag">KEEP TECH IN CHECK</div>
+    </a>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
+        <li><a class="navlink" href="../index.html">Home</a></li>
+        <li><a class="navlink" href="../about.html">About</a></li>
+        <li><a class="navlink" href="../communities.html">Communities</a></li>
+        <li><a class="navlink" href="../learn.html">Learn</a></li>
+        <li><a class="navlink" href="../get-involved.html">Get Involved</a></li>
+        <li><a class="navlink" href="../events.html">Events</a></li>
+        <li><a class="navlink" href="../support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--/SHELL:nav-->
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Smartphone alternatives</div>
+      <h1>Start with the <em>simplest</em> device that works.</h1>
+      <p>What each option costs, what it does, and what goes wrong with it.</p>
+      <div class="alt-chips">
+        <span>16 devices compared</span>
+        <span>Prices verified 9 Aug 2026</span>
+        <a href="#borrow">Devices you can borrow</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap read">
+      <p class="lede" style="margin-top:0">Parents need a way to reach their kids, and we support that. Our concern with smartphones isn't calling and texting. It's that they give kids constant, unrestricted access to social media, gaming and the internet, and crowd out face-to-face time and other healthy activities.</p>
+      <p class="lede">There's no research-backed &ldquo;safe age&rdquo; to give your child a smartphone. Match the device to your child's maturity level, not their age.</p>
+    </div>
+  </section>
+
+  <section class="s mist" id="start">
+    <div class="wrap">
+      <div class="kick">Start here</div>
+      <h2>What are you trying to solve?</h2>
+      <p class="lede">Most of us start by asking which phone to buy. The better first question is what the device is for.</p>
+
+      <div class="alt-router" data-tabs>
+        <div class="tablist" role="tablist" aria-label="What are you trying to solve?">
+          <button role="tab" id="nt1" aria-controls="np1"><b>I need to reach them after school.</b><span>They are home alone for a couple of hours before you are.</span></button>
+          <button role="tab" id="nt2" aria-controls="np2"><b>They walk or bike alone.</b><span>You want to know they arrived, and they need a way to call you.</span></button>
+          <button role="tab" id="nt3" aria-controls="np3"><b>They're the only one without one.</b><span>The pressure is social, not logistical.</span></button>
+          <button role="tab" id="nt4" aria-controls="np4"><b>They have activities and rides.</b><span>Practices, pickups, plans that change at the last minute.</span></button>
+        </div>
+
+        <div class="alt-answer" role="tabpanel" id="np1" aria-labelledby="nt1">
+          <div class="alt-label">The simplest device that solves it</div>
+          <h3>A home phone, not a phone for them.</h3>
+          <p>If the need is &ldquo;call me from the house,&rdquo; a landline covers it. About $75&ndash;120 for the phone, then $7&ndash;10 a month. It is also an easy way for kids to call grandparents, cousins and family, which tends to happen more when the phone is sitting there in the kitchen.</p>
+        </div>
+
+        <div class="alt-answer" role="tabpanel" id="np2" aria-labelledby="nt2">
+          <div class="alt-label">The simplest device that solves it</div>
+          <h3>A basic phone, or a simple watch.</h3>
+          <p>Both cover this one. A watch puts location and calling on their wrist, and it also sits there all day buzzing at them, which is some of what you were trying to avoid. A basic phone goes in a bag and can be ignored for an hour. On kid watches, mind the catch: several ship a game layer you cannot switch off, and two limit texting to canned replies, which suits an 8-year-old and frustrates a 12-year-old.</p>
+          <p>For the phone route, Dumb Wireless is the easiest place to start. They stock AGM, Light Phone, Punkt and Sunbeam, and they sell service on the T-Mobile network to go with them, which saves a lot of the carrier runaround.</p>
+          <div class="links"><a class="more" href="https://www.dumbwireless.com/" target="_blank" rel="noopener">Dumb Wireless</a></div>
+        </div>
+
+        <div class="alt-answer" role="tabpanel" id="np3" aria-labelledby="nt3">
+          <div class="alt-label">Worth sitting with</div>
+          <h3>This one is your call.</h3>
+          <p>Ask a 12-year-old whether being the only one without a phone will hurt their friendships and the answer is yes, every time. They believe it, and at that age it feels true. What we get to weigh and they cannot: most of what the phone buys is entry to a group chat, and the hours it takes have to come from somewhere. It can settle one problem and quietly create others, trading the afternoons that went to a practice, a band, or a friend's kitchen table for time on a screen.</p>
+          <p class="alt-stat">&ldquo;The average American 18-year-old is on track to spend 93% of their remaining free time in front of a screen.&rdquo;</p>
+          <p class="src"><a href="https://www.ted.com/talks/dino_ambrosi_the_battle_for_your_time_exposing_the_hidden_costs_of_social_media" target="_blank" rel="noopener">Dino Ambrosi, TED</a></p>
+          <p>What lowers the pressure is other families making the same call. The Wait Until 8th pledge lets parents in the same grade at the same school agree to wait together, and it only takes effect once ten families in that grade have signed. Being the only one is a different situation from being one of many, and that gap is the thing you can close.</p>
+          <div class="links"><a class="more" href="https://www.waituntil8th.org/take-the-pledge" target="_blank" rel="noopener">Delay the smartphone</a></div>
+        </div>
+
+        <div class="alt-answer" role="tabpanel" id="np4" aria-labelledby="nt4">
+          <div class="alt-label">The simplest device that solves it</div>
+          <h3>A basic phone, once you have read the group chat section.</h3>
+          <p>Calls and texts cover the logistics fine. The part that catches families out is group chats, both what gets said in them and how badly they work on a basic phone. <a href="#group-chats">Worth reading before you buy.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="ladder">
+    <div class="wrap">
+      <div class="kick">The ladder</div>
+      <h2>Start at rung one. Only go further if you have to.</h2>
+      <p class="lede">Every rung solves a real need, and none of them is a default. Work out which problem you are solving, then stop at the first rung that solves it. Plenty of families run two, a watch on the wrist and a basic phone in the bag. Most of these cost less than the phone you are trying to avoid.</p>
+
+      <ol class="alt-ladder">
+        <li><span class="n">1</span><div><h3>A home phone <span class="alt-tag">Start here</span></h3><p>They need to reach you from the house.</p><p class="ex">Ring Ring Club &middot; Ooma Telo &middot; Tin Can</p></div><div class="price">$75&ndash;120, then $7&ndash;10/mo</div></li>
+        <li><span class="n">2</span><div><h3>A watch <span class="alt-tag">Depends on the need</span></h3><p>Calls, texts and location, on their wrist. The trade is that it rides there all day.</p><p class="ex">COSMO JrTrack &middot; Xplora XGO3 &middot; Gizmo Watch</p></div><div class="price">$65&ndash;180, then $10&ndash;20/mo</div></li>
+        <li><span class="n">3</span><div><h3>A basic or flip phone <span class="alt-tag">Depends on the need</span></h3><p>Texting anyone, not just an approved list. Goes in a bag and stays quiet until they use it.</p><p class="ex">AGM M10 &middot; Zalpha Mobile</p></div><div class="price">$59&ndash;179, then $15&ndash;20/mo</div></li>
+        <li class="alt-high"><span class="n">4</span><div><h3>A minimalist phone <span class="alt-tag">Older teens</span></h3><p>Older teen, still no browser and no feed.</p><p class="ex">Light Phone III</p></div><div class="price">$899, then $25/mo</div></li>
+        <li class="alt-high"><span class="n">5</span><div><h3>A controlled smartphone <span class="alt-tag">Be cautious</span></h3><p>Only when nothing above it will do. The guardrails leak more than the marketing suggests.</p><p class="ex">Gabb &middot; Troomi</p></div><div class="price">$150&ndash;200, then $25&ndash;40/mo</div></li>
+      </ol>
+      <p class="alt-order">The rungs are ordered by how much of the internet reaches your child, not by price.</p>
+
+      <div class="alt-past">
+        <div class="kick">Past the last rung</div>
+        <div>
+          <h4>An iPhone with parental controls <span>Not recommended</span></h4>
+          <p>The one families drift into, because there is already an old iPhone in a drawer. Screen Time limits get bypassed by changing the date, deleting and reinstalling apps, or using a browser inside another app, and kids trade the workarounds with each other.</p>
+        </div>
+        <div>
+          <h4>An unlocked smartphone <span>Worst option</span></h4>
+          <p>Everything at once, in a 10-year-old's pocket. If this is where you land, let it be a decision rather than a default.</p>
+        </div>
+      </div>
+
+      <div class="alt-test">
+        <div class="kick">One test for any device</div>
+        <p>Does it have a browser, an app store, or a feed? That is the difference between a way to reach your kid and something built to hold their attention, whatever shape it comes in.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="s mist" id="devices">
+    <div class="wrap">
+      <div class="kick">Device by device</div>
+      <h2>Every one of these, with a straight answer</h2>
+      <p class="lede">Four verdicts, no hedging. The feature list under each is a plain statement of what the device does: canned-only texting or no camera may be exactly what you want. Colour marks a gap between what a device promises and what it delivers.</p>
+      <p class="alt-within">Verdicts compare devices within a rung rather than across them.</p>
+
+      <div class="alt-filters" id="altfilters" hidden>
+        <button class="alt-filter" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="alt-filter" type="button" data-f="rec" aria-pressed="false">Recommended</button>
+        <button class="alt-filter" type="button" data-f="cheap" aria-pressed="false">Under $15/mo</button>
+        <button class="alt-filter" type="button" data-f="text" aria-pressed="false">Real texting</button>
+        <button class="alt-filter" type="button" data-f="games" aria-pressed="false">Games off</button>
+        <span class="alt-count" id="altcount" role="status">Showing 16 devices</span>
+      </div>
+
+      <div class="alt-group" data-group>
+        <h3><span>Rung 1</span> A home phone</h3>
+        <p class="alt-groupnote">They need to reach you from the house.</p>
+        <div class="alt-grid">
+        <article class="alt-card" data-verdict="rec" data-monthly="9" data-texting="none" data-games="na">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>Ring Ring Club Home phone</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$75 <span class="alt-note">(corded kit $89)</span></dd></div><div><dt>Monthly</dt><dd>$9</dd></div></dl>
+          <p class="alt-take">A kids' home phone that only makes calls. Parents approve every number, and nothing else gets through.</p>
+          <dl class="alt-feats"><div><dt>Calls</dt><dd class="alt-good">Approved numbers only</dd></div><div><dt>Texting, apps, internet</dt><dd class="alt-good">None</dd></div><div><dt>Needs</dt><dd>Home wi-fi</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> The free tier only reaches other Ring Ring Club phones. Calling any US number, with E911, is $9 a month. It runs over your home wi-fi rather than a phone line.</p>
+          <p class="src">Verified 14 Sept 2026 &middot; ringringclub.com</p>
+        </article>
+        <article class="alt-card" data-verdict="rec" data-monthly="7" data-texting="none" data-games="na">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>Ooma Telo + HD3</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$120</dd></div><div><dt>Monthly</dt><dd>$7</dd></div></dl>
+          <p class="alt-take">The simplest answer to &ldquo;but how will they reach me?&rdquo;</p>
+          <dl class="alt-feats"><div><dt>Texting</dt><dd>None</dd></div><div><dt>Contract</dt><dd class="alt-good">None</dd></div><div><dt>Needs</dt><dd>Home internet</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> The $7 a month is tax on the phone number, with no other monthly fee. It rides on your home internet, so it goes down when that does.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; ooma.com</p>
+        </article>
+        <article class="alt-card" data-verdict="rec" data-monthly="10" data-texting="none" data-games="na">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>Tin Can Kid landline</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$100</dd></div><div><dt>Monthly</dt><dd>$10</dd></div></dl>
+          <p class="alt-take">Built for kids rather than adapted for them, and best when a few families get them together.</p>
+          <dl class="alt-feats"><div><dt>Texting</dt><dd>None</dd></div><div><dt>Contract</dt><dd class="alt-good">None</dd></div><div><dt>Calls to any number</dt><dd class="alt-warn">Needs paid plan</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> The free tier only reaches other Tin Can owners.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; tincan.kids</p>
+        </article>
+        </div>
+      </div>
+      <div class="alt-group" data-group>
+        <h3><span>Rung 2</span> A watch</h3>
+        <p class="alt-groupnote">Calls, texts and location, on their wrist.</p>
+        <div class="alt-grid">
+        <article class="alt-card" data-verdict="rec" data-monthly="10" data-texting="free" data-games="off">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>COSMO JrTrack 5</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$80</dd></div><div><dt>Monthly</dt><dd>$10&ndash;20</dd></div></dl>
+          <p class="alt-take">The one kid watch where the games are off by default and stay off.</p>
+          <dl class="alt-feats"><div><dt>Calls and texts</dt><dd class="alt-good">Regular, to approved numbers</dd></div><div><dt>Group texts</dt><dd>Up to 8, all approved</dd></div><div><dt>Games</dt><dd class="alt-good">Off by default</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> You text it from your normal messaging app, photos and video included, with no extra app at your end. The watch replies with presets or speech-to-text rather than a keyboard, and a group chat works only if every member is approved.</p>
+          <span class="alt-chip">Games can be turned off</span>
+          <p class="src">Verified 9 Aug 2026 &middot; cosmotogether.com</p>
+        </article>
+        <article class="alt-card" data-verdict="rec" data-monthly="10" data-texting="preset" data-games="none">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>Verizon Gizmo Watch 4</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$180</dd></div><div><dt>Monthly</dt><dd>$10</dd></div></dl>
+          <p class="alt-take">A common pick, and a sensible choice.</p>
+          <dl class="alt-feats"><div><dt>Carrier</dt><dd class="alt-warn">Verizon only</dd></div><div><dt>Messaging</dt><dd>Voice notes and emoji</dd></div><div><dt>Geofence accuracy</dt><dd class="alt-warn">700 ft at best</dd></div><div><dt>SOS</dt><dd class="alt-bad">Does not dial 911</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Verizon's page lists voice notes and emoji rather than a keyboard. On earlier Gizmos it switched typed texting on through an update parents never asked for, so treat the limit as current behaviour rather than a promise.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; verizon.com</p>
+        </article>
+        <article class="alt-card" data-verdict="works" data-monthly="10" data-texting="preset" data-games="none">
+          <div class="alt-verdict alt-v-plain">Works, with caveats</div>
+          <h4>Xplora XGO3</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$130</dd></div><div><dt>Monthly</dt><dd>$10&ndash;12</dd></div></dl>
+          <p class="alt-take">The most locked-down watch here, which is the point for a younger kid.</p>
+          <dl class="alt-feats"><div><dt>Texting</dt><dd>Preset replies and emoji</dd></div><div><dt>Battery</dt><dd class="alt-good">72&ndash;86 hours</dd></div><div><dt>Contacts</dt><dd>50</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> No keyboard at all. The larger X6Play adds a camera at $170.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; myxplora.com</p>
+        </article>
+        <article class="alt-card" data-verdict="works" data-monthly="10" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-plain">Works, with caveats</div>
+          <h4>Garmin Bounce 2</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$300</dd></div><div><dt>Monthly</dt><dd>$10</dd></div></dl>
+          <p class="alt-take">The most accurate location of any watch here, and you pay for it.</p>
+          <dl class="alt-feats"><div><dt>Location</dt><dd class="alt-good">3&ndash;8m accuracy</dd></div><div><dt>Texting</dt><dd>Free text, keyboard</dd></div><div><dt>Battery</dt><dd class="alt-warn">~1.5 days with LTE</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Nearly four times the price of a JrTrack, for location precision most families will not need.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; garmin.com</p>
+        </article>
+        <article class="alt-card" data-verdict="skip" data-monthly="10" data-texting="preset" data-games="forced">
+          <div class="alt-verdict alt-v-bad">Skip</div>
+          <h4>Fitbit Ace LTE</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$100</dd></div><div><dt>Monthly</dt><dd>$10</dd></div></dl>
+          <p class="alt-take">Limited on purpose, which suits plenty of families. The arcade layer is the problem.</p>
+          <dl class="alt-feats"><div><dt>Games</dt><dd class="alt-bad">Cannot disable</dd></div><div><dt>Texting</dt><dd>Canned replies only</dd></div><div><dt>If you stop paying</dt><dd class="alt-bad">Stops working</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Google's own policy: cancel the subscription and the watch &ldquo;may stop working,&rdquo; with no refund.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; support.google.com</p>
+        </article>
+        <article class="alt-card alt-wide" data-verdict="works" data-monthly="11" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-plain">Works, with caveats</div>
+          <h4>Apple Watch SE 3, for your kids</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$299 <span class="alt-note">(cellular model required)</span></dd></div><div><dt>Monthly</dt><dd>Carrier watch line</dd></div><div><dt>Needs</dt><dd>A parent iPhone</dd></div></dl>
+          <p class="alt-take">Workable if you are already an iPhone family. The walls are lower than they look, and all of this comes from Apple's own pages.</p>
+          <ul class="alt-watch"><li><b>Schooltime is designed to be exited.</b> Apple's own guide: &ldquo;Your child can exit Schooltime temporarily&hellip; If they exit Schooltime, you get a notification.&rdquo; It tells you afterwards rather than stopping them.</li><li><b>There is a working web browser.</b> No Safari app sits in the grid, but pages render when a link is opened from Siri, from a message, or from an email.</li><li><b>The watch has its own App Store,</b> which carries third-party browsers and a YouTube client. Restricting it takes Screen Time plus Ask to Buy, both set by you.</li><li><b>Parents on Apple's own support forums report</b> that a child can dial from the keypad despite an approved-contacts list, and can block a parent, which cuts your messages and your view of their location. These are user accounts rather than documented behaviour.</li></ul>
+          <p class="src">Verified 9 Aug 2026 &middot; Apple Watch User Guide, discussions.apple.com</p>
+        </article>
+        </div>
+      </div>
+      <div class="alt-group" data-group>
+        <h3><span>Rung 3</span> A basic or flip phone</h3>
+        <p class="alt-groupnote">Texting anyone, not just an approved list.</p>
+        <div class="alt-grid">
+        <article class="alt-card" data-verdict="rec" data-monthly="15" data-texting="sms" data-games="none">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>AGM M10</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$59 <span class="alt-note">(on sale from $69)</span></dd></div><div><dt>Monthly</dt><dd>About $15 (prepaid plan, varies)</dd></div></dl>
+          <p class="alt-take">A real dumb phone at a real dumb-phone price.</p>
+          <dl class="alt-feats"><div><dt>Carrier</dt><dd class="alt-warn">T-Mobile only</dd></div><div><dt>Texting</dt><dd>Plain SMS</dd></div><div><dt>Group texts</dt><dd class="alt-warn">Unverified</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> No Verizon or AT&amp;T compatibility is claimed anywhere. The M9 is $49 if you want the cheapest way in.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; dumbwireless.com</p>
+        </article>
+        <article class="alt-card" data-verdict="rec" data-monthly="20" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-good">Recommended</div>
+          <h4>Zalpha Mobile</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$179 <span class="alt-note">(case included)</span></dd></div><div><dt>Monthly</dt><dd>$20</dd></div></dl>
+          <p class="alt-take">Calls, texts and Spotify, and nothing else. Music without a feed attached is a rare combination.</p>
+          <dl class="alt-feats"><div><dt>Music</dt><dd class="alt-good">Spotify</dd></div><div><dt>Browser</dt><dd class="alt-good">None</dd></div><div><dt>App store</dt><dd class="alt-good">None</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> The limits are built into the phone rather than managed from an app, so there is no dashboard and no location tracking.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; zalphamobile.com</p>
+        </article>
+        </div>
+      </div>
+      <div class="alt-group" data-group>
+        <h3><span>Rung 4</span> A minimalist phone</h3>
+        <p class="alt-groupnote">Older teen, still no browser and no feed.</p>
+        <div class="alt-grid">
+        <article class="alt-card" data-verdict="works" data-monthly="25" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-plain">Works, with caveats</div>
+          <h4>Light Phone III</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$899 <span class="alt-note">(or $59/mo on a 2-year plan)</span></dd></div><div><dt>Monthly</dt><dd>$25</dd></div></dl>
+          <p class="alt-take">Beautiful and deliberate, and the one many adults want for themselves. It also costs more than most smartphones.</p>
+          <dl class="alt-feats"><div><dt>Texting</dt><dd>Free text, images included</dd></div><div><dt>Camera</dt><dd>Yes</dd></div><div><dt>Availability</dt><dd class="alt-warn">Reserve now, delivers late December</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> No browser, no app store and no feed, and no streaming music or messaging apps like Signal or WhatsApp. The phone is unlocked, so a cheaper prepaid plan works in place of Light's own. The Light Phone II is $299 if you want the idea at a third of the price.</p>
+          <p class="src">Verified 14 Sept 2026 &middot; thelightphone.com</p>
+        </article>
+        </div>
+      </div>
+      <div class="alt-group" data-group>
+        <h3><span>Rung 5</span> A controlled smartphone</h3>
+        <p class="alt-groupnote">Only when nothing above it will do.</p>
+        <div class="alt-grid">
+        <article class="alt-card" data-verdict="comp" data-monthly="25" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-warn">Be cautious</div>
+          <h4>Gabb Phone 4</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$150 <span class="alt-note">(+ $30 activation)</span></dd></div><div><dt>Monthly</dt><dd>$25&ndash;40</dd></div></dl>
+          <p class="alt-take">Gabb's tween phone: a fixed set of apps chosen by Gabb, with no way to add more.</p>
+          <dl class="alt-feats"><div><dt>Apps</dt><dd class="alt-good">Fixed set</dd></div><div><dt>Group texts</dt><dd class="alt-warn">Depends on plan</dd></div><div><dt>You can read their messages</dt><dd class="alt-good">Yes</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Gabb's own support page says iPhone group threads must be remade to exclude a Gabb number.</p>
+          <p class="alt-code">Turning Life On discount code: <b>TLOGABB</b></p>
+          <p class="src">Verified 9 Aug 2026 &middot; gabb.com</p>
+        </article>
+        <article class="alt-card" data-verdict="comp" data-monthly="25" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-warn">Be cautious</div>
+          <h4>Gabb Phone 4 Pro</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$200 <span class="alt-note">(+ $30 activation)</span></dd></div><div><dt>Monthly</dt><dd>$25&ndash;40</dd></div></dl>
+          <p class="alt-take">The $50 buys app access, not just better hardware. Gabb aims this one at teens rather than tweens.</p>
+          <dl class="alt-feats"><div><dt>Apps</dt><dd class="alt-warn">Gabb-reviewed library</dd></div><div><dt>Storage</dt><dd>128GB, up from 32GB</dd></div><div><dt>Cameras</dt><dd>50MP triple rear</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Parents add third-party apps from Gabb's library through the portal. That flexibility is the step toward an ordinary smartphone, so it is worth deciding whether you want the step.</p>
+          <p class="alt-code">Turning Life On discount code: <b>TLOGABB</b></p>
+          <p class="src">Verified 9 Aug 2026 &middot; gabb.com/blog/gabb-phone-4-pro-guide</p>
+        </article>
+        <article class="alt-card" data-verdict="comp" data-monthly="25" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-warn">Be cautious</div>
+          <h4>Troomi Galaxy A17 5G</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$200</dd></div><div><dt>Monthly</dt><dd>$25&ndash;35</dd></div></dl>
+          <p class="alt-take">Real Samsung hardware with per-app control that opens up as they grow.</p>
+          <dl class="alt-feats"><div><dt>Carrier</dt><dd>AT&amp;T</dd></div><div><dt>Group texts</dt><dd class="alt-warn">Needs mid plan</dd></div><div><dt>Browser</dt><dd>Filtered</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> Every app stays off until you turn it on, one at a time. That is the appeal, and it is more upkeep than most parents expect.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; troomi.com</p>
+        </article>
+        <article class="alt-card" data-verdict="comp" data-monthly="29" data-texting="free" data-games="none">
+          <div class="alt-verdict alt-v-warn">Be cautious</div>
+          <h4>Bark Phone</h4>
+          <dl class="alt-money"><div><dt>Up front</dt><dd>$240</dd></div><div><dt>Monthly</dt><dd>$29</dd></div></dl>
+          <p class="alt-take">A Samsung phone that watches what your kid types and tells you what it finds.</p>
+          <dl class="alt-feats"><div><dt>Monitoring</dt><dd class="alt-warn">Alerts, not blocks</dd></div><div><dt>App limits</dt><dd class="alt-good">Enforced</dd></div><div><dt>Carrier</dt><dd class="alt-warn">Bark's own network</dd></div></dl><p class="alt-know"><b>Worth knowing:</b> The monitoring reports rather than prevents, and the Pro runs $600 up front for the same software.</p>
+          <p class="src">Verified 9 Aug 2026 &middot; bark.us</p>
+        </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s alt-dark" id="group-chats">
+    <div class="wrap read">
+      <div class="kick">Before you buy anything that texts</div>
+      <h2>Group chats come with nearly every device here</h2>
+      <p class="lede">A limited phone or watch takes social media, the open web and an app store off the table. Group chats stay. Pile-ons that would never happen face to face, kids added and removed to make a point, a photo shared with 30 people in a second. Most of it happens with no adult aware, and the kid on the receiving end usually says nothing at home.</p>
+      <ol>
+        <li><b>Can I see what is being said?</b> Some devices show you every message and some show you nothing. It varies more than almost anything else here, and it rarely appears on the box.</li>
+        <li><b>Does my kid know I can see it?</b> Say so up front. Reading their messages in secret costs more than it gains.</li>
+      </ol>
+      <p class="lede">One more thing about basic phones. When someone in a group is not on iMessage, the thread drops to older technology for everyone: messages land late, out of order, or not at all. Worth talking through before you buy, and plenty of families decide the simpler device is worth the friction.</p>
+    </div>
+  </section>
+
+  <section class="s" id="about-page">
+    <div class="wrap read">
+      <div class="kick">About this page</div>
+      <h2>How this page works</h2>
+      <p class="lede">The Gabb listings carry a Turning Life On discount code, shown next to each one. That arrangement doesn't change a verdict: Gabb carries both a TLO code and a &ldquo;Be cautious&rdquo; rating. Every price carries a source and the date it was checked, and anything we could not confirm says so.</p>
+      <p class="lede">Technology changes quickly and these products come and go. If you find a product that works for your family, let us know by <a href="mailto:info@turninglifeon.org">emailing us</a>.</p>
+      <p class="lede">Research by <a href="https://techwisearlington.org/smartphone-alternatives/" target="_blank" rel="noopener">Tech-Wise Arlington</a>, a Turning Life On community.</p>
+
+      <div class="alt-lend" id="borrow">
+        <h3>Try before you buy.</h3>
+        <p>TLO communities can borrow a basic phone or kid-focused watch from our lending library before buying.</p>
+        <div class="btns" style="margin-top:14px"><a class="btn btn-teal btn-sm" href="mailto:jeff@turninglifeon.org?subject=Borrowing%20a%20device">Email Jeff to borrow a device</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s mist">
+    <div class="wrap read">
+      <div class="kick">Next steps</div>
+      <p class="lede" style="margin-top:0">Whichever device you choose, if any, set up a family media plan and basic phone etiquette rules, like no devices in bedrooms, at the dinner table or in the car. Another easy rule: People Come First.</p>
+      <p class="lede">Also, don't be afraid of <a href="https://www.amazon.com/Free-Range-Raise-Self-Reliant-Children-Without/dp/0470574755" target="_blank" rel="noopener">free-range parenting</a>. Many families let their children walk home from school or around their community with no device at all, just like kids did in the '70s, '80s and '90s. It's a personal decision that depends on where you live, your child's age and how prepared they are.</p>
+      <div class="btns"><a class="btn btn-orange" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></div>
+    </div>
+  </section>
+
+  <section class="s" id="join">
+    <div class="wrap">
+      <div class="kick">Join us</div>
+      <h2>you bring the concern and we'll help carry what comes next</h2>
+      <p class="lede">Tell us a little about where your community is today, and a real person will get back to you.</p>
+      <div class="joinwrap" data-joinform>
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!--SHELL:footer-->
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
+      </div>
+    </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="../privacy/">Privacy policy</a></li>
+    </ul>
+    <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
+  </div>
+</footer>
+<!--/SHELL:footer-->
+<script src="../assets/nearby.js"></script>
+<script src="../assets/join.js"></script>
+<script src="../assets/site.js"></script>
+<script>
+/* Device filters. Every card carries data- attributes (verdict, monthly,
+   texting, games), so nothing is read from the visible text. Without
+   JavaScript all devices simply show. */
+(function(){
+  var bar = document.getElementById('altfilters');
+  var count = document.getElementById('altcount');
+  var cards = [].slice.call(document.querySelectorAll('.alt-card'));
+  var groups = [].slice.call(document.querySelectorAll('[data-group]'));
+  var TEST = {
+    all: function(){ return true; },
+    rec: function(c){ return c.dataset.verdict === 'rec'; },
+    cheap: function(c){ return Number(c.dataset.monthly) < 15; },
+    text: function(c){ return c.dataset.texting === 'free' || c.dataset.texting === 'sms'; },
+    games: function(c){ return c.dataset.games === 'off' || c.dataset.games === 'none'; }
+  };
+  function apply(f){
+    var n = 0;
+    cards.forEach(function(c){ var on = TEST[f](c); c.hidden = !on; if (on) n++; });
+    groups.forEach(function(g){ g.hidden = !g.querySelector('.alt-card:not([hidden])'); });
+    count.textContent = 'Showing ' + n + (n === 1 ? ' device' : ' devices');
+  }
+  bar.hidden = false;
+  bar.addEventListener('click', function(e){
+    var b = e.target.closest('.alt-filter');
+    if (!b) return;
+    [].slice.call(bar.querySelectorAll('.alt-filter')).forEach(function(x){
+      x.setAttribute('aria-pressed', String(x === b));
+    });
+    apply(b.dataset.f);
+  });
+})();
+</script>
+</body></html>

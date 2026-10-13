@@ -24,9 +24,11 @@ There is no staging step, so check before you push.
 | `community-grants/` | Community Grants | Static copy (not in the navigation) |
 | `privacy/` | Privacy policy | Static copy |
 | `pact/` | Community pact | Placeholder until the statewide pact is live |
+| `smartphone-alternatives/` | Smartphone Alternatives | Static copy from Tech-Wise Arlington's research (not in the navigation) |
 
-`attend.html`, `network.html`, `resources.html` and `take-action.html` are
-redirects from older addresses. Keep them so old links still work.
+`attend.html`, `network.html`, `resources.html`, `take-action.html` and
+`turning-life-on-resources/smartphone-alternatives/` are redirects from older
+addresses. Keep them so old links still work.
 
 Every page has a `<section id="join">` holding the sign-up form; the **Join Us**
 button in the navigation and **Sign up** in the footer jump to it.
@@ -176,6 +178,9 @@ git push
   cannot do this. Swapping it is `submitSignup` in `assets/join.js`.
 - **Per-issue pages.** The home page describes four issues; none has its own
   page yet, and the links point at existing pages instead.
-- **Smartphone Alternatives page.** Not built yet; links point at
-  turninglifeon.org/smartphone-alternatives.
+- **Smartphone Alternatives prices.** Every device shows the date its price
+  was checked on the manufacturer's own site. Re-check before those dates get
+  stale, and send Jeff Miller (Tech-Wise Arlington) changes for an accuracy
+  pass. Never change a verdict to suit a discount code. Jeff's build brief is
+  internal and stays out of this repo.
 - **Team headshots.** Initials stand in until headshots arrive.
