@@ -1,84 +1,102 @@
 {
-  "note": "Communities not yet registered on Four Norms. Hand maintained. Delete a row once its group appears in the Four Norms data, or it will show twice.",
+  "note": "Hand maintained, unlike the other files in data/. 'communities' lists Massachusetts groups not yet registered under Turning Life On on Four Norms; delete a row once its group appears in groups.json, or it is hidden automatically when a group with the same city arrives. 'websites' gives a group's own website, keyed by its Four Norms slug, for groups whose own site is not in the Four Norms data. Source: Wireframe v4, October 2026.",
+  "websites": {
+    "tech-wise-arlington": "https://techwisearlington.org/",
+    "intentional-tech-coalition-concord": "https://intentionaltechcoalition.org/itc-homepage.html",
+    "lex-kids-be-kids": "https://www.lexkidsbekids.org/",
+    "reconnect-nashoba-valley": "https://www.reconnectma.org/",
+    "south-shore-digital-wellness": "https://southshoredigitalwellness.org/",
+    "sudbury-for-digital-balance": "https://www.sudburyfordigitalbalance.org/"
+  },
   "communities": [
     {
-      "name": null,
-      "display_name": null,
+      "name": "Schools Beyond Screens Boston",
       "city": "Boston",
       "state": "MA",
       "lat": 42.3588,
       "lon": -71.0578,
-      "web_url": null,
+      "fournorms_url": "https://www.fournorms.com/organization/groups/schools-beyond-screens-boston",
+      "website": null,
+      "registered": false
+    },
+    {
+      "name": "CLASS Harvard",
+      "city": "Harvard",
+      "state": "MA",
+      "lat": 42.5001,
+      "lon": -71.5828,
+      "fournorms_url": null,
+      "website": "https://www.classharvard.org/",
       "registered": false
     },
     {
       "name": "Reconnect Malden",
-      "display_name": "Reconnect Malden",
       "city": "Malden",
       "state": "MA",
       "lat": 42.4268,
       "lon": -71.0684,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": "https://www.reconnectmalden.com/",
       "registered": false
     },
     {
       "name": null,
-      "display_name": null,
       "city": "Medfield",
       "state": "MA",
       "lat": 42.1866,
       "lon": -71.3055,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": null,
       "registered": false
     },
     {
-      "name": null,
-      "display_name": null,
-      "city": "Needham",
+      "name": "Natick Schools Beyond Screens",
+      "city": "Natick",
       "state": "MA",
-      "lat": 42.2803,
-      "lon": -71.2361,
-      "web_url": null,
+      "lat": 42.2835,
+      "lon": -71.3495,
+      "fournorms_url": "https://www.fournorms.com/organization/groups/natick-schools-beyond-screens",
+      "website": null,
       "registered": false
     },
     {
       "name": null,
-      "display_name": null,
       "city": "Watertown",
       "state": "MA",
       "lat": 42.3653,
       "lon": -71.1843,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": null,
       "registered": false
     },
     {
-      "name": null,
-      "display_name": null,
+      "name": "Beyond Screens Wellesley",
       "city": "Wellesley",
       "state": "MA",
       "lat": 42.2965,
       "lon": -71.2926,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": null,
       "registered": false
     },
     {
       "name": null,
-      "display_name": null,
       "city": "Westborough",
       "state": "MA",
       "lat": 42.2694,
       "lon": -71.613,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": null,
       "registered": false
     },
     {
       "name": null,
-      "display_name": null,
       "city": "Woburn",
       "state": "MA",
       "lat": 42.4793,
       "lon": -71.1523,
-      "web_url": null,
+      "fournorms_url": null,
+      "website": null,
       "registered": false
     }
   ]

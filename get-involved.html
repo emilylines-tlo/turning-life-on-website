@@ -1,152 +1,53 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Take Action &middot; Turning Life On</title>
+<title>Get Involved &middot; Turning Life On</title>
+<meta name="description" content="Small steps for parents at home and at school, and playbooks for advocates leading change in their community and district.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-:root{
-  --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
-  --orange:#e8821e; --orange-d:#cf7316; --mist:#f1f1ef; --line:#e4e3de; --maxw:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Mulish',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:600;line-height:1.15;color:var(--ink)}
-a{color:var(--teal);text-decoration:none}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
-.read{max-width:780px}
-.review{background:var(--slate);color:#e9eef1;font-size:13px;text-align:center;padding:7px 16px}
-.review b{color:#fff;font-weight:600}
-header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:3px solid var(--teal)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:96px}
-.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer}
-.logo .word{font-family:'Poppins',sans-serif;font-weight:700;font-size:27px;letter-spacing:.01em}
-.logo .word .a{color:var(--slate)} .logo .word .b{color:var(--teal)}
-.logo .word .pw{font-size:18px;vertical-align:middle;margin:0 1px}
-.logo .tag{font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.18em;color:var(--teal);margin-top:5px}
-nav ul{display:flex;align-items:center;gap:26px;list-style:none}
-.navlink{font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;color:var(--slate);padding:4px 0;position:relative}
-.navlink:hover{color:var(--teal)}
-.navlink.active::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--slate)}
-.menubtn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:9px 13px;cursor:pointer;font-size:15px;color:var(--slate)}
-.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:17px;font-weight:500;padding:15px 30px;border-radius:2px;cursor:pointer;border:0;transition:background .18s}
-.btn-orange{background:var(--orange);color:#fff} .btn-orange:hover{background:var(--orange-d)}
-.btn-teal{background:var(--teal);color:#fff} .btn-teal:hover{background:var(--teal-d)}
-.btn-sm{font-size:15px;padding:11px 22px}
-.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.phero{position:relative;background-size:cover;background-position:center;min-height:540px;display:flex;align-items:center}
-.phero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.12)}
-.phero .inner{position:relative;z-index:2;width:100%}
-.tblock{display:inline-block;background:var(--teal);color:#fff;padding:14px 26px;font-family:'Poppins',sans-serif;font-weight:600}
-.tblock.sm{font-size:30px} .tblock.lg{font-size:54px;margin-top:14px}
-.phero .btns{margin-top:30px} .phero .btns .btn{box-shadow:0 2px 14px rgba(0,0,0,.18)}
-.subhero{display:inline-block;background:var(--teal);color:#fff;padding:16px 26px;max-width:600px;font-size:19px;font-weight:400;margin-top:14px;font-family:'Mulish',sans-serif}
-section.s{padding:78px 0}
-section.s.mist{background:var(--mist)}
-section.s.teal{background:var(--teal);color:#fff}
-section.s.teal h2,section.s.teal h3{color:#fff}
-.kick{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
-section.s.teal .kick{color:#cfeaea}
-.s h2{font-size:clamp(30px,4vw,46px);margin-bottom:18px}
-.s h3{font-size:24px;margin-bottom:10px}
-.s p{font-size:17px;margin-bottom:16px;color:#33373a}
-section.s.teal p{color:rgba(255,255,255,.95)}
-.s p:last-child{margin-bottom:0}
-.lede{font-size:19px}
-.tlolink{color:var(--teal);font-weight:700;text-decoration:underline}
-.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
-.mapteaser{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
-.mapteaser .topbar{background:#222;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;padding:12px 16px}
-.mapteaser .mapimg{height:300px;background:linear-gradient(135deg,#dbe7e2,#e9efe8);position:relative}
-.mapteaser .pin{position:absolute;width:14px;height:14px;background:var(--teal);border:2px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.mapteaser .foot{padding:16px;text-align:center}
-.pathgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
-.path .photo{height:230px;background-size:cover;background-position:center;background-color:#5fb0b0;border-radius:2px}
-.path h3{margin-top:22px;font-size:28px;color:#fff}
-.path p{margin-top:10px;font-size:16px;color:rgba(255,255,255,.95)}
-.path .btn{margin-top:20px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.card{background:var(--mist);border-radius:4px;padding:30px}
-.card .tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
-.card h3{font-size:22px} .card p{font-size:16px;margin:10px 0 18px}
-.wave{display:block;width:100%;height:40px;margin-top:10px}
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.member{background:var(--mist);border-radius:4px;padding:26px}
-.member .name{font-family:'Poppins',sans-serif;font-size:21px;font-weight:600;color:var(--slate)}
-.member .role{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:5px 0 12px}
-.member p{font-size:15px;margin:0}
-.flag{color:var(--orange);font-style:italic;font-size:14px}
-.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dir a{background:var(--mist);border-radius:3px;padding:18px;color:var(--slate);font-family:'Poppins',sans-serif;font-weight:500;font-size:16px}
-.dir a:hover{background:#e7e7e3}
-.dir a span{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:var(--orange);text-decoration:underline;font-size:14px;margin-top:6px}
-.embed{border:1px dashed var(--teal);border-radius:4px;background:#eef5f5;padding:46px 24px;text-align:center;color:var(--teal-d)}
-.embed .lab{font-family:'Poppins',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.embed .ico{font-size:32px;display:block;margin-bottom:10px}
-.imgrow{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.imgrow .pic{height:320px;background-size:cover;background-position:center;background-color:#cfe0db;border-radius:4px}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.quote{background:#fff;border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:24px;box-shadow:0 1px 0 var(--line)}
-.quote p{font-size:17px;color:var(--ink);font-style:italic;margin-bottom:12px}
-.quote .who{font-family:'Poppins',sans-serif;font-style:normal;font-size:13.5px;font-weight:500;color:var(--teal)}
-footer{background:#24323f;color:#c8d3dc;padding:56px 0 40px;font-size:15px}
-footer h4{color:#fff;font-size:17px;margin-bottom:12px}
-footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
-footer p,footer li{font-size:15px;color:#c8d3dc;line-height:1.7}
-footer a{color:#c8d3dc} footer a:hover{color:#fff}
-.flist{list-style:none;display:flex;flex-direction:column;gap:9px}
-.disc{margin-top:38px;padding-top:22px;border-top:1px solid #465866;font-size:12.5px;color:#8d9caa;line-height:1.55}
-.btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
-.btn-line:hover{background:var(--slate);color:#fff}
-.navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
-.s h2 em{font-style:normal;color:var(--teal)}
-.firststeps{margin-top:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.firststeps div{background:var(--mist);border-radius:4px;padding:24px;display:flex;flex-direction:column;align-items:flex-start}
-.firststeps b{font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate)}
-.firststeps span{display:block;margin:8px 0 16px;font-size:15.5px;color:var(--body)}
-.firststeps .btn{margin-top:auto}
-.firststeps .await{margin-top:auto;font-style:italic;font-size:14px;color:var(--orange-d)}
-.issuetabs{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
-.issuetab{font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);border-radius:2px;padding:11px 20px;cursor:pointer}
-.issuetab:hover{border-color:var(--teal);color:var(--teal-d)}
-.issuetab.is-on{background:var(--teal);border-color:var(--teal);color:#fff}
-.issuepanel{margin-top:26px}
-.issuepanel .one{font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:var(--teal-d);max-width:70ch}
-.acts{margin-top:22px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.act{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px}
-.act b{font-family:'Poppins',sans-serif;font-size:17px;color:var(--slate)}
-.act span{display:block;margin-top:8px;font-size:15.5px;color:var(--body)}
-@media (max-width:900px){ .firststeps,.acts{grid-template-columns:1fr} }
-@media (max-width:900px){
-  .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
-  .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
-  .bar{height:auto;padding:14px 0;flex-wrap:wrap}
-  nav ul{display:none} nav.open ul{display:flex;flex-direction:column;width:100%;gap:12px;margin-top:12px}
-  .menubtn{display:block} .tblock.lg{font-size:38px}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style></head><body>
+.tablist{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:32px}
+.tablist [role="tab"]{text-align:left;background:#fff;border:2px solid var(--line);padding:16px 18px;cursor:pointer;font-family:'Mulish',sans-serif;font-size:14.5px;color:var(--body);display:flex;flex-direction:column;gap:6px}
+.tablist [role="tab"] b{font-family:'Poppins',sans-serif;font-size:16.5px;color:var(--slate)}
+.tablist [role="tab"] em{font-family:'Poppins',sans-serif;font-size:14px}
+.tablist [role="tab"]:hover{border-color:var(--teal)}
+.tablist [role="tab"][aria-selected="true"]{border-color:var(--teal);background:var(--teal);color:#fff}
+.tablist [role="tab"][aria-selected="true"] b,.tablist [role="tab"][aria-selected="true"] em{color:#fff}
+.panel{margin-top:22px}
+.acts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.act{background:#fff;border:1px solid var(--line);padding:22px;display:flex;flex-direction:column}
+.mist .act{border-color:#e6e8e8}
+.act h3{font-size:17.5px;margin-bottom:6px}
+.act p{font-size:15.5px}
+.act .links{margin-top:auto;padding-top:14px}
+.act .tbd{font-size:13.5px;color:var(--muted);font-style:italic;margin-top:10px}
+.starthere{margin-top:16px;font-size:17px}
+.aff{margin-top:26px}
+@media (max-width:980px){ .tablist{grid-template-columns:1fr 1fr} }
+@media (max-width:640px){ .tablist,.acts{grid-template-columns:1fr} }
+</style>
+</head><body>
 <!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Turning Life On, home">
       <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
       <div class="tag">KEEP TECH IN CHECK</div>
     </a>
-    <nav id="nav">
-      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
-      <ul>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
         <li><a class="navlink" href="index.html">Home</a></li>
         <li><a class="navlink" href="about.html">About</a></li>
         <li><a class="navlink" href="communities.html">Communities</a></li>
         <li><a class="navlink" href="learn.html">Learn</a></li>
         <li><a class="navlink active" href="get-involved.html">Get Involved</a></li>
-        <li><a class="navlink" href="attend.html">Attend</a></li>
-        <li><a class="btn btn-line btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></li>
-        <li><a class="btn btn-orange btn-sm" href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+        <li><a class="navlink" href="events.html">Events</a></li>
+        <li><a class="navlink" href="support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
       </ul>
     </nav>
   </div>
@@ -154,108 +55,131 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--/SHELL:nav-->
 <main id="main">
 
-  <section class="s cream">
+  <section class="hero">
     <div class="wrap">
-      <h2>Get involved</h2>
-      <p class="lede">There's no single right way to be part of this. Some families start by signing a pact with other parents in their kid's grade. Some start a group in their community. Pick what fits your life right now. Every step counts.</p>
+      <h1>get involved. find your first step</h1>
+      <p>There's no single right way to be part of this. Some families start by signing a pact with other parents in their kid's grade. Some start a group in their community. Pick what fits your life right now. Every step counts.</p>
       <div class="btns">
-        <a class="btn btn-orange" href="#first-step">Find your first step</a>
-        <a class="textlink" href="#by-issue">Take action by issue</a>
+        <a class="btn btn-orange" href="#parents">For parents</a>
+        <a class="btn btn-ghost" href="#advocates">For advocates</a>
       </div>
     </div>
   </section>
 
-  <section class="s" id="first-step">
+  <section class="s" id="parents">
     <div class="wrap">
-      <div class="kick">Find your first step</div>
-      <h2><em>Start</em> where you are</h2>
-      <div class="firststeps">
-        <div><b>Have five minutes?</b><span>Sign and share the community pact, email your legislators about phone-free schools, or get our monthly email so you'll know when it's time to act.</span>
-          <a class="btn btn-orange btn-sm" href="pact/">Sign the pact</a></div>
-        <div><b>Have an evening?</b><span>Come to a parent night or coffee near you and meet other families who are thinking about this too.</span>
-          <a class="btn btn-orange btn-sm" href="attend.html">Find an event</a></div>
-        <div><b>Ready to lead?</b><span>Start or grow a group in your community. We'll bring the playbooks, funding and a network of parents who've done it before.</span>
-          <a class="btn btn-orange btn-sm" href="communities.html#start">Start a group</a></div>
-        <div><b>New to advocacy?</b><span>Building a team, preparing for meetings, talking with decision-makers, and what to say when you hear "we're waiting for the state." Written for first-timers and seasoned advocates alike. You don't have to be an expert. You just have to care.</span>
-          <em class="await">Advocate's Toolkit link to come</em></div>
+      <h2>small steps that <em>make a difference</em></h2>
+      <p class="lede"><b>For parents</b> (things you can do at home and at your child's school). Every conversation and every small change is a step in the right direction.</p>
+
+      <div data-tabs>
+        <div class="tablist" role="tablist" aria-label="For parents, by issue">
+          <button role="tab" id="pt1" aria-controls="pp1"><b>Smartphones and Social Media</b><span><em>More childhood before the phone.</em> Waiting is so much easier when you're not the only family doing it.</span></button>
+          <button role="tab" id="pt2" aria-controls="pp2"><b>Distraction-free Learning</b><span><em>School should be the easy part.</em></span></button>
+          <button role="tab" id="pt3" aria-controls="pp3"><b>AI in Childhood</b><span><em>Powerful, and unsafe for kids.</em> AI is arriving in classrooms faster than anyone can study it.</span></button>
+          <button role="tab" id="pt4" aria-controls="pp4"><b>Reconnecting our Communities</b><span><em>Busy kids don't miss their screens.</em></span></button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="pp1" aria-labelledby="pt1"><div class="acts">
+          <div class="act"><h3>Sign and share the community pact.</h3><p>Pledge to wait on smartphones until high school and social media until 16, then pass it along to 3 friends.</p><div class="links"><a class="more" href="https://www.turninglifeon.org/pact">Community pact</a></div></div>
+          <div class="act"><h3>Slow-tech your family's devices.</h3><p>Simple habits, phone settings and router settings.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Slow Tech at Home</a></div></div>
+          <div class="act"><h3>Find a phone that fits.</h3><p>Stay in touch without the whole internet in their pocket.</p><div class="links"><a class="more" href="https://www.turninglifeon.org/smartphone-alternatives">Smartphone Alternatives</a></div></div>
+          <div class="act"><h3>Create a family media plan.</h3><p>Decide together what tech looks like in your home, before the arguments start.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></div></div>
+          <div class="act"><h3>Give phones a home.</h3><p>A Phone Home gives every device in the house one spot to rest and charge, away from bedrooms and the dinner table.</p><div class="links"><a class="more" href="https://a.co/d/0ecfs5av" target="_blank" rel="noopener sponsored">Phone Home</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="pp2" aria-labelledby="pt2"><div class="acts">
+          <div class="act"><h3>Ask one question at pickup.</h3><p>"How much screen time does my child get in a typical school day?" One curious question shows your school that families care.</p></div>
+          <div class="act"><h3>Tell the State House: advance phone-free schools now.</h3><p>Both chambers have voted for bell-to-bell, phone-free schools, but the final bill is stuck in conference committee. Email the negotiators and your own legislators, and ask them to finish the job.</p><div class="links"><a class="more" href="https://www.fournorms.com/actions/tlo-finish-phone-free-schools-now" target="_blank" rel="noopener">Finish Phone-Free Schools Now</a></div></div>
+          <div class="act"><h3>Ask your teacher to ditch "free" screen time.</h3><p>An email or conversation asking that students in your child's class do screen-free activities during free time.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-1-ditch-free-screen-time" target="_blank" rel="noopener">Ditch "Free" Screen Time playbook</a></div></div>
+          <div class="act"><h3>Request informed consent.</h3><p>Most schools ask for your consent for your child's internet and device use, often buried in an annual form. You can give consent based on conditions.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts" target="_blank" rel="noopener">Your Consent Counts</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="pp3" aria-labelledby="pt3"><div class="acts">
+          <div class="act"><h3>Learn more about AI and skip AI companion apps for kids.</h3><p>Apps like Character.AI, Replika, Chai and Talkie are built to keep users talking. They replace the pushback that real relationships provide with constant validation. A friend or parent will tell a kid when an idea is unkind, unsafe or wrong. These apps, by design, agree.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></div></div>
+          <div class="act"><h3>Teach kids that AI lies confidently.</h3><p>AI sounds fluent. It cites things. It uses authoritative language. None of that means it's right, and the most dangerous outputs are the wrong ones that feel correct. Kids need a working assumption: check it before you trust it.</p></div>
+          <div class="act"><h3>Check the smart speaker and the toys.</h3><p>The chatbot may already be in the kitchen. AI is no longer only something kids open on a laptop. Amazon recently updated Alexa into a full chatbot built on the same kind of technology as ChatGPT, and AI plush toys are sold as a child's best friend. Check what your speakers and toys can do, and decide whether you want them in conversation with your kids.</p></div>
+          <div class="act"><h3>Ask your school about AI.</h3><p>Which AI tools are students using, what data do they collect, and has anyone shown they help kids learn?</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></div></div>
+          <div class="act"><h3>Sign and share the petition to pause AI in schools.</h3><p>Until AI tools are independently proven safe, effective, equitable and private, they don't belong with students.</p><div class="links"><a class="more" href="https://www.fournorms.com/campaigns/massachusetts-hq-pause-ai-in-all-massachusetts-schools" target="_blank" rel="noopener">Sign the petition</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="pp4" aria-labelledby="pt4"><div class="acts">
+          <div class="act"><h3>Hang out with us. Bring a friend.</h3><p>Parent nights, device-free gatherings and play-based events across Massachusetts.</p><div class="links"><a class="more" href="events.html">Find an event</a><a class="more" href="communities.html#find">Join your local group</a></div></div>
+          <div class="act"><h3>Fill the jar: everyday ideas.</h3><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters" target="_blank" rel="noopener">Why Reconnecting in Real Life Matters</a></div></div>
+          <div class="act"><h3>Bring back screen-free activities.</h3><p>You probably remember a time when we didn't rely so much on devices. Here's a list of things you and your family can do to reconnect with yourselves, each other, the community and nature.</p></div>
+          <div class="act"><h3>Give phones a home.</h3><p>A Phone Home gives every device in the house one spot to rest and charge, away from bedrooms and the dinner table.</p><div class="links"><a class="more" href="https://a.co/d/0ecfs5av" target="_blank" rel="noopener sponsored">Phone Home</a></div></div>
+        </div></div>
       </div>
     </div>
   </section>
 
-  <section class="s mist" id="by-issue">
+  <section class="s mist" id="advocates">
     <div class="wrap">
-      <div class="kick">For parents</div>
-      <h2><em>Small steps</em> that make a difference</h2>
-      <p class="lede">Things you can do at home and at your child's school. Every conversation and every small change is a step in the right direction.</p>
-      <div class="issuetabs" role="tablist" aria-label="Actions for parents, by issue">
-        <button class="issuetab is-on" role="tab" aria-selected="true" data-i="slow" data-g="parents">Slow Tech</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="school" data-g="parents">Distraction-free learning</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="ai" data-g="parents">AI in Childhood</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="reconnect" data-g="parents">Reconnecting our communities</button>
+      <h2>leading the way in <em>your</em> community</h2>
+      <p class="lede"><b>For advocates</b> (leading change in your community and district). We exist so you don't have to reinvent the wheel. Use our resources to get started, keep going, and make a difference.</p>
+      <p class="starthere"><em>Start here with the <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a> and <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-when-they-say-no-answers-to-common-pushback" target="_blank" rel="noopener">When They Say No</a>.</em></p>
+
+      <div data-tabs>
+        <div class="tablist" role="tablist" aria-label="For advocates, by issue">
+          <button role="tab" id="at1" aria-controls="ap1"><b>Slow Tech</b><span><em>More childhood before the phone.</em> Waiting is so much easier when you're not the only family doing it.</span></button>
+          <button role="tab" id="at2" aria-controls="ap2"><b>Distraction-free Learning</b><span><em>School should be the easy part.</em> A six-hour-a-day break from screens is just what the doctor ordered.</span></button>
+          <button role="tab" id="at3" aria-controls="ap3"><b>AI in Childhood</b><span><em>Powerful, and unsafe for kids.</em> AI is arriving in classrooms and in homes faster than anyone can study it. The results aren't good.</span></button>
+          <button role="tab" id="at4" aria-controls="ap4"><b>Reconnecting our Communities</b><span><em>Connecting IRL lifts spirits and ignites conversation.</em> Busy kids don't miss their screens. Energized parents feel more confident.</span></button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="ap1" aria-labelledby="at1"><div class="acts">
+          <div class="act"><h3>Bring the pact to your community.</h3><p>How to share the pact with families at your school and reach whole grades.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-bring-the-pact-to-your-community" target="_blank" rel="noopener">Bring the Pact to Your Community</a></div></div>
+          <div class="act"><h3>Start or grow a group.</h3><p>Advocating for a cultural shift around smartphone and social media norms in your community takes buy-in.</p><div class="links"><a class="more" href="https://www.fournorms.com/turning-life-on" target="_blank" rel="noopener">Register a group on Four Norms</a><a class="more" href="mailto:adrienne@turninglifeon.org">Talk to someone at TLO</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="ap2" aria-labelledby="at2"><div class="acts">
+          <div class="act"><h3>Tell the State House: advance phone-free schools now.</h3><p>Both chambers have voted for bell-to-bell, phone-free schools, but the final bill is stuck in conference committee. Email the negotiators and your own legislators, and ask them to finish the job.</p><div class="links"><a class="more" href="https://www.fournorms.com/actions/tlo-finish-phone-free-schools-now" target="_blank" rel="noopener">Finish Phone-Free Schools Now</a></div></div>
+          <div class="act"><h3>Going phone-free? Storage options for schools.</h3><p>Phone Home storage for classrooms and schools adopting a phone-free policy. Not phone-free yet? Launch the playbook that tells you how. It includes a model policy, template emails and public comments.</p><div class="links"><a class="more" href="https://a.co/d/0gzhlunq" target="_blank" rel="noopener sponsored">Option 1</a><a class="more" href="https://a.co/d/05GL4fvd" target="_blank" rel="noopener sponsored">Option 2</a><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-2-phone-free-schools-policy" target="_blank" rel="noopener">Phone-Free School Day</a></div></div>
+          <div class="act"><h3>Pick your trail.</h3><p>We've sorted nine school policy priorities by difficulty, like ski trails. Start wherever your district is, and climb at your own pace.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">See all nine priorities</a></div></div>
+          <div class="act"><h3>Connect with IT about how students get around filters.</h3><p>Kids finding workarounds isn't a reason to abandon defaults, filtering or device restrictions. It's part of why layered guardrails matter in the first place. A conversation with IT can be a great first step.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></div></div>
+          <div class="act"><h3>Public records request.</h3><p>If you've been at this for a while and you're still not getting anywhere with your district, it might be time for a request to get real answers.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ma-public-records-request" target="_blank" rel="noopener">MA Public Records Request</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="ap3" aria-labelledby="at3"><div class="acts">
+          <div class="act"><h3>Sign and share the petition to pause AI in schools.</h3><p>Until AI tools are independently proven safe, effective, equitable and private, they don't belong with students.</p><div class="links"><a class="more" href="https://www.fournorms.com/campaigns/massachusetts-hq-pause-ai-in-all-massachusetts-schools" target="_blank" rel="noopener">Sign the petition</a></div></div>
+          <div class="act"><h3>Start a conversation with your building principal or district leadership, and ask for evidence of learning.</h3><p>Approval on the privacy list means a tool cleared data-privacy review. It does not mean anyone has shown it improves learning. Almost no AI tool used in K&ndash;12 has independent evidence that it does. For every approved AI tool, ask: Why this tool? What learning outcome is it improving? How will we know it's working?</p></div>
+          <div class="act"><h3>Advocate for a pause on AI in your district.</h3><p>New York City and Los Angeles have both paused student AI use until it can be tested for safety, efficacy, equity and privacy. There's never been a better time to ask for one in your district.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pause-ai-in-your-district" target="_blank" rel="noopener">Pause AI in Your District</a></div></div>
+          <div class="act"><h3>Get parents a seat at the table.</h3><p>A Tech Advisory Committee and digital product standards give families a real voice in which AI tools reach classrooms.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tech-advisory-council-playbook" target="_blank" rel="noopener">Tech Advisory Committee playbook</a><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-black-tier-3-digital-product-standards" target="_blank" rel="noopener">Digital Product Standards playbook</a></div></div>
+        </div></div>
+
+        <div class="panel" role="tabpanel" id="ap4" aria-labelledby="at4"><div class="acts">
+          <div class="act"><h3>Start the conversation.</h3><p>Send an email to friends and the parents of your child's teammates and classmates. Regular parent get-togethers are easy and essential, both for helping parents feel supported and for inspiring change.</p><div class="links"><a class="more" href="https://www.fournorms.com/playbooks/200/preview" target="_blank" rel="noopener">Host a community conversation</a></div></div>
+          <div class="act"><h3>Host a device-free event.</h3><p>Playbooks for parent coffees, speaker nights and community gatherings, plus printables.</p><div class="links"><a class="more" href="https://www.fournorms.com/playbooks/201/preview" target="_blank" rel="noopener">Host an event</a></div>
+            <p style="margin-top:12px;font-size:14.5px">Printables: <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-event-signup" target="_blank" rel="noopener">Sign-up sheet</a> &middot; <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-sticker-survey" target="_blank" rel="noopener">Sticker survey</a> &middot; <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-when-should-kids" target="_blank" rel="noopener">"When should kids..." survey</a> &middot; <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-printable" target="_blank" rel="noopener">TLO display</a></p></div>
+          <div class="act"><h3>Gift a Phone Home.</h3><p>A Phone Home gives every device in a classroom or at an event one spot to rest, so people can reconnect without the distraction.</p><div class="links"><a class="more" href="https://a.co/d/0ecfs5av" target="_blank" rel="noopener sponsored">Phone Home</a></div></div>
+          <div class="act"><h3>Get help paying for it.</h3><p>Community Grants for registered groups, plus help using our 501(c)(3) status to book free community space.</p><div class="links"><a class="more" href="mailto:adrienne@turninglifeon.org">Ask us about grants</a></div></div>
+        </div></div>
       </div>
-      <div class="issuepanel" data-i="slow">
-        <p class="one">More childhood before the phone. Waiting is so much easier when you're not the only family doing it.</p>
-        <div class="acts"><div class="act"><b>Sign and share the community pact</b><span>Pledge to wait on smartphones until high school and social media until 16, then pass it along to 3 friends.</span></div><div class="act"><b>Slow-tech your family's devices</b><span>Simple habits, phone settings and router settings.</span></div><div class="act"><b>Find a phone that fits</b><span>Smartphone alternatives for families who want something simpler.</span></div><div class="act"><b>Create a family media plan</b><span>Decide together what tech looks like in your home, before the arguments start.</span></div><div class="act"><b>Give phones a home</b><span>A Phone Home gives every device in the house one spot to rest and charge, away from bedrooms and the dinner table.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="school" hidden>
-        <p class="one">School should be the easy part.</p>
-        <div class="acts"><div class="act"><b>Ask one question at pickup</b><span>"How much screen time does my child get in a typical school day?" One curious question shows your school that families care.</span></div><div class="act"><b>Tell the State House: advance phone-free schools now</b><span>Both chambers have voted for bell-to-bell, phone-free schools, but the final bill is stuck in conference committee. Email the negotiators and your own legislators, and ask them to finish the job.</span></div><div class="act"><b>Ask your teacher to ditch free screen-time</b><span>An email or conversation to request students in your child's class engage in screen-free activities during free time.</span></div><div class="act"><b>Request informed consent</b><span>Most schools ask for your consent for your child's internet and device use, often buried in an annual form. You can give consent based on conditions.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="ai" hidden>
-        <p class="one">Powerful, and unsafe for kids. AI is arriving in classrooms faster than anyone can study it.</p>
-        <div class="acts"><div class="act"><b>Learn more about AI, and skip AI companion apps for kids</b><span>Apps like Character.AI, Replika, Chai and Talkie are built to keep users talking. They replace the pushback real relationships provide with constant validation. A friend or parent will tell a kid when an idea is unkind, unsafe or wrong. These apps, by design, agree.</span></div><div class="act"><b>Teach kids that AI lies confidently</b><span>AI sounds fluent. It cites things. It uses authoritative language. None of that means it's right, and the most dangerous outputs are the wrong ones that feel correct. Kids need a working assumption: check it before you trust it.</span></div><div class="act"><b>Check the smart speaker and the toys</b><span>The chatbot may already be in the kitchen. Amazon has updated Alexa into a full chatbot built on the same kind of technology as ChatGPT, and AI plush toys are sold as a child's best friend. Check what your speakers and toys can do, and decide whether you want them in conversation with your kids.</span></div><div class="act"><b>Ask your school about AI</b><span>Which AI tools are students using, what data do they collect, and has anyone shown they help kids learn?</span></div><div class="act"><b>Sign and share the petition to pause AI in schools</b><span>Until AI tools are independently proven safe, effective, equitable and private, they don't belong with students.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="reconnect" hidden>
-        <p class="one">Busy kids don't miss their screens.</p>
-        <div class="acts"><div class="act"><b>Hang out with us, and bring a friend</b><span>Parent nights, device-free gatherings and play-based events across Massachusetts.</span></div><div class="act"><b>Fill the jar: everyday ideas</b><span>Small, repeatable things to do instead of reaching for a screen.</span></div><div class="act"><b>Bring back screen-free activities</b><span>You probably remember a time when we didn't rely so much on devices. Here's a list of things you and your family can do to reconnect with yourselves, each other, the community and nature.</span></div><div class="act"><b>Give phones a home</b><span>A Phone Home gives every device in the house one spot to rest and charge, away from bedrooms and the dinner table.</span></div></div>
-      </div>
+      <p class="note aff">Turning Life On may earn a small commission from purchases made through some of these links.</p>
     </div>
   </section>
 
-  <section class="s">
-    <div class="wrap">
-      <div class="kick">For advocates</div>
-      <h2>Leading the way in <em>your</em> community</h2>
-      <p class="lede">We exist so you don't have to reinvent the wheel. Use our resources to get started, keep going, and make a difference. Start with the Advocate's Toolkit and When They Say No.</p>
-      <div class="issuetabs" role="tablist" aria-label="Actions for advocates, by issue">
-        <button class="issuetab is-on" role="tab" aria-selected="true" data-i="slow" data-g="advocates">Slow Tech</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="school" data-g="advocates">Distraction-free learning</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="ai" data-g="advocates">AI in Childhood</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="reconnect" data-g="advocates">Reconnecting our communities</button>
-      </div>
-      <div class="issuepanel" data-i="slow">
-        <p class="one">More childhood before the phone. Waiting is so much easier when you're not the only family doing it.</p>
-        <div class="acts"><div class="act"><b>Bring the pact to your community</b><span>How to share the pact with families at your school and reach whole grades.</span></div><div class="act"><b>Start or grow a group</b><span>Advocating for a cultural shift around smartphones and social media norms in your community takes buy-in.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="school" hidden>
-        <p class="one">School should be the easy part. A six-hour-a-day break from screens is just what the doctor ordered.</p>
-        <div class="acts"><div class="act"><b>Tell the State House: advance phone-free schools now</b><span>Both chambers have voted for bell-to-bell, phone-free schools, but the final bill is stuck in conference committee. Email the negotiators and your own legislators, and ask them to finish the job.</span></div><div class="act"><b>Going phone-free? Storage options for schools</b><span>Phone Home storage for classrooms and schools adopting a phone-free policy.</span></div><div class="act"><b>Not phone-free yet? Launch the playbook that tells you how</b><span>It includes a model policy and template emails and public comments.</span></div><div class="act"><b>Pick your trail</b><span>We've sorted nine school policy priorities by difficulty, like ski trails. Green circle for easy wins, blue square to pick up the pace, black diamond for steep and technical. Start wherever your district is, and climb at your own pace.</span></div><div class="act"><b>Connect with IT about how students get around filters</b><span>Kids finding workarounds isn't a reason to abandon defaults, filtering or device restrictions. It's part of why layered guardrails matter in the first place. A conversation with IT can be a great first step.</span></div><div class="act"><b>Public records request</b><span>If you've been at this a while and you're still not getting anywhere with your district, it might be time for a request to get real answers.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="ai" hidden>
-        <p class="one">Powerful, and unsafe for kids. AI is arriving in classrooms and in homes faster than anyone can study it. The results aren't good.</p>
-        <div class="acts"><div class="act"><b>Sign and share the petition to pause AI in schools</b><span>Until AI tools are independently proven safe, effective, equitable and private, they don't belong with students.</span></div><div class="act"><b>Start a conversation with your principal and ask for evidence of learning</b><span>Approval on the privacy list means a tool cleared data-privacy review. It does not mean anyone has shown it improves learning. For every approved AI tool, ask: why this tool? What learning outcome is it improving? How will we know it's working?</span></div><div class="act"><b>Advocate for a pause on AI in your district</b><span>New York City and Los Angeles have both paused generative AI in schools while they work out safety, efficacy, equity and privacy. There's never been a better time to ask for one in your district.</span></div><div class="act"><b>Get parents a seat at the table</b><span>A Tech Advisory Committee and digital product standards give families a real voice in which AI tools reach classrooms.</span></div></div>
-      </div>
-      <div class="issuepanel" data-i="reconnect" hidden>
-        <p class="one">Connecting in real life lifts spirits and ignites conversation. Busy kids don't miss their screens, and energized parents feel more confident.</p>
-        <div class="acts"><div class="act"><b>Start the conversation</b><span>Send an email to friends, and to parents of your child's teammates and classmates. Regular parent get-togethers are easy and essential, both for helping parents feel supported and for inspiring change.</span></div><div class="act"><b>Host a device-free event</b><span>Playbooks for parent coffees, speaker nights and community gatherings, plus printables: a sign-up sheet, a sticker survey, a "When should kids..." survey and a Turning Life On display.</span></div><div class="act"><b>Gift a Phone Home</b><span>A Phone Home gives every device in the classroom or at an event one spot to rest, so people can reconnect without the distraction.</span></div><div class="act"><b>Get help paying for it</b><span>Community Grants for registered groups, plus help using our 501(c)(3) status to book free community space.</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s mist">
+  <section class="s" id="playbooks">
     <div class="wrap">
       <div class="kick">Templates and tools</div>
-      <h2>Policy priorities and playbooks</h2>
-      <p class="lede">We've identified nine policy priorities for the school year, written playbooks and model policies for every priority, a glossary of key terms, and a plain-language guide to how students get around school filters. Share these with your district.</p>
-      <p class="evstamp">Links to the priorities, key terms, the filters guide and the model policies go here as soon as we have them.</p>
+      <h2>policy priorities and playbooks</h2>
+      <p class="lede">We've identified nine policy priorities for the school year, and written playbooks and model policies for every priority, a glossary of key terms, and a plain-language guide to how students get around school filters. Share these with your district.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities for MA</a>
+      </div>
+      <div class="btns" style="margin-top:14px">
+        <a class="btn btn-line btn-sm" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-key-terms-in-edtech" target="_blank" rel="noopener">Key Terms</a>
+        <a class="btn btn-line btn-sm" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a>
+        <a class="btn btn-line btn-sm" href="https://drive.google.com/drive/folders/1FHSwbIjG0gMgAxXQ4-EyDWmu0mjNAGRE?usp=drive_link" target="_blank" rel="noopener">Model policies</a>
+      </div>
     </div>
   </section>
 
-  <section class="s cream">
+  <section class="s mist" id="join">
     <div class="wrap">
-      <h2>You bring the concern. We'll help carry what comes next.</h2>
-      <div data-joinform style="margin-top:32px;max-width:720px">
-        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a>.</p></noscript>
+      <div class="kick">Join us</div>
+      <h2>you bring the concern and we'll help carry what comes next</h2>
+      <div class="joinwrap" data-joinform>
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
       </div>
     </div>
   </section>
@@ -264,65 +188,27 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--SHELL:footer-->
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Turning Life On</h4>
-        <p>A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
-        <p style="margin-top:14px"><a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="flist">
-          <li><a href="about.html">About</a></li>
-          <li><a href="communities.html">Communities</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
-          <li><a href="attend.html">Attend</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul class="flist">
-          <li>Concord, Massachusetts</li>
-          <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
-          <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
-          <li><a href="privacy/">Privacy policy</a></li>
-        </ul>
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
       </div>
     </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+    </ul>
     <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
   </div>
 </footer>
 <!--/SHELL:footer-->
-<script>
-
-/* Issue tabs. Each group of tabs controls only its own panels. */
-(function(){
-  var groups = {};
-  [].slice.call(document.querySelectorAll('.issuetab')).forEach(function(t){
-    (groups[t.dataset.g] = groups[t.dataset.g] || []).push(t);
-  });
-  Object.keys(groups).forEach(function(g){
-    var tabs = groups[g];
-    var section = tabs[0].closest('section');
-    var panels = [].slice.call(section.querySelectorAll('.issuepanel'));
-    tabs.forEach(function(t){
-      t.addEventListener('click', function(){
-        tabs.forEach(function(o){
-          var on = o === t;
-          o.classList.toggle('is-on', on);
-          o.setAttribute('aria-selected', String(on));
-        });
-        panels.forEach(function(pn){ pn.hidden = pn.dataset.i !== t.dataset.i; });
-      });
-    });
-  });
-})();
-document.getElementById('menubtn').addEventListener('click',function(){
-  var nav=document.getElementById('nav'); nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', nav.classList.contains('open'));
-});
-</script>
+<script src="assets/nearby.js"></script>
+<script src="assets/join.js"></script>
+<script src="assets/site.js"></script>
 </body></html>

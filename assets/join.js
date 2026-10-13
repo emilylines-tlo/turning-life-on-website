@@ -9,7 +9,7 @@
 */
 (function(){
   var TEAM_EMAIL = 'info@turninglifeon.org';
-  var PRIVACY = 'privacy/';
+  function base(){ return (window.TLO && window.TLO.base) || ''; }
 
   function esc(t){
     return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){
@@ -23,10 +23,10 @@
       '<p class="tierq">How involved do you want to be?</p>' +
       '<div class="tiers">' +
         '<button class="tier" type="button" data-t="loop" aria-pressed="false">' +
-          '<b>Stay in the loop</b>' +
+          '<b>Stay in the loop.</b>' +
           '<span>A short monthly email, events near you, and a heads-up when there\'s a pact to sign or a legislator worth calling.</span></button>' +
         '<button class="tier" type="button" data-t="involved" aria-pressed="false">' +
-          '<b>Get involved</b>' +
+          '<b>Get involved.</b>' +
           '<span>Join the coalition calls and work with us on what happens in your community.</span></button>' +
       '</div>' +
       '<span class="err" data-tiererr hidden></span>' +
@@ -42,18 +42,18 @@
       '<div class="field"><label for="' + id + '-zip">Zip code</label>' +
         '<input id="' + id + '-zip" name="zip" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" required>' +
         '<span class="err" hidden></span></div>' +
-      '<div class="field wide"><label for="' + id + '-grp">Join a community <i>Optional</i></label>' +
+      '<div class="field wide"><label for="' + id + '-grp">Join a community</label>' +
         '<select id="' + id + '-grp" name="grp"><option value="">Choose your community</option></select></div>' +
       '<div class="field wide"><label for="' + id + '-nt">What\'s going on? <i>Optional</i></label>' +
         '<textarea id="' + id + '-nt" name="nt"></textarea></div>' +
       '<button class="btn btn-orange submit" type="submit">Keep me posted</button>' +
-      '<p class="note">A person reads every one of these. No automated sequence, and we never share your info. ' +
-        '<a href="' + PRIVACY + '">Privacy policy</a></p>' +
+      '<p class="fine">A person reads every one of these. No automated sequence, and we never share your info. ' +
+        '<a href="' + base() + 'privacy/">Privacy policy</a></p>' +
     '</form>';
   }
 
-  /* Communities come from the same Four Norms data as the map, so the list
-     cannot go stale. */
+  /* Communities come from the same Four Norms data as the map (Massachusetts
+     only), so the list cannot go stale. */
   function fillCommunities(select){
     var api = window.TLO;
     var notListed = function(){
@@ -62,14 +62,14 @@
       o.textContent = "My community isn't listed yet";
       select.appendChild(o);
     };
-    if (!api || typeof api.loadJSON !== 'function'){ notListed(); return; }
+    if (!api || typeof api.loadCommunities !== 'function'){ notListed(); return; }
 
-    api.loadJSON('data/groups.json').then(function(d){
-      var groups = (d.groups || []).filter(function(g){ return g.city; });
+    api.loadCommunities().then(function(groups){
       groups.forEach(function(g){
+        var name = g.display_name || g.name;
         var o = document.createElement('option');
-        o.value = g.slug || g.display_name || g.name;
-        o.textContent = (g.display_name || g.name) + ' (' + g.city + ')';
+        o.value = g.slug || name || g.city;
+        o.textContent = name ? name + ' (' + g.city + ')' : g.city;
         select.appendChild(o);
       });
       notListed();
@@ -135,8 +135,8 @@
   function thanks(form, firstName){
     form.innerHTML = '<p class="thanks">Thanks, ' + esc(firstName) + '. A real person on our team ' +
       'will read this, and if you chose "Get involved," we\'ll be in touch soon. In the meantime, ' +
-      '<a href="communities.html">find your local community</a> or ' +
-      '<a href="attend.html">see upcoming events</a>.</p>';
+      '<a href="' + base() + 'communities.html#find">find your local group</a> or ' +
+      '<a href="' + base() + 'events.html#upcoming">see upcoming events</a>.</p>';
   }
 
   function wire(form){

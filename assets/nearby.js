@@ -1,6 +1,15 @@
-/* Shared helpers for the "near you" features on the Network and Events pages.
-   Kept in one file so the distance maths and the ZIP lookup cannot drift apart. */
+/* Shared helpers for the live data on the site: communities, events and the
+   "near you" searches. Kept in one file so the distance maths, the ZIP lookup
+   and the community list cannot drift apart between pages. */
 window.TLO = (function(){
+
+  /* Pages in a folder (privacy/, community-grants/) load this file as
+     ../assets/nearby.js, so data paths are worked out from this script's own
+     address rather than the page's. */
+  var BASE = (function(){
+    var s = document.currentScript && document.currentScript.src;
+    return s ? s.replace(/assets\/nearby\.js(\?.*)?$/, '') : '';
+  })();
 
   /* Escape text before putting it into the page, so a stray quote or angle
      bracket in a title from Four Norms cannot break the markup. */
@@ -26,7 +35,7 @@ window.TLO = (function(){
     if (!/^\d{5}$/.test(zip)) return Promise.reject(new Error('bad-zip'));
     var get = zipTable
       ? Promise.resolve(zipTable)
-      : fetch('data/zip-coords.json')
+      : fetch(BASE + 'data/zip-coords.json')
           .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
           .then(function(d){ zipTable = d; return d; });
     return get.then(function(table){
@@ -67,38 +76,60 @@ window.TLO = (function(){
   }
 
 
-  /* The full community list: everything Four Norms returns, plus the
-     hand-maintained rows in data/communities-extra.json for groups that are
+  /* The full community list: the Massachusetts groups Four Norms returns, plus
+     the hand-maintained rows in data/communities-extra.json for groups that are
      real but not registered on Four Norms yet. A supplement row is dropped
      automatically once a matching community appears in the live data, so the
-     same place never shows twice. */
+     same place never shows twice. Groups outside Massachusetts are left out.
+
+     Each community gets two links where we have them: fournorms_url, its page
+     on Four Norms, and website, its own site (from the "websites" table in
+     communities-extra.json, keyed by Four Norms slug). */
+  var STATE = 'MA';
   function loadCommunities(){
     return Promise.all([
       loadJSON('data/groups.json').catch(function(){ return {groups: []}; }),
-      loadJSON('data/communities-extra.json').catch(function(){ return {communities: []}; })
+      loadJSON('data/communities-extra.json').catch(function(){ return {communities: [], websites: {}}; })
     ]).then(function(res){
-      var live = (res[0].groups || []).filter(function(g){ return g.city; });
-      live.forEach(function(g){ g.registered = true; });
-
-      var seen = {};
-      live.forEach(function(g){ seen[(g.city + '|' + (g.state || '')).toLowerCase()] = true; });
-
-      var extra = (res[1].communities || []).filter(function(c){
-        return c.city && !seen[(c.city + '|' + (c.state || '')).toLowerCase()];
+      var sites = res[1].websites || {};
+      var live = (res[0].groups || []).filter(function(g){ return g.city && g.state === STATE; });
+      live.forEach(function(g){
+        g.registered = true;
+        g.fournorms_url = g.web_url || null;
+        g.website = sites[g.slug] || null;
       });
 
-      return live.concat(extra);
+      var seen = {};
+      live.forEach(function(g){ seen[g.city.toLowerCase()] = true; });
+
+      var extra = (res[1].communities || []).filter(function(c){
+        return c.city && c.state === STATE && !seen[c.city.toLowerCase()];
+      });
+
+      return live.concat(extra).sort(function(a, b){
+        return a.city.localeCompare(b.city) ||
+          (a.display_name || a.name || '').localeCompare(b.display_name || b.name || '');
+      });
     });
   }
 
+  /* Longitude/latitude to a point on the Massachusetts map in assets/ma-map.js.
+     Same Mercator projection the map outline was drawn with. */
+  function maProject(lat, lon){
+    var m = window.TLO_MA;
+    var rad = Math.PI / 180;
+    return [m.ox + m.k * lon * rad,
+            m.oy - m.k * Math.log(Math.tan(Math.PI / 4 + lat * rad / 2))];
+  }
+
   function loadJSON(path){
-    return fetch(path, {cache: 'no-cache'}).then(function(r){
+    return fetch(BASE + path, {cache: 'no-cache'}).then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     });
   }
 
   return {esc: esc, miles: miles, milesLabel: milesLabel, distancePhrase: distancePhrase, lookupZip: lookupZip, place: place,
-          loadCommunities: loadCommunities,
+          loadCommunities: loadCommunities, maProject: maProject, base: BASE,
           byDistance: byDistance, loadJSON: loadJSON};
 })();

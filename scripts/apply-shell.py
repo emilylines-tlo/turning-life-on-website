@@ -29,7 +29,8 @@ NAV = [
     ("Communities", "communities.html"),
     ("Learn", "learn.html"),
     ("Get Involved", "get-involved.html"),
-    ("Attend", "attend.html"),
+    ("Events", "events.html"),
+    ("Support", "support.html"),
 ]
 
 
@@ -39,18 +40,19 @@ def nav_html(page, depth=0):
     for label, href in NAV:
         cls = "navlink active" if href == page else "navlink"
         items.append(f'        <li><a class="{cls}" href="{up}{href}">{label}</a></li>')
-    items.append(f'        <li><a class="btn btn-line btn-sm" href="{DONATE}" target="_blank" rel="noopener">Donate</a></li>')
-    items.append(f'        <li><a class="btn btn-orange btn-sm" href="{TALK}">Talk with us</a></li>')
+    # Every page carries the sign-up form in a section with id="join".
+    items.append('        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>')
     return (
+        '<a class="skip" href="#main">Skip to content</a>\n'
         '<header>\n'
         '  <div class="wrap bar">\n'
         f'    <a class="logo" href="{up}index.html" aria-label="Turning Life On, home">\n'
         '      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>\n'
         '      <div class="tag">KEEP TECH IN CHECK</div>\n'
         '    </a>\n'
-        '    <nav id="nav">\n'
-        '      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>\n'
-        '      <ul>\n' + "\n".join(items) + '\n'
+        '    <nav id="nav" aria-label="Main">\n'
+        '      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>\n'
+        '      <ul id="navlist">\n' + "\n".join(items) + '\n'
         '      </ul>\n'
         '    </nav>\n'
         '  </div>\n'
@@ -63,34 +65,22 @@ def footer_html(depth=0):
     return (
         '<footer>\n'
         '  <div class="wrap">\n'
-        '    <div class="cols">\n'
-        '      <div>\n'
-        '        <h4>Turning Life On</h4>\n'
-        '        <p>A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>\n'
-        f'        <p style="margin-top:14px"><a class="btn btn-orange btn-sm" href="{DONATE}" target="_blank" rel="noopener">Donate</a></p>\n'
-        '      </div>\n'
-        '      <div>\n'
-        '        <h4>Explore</h4>\n'
-        '        <ul class="flist">\n'
-        f'          <li><a href="{up}about.html">About</a></li>\n'
-        f'          <li><a href="{up}communities.html">Communities</a></li>\n'
-        f'          <li><a href="{up}learn.html">Learn</a></li>\n'
-        f'          <li><a href="{up}get-involved.html">Get Involved</a></li>\n'
-        f'          <li><a href="{up}attend.html">Attend</a></li>\n'
-        '        </ul>\n'
-        '      </div>\n'
-        '      <div>\n'
-        '        <h4>Connect</h4>\n'
-        '        <ul class="flist">\n'
-        '          <li>Concord, Massachusetts</li>\n'
-        '          <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>\n'
-        '          <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>\n'
-        '          <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>\n'
-        f'          <li><a href="{PORTAL}" target="_blank" rel="noopener">Community Portal</a></li>\n'
-        f'          <li><a href="{up}privacy/">Privacy policy</a></li>\n'
-        '        </ul>\n'
+        '    <div class="ftop">\n'
+        '      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>\n'
+        '      <div class="fbtns">\n'
+        f'        <a class="btn btn-orange btn-sm" href="{DONATE}" target="_blank" rel="noopener">Donate</a>\n'
+        '        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>\n'
         '      </div>\n'
         '    </div>\n'
+        '    <ul class="flinks">\n'
+        '      <li>Concord, MA</li>\n'
+        '      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>\n'
+        f'      <li><a href="{TALK}">Talk with us</a></li>\n'
+        '      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>\n'
+        '      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>\n'
+        f'      <li><a href="{PORTAL}" target="_blank" rel="noopener">Community Portal</a></li>\n'
+        f'      <li><a href="{up}privacy/">Privacy policy</a></li>\n'
+        '    </ul>\n'
         '    <p class="disc">This website is provided for educational and informational purposes only '
         'and does not constitute medical advice or professional services. Always seek the advice of '
         'your doctor or other qualified health provider regarding a medical condition. If you think '
