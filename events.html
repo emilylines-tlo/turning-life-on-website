@@ -1,10 +1,242 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<meta charset="UTF-8">
-<title>Moved &middot; Turning Life On</title>
-<link rel="canonical" href="attend.html">
-<meta http-equiv="refresh" content="0; url=attend.html">
-<meta name="robots" content="noindex">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events &middot; Turning Life On</title>
+<meta name="description" content="Parent nights, device-free gatherings, coalition calls and events from partners we trust, across Massachusetts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.evpast{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center}
+.expect .card h3{font-size:19px}
+.evgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.ev{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.ev .pic{aspect-ratio:16/9;background:var(--teal-l);overflow:hidden}
+.ev .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.ev .body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.ev .when{font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-d)}
+.ev h3{font-size:17.5px;margin-top:6px}
+.ev h3 a{color:var(--slate);text-decoration:none}
+.ev h3 a:hover{color:var(--teal-d)}
+.ev .meta{font-size:14px;color:var(--muted);margin-top:6px}
+.ev .desc{font-size:15px;margin-top:10px}
+.ev .links{margin-top:auto;padding-top:14px}
+.evstamp{font-size:13px;color:var(--muted);margin-top:18px}
+@media (max-width:980px){ .evgrid{grid-template-columns:1fr 1fr} .evpast{grid-template-columns:1fr} .evpast figure{max-width:300px} }
+@media (max-width:640px){ .evgrid{grid-template-columns:1fr} }
+</style>
 </head><body>
-<p>This page has moved. <a href="attend.html">Continue to its new home</a>.</p>
+<!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Turning Life On, home">
+      <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
+      <div class="tag">KEEP TECH IN CHECK</div>
+    </a>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
+        <li><a class="navlink" href="index.html">Home</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
+        <li><a class="navlink" href="communities.html">Communities</a></li>
+        <li><a class="navlink" href="learn.html">Learn</a></li>
+        <li><a class="navlink" href="get-involved.html">Get Involved</a></li>
+        <li><a class="navlink active" href="events.html">Events</a></li>
+        <li><a class="navlink" href="support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--/SHELL:nav-->
+<main id="main">
+
+  <section class="hero photo" style="background-image:url('assets/img/events-hero.jpg')">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Events</div>
+        <h1>learn, connect, feel empowered</h1>
+        <p>Come as you are. You don't need to know the research, have a plan, or be ready to lead anything. Just show up, and you'll find other parents who care about the same things you do.</p>
+        <div class="btns">
+          <a class="btn btn-orange" href="#upcoming">See upcoming events</a>
+          <a class="btn btn-ghost" href="#host">Host your own</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s expect">
+    <div class="wrap">
+      <div class="kick">What to expect</div>
+      <h2>new here? here's what to expect</h2>
+      <div class="grid2">
+        <div class="card top"><h3>Parent nights and speakers</h3><p>An expert shares the research, and there's time for your questions. You'll leave with ideas you can try at home that same week. Past speakers include psychologist Jean Twenge.</p></div>
+        <div class="card top"><h3>Device-free gatherings</h3><p>Play, food, games and conversation, with the phones put away. Fun for the whole family, and usually the best thing on the calendar.</p></div>
+        <div class="card top"><h3>Coffees and small groups</h3><p>A handful of parents around a table, talking honestly about what's working and what isn't. No agenda, no judgment.</p></div>
+        <div class="card top"><h3>Coalition calls and meetups</h3><p>For community leads and anyone curious about leading. We meet monthly on a call and in person several times a year.</p><div class="links"><a class="more" href="#upcoming">Find the next call</a></div></div>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <p>&ldquo;Thank you so much for sharing your expertise, practical strategies, and thoughtful guidance at last night&rsquo;s Tech Talk. Your insights made the event a real success, and we&rsquo;re incredibly grateful for your time and support.&rdquo;</p>
+          <figcaption class="who">Acton Boxborough Parent</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>&ldquo;Adrienne has had two sessions with our school&rsquo;s parent community! Her presentations are not only informative with the latest science and research, but include strategies for families to negotiate complex social situations.&rdquo;</p>
+          <figcaption class="who">Laurel Zolfonoon, Head of School, Concord Montessori School</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>&ldquo;Adrienne&rsquo;s presentation was very well received by an audience of educators, psychologists, social workers and guidance counselors. She is an interactive, informative, and skilled presenter and received countless accolades from our participants&rdquo;</p>
+          <figcaption class="who">Margie Daniels, M.Ed., L.I.C.S.W., Executive Director, Massachusetts Partnerships for Youth, Inc.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="s mist" id="upcoming">
+    <div class="wrap">
+      <div class="kick">Upcoming events</div>
+      <h2>what's happening near you</h2>
+      <p class="lede">Parent nights, device-free gatherings, coalition calls and events from partners we trust, all in one place.</p>
+      <div class="evgrid" id="evgrid"><p class="note">Loading events&hellip;</p></div>
+      <p class="evstamp" id="evstamp"></p>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="evpast">
+        <div>
+          <div class="kick">Missed one?</div>
+          <h2>catch up on past talks</h2>
+          <p class="lede">Many of our events are recorded, so you can watch on your own time, whether that's after bedtime or on your commute.</p>
+          <div class="btns"><a class="btn btn-teal" href="learn.html#recordings">Watch past events</a></div>
+        </div>
+        <figure class="photo">
+          <img src="assets/img/twenge-concord.jpg" width="360" height="480" loading="lazy" alt="Five people standing together on a stage">
+          <figcaption>Emily Lines, Adrienne Principe, Dr. Jean Twenge, Wendi Hoffer and Jeff Miller at a Turning Life On parent night in Concord, October 2025.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="s teal" id="host">
+    <div class="wrap">
+      <div class="kick">Host your own</div>
+      <h2>want an event like this in your community?</h2>
+      <p class="lede">You don't need experience planning events. Our playbooks walk you through everything, from booking a room to getting people in the door and turning that energy into action. Community Grants can help cover the cost, and we can help you use our 501(c)(3) status to book free space.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="https://www.fournorms.com/playbooks/201/preview" target="_blank" rel="noopener">Host an event</a>
+        <a class="btn btn-ghost" href="mailto:adrienne@turninglifeon.org">Ask us about grants</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="join">
+    <div class="wrap">
+      <div class="kick">Never miss an event</div>
+      <h2>know what's happening near you</h2>
+      <p class="lede">Choose "Stay in the loop," and we'll let you know when there's an event in your area.</p>
+      <div class="joinwrap" data-joinform>
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!--SHELL:footer-->
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
+      </div>
+    </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+    </ul>
+    <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
+  </div>
+</footer>
+<!--/SHELL:footer-->
+<script src="assets/nearby.js"></script>
+<script src="assets/join.js"></script>
+<script src="assets/site.js"></script>
+<script>
+/* Upcoming events, three across, each with its picture from Four Norms.
+   Reads data/events.json, refreshed from Four Norms twice a day; Four Norms is
+   the only event source. Tags are deliberately not shown. */
+(function(){
+  var grid = document.getElementById('evgrid');
+  var stamp = document.getElementById('evstamp');
+  var esc = TLO.esc;
+  var PORTAL = 'https://papa.fournorms.com/turning-life-on';
+
+  function trim(text, max){
+    var t = String(text || '').replace(/\s+/g, ' ').trim();
+    if (t.length <= max) return t;
+    return t.slice(0, max).replace(/\s+\S*$/, '') + '…';
+  }
+
+  function link(ev){
+    return (ev.links && ev.links.web_url) || ev.external_link || '';
+  }
+
+  function when(ev){
+    var d = new Date(ev.start_time);
+    if (isNaN(d)) return '';
+    return d.toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric'}) + ' · ' +
+      d.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'});
+  }
+
+  function card(ev){
+    var href = link(ev);
+    var title = esc((ev.title || '').trim());
+    var where = ev.virtual ? 'Online' : (ev.location_name || 'In person');
+    var meta = [where, ev.host_name].filter(Boolean).map(esc).join(' · ');
+    var a = function(inner){ return href ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + inner + '</a>' : inner; };
+    return '<article class="ev">' +
+      '<div class="pic">' + (ev.cover_image_url
+        ? '<img src="' + esc(ev.cover_image_url) + '" alt="" loading="lazy" onerror="this.remove()">' : '') + '</div>' +
+      '<div class="body">' +
+        '<div class="when">' + esc(when(ev)) + '</div>' +
+        '<h3>' + a(title) + '</h3>' +
+        '<div class="meta">' + meta + '</div>' +
+        (ev.description ? '<p class="desc">' + esc(trim(ev.description, 150)) + '</p>' : '') +
+        (href ? '<div class="links"><a class="more" href="' + esc(href) + '" target="_blank" rel="noopener">Event details</a></div>' : '') +
+      '</div>' +
+    '</article>';
+  }
+
+  TLO.loadJSON('data/events.json').then(function(d){
+    var now = Date.now();
+    var list = (d.events || []).filter(function(ev){
+      var end = new Date(ev.end_time || ev.start_time).getTime();
+      return !isNaN(end) && end >= now;
+    });
+    if (!list.length){
+      grid.innerHTML = '<p class="note">No upcoming events are listed right now. ' +
+        '<a href="' + PORTAL + '" target="_blank" rel="noopener">Check the Community Portal</a> for the latest.</p>';
+    } else {
+      grid.innerHTML = list.map(card).join('');
+    }
+    if (d.updated){
+      stamp.textContent = 'Event listings come from Four Norms. Last updated ' +
+        new Date(d.updated).toLocaleDateString([], {month: 'long', day: 'numeric', year: 'numeric'}) + '.';
+    }
+  }).catch(function(){
+    grid.innerHTML = '<p class="note">Our events list could not be loaded just now. Please see the ' +
+      '<a href="' + PORTAL + '" target="_blank" rel="noopener">Community Portal</a> for upcoming events.</p>';
+  });
+})();
+</script>
 </body></html>

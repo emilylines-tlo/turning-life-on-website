@@ -1,153 +1,63 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us &middot; Turning Life On</title>
+<title>About &middot; Turning Life On</title>
+<meta name="description" content="Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology, led by parents since 2017.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-:root{
-  --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
-  --orange:#e8821e; --orange-d:#cf7316; --mist:#f1f1ef; --line:#e4e3de; --maxw:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Mulish',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:600;line-height:1.15;color:var(--ink)}
-a{color:var(--teal);text-decoration:none}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
-.read{max-width:780px}
-.review{background:var(--slate);color:#e9eef1;font-size:13px;text-align:center;padding:7px 16px}
-.review b{color:#fff;font-weight:600}
-header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:3px solid var(--teal)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:96px}
-.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer}
-.logo .word{font-family:'Poppins',sans-serif;font-weight:700;font-size:27px;letter-spacing:.01em}
-.logo .word .a{color:var(--slate)} .logo .word .b{color:var(--teal)}
-.logo .word .pw{font-size:18px;vertical-align:middle;margin:0 1px}
-.logo .tag{font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.18em;color:var(--teal);margin-top:5px}
-nav ul{display:flex;align-items:center;gap:26px;list-style:none}
-.navlink{font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;color:var(--slate);padding:4px 0;position:relative}
-.navlink:hover{color:var(--teal)}
-.navlink.active::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--slate)}
-.menubtn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:9px 13px;cursor:pointer;font-size:15px;color:var(--slate)}
-.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:17px;font-weight:500;padding:15px 30px;border-radius:2px;cursor:pointer;border:0;transition:background .18s}
-.btn-orange{background:var(--orange);color:#fff} .btn-orange:hover{background:var(--orange-d)}
-.btn-teal{background:var(--teal);color:#fff} .btn-teal:hover{background:var(--teal-d)}
-.btn-sm{font-size:15px;padding:11px 22px}
-.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.phero{position:relative;background-size:cover;background-position:center;min-height:540px;display:flex;align-items:center}
-.phero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.12)}
-.phero .inner{position:relative;z-index:2;width:100%}
-.tblock{display:inline-block;background:var(--teal);color:#fff;padding:14px 26px;font-family:'Poppins',sans-serif;font-weight:600}
-.tblock.sm{font-size:30px} .tblock.lg{font-size:54px;margin-top:14px}
-.phero .btns{margin-top:30px} .phero .btns .btn{box-shadow:0 2px 14px rgba(0,0,0,.18)}
-.subhero{display:inline-block;background:var(--teal);color:#fff;padding:16px 26px;max-width:600px;font-size:19px;font-weight:400;margin-top:14px;font-family:'Mulish',sans-serif}
-section.s{padding:78px 0}
-section.s.mist{background:var(--mist)}
-section.s.teal{background:var(--teal);color:#fff}
-section.s.teal h2,section.s.teal h3{color:#fff}
-.kick{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
-section.s.teal .kick{color:#cfeaea}
-.s h2{font-size:clamp(30px,4vw,46px);margin-bottom:18px}
-.s h3{font-size:24px;margin-bottom:10px}
-.s p{font-size:17px;margin-bottom:16px;color:#33373a}
-section.s.teal p{color:rgba(255,255,255,.95)}
-.s p:last-child{margin-bottom:0}
-.lede{font-size:19px}
-.tlolink{color:var(--teal);font-weight:700;text-decoration:underline}
-.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
-.mapteaser{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
-.mapteaser .topbar{background:#222;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;padding:12px 16px}
-.mapteaser .mapimg{height:300px;background:linear-gradient(135deg,#dbe7e2,#e9efe8);position:relative}
-.mapteaser .pin{position:absolute;width:14px;height:14px;background:var(--teal);border:2px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.mapteaser .foot{padding:16px;text-align:center}
-.pathgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
-.path .photo{height:230px;background-size:cover;background-position:center;background-color:#5fb0b0;border-radius:2px}
-.path h3{margin-top:22px;font-size:28px;color:#fff}
-.path p{margin-top:10px;font-size:16px;color:rgba(255,255,255,.95)}
-.path .btn{margin-top:20px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.card{background:var(--mist);border-radius:4px;padding:30px}
-.card .tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
-.card h3{font-size:22px} .card p{font-size:16px;margin:10px 0 18px}
-.wave{display:block;width:100%;height:40px;margin-top:10px}
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.member{background:var(--mist);border-radius:4px;padding:26px}
-.member .name{font-family:'Poppins',sans-serif;font-size:21px;font-weight:600;color:var(--slate)}
-.member .role{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:5px 0 12px}
-.member p{font-size:15px;margin:0}
-.flag{color:var(--orange);font-style:italic;font-size:14px}
-.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dir a{background:var(--mist);border-radius:3px;padding:18px;color:var(--slate);font-family:'Poppins',sans-serif;font-weight:500;font-size:16px}
-.dir a:hover{background:#e7e7e3}
-.dir a span{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:var(--orange);text-decoration:underline;font-size:14px;margin-top:6px}
-.embed{border:1px dashed var(--teal);border-radius:4px;background:#eef5f5;padding:46px 24px;text-align:center;color:var(--teal-d)}
-.embed .lab{font-family:'Poppins',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.embed .ico{font-size:32px;display:block;margin-bottom:10px}
-.imgrow{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.imgrow .pic{height:320px;background-size:cover;background-position:center;background-color:#cfe0db;border-radius:4px}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.quote{background:#fff;border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:24px;box-shadow:0 1px 0 var(--line)}
-.quote p{font-size:17px;color:var(--ink);font-style:italic;margin-bottom:12px}
-.quote .who{font-family:'Poppins',sans-serif;font-style:normal;font-size:13.5px;font-weight:500;color:var(--teal)}
-footer{background:#24323f;color:#c8d3dc;padding:56px 0 40px;font-size:15px}
-footer h4{color:#fff;font-size:17px;margin-bottom:12px}
-footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
-footer p,footer li{font-size:15px;color:#c8d3dc;line-height:1.7}
-footer a{color:#c8d3dc} footer a:hover{color:#fff}
-.flist{list-style:none;display:flex;flex-direction:column;gap:9px}
-.disc{margin-top:38px;padding-top:22px;border-top:1px solid #465866;font-size:12.5px;color:#8d9caa;line-height:1.55}
-.btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
-.btn-line:hover{background:var(--slate);color:#fff}
-.navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
-.s h2 em{font-style:normal;color:var(--teal)}
-.read p{font-size:17px;color:var(--body);margin-top:16px}
-.read p b{color:var(--slate)}
-.watch{background:var(--mist);border-radius:4px;padding:16px 20px}
-.await{font-style:italic;color:var(--orange-d);font-size:14.5px}
-.creds{list-style:none;margin-top:26px;display:grid;gap:14px;max-width:900px}
-.creds li{font-size:16.5px;color:var(--body);padding-left:22px;position:relative;line-height:1.6}
-.creds li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:9px;background:var(--teal);border-radius:50%}
-.creds li b{color:var(--slate)}
-.photo-wide{margin-top:34px;aspect-ratio:16/8;border-radius:4px}
-.pull{margin-top:30px;border-left:4px solid var(--orange);padding-left:22px}
-.pull p{font-family:'Poppins',sans-serif;font-weight:600;font-size:20px;line-height:1.35;color:var(--slate)}
-.pull cite{display:block;margin-top:12px;font-style:normal;font-size:14px;color:#8a939c}
-.newsgrid{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.newsgrid article{background:#fff;border-radius:4px;padding:22px}
-.newsgrid b{font-family:'Poppins',sans-serif;font-size:16.5px;color:var(--slate);display:block}
-.newsgrid em{display:block;font-style:normal;font-size:13px;color:var(--teal);margin-top:4px}
-.newsgrid span{display:block;margin-top:10px;font-size:15px;color:var(--body)}
-@media (max-width:900px){ .newsgrid{grid-template-columns:1fr} }
-@media (max-width:900px){
-  .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
-  .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
-  .bar{height:auto;padding:14px 0;flex-wrap:wrap}
-  nav ul{display:none} nav.open ul{display:flex;flex-direction:column;width:100%;gap:12px;margin-top:12px}
-  .menubtn{display:block} .tblock.lg{font-size:38px}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style></head><body>
+.about-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.about-hero h1{font-size:clamp(34px,4.6vw,54px)}
+.movement{background:var(--teal);color:#fff;padding:30px 32px}
+.movement .kick{color:#fff;opacity:.85}
+.movement h2{font-size:clamp(21px,2.2vw,25px);line-height:1.3}
+.movement h2 a{color:#fff;text-decoration:none}
+.movement h2 a:hover{text-decoration:underline}
+.movement p{color:rgba(255,255,255,.94);margin-top:12px;font-size:16.5px}
+.why{list-style:none;display:grid;gap:18px;margin-top:30px}
+.why li{padding-left:22px;position:relative;font-size:16.5px;color:var(--body)}
+.why li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;background:var(--orange)}
+.why b{color:var(--slate)}
+.closing{margin-top:28px;font-family:'Poppins',sans-serif;font-weight:500;font-size:19px;color:var(--slate)}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px}
+.photos{display:grid;gap:36px;align-content:start}
+.member{display:grid;grid-template-columns:150px 1fr;gap:24px;background:#fff;border:1px solid var(--line);padding:24px}
+.member .face{width:150px;height:150px;border-radius:12px;background:var(--teal-l);color:var(--teal-d);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:600;font-size:36px;overflow:hidden}
+.member .face img{width:100%;height:100%;object-fit:cover}
+.member h3{font-size:19px}
+.member .role{font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d);margin:4px 0 10px}
+.member p{font-size:15.5px}
+.member .grp{margin-top:10px;font-size:14.5px}
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.news .card h3{font-size:16px;margin-bottom:8px}
+.news .card p{font-size:15px}
+.news .card .links{padding-top:12px}
+@media (max-width:980px){ .team,.news{grid-template-columns:1fr} }
+@media (max-width:980px){ .about-hero{grid-template-columns:1fr} }
+@media (max-width:560px){ .member{grid-template-columns:1fr} .member .face{width:180px;height:180px} }
+</style>
+</head><body>
 <!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Turning Life On, home">
       <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
       <div class="tag">KEEP TECH IN CHECK</div>
     </a>
-    <nav id="nav">
-      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
-      <ul>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
         <li><a class="navlink" href="index.html">Home</a></li>
         <li><a class="navlink active" href="about.html">About</a></li>
         <li><a class="navlink" href="communities.html">Communities</a></li>
         <li><a class="navlink" href="learn.html">Learn</a></li>
         <li><a class="navlink" href="get-involved.html">Get Involved</a></li>
-        <li><a class="navlink" href="attend.html">Attend</a></li>
-        <li><a class="btn btn-line btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></li>
-        <li><a class="btn btn-orange btn-sm" href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+        <li><a class="navlink" href="events.html">Events</a></li>
+        <li><a class="navlink" href="support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
       </ul>
     </nav>
   </div>
@@ -155,104 +65,179 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--/SHELL:nav-->
 <main id="main">
 
-  <section class="s cream">
-    <div class="wrap">
-      <h2>We <em>are</em> the movement.</h2>
-      <p class="lede">Parents, educators and professionals across Massachusetts, working together so kids can learn, play and connect in the real world.</p>
-      <div class="btns"><a class="btn btn-orange" href="#join">Join the movement</a></div>
-    </div>
-  </section>
-
-  <section class="s">
-    <div class="wrap read">
-      <div class="kick">Who we are</div>
-      <h2>We <em>grew up</em> here</h2>
-      <p>Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology. What sets us apart is where we came from: we didn't parachute into Massachusetts, we grew up here. Since 2017, our grassroots start has become a network of experienced, in-state community leads who know the unique challenges and opportunities in Massachusetts communities and districts because we've lived them.</p>
-      <p>We back local groups with playbooks, funding, connections and expert support, so more kids get room to learn, play and connect in the real world.</p>
-      <p class="watch">Watch: <b>It Happens Here: Concord's Push To Revolutionize Kids And Phones</b>, October 2018. A WBZ-4 interview detailing how we started. <em class="await">Link to come.</em></p>
+  <section class="hero photo" style="background-image:url('assets/img/about-hero.jpg')">
+    <div class="wrap about-hero">
+      <div>
+        <div class="eyebrow">Who we are</div>
+        <h1>we <em>grew up</em> here</h1>
+        <p>Turning Life On is a Massachusetts-based coalition helping communities shift the norms around technology. What sets us apart is where we came from: we didn't parachute into Massachusetts, we grew up here. Since 2017, our grassroots start has become a network of experienced, in-state community leads who know the unique challenges and opportunities in Massachusetts communities and districts because we've lived them.</p>
+        <p>We back local groups with playbooks, funding, connections and expert support, so more kids get room to learn, play and connect in the real world.</p>
+        <div class="btns"><a class="btn btn-orange" href="#join">Join the movement</a></div>
+      </div>
+      <div class="movement">
+        <div class="kick">Watch</div>
+        <h2><a href="https://www.cbsnews.com/boston/news/concord-promise-massachusetts-wait-until-8th-grade-kids-phones/" target="_blank" rel="noopener">It Happens Here: Concord's Push To Revolutionize Kids And Phones</a></h2>
+        <p>From humble beginnings as the Concord Promise, this is our first on-air experience, on WBZ-TV in October 2018.</p>
+        <div class="btns"><a class="btn btn-white btn-sm" href="https://www.cbsnews.com/boston/news/concord-promise-massachusetts-wait-until-8th-grade-kids-phones/" target="_blank" rel="noopener">Watch on CBS News</a></div>
+      </div>
     </div>
   </section>
 
   <section class="s mist">
-    <div class="wrap">
-      <div class="kick">Why communities turn to us</div>
-      <h2>Nearly a <em>decade</em> of groundwork</h2>
-      <p class="lede">Here's how our experience supports your work.</p>
-      <ul class="creds">
-        <li><b>Direct lines to decision-makers.</b> We work with the Massachusetts Attorney General's Office, the State House and the Governor's Office, and were invited to join Governor Healey for her announcement of new social media protections for kids in May 2026.</li>
-        <li><b>Leaders who've done this work.</b> Our board includes a founding member of the Children's Screen Time Action Network's Screens in Schools Working Group, a former co-lead of the Distraction Free Schools Policy Project, a founding member and former co-lead of Smartphone Free Childhood U.S., and a Smartphone Free Childhood U.S. board member. Our leaders have founded local groups in Arlington, Concord, Lexington and the Nashoba Valley, and have experience in education, technology, communication and non-profits.</li>
-        <li><b>National partners.</b> Fairplay, The Anxious Generation, the Four Norms Leadership Circle and Culture Reframed, to name a few, work with us to bring the latest research and strategy to our local leads.</li>
-        <li><b>Playbooks built here.</b> Tested in real Massachusetts districts, not adapted from somewhere else.</li>
-        <li><b>Funding for local groups.</b> We raise money so community leads can pay for rooms, speakers and events, and we're dedicated to growing our philanthropic base to support even more communities.</li>
-        <li><b>A network of experienced leads.</b> People who know the challenges in Massachusetts, and the openings too.</li>
-      </ul>
-      <p class="lede" style="margin-top:24px">A statewide coalition moves faster. When one community figures something out, every other community benefits.</p>
-
-      <figure class="ph photo-wide">
-        <img src="assets/img/healey.jpg" alt="Turning Life On board members with Governor Maura Healey">
-        <div class="shot"><b>Photo &middot; assets/img/healey.jpg</b><span>Governor Healey's social media press conference, May 2026.</span></div>
-        <figcaption>Turning Life On was invited to join Governor Maura Healey for her announcement of new social media protections for kids, May 2026. From left: Jeff Miller, Emily Lines, Wendi Hoffer, Adrienne Principe, Governor Healey, Erica Walsh (Winchester), Katie O'Connor (Winchester) and Jackie Berry (Sudbury).</figcaption>
-      </figure>
+    <div class="wrap split">
+      <div>
+        <div class="kick">Why communities turn to us</div>
+        <h2>nearly a <em>decade</em> of groundwork</h2>
+        <p class="lede">Here's how our experience supports your work:</p>
+        <ul class="why">
+          <li><b>Direct lines to decision-makers.</b> We work with the Massachusetts Attorney General's Office, the State House and the Governor's Office, and were invited to join Governor Healey for her announcement of new social media protections for kids in May 2026. <a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-meta-settlement-briefing" target="_blank" rel="noopener">Read our Meta Settlement briefing</a></li>
+          <li><b>Leaders who've done this work.</b> Our board includes a founding member of the Children's Screen Time Action Network's Screens in Schools Working Group, a former co-lead of the Distraction Free Schools Policy Project, a founding member and former co-lead of Smartphone Free Childhood U.S., and a Smartphone Free Childhood U.S. board member. Our leaders have founded local groups in Arlington, Concord, Lexington and the Nashoba Valley and have experience in education, technology, communication and nonprofits.</li>
+          <li><b>National partners.</b> Fairplay, The Anxious Generation, the Four Norms Leadership Circle and Culture Reframed, to name a few, work with us to bring the latest research and strategy to our local leads.</li>
+          <li><b>Playbooks built here.</b> Tested in real Massachusetts districts, not adapted from somewhere else.</li>
+          <li><b>Funding for local groups.</b> We raise money so community leads can pay for rooms, speakers and events, and we're dedicated to growing our philanthropic base to support even more communities.</li>
+          <li><b>A network of experienced leads.</b> People who know the challenges in Massachusetts, and the openings too.</li>
+        </ul>
+        <p class="closing">A statewide coalition moves faster. When one community figures something out, every other community benefits.</p>
+      </div>
+      <div class="photos">
+        <figure class="photo">
+          <img src="assets/img/governor-healey.jpg" width="1000" height="667" loading="lazy" alt="Turning Life On leaders standing with Governor Maura Healey in front of flags">
+          <figcaption>Turning Life On was invited to join Governor Maura Healey for her announcement of new social media protections for kids, May 2026. From left: Jeff Miller, Emily Lines, Wendi Hoffer, Adrienne Principe, Governor Healey, Erica Walsh (Winchester), Katie O'Connor (Winchester) and Jackie Berry (Sudbury).</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/img/un-general-assembly.jpg" width="1000" height="750" loading="lazy" alt="Five people standing beside a Human Change Foundation banner at a UN General Assembly event">
+          <figcaption>At the Human Change Foundation's <i>The Illusion of Intimacy: Protecting Children from a Digitalized Childhood</i>, during the UN General Assembly in New York, September 2026. From left: Jeff Miller (Arlington), Shaleen Title (Malden), Adrienne Principe (Concord), Jennifer Henderson (Stow) and Jonathan Werbell.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
-  <section class="s" id="join">
+  <section class="s teal">
     <div class="wrap">
       <div class="kick">Join us</div>
-      <h2><em>Ready</em> when you are.</h2>
+      <h2><em>ready</em> when you are</h2>
       <p class="lede">If you're in Massachusetts and want to make a difference where you live, we're the coalition built to go the distance with you.</p>
       <div class="btns">
         <a class="btn btn-orange" href="communities.html#find">Find a group near you</a>
-        <a class="textlink" href="communities.html#start">Start one in your community</a>
+        <a class="btn btn-ghost" href="communities.html#start">Start one in your community</a>
       </div>
-    </div>
-  </section>
-
-  <section class="s mist">
-    <div class="wrap read">
-      <div class="kick">What we believe</div>
-      <h2>A continuum, not a switch</h2>
-      <p>Technology use exists on a continuum, from constant, compulsive engagement to complete disconnection. Our goal is to help families, schools, and communities move toward a healthier, more intentional, and age-appropriate relationship with tech, regardless of where they are starting from.</p>
-      <p><b>We are not anti-tech.</b> We recognize what technology makes possible, and we meet people where they are, supporting any step toward balance.</p>
-      <div class="btns">
-        <a class="btn btn-orange btn-sm" href="learn.html#start-here">Learn more about where we stand</a>
-        <a class="btn btn-line btn-sm" href="learn.html#start-here">A holistic approach to keeping tech in check</a>
-      </div>
-      <blockquote class="pull">
-        <p>&ldquo;It's less about turning screens off. TLO is about turning on relationships, curiosity, senses, support, and activism. It's about letting tech take a back seat to life and raising children in the real world.&rdquo;</p>
-        <cite>Jean Rogers, M.S.Ed., Director, Screen Time Action Network at Fairplay</cite>
-      </blockquote>
     </div>
   </section>
 
   <section class="s">
     <div class="wrap">
-      <div class="kick">Our team</div>
-      <h2>Led by parents who do this work in their own <em>Massachusetts</em> communities, too</h2>
-      <p class="evstamp" style="margin-top:18px">Bios and headshots go here, from the board review document.</p>
+      <div class="kick">What we believe</div>
+      <h2>a continuum, not a switch</h2>
+      <p class="lede">Technology use exists on a continuum, from constant, compulsive engagement to complete disconnection. Our goal is to help families, schools, and communities move toward a healthier, more intentional, and age-appropriate relationship with tech, regardless of where they are starting from.</p>
+      <p class="lede">We are not anti-tech. We recognize what technology makes possible, and we meet people where they are, supporting any step toward balance.</p>
+      <div class="btns">
+        <a class="btn btn-teal" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Learn more about where we stand</a>
+        <a class="btn btn-line" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-a-holistic-approach-to-keeping-tech-in-check" target="_blank" rel="noopener">A holistic approach to keeping tech in check</a>
+      </div>
+      <div class="quote">
+        <p>&ldquo;It's less about turning screens off. TLO is about turning on relationships, curiosity, senses, support, and activism. It's about letting tech take a back seat to life and raising children in the real world.&rdquo;</p>
+        <span class="who">Jean Rogers, M.S.Ed., Director, Screen Time Action Network at Fairplay</span>
+      </div>
     </div>
   </section>
 
-  <section class="s mist">
+  <section class="s mist" id="team">
+    <div class="wrap">
+      <div class="kick">Our team</div>
+      <h2>led by parents who do this work in their own <em>Massachusetts</em> communities, too</h2>
+      <div class="team">
+        <article class="member">
+          <div class="face"><img src="assets/img/team/adrienne-principe.jpg" width="400" height="400" alt="Adrienne Principe" loading="lazy"></div>
+          <div>
+            <h3>Adrienne Principe</h3>
+            <div class="role">Founder and President &middot; Concord</div>
+            <p>A certified Child and Teen Coach, Adrienne blends the latest research on child development with real-world parenting wisdom to offer practical, values-based strategies for healthy tech use. She co-founded the Concord Promise, serves on the MA Distraction Free Schools Policy Project, is a founding member of the Children's Screen Time Action Network's Screens in Schools Working Group, and sits on the Emerson Health Foundation Board of Directors. Adrienne lives in Concord with her husband, their four busy and very different kids, and their dog, Gus.</p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face"><img src="assets/img/team/emily-lines.jpg" width="400" height="400" alt="Emily Lines" loading="lazy"></div>
+          <div>
+            <h3>Emily Lines</h3>
+            <div class="role">Vice President &middot; Concord</div>
+            <p>Emily founded the Intentional Tech Coalition in Concord and is a dedicated advocate for community-based partnerships that help parents, caregivers and schools make intentional, developmentally aligned technology decisions. She's deeply committed to protecting childhood, supporting mental health, and strengthening family and community connections. Emily holds a master's degree in Animals and Public Policy and brings a background in finance, nonprofit leadership and strategic consulting. She lives in Concord with her husband, children, and rescued pit bulls.</p>
+            <p class="grp">Local group: <a href="https://intentionaltechcoalition.org/itc-homepage.html" target="_blank" rel="noopener">Intentional Tech Coalition</a></p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face"><img src="assets/img/team/wendi-hoffer.jpg" width="400" height="400" alt="Wendi Hoffer" loading="lazy"></div>
+          <div>
+            <h3>Wendi Hoffer</h3>
+            <div class="role">Director of Community Engagement &middot; Lexington</div>
+            <p>Wendi founded Lex Kids Be Kids and is a passionate advocate for a more human, less digital childhood. At Turning Life On, she builds the framework that connects community leads so they can support one another, a network that has proven especially valuable when advocating for change with school districts. Wendi works for a separate nonprofit and has led one, and she channels that experience into meaningful change for families and vulnerable communities. She lives in Lexington with her husband and three diversely-abled children.</p>
+            <p class="grp">Local group: <a href="https://www.lexkidsbekids.org/" target="_blank" rel="noopener">Lex Kids Be Kids</a></p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face"><img src="assets/img/team/jeff-miller.jpg" width="400" height="400" alt="Jeff Miller" loading="lazy"></div>
+          <div>
+            <h3>Jeff Miller</h3>
+            <div class="role">Treasurer and AI Specialist &middot; Arlington</div>
+            <p>Jeff founded Tech-Wise Arlington, a parent-to-parent guide that helps local families think through smartphones, phone-free schools, classroom tech and AI, including a plain-language guide to AI for parents. He's an advocate for Wait Until 8th and phone-free schools and works to share ideas and resources across communities. Jeff is EVP of Strategy and Acquisition at Acxion Foodservice and has served on 10 corporate boards. He also sits on the boards of Smartphone Free Childhood U.S., the Arlington Libraries Foundation, and the Humanist Chaplaincy at Harvard and MIT. Jeff holds an A.B. in Economics from Harvard and lives in Arlington with his wife, two children, and two dogs.</p>
+            <p class="grp">Local group: <a href="https://techwisearlington.org/" target="_blank" rel="noopener">Tech-Wise Arlington</a></p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face"><img src="assets/img/team/kelsey-magnuson.jpg" width="400" height="400" alt="Kelsey Magnuson" loading="lazy"></div>
+          <div>
+            <h3>Kelsey Magnuson</h3>
+            <div class="role">Director of Development &middot; Bolton</div>
+            <p>Kelsey is a public health professional with more than 10 years of experience translating community data into strategic programming that improves health, including local Youth Risk Behavior Survey data showing growing concern about youth mental health. She is passionate about bringing people together for shared learning and program development. Kelsey first worked with Turning Life On in 2020, developing an educational campaign through website content and a mini podcast series, and as Director of Development she now leads TLO's fundraising through grants and sponsorships. She holds an MPH and lives in Bolton with her husband and two children.</p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face" aria-hidden="true">JH</div>
+          <div>
+            <h3>Jennifer Henderson</h3>
+            <div class="role">Special Projects &middot; Stow</div>
+            <p>Jennifer founded Reconnect Nashoba Valley and is a certified Digital Wellbeing coach committed to changing the norms around tech use. Since beginning her advocacy work in 2021, she has served as co-lead of the Distraction Free Schools Policy Project and was a founding member and co-lead of Smartphone Free Childhood U.S. Jennifer is Head of Supply Chain at a rare disease pharmaceutical company. She lives in Stow with her husband, daughter, and her two dogs.</p>
+            <p class="grp">Local group: <a href="https://www.reconnectma.org/" target="_blank" rel="noopener">Reconnect Nashoba Valley</a></p>
+          </div>
+        </article>
+        <article class="member">
+          <div class="face"><img src="assets/img/team/sheila-pundit.jpg" width="400" height="400" alt="Sheila Pundit" loading="lazy"></div>
+          <div>
+            <h3>Sheila Pundit</h3>
+            <div class="role">Device-Free Events &middot; Sudbury</div>
+            <p>Sheila works with Sudbury for Digital Balance and spent many years as a teacher and administrator in public schools, after-school programs and summer programs. She was Executive Director of Summer Ink, a Boston nonprofit creative writing program that welcomes middle schoolers from a wide range of backgrounds, and helped design K&ndash;12 English Language Arts curriculum at the Writers' Express, later acquired by the education technology company Amplify. Sheila serves on the board of the Goodnow Library Foundation, which supports Sudbury's Goodnow Library, and is active in The Reconnect Movement, which creates more screen-free social time for all ages.</p>
+            <p class="grp">Local group: <a href="https://www.sudburyfordigitalbalance.org/" target="_blank" rel="noopener">Sudbury for Digital Balance</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="news">
     <div class="wrap">
       <div class="kick">We get noticed</div>
-      <h2>In the news</h2>
-      <div class="newsgrid">
-        <article><b>Massachusetts Senate</b><em>July 2026</em><span>Adrienne's statement supporting S.3164, the Senate's bill to switch off addictive social media features for kids, appears alongside Jonathan Haidt, Fairplay and Common Sense Media.</span></article>
-        <article><b>Massachusetts Attorney General's Office</b><em>August 2026</em><span>Adrienne is quoted in AG Campbell's announcement of the landmark Meta settlement.</span></article>
-        <article><b>The Concord Bridge</b><em>June 2026</em><span>Public comments made by Emily Lines and other parents in the Concord-based group Intentional Tech Coalition, asking the district to reexamine cell phone and technology policies.</span></article>
-        <article><b>Governor's Office</b><em>May 2026</em><span>Turning Life On was invited to join Governor Healey at her press conference announcing new social media protections for kids.</span></article>
-        <article><b>NBC10 Boston</b><em>May 2026</em><span>"Mass. educators grapple with tech in the classroom." Founder Adrienne talks with Munashe Kwangwari about how much technology belongs in Massachusetts classrooms.</span></article>
+      <h2>in the news</h2>
+      <div class="news" id="newsgrid">
+        <div class="card"><h3>Massachusetts Senate &middot; July 2026</h3><p>Adrienne's statement supporting S.3164, the Senate's bill to switch off addictive social media features for kids, appears alongside Jonathan Haidt, Fairplay and Common Sense Media.</p><div class="links"><a class="more" href="https://malegislature.gov/PressRoom/Detail?pressReleaseId=1440" target="_blank" rel="noopener">Read the release</a></div></div>
+        <div class="card"><h3>Massachusetts Attorney General's Office &middot; August 2026</h3><p>Adrienne is quoted in AG Campbell's announcement of the landmark Meta settlement.</p><div class="links"><a class="more" href="https://www.mass.gov/news/ag-campbell-reaches-landmark-settlement-with-meta-that-requires-design-changes-to-protect-massachusetts-young-people-from-social-media-harms" target="_blank" rel="noopener">Read the release</a></div></div>
+        <div class="card"><h3>The Concord Bridge &middot; June 2026</h3><p>This article highlights public comments made by Emily Lines and other parents in the Concord-based TLO group Intentional Tech Coalition asking the district to reexamine cell phone and technology policies.</p><div class="links"><a class="more" href="https://concordbridge.org/index.php/2026/06/02/parents-voice-concerns-as-schools-put-cellphone-policy-on-hold/" target="_blank" rel="noopener">Read the article</a></div></div>
+        <div class="card"><h3>Governor's Office &middot; May 2026</h3><p>Turning Life On was invited to join Governor Healey at her press conference announcing new social media protections for kids.</p></div>
+        <div class="card"><h3>NBC10 Boston &middot; May 2026</h3><p>&ldquo;Mass. educators grapple with tech in the classroom.&rdquo; TLO Founder Adrienne talks with Munashe Kwangwari about how much technology belongs in Massachusetts classrooms.</p><div class="links"><a class="more" href="https://www.youtube.com/watch?v=E_0-Ct-YnWI" target="_blank" rel="noopener">Watch</a></div></div>
+        <div class="card" data-more hidden><h3>The Christian Science Monitor &middot; December 2025</h3><p>Wendi Hoffer, founder of TLO group Lex Kids Be Kids, discusses how she used the Youth Risk Behavior Survey to cross-tab social media and screen time impacts on mental health in Lexington.</p><div class="links"><a class="more" href="https://www.csmonitor.com/Arts-Culture/2025/1209/australia-social-media-ban-teens" target="_blank" rel="noopener">Read the article</a></div></div>
+        <div class="card" data-more hidden><h3>The Lexington Observer &middot; September 2025</h3><p>A feature on how Wendi Hoffer, through her role as founder of TLO group Lex Kids Be Kids, advocates for fewer screens and more real-life opportunities.</p><div class="links"><a class="more" href="https://lexobserver.org/2025/09/11/meet-lex-kids-be-kids-parents-advocating-for-phone-free-childhoods/" target="_blank" rel="noopener">Read the article</a></div></div>
+        <div class="card" data-more hidden><h3>The Wall Street Journal &middot; September 2025</h3><p>&ldquo;Paying Kids to Stay Off Their Phones: Incentive or Bribe?&rdquo; Adrienne shares her expertise in Julie Jargon's Family &amp; Tech column.</p><div class="links"><a class="more" href="https://www.wsj.com/tech/personal-tech/kids-social-media-phone-bribe-parenting-717ee13e" target="_blank" rel="noopener">Read the column (free WSJ sign-in)</a></div></div>
+        <div class="card" data-more hidden><h3>YourArlington &middot; September 2024</h3><p>A feature on Jeff Miller's work, through TLO group Tech-Wise Arlington, to bring information to parents and help them connect over their concerns about smartphones in Arlington.</p><div class="links"><a class="more" href="https://yourarlington.com/2024/09/phones-082724/" target="_blank" rel="noopener">Read the story</a></div></div>
+        <div class="card" data-more hidden><h3>WBZ-TV (CBS Boston) &middot; October 2018</h3><p>&ldquo;It Happens Here&rdquo; featured the Concord Promise, the parent pledge that later became Turning Life On.</p><div class="links"><a class="more" href="https://www.cbsnews.com/boston/news/concord-promise-massachusetts-wait-until-8th-grade-kids-phones/" target="_blank" rel="noopener">Read the story</a></div></div>
       </div>
-      <p class="evstamp">Showing the newest five. Each becomes a link once we have its address, and older coverage from The Christian Science Monitor, The Lexington Observer, The Wall Street Journal, Your Arlington and WBZ-TV sits behind them.</p>
+      <div class="btns"><button class="btn btn-line" type="button" id="newsmore" aria-controls="newsgrid" aria-expanded="false">See more</button></div>
     </div>
   </section>
 
-  <section class="s cream">
+  <section class="s mist" id="join">
     <div class="wrap">
-      <h2>You bring the concern. We'll help carry what comes next.</h2>
-      <div data-joinform style="margin-top:32px;max-width:720px">
-        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a>.</p></noscript>
+      <div class="kick">Join us</div>
+      <h2>you bring the concern and we'll help carry what comes next</h2>
+      <p class="lede">Tell us a little about where your community is today, and a real person will get back to you.</p>
+      <div class="joinwrap" data-joinform>
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
       </div>
     </div>
   </section>
@@ -261,50 +246,35 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--SHELL:footer-->
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Turning Life On</h4>
-        <p>A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
-        <p style="margin-top:14px"><a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="flist">
-          <li><a href="about.html">About</a></li>
-          <li><a href="communities.html">Communities</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
-          <li><a href="attend.html">Attend</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul class="flist">
-          <li>Concord, Massachusetts</li>
-          <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
-          <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
-          <li><a href="privacy/">Privacy policy</a></li>
-        </ul>
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
       </div>
     </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+    </ul>
     <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
   </div>
 </footer>
 <!--/SHELL:footer-->
 <script src="assets/nearby.js"></script>
 <script src="assets/join.js"></script>
+<script src="assets/site.js"></script>
 <script>
-[].slice.call(document.querySelectorAll('.ph img')).forEach(function(img){
-  function ok(){ img.parentNode.classList.add('has-img'); }
-  function bad(){ img.remove(); }
-  if (img.complete) { img.naturalWidth ? ok() : bad(); }
-  else { img.addEventListener('load', ok); img.addEventListener('error', bad); }
-});
-document.getElementById('menubtn').addEventListener('click',function(){
-  var nav=document.getElementById('nav'); nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', nav.classList.contains('open'));
+/* "In the news": the newest five show; See more reveals the rest. */
+document.getElementById('newsmore').addEventListener('click', function(){
+  [].slice.call(document.querySelectorAll('#newsgrid [data-more]')).forEach(function(c){ c.hidden = false; });
+  this.setAttribute('aria-expanded', 'true');
+  this.parentNode.hidden = true;
 });
 </script>
 </body></html>

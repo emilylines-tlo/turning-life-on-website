@@ -2,7 +2,7 @@
 
 Static HTML site for [turninglifeon.org](https://www.turninglifeon.org), a
 Massachusetts 501(c)(3) helping local leaders build grassroots digital-wellness
-movements. Seven pages, no framework, no build step.
+movements. Seven main pages plus grants, privacy and pact pages. No framework, no build step.
 
 **This repository is live.** Anything pushed to `main` publishes to
 https://emilylines-tlo.github.io/turning-life-on-website/ within about a minute.
@@ -14,13 +14,24 @@ There is no staging step, so check before you push.
 
 | File | Page | What drives it |
 | --- | --- | --- |
-| `index.html` | Home | Live: next event, list of towns |
+| `index.html` | Home | Static copy; the sign-up form's community list |
 | `about.html` | About | Static copy |
-| `take-action.html` | Take Action | Static copy |
-| `network.html` | Network | Live: map, ZIP search, directory |
-| `resources.html` | Resources | Live: resource library |
-| `events.html` | Events | Live: event list, "what's happening near you" |
+| `communities.html` | Communities | Live: Massachusetts map, ZIP search, directory |
+| `learn.html` | Learn | Static copy; links into the Four Norms library |
+| `get-involved.html` | Get Involved | Static copy |
+| `events.html` | Events | Live: upcoming events grid |
 | `support.html` | Support | Static copy |
+| `community-grants/` | Community Grants | Static copy (not in the navigation) |
+| `privacy/` | Privacy policy | Static copy |
+| `pact/` | Community pact | Placeholder until the statewide pact is live |
+| `smartphone-alternatives/` | Smartphone Alternatives | Static copy from Tech-Wise Arlington's research (not in the navigation) |
+
+`attend.html`, `network.html`, `resources.html`, `take-action.html` and
+`turning-life-on-resources/smartphone-alternatives/` are redirects from older
+addresses. Keep them so old links still work.
+
+Every page has a `<section id="join">` holding the sign-up form; the **Join Us**
+button in the navigation and **Sign up** in the footer jump to it.
 
 ---
 
@@ -44,10 +55,14 @@ GitHub Actions (twice daily)
 - `data/events.json` — upcoming events
 - `data/groups.json` — coalition communities (map, directory, town chips)
 - `data/library.json` — resource library
+- `data/communities-extra.json` — **the one hand-maintained file in `data/`.**
+  Massachusetts groups not yet registered on Four Norms, each group's own
+  website keyed by Four Norms slug, and a `hide` list of Four Norms slugs
+  never shown on the site. The fetch script never touches it.
 - `data/zip-coords.json` — US ZIP centroids from the 2023 Census gazetteer,
   used for the "near you" searches. Loaded only when someone searches.
 
-**`data/*.json` is generated output. Never edit it by hand** — the next
+**Apart from `communities-extra.json`, `data/*.json` is generated output. Never edit it by hand** — the next
 scheduled run overwrites your change and no one will know why it reverted.
 To change what ends up there, change `scripts/fetch-fournorms.py`.
 
@@ -105,19 +120,36 @@ Then open http://localhost:8000. Stop it with Ctrl-C.
 
 ## Conventions
 
-- **CSS is inlined in each page's `<style>` block.** This is duplicated across
-  pages and is known debt; when changing shared styling — header, footer,
-  buttons — change every page, or the site splits visually at the seams.
+- **Shared CSS lives in `assets/site.css`**; each page's own `<style>` block
+  holds only what is specific to that page. Brand colors are the variables at
+  the top of `site.css`.
+- **The header and footer are stamped in by `python3 scripts/apply-shell.py`.**
+  Change the navigation or footer there, run it, and every page updates.
 - **Shared JavaScript lives in `assets/nearby.js`** (`TLO.esc`, `TLO.miles`,
-  `TLO.lookupZip`, `TLO.loadJSON`, `TLO.byDistance`, `TLO.distancePhrase`).
-  Distance and ZIP logic belongs there, not copied into a page.
+  `TLO.lookupZip`, `TLO.loadJSON`, `TLO.loadCommunities`, `TLO.byDistance`,
+  `TLO.distancePhrase`, `TLO.maProject`). Distance, ZIP and community logic
+  belongs there, not copied into a page. `assets/join.js` is the sign-up form,
+  `assets/site.js` the mobile menu and tabs, and `assets/ma-map.js` the
+  Massachusetts outline for the map (generated from US Census boundaries).
+- **Only Massachusetts communities appear on the site.** `TLO.loadCommunities`
+  filters on `state === "MA"`.
 - **Escape anything from the API before putting it in the DOM** — `TLO.esc()`.
 - **External scripts need a correct Subresource Integrity hash.** A wrong hash
   does not error visibly; the browser silently refuses to load the file. Verify
   with `openssl dgst -sha512 -binary file | openssl base64 -A`.
 - **Photos belong in `assets/img/`.** Do not hot-link images from elsewhere.
-- Fonts are Poppins (headings) and Mulish (body). Brand colors are defined as
-  CSS variables at the top of each page.
+- Fonts are Poppins (headings) and Mulish (body). Brand colors: orange
+  `#F67800`, blue `#339797`, light grey `#F5F5F5`. Italics show in blue.
+  Headings are lower case where the wireframe has them that way.
+- **Partner logos** live in `assets/img/partners/`, used with each partner's
+  permission and never recolored. Logos published only in white sit on a dark
+  tile (`<li class="dark">`).
+- **Photos are kept small**: resize to at most 1000px on the long side before
+  adding them to `assets/img/`. Full-width hero backgrounds (`about-hero.jpg`,
+  `events-hero.jpg`) are the exception, at up to 1600px.
+- **Issue tabs** (Learn, Get Involved) use the shared `.itabs` / `.ipanel` /
+  `.icards` classes in `site.css` and the tab script in `site.js`, modeled on
+  Tech-Wise Arlington's AI for Parents page. Without JavaScript every panel shows.
 
 ---
 
@@ -147,11 +179,13 @@ git push
   info@turninglifeon.org as an interim. The intended destination is the Four
   Norms Supporters API, which needs a host that can run server-side code
   (Cloudflare Pages or Netlify) so the API key stays private. GitHub Pages
-  cannot do this. Swapping it is one function in `index.html`.
+  cannot do this. Swapping it is `submitSignup` in `assets/join.js`.
 - **Per-issue pages.** The home page describes four issues; none has its own
   page yet, and the links point at existing pages instead.
-- **Brand values.** Colors and fonts are close approximations pending exact
-  values from the previous Squarespace site.
-- **Photos.** `assets/img/hero.jpg`, `gathering.jpg` and `donate.jpg` are
-  referenced but do not exist. Each slot falls back to a placeholder describing
-  the shot needed; drop the file in and it appears.
+- **Smartphone Alternatives prices.** Every device shows the date its price
+  was checked on the manufacturer's own site. Re-check before those dates get
+  stale, and send Jeff Miller (Tech-Wise Arlington) changes for an accuracy
+  pass. Never change a verdict to suit a discount code. Jeff's build brief is
+  internal and stays out of this repo.
+- **Team headshots** live in `assets/img/team/` as 400px squares. Jennifer
+  Henderson still shows initials until her photo arrives.

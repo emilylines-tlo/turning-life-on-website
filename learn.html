@@ -1,180 +1,43 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources &middot; Turning Life On</title>
+<title>Learn &middot; Turning Life On</title>
+<meta name="description" content="Short, clear guides on smartphones, social media, distraction-free learning, AI and reconnecting, plus event recordings, books and films.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-:root{
-  --slate:#2d3e4e; --ink:#1a1a1a; --teal:#3f9b9b; --teal-d:#347f7f;
-  --orange:#e8821e; --orange-d:#cf7316; --mist:#f1f1ef; --line:#e4e3de; --maxw:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Mulish',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:600;line-height:1.15;color:var(--ink)}
-a{color:var(--teal);text-decoration:none}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
-.read{max-width:780px}
-.review{background:var(--slate);color:#e9eef1;font-size:13px;text-align:center;padding:7px 16px}
-.review b{color:#fff;font-weight:600}
-header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:3px solid var(--teal)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:96px}
-.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer}
-.logo .word{font-family:'Poppins',sans-serif;font-weight:700;font-size:27px;letter-spacing:.01em}
-.logo .word .a{color:var(--slate)} .logo .word .b{color:var(--teal)}
-.logo .word .pw{font-size:18px;vertical-align:middle;margin:0 1px}
-.logo .tag{font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.18em;color:var(--teal);margin-top:5px}
-nav ul{display:flex;align-items:center;gap:26px;list-style:none}
-.navlink{font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;color:var(--slate);padding:4px 0;position:relative}
-.navlink:hover{color:var(--teal)}
-.navlink.active::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--slate)}
-.menubtn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:9px 13px;cursor:pointer;font-size:15px;color:var(--slate)}
-.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:17px;font-weight:500;padding:15px 30px;border-radius:2px;cursor:pointer;border:0;transition:background .18s}
-.btn-orange{background:var(--orange);color:#fff} .btn-orange:hover{background:var(--orange-d)}
-.btn-teal{background:var(--teal);color:#fff} .btn-teal:hover{background:var(--teal-d)}
-.btn-sm{font-size:15px;padding:11px 22px}
-.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.phero{position:relative;background-size:cover;background-position:center;min-height:540px;display:flex;align-items:center}
-.phero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.12)}
-.phero .inner{position:relative;z-index:2;width:100%}
-.tblock{display:inline-block;background:var(--teal);color:#fff;padding:14px 26px;font-family:'Poppins',sans-serif;font-weight:600}
-.tblock.sm{font-size:30px} .tblock.lg{font-size:54px;margin-top:14px}
-.phero .btns{margin-top:30px} .phero .btns .btn{box-shadow:0 2px 14px rgba(0,0,0,.18)}
-.subhero{display:inline-block;background:var(--teal);color:#fff;padding:16px 26px;max-width:600px;font-size:19px;font-weight:400;margin-top:14px;font-family:'Mulish',sans-serif}
-section.s{padding:78px 0}
-section.s.mist{background:var(--mist)}
-section.s.teal{background:var(--teal);color:#fff}
-section.s.teal h2,section.s.teal h3{color:#fff}
-.kick{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
-section.s.teal .kick{color:#cfeaea}
-.s h2{font-size:clamp(30px,4vw,46px);margin-bottom:18px}
-.s h3{font-size:24px;margin-bottom:10px}
-.s p{font-size:17px;margin-bottom:16px;color:#33373a}
-section.s.teal p{color:rgba(255,255,255,.95)}
-.s p:last-child{margin-bottom:0}
-.lede{font-size:19px}
-.tlolink{color:var(--teal);font-weight:700;text-decoration:underline}
-.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
-.mapteaser{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
-.mapteaser .topbar{background:#222;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;padding:12px 16px}
-.mapteaser .mapimg{height:300px;background:linear-gradient(135deg,#dbe7e2,#e9efe8);position:relative}
-.mapteaser .pin{position:absolute;width:14px;height:14px;background:var(--teal);border:2px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.mapteaser .foot{padding:16px;text-align:center}
-.pathgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
-.path .photo{height:230px;background-size:cover;background-position:center;background-color:#5fb0b0;border-radius:2px}
-.path h3{margin-top:22px;font-size:28px;color:#fff}
-.path p{margin-top:10px;font-size:16px;color:rgba(255,255,255,.95)}
-.path .btn{margin-top:20px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.card{background:var(--mist);border-radius:4px;padding:30px}
-.card .tag{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
-.card h3{font-size:22px} .card p{font-size:16px;margin:10px 0 18px}
-.spot{text-align:center}
-.spot h2{font-size:clamp(34px,5vw,52px);color:var(--ink);margin-bottom:34px}
-.townrow{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
-.spot .more{margin-top:30px}
-.wave{display:block;width:100%;height:40px;margin-top:10px}
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.member{background:var(--mist);border-radius:4px;padding:26px}
-.member .name{font-family:'Poppins',sans-serif;font-size:21px;font-weight:600;color:var(--slate)}
-.member .role{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:5px 0 12px}
-.member p{font-size:15px;margin:0}
-.flag{color:var(--orange);font-style:italic;font-size:14px}
-.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dir a{background:var(--mist);border-radius:3px;padding:18px;color:var(--slate);font-family:'Poppins',sans-serif;font-weight:500;font-size:16px}
-.dir a:hover{background:#e7e7e3}
-.dir a span{display:block;font-family:'Mulish',sans-serif;font-weight:400;color:var(--orange);text-decoration:underline;font-size:14px;margin-top:6px}
-.embed{border:1px dashed var(--teal);border-radius:4px;background:#eef5f5;padding:46px 24px;text-align:center;color:var(--teal-d)}
-.embed .lab{font-family:'Poppins',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.embed .ico{font-size:32px;display:block;margin-bottom:10px}
-.imgrow{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.imgrow .pic{height:320px;background-size:cover;background-position:center;background-color:#cfe0db;border-radius:4px}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.quote{background:#fff;border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:24px;box-shadow:0 1px 0 var(--line)}
-.quote p{font-size:17px;color:var(--ink);font-style:italic;margin-bottom:12px}
-.quote .who{font-family:'Poppins',sans-serif;font-style:normal;font-size:13.5px;font-weight:500;color:var(--teal)}
-footer{background:#24323f;color:#c8d3dc;padding:56px 0 40px;font-size:15px}
-footer h4{color:#fff;font-size:17px;margin-bottom:12px}
-footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
-footer p,footer li{font-size:15px;color:#c8d3dc;line-height:1.7}
-footer a{color:#c8d3dc} footer a:hover{color:#fff}
-.flist{list-style:none;display:flex;flex-direction:column;gap:9px}
-.disc{margin-top:38px;padding-top:22px;border-top:1px solid #465866;font-size:12.5px;color:#8d9caa;line-height:1.55}
-.btn-line{background:transparent;color:var(--slate);border:2px solid var(--slate)}
-.btn-line:hover{background:var(--slate);color:#fff}
-.navlink.active{color:var(--teal-d);border-bottom:2px solid var(--teal)}
-.libfilters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
-.libfilter{font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);border-radius:2px;padding:9px 18px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
-.libfilter:hover{border-color:var(--teal);color:var(--teal)}
-.libfilter.is-on{background:var(--teal);border-color:var(--teal);color:#fff}
-.libgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.res{background:var(--mist);border-radius:4px;padding:26px;display:flex;flex-direction:column}
-.res .kind{font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:9px}
-.res h3{font-size:20px;margin-bottom:9px}
-.res p{font-size:15.5px;color:#4a4f52;margin:0 0 14px}
-.res .rtags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
-.res .rtag{font-size:11.5px;font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#5c6468;background:#fff;border:1px solid var(--line);border-radius:2px;padding:4px 9px}
-.res .btn{margin-top:auto;align-self:flex-start}
-.mapnote{font-size:15px;color:#5c6468}
-.evstamp{font-size:12.5px;color:#8a8f92;margin-top:26px}
-@media (max-width:760px){.libgrid{grid-template-columns:1fr}}
-.s h2 em{font-style:normal;color:var(--teal)}
-.sub{font-size:21px;margin:34px 0 0}
-.guides{margin-top:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.guide{background:var(--mist);border-radius:4px;padding:24px}
-.guide b{font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate)}
-.guide span{display:block;margin-top:8px;font-size:15.5px;color:var(--body)}
-.issuetabs{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
-.issuetab{font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;color:var(--slate);background:#fff;border:1px solid var(--line);border-radius:2px;padding:11px 20px;cursor:pointer}
-.issuetab:hover{border-color:var(--teal);color:var(--teal-d)}
-.issuetab.is-on{background:var(--teal);border-color:var(--teal);color:#fff}
-.issuepanel{margin-top:26px;background:#fff;border-radius:4px;padding:28px;max-width:860px}
-.issuepanel .one{font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:var(--teal-d)}
-.issuepanel p{font-size:16.5px;color:var(--body);margin-top:10px}
-.docs{margin-top:18px;list-style:none;display:grid;gap:9px}
-.docs li{font-size:16px;color:var(--slate);padding-left:20px;position:relative}
-.docs li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--orange)}
-.recordings{margin-top:32px;display:grid;gap:18px}
-.recordings article{background:var(--mist);border-radius:4px;padding:24px}
-.recordings b{font-family:'Poppins',sans-serif;font-size:18px;color:var(--slate)}
-.recordings span{display:block;margin-top:8px;font-size:15.5px;color:var(--body)}
-.recordings .await{display:inline-block;margin-top:12px;font-style:italic;font-size:14px;color:var(--orange-d)}
-.media{margin-top:16px;list-style:none;display:grid;gap:12px;max-width:900px}
-.media li{font-size:16.5px;color:var(--body);padding-left:20px;position:relative}
-.media li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
-.media b{color:var(--slate)}
-.photo-wide{margin-top:30px;aspect-ratio:16/8;border-radius:4px}
-@media (max-width:900px){ .guides{grid-template-columns:1fr} }
-@media (max-width:900px){
-  .twocol,.cards,.team,.imgrow,.quotes,footer .cols{grid-template-columns:1fr}
-  .pathgrid{grid-template-columns:1fr} .townrow,.dir{grid-template-columns:repeat(2,1fr)}
-  .bar{height:auto;padding:14px 0;flex-wrap:wrap}
-  nav ul{display:none} nav.open ul{display:flex;flex-direction:column;width:100%;gap:12px;margin-top:12px}
-  .menubtn{display:block} .tblock.lg{font-size:38px}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style></head><body>
+.issues{margin-top:30px;max-width:900px}
+details.acc summary em{font-family:'Poppins',sans-serif}
+.recs{list-style:none;display:grid;gap:18px;margin-top:30px;max-width:900px}
+.recs li{background:#fff;border-left:4px solid var(--teal);padding:20px 22px;font-size:16px;color:var(--body)}
+.recs b{color:var(--slate);font-family:'Poppins',sans-serif;font-weight:600}
+.media h3{font-size:22px;margin:40px 0 16px}
+.media .linklist{max-width:900px}
+.media .split{margin-top:10px}
+.aff{margin-top:30px}
+</style>
+</head><body>
 <!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Turning Life On, home">
       <div class="word"><span class="a">TURNING LIFE</span> <span class="b"><span class="pw">&#9211;</span>N</span></div>
       <div class="tag">KEEP TECH IN CHECK</div>
     </a>
-    <nav id="nav">
-      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
-      <ul>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
         <li><a class="navlink" href="index.html">Home</a></li>
         <li><a class="navlink" href="about.html">About</a></li>
         <li><a class="navlink" href="communities.html">Communities</a></li>
         <li><a class="navlink active" href="learn.html">Learn</a></li>
         <li><a class="navlink" href="get-involved.html">Get Involved</a></li>
-        <li><a class="navlink" href="attend.html">Attend</a></li>
-        <li><a class="btn btn-line btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></li>
-        <li><a class="btn btn-orange btn-sm" href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+        <li><a class="navlink" href="events.html">Events</a></li>
+        <li><a class="navlink" href="support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
       </ul>
     </nav>
   </div>
@@ -182,144 +45,166 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--/SHELL:nav-->
 <main id="main">
 
-  <section class="s cream">
+  <section class="hero">
     <div class="wrap">
-      <h2>Learn</h2>
-      <p class="lede">You don't need to read every study to make good decisions for your family. We've done the digging and turned it into short, clear guides, whether you have five minutes or a free evening.</p>
-      <div class="btns">
-        <a class="btn btn-orange" href="#start-here">Start here</a>
-        <a class="textlink" href="#by-issue">Explore the issues</a>
+      <h1>new to this? <em>begin</em> with the basics</h1>
+      <p>You don't need to read every study to make good decisions for your family. We've done the digging and turned it into short, clear guides, whether you have five minutes or a free evening.</p>
+    </div>
+  </section>
+
+  <section class="s" id="start">
+    <div class="wrap">
+      <h2>start here</h2>
+      <div class="grid4">
+        <div class="card top"><h3>Where We Stand on Tech</h3><p>Our platform: where we stand on phones, social media, gaming, school tech and AI, with age-by-age guidance.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Read it</a></div></div>
+        <div class="card top"><h3>Screen Time Recommendations by Stage</h3><p>What your child is developing at each age, and how to support it.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-screen-time-recommendations-by-stage" target="_blank" rel="noopener">Read it</a></div></div>
+        <div class="card top"><h3>Values-Based Parenting</h3><p>Five practices that help kids build an inner compass for a digital world.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-values-based-parenting" target="_blank" rel="noopener">Read it</a></div></div>
+        <div class="card top"><h3>A Holistic Approach to Keeping Tech in Check</h3><p>Developed with Emerson Health, this guide looks at six pillars of digital wellness.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-a-holistic-approach-to-keeping-tech-in-check" target="_blank" rel="noopener">Read it</a></div></div>
       </div>
     </div>
   </section>
 
-  <section class="s" id="start-here">
+  <section class="s mist" id="issues">
     <div class="wrap">
-      <div class="kick">Start here</div>
-      <h2>New to this? <em>Begin</em> with the basics</h2>
-      <div class="guides">
-        <div class="guide"><b>Where We Stand on Tech</b><span>Our platform: where we stand on phones, social media, gaming, school tech and AI, with age-by-age guidance.</span></div>
-        <div class="guide"><b>Screen Time Recommendations by Stage</b><span>What your child is developing at each age, and how to support it.</span></div>
-        <div class="guide"><b>Values-Based Parenting</b><span>Five practices that help kids build an inner compass for a digital world.</span></div>
-        <div class="guide"><b>A Holistic Approach to Keeping Tech in Check</b><span>Developed with Emerson Health, this guide looks at six pillars of digital wellness.</span></div>
+      <h2>explore the issues</h2>
+      <div data-tabs>
+        <div class="itabs" role="tablist" aria-label="Explore the issues">
+          <button role="tab" id="lt1" aria-controls="lp1"><b>Smartphones and Social Media</b><span>More childhood before the phone</span></button>
+          <button role="tab" id="lt2" aria-controls="lp2"><b>Distraction-free Schools</b><span>School should be the easy part</span></button>
+          <button role="tab" id="lt3" aria-controls="lp3"><b>AI and Childhood</b><span>Powerful, and unsafe for kids</span></button>
+          <button role="tab" id="lt4" aria-controls="lp4"><b>Reconnecting Communities</b><span>Busy kids don't miss their screens</span></button>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp1" aria-labelledby="lt1">
+          <div class="ieyebrow">Smartphones and Social Media</div>
+          <p class="ilead"><em>More childhood before the phone.</em> Many families are choosing to wait on smartphones until high school and social media until 16. It's what the research supports. Waiting also gives kids time to develop a sense of life without the demands of technology, so when they have access, they're empowered to make a choice between tech or real life.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Simple habits and settings to keep tech in check</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design" target="_blank" rel="noopener">What is addictive design?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Why delay smartphones?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></h3></li>
+            <li class="icard"><h3><a href="smartphone-alternatives/">Smartphone alternatives</a></h3><p>What each option costs, what it does, and what goes wrong with it.</p></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp2" aria-labelledby="lt2">
+          <div class="ieyebrow">Distraction-free Schools</div>
+          <p class="ilead"><em>School should be the easy part.</em> Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters" target="_blank" rel="noopener">Why distraction-free learning matters</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts stands</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts" target="_blank" rel="noopener">Your Consent Counts</a></h3></li>
+            <li class="icard"><h3><a href="https://www.youtube.com/watch?v=Fd-_VDYit3U" target="_blank" rel="noopener">Dr. Jared Cooney Horvath's U.S. Senate testimony (January 2026)</a></h3></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp3" aria-labelledby="lt3">
+          <div class="ieyebrow">AI and Childhood</div>
+          <p class="ilead"><em>Powerful, and unsafe for kids.</em> Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where we stand on AI</a></h3></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp4" aria-labelledby="lt4">
+          <div class="ieyebrow">Reconnecting Communities</div>
+          <p class="ilead"><em>Busy kids don't miss their screens.</em> When kids' days are full of people, play and things they love, screens lose their pull.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters" target="_blank" rel="noopener">Why Reconnecting in Real Life Matters</a></h3></li>
+            <li class="icard"><h3><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy</a></h3><p>Sherry Turkle</p></li>
+          </ol>
+        </div>
       </div>
-      <p class="evstamp">Each guide gets a "Read it" button as soon as we have its link.</p>
     </div>
   </section>
 
-  <section class="s mist" id="by-issue">
+  <section class="s" id="advocates">
     <div class="wrap">
-      <div class="kick">Explore the issues</div>
-      <h2>Info by issue</h2>
-      <div class="issuetabs" role="tablist" aria-label="The four issues">
-        <button class="issuetab is-on" role="tab" aria-selected="true" data-i="slow">Slow Tech</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="school">Distraction-free learning</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="ai">AI in Childhood</button>
-        <button class="issuetab" role="tab" aria-selected="false" data-i="reconnect">Reconnecting our communities</button>
-      </div>
-
-      <div class="issuepanel" data-i="slow">
-        <p class="one">More childhood before the phone.</p>
-        <p>Why so many families are choosing to wait on smartphones until high school and social media until 16, and what the research says about why it matters.</p>
-        <ul class="docs"><li>Slow Tech at Home</li><li>What is addictive design?</li><li>Why wait?</li><li>Family Media Plan</li></ul>
-      </div>
-      <div class="issuepanel" data-i="school" hidden>
-        <p class="one">School should be the easy part.</p>
-        <p>Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p>
-        <ul class="docs"><li>Why distraction-free learning matters</li><li>Where Massachusetts stands</li><li>Dr. Jared Cooney Horvath's U.S. Senate testimony, January 2026 (video)</li></ul>
-      </div>
-      <div class="issuepanel" data-i="ai" hidden>
-        <p class="one">Powerful, and unsafe for kids.</p>
-        <p>Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p>
-        <ul class="docs"><li>What Parents Need to Know About AI</li><li>Where we stand on AI</li></ul>
-      </div>
-      <div class="issuepanel" data-i="reconnect" hidden>
-        <p class="one">Busy kids don't miss their screens.</p>
-        <p>When kids' days are full of people, play and things they love, screens lose their pull.</p>
-        <ul class="docs"><li>Why Reconnecting in Real Life Matters</li><li>Sherry Turkle, Artificial Intimacy</li></ul>
-      </div>
-      <p class="evstamp">Each item becomes a link as soon as we have its address.</p>
+      <div class="kick">For advocates</div>
+      <h2>playbooks for every advocate</h2>
+      <p class="lede">Our playbooks give you everything you need to advocate for change in your community. Whether you're just starting out or a seasoned advocate, there's something for everyone, from ditching "free" screen time in a single classroom to advocating for a Tech Advisory Committee.</p>
+      <ol class="icards">
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook" target="_blank" rel="noopener">Green Tier playbook: easy wins</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac" target="_blank" rel="noopener">Blue Tier playbook: pick up the pace</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks" target="_blank" rel="noopener">Black Tier playbook: steep and technical</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></h3></li>
+      </ol>
     </div>
   </section>
 
-  <section class="s" id="recordings">
-    <div class="wrap">
-      <div class="kick">Event recordings</div>
-      <h2>Missed it? <em>Watch</em> it here</h2>
-      <p class="lede">Talks and panels from Turning Life On and our communities.</p>
-      <div class="recordings">
-        <article><b>The Homework Machine: AI and the future of our schools</b>
-          <span>MIT Professor Justin Reich, director of the MIT Teaching Systems Lab and host of the podcast <i>The Homework Machine</i>, on what generative AI is doing to teaching, learning and the classrooms our kids walk into. Introduced by TLO board member Jeff Miller. Recorded May 13, 2026, at the Griffin Museum in Winchester.</span>
-          <em class="await">Watch link to come from Jeff (WinCAM)</em></article>
-        <article><b>Keeping Tech in Check with Culture Reframed</b>
-          <span>A Culture Reframed webinar with digital wellness experts Julia Storm and Adrienne Principe, moderated by Dr. Mandy Sanchez. It covers how screens affect kids' social and emotional well-being, how to be "smart, not scared," how to keep kids safe online, and practical ways to keep tech in check at home and in your community. July 2025.</span></article>
-        <article><b>Goodnow Community Read: The Anxious Generation</b>
-          <span>A panel discussion of Jonathan Haidt's book for the Goodnow Library's community read in Sudbury, with Adrienne Principe, Sudbury Officer Kim Mangano, psychiatrist Dr. Allison Baker, and Gabriela Nguyen, founder of APPstinence. February 11, 2025.</span></article>
-        <article><b>Solutions to the Social Dilemma</b>
-          <span>A panel and town hall on what it means to be digitally healthy, and the concrete steps families can take. It opens with teen advocate Aliza Goldie Kopans, co-author of the "Dear Parents" report, followed by a panel with Dr. Criscillia Benford, Dr. Gail Dines of Culture Reframed, Dr. Sharon Maxwell, Chelsea Maxwell, Helena Rampersaud and Jay Vidyarthi. Hosted by Adrienne Principe and psychotherapist Teodora Pavkovic. October 2020.</span></article>
+  <section class="s mist" id="recordings">
+    <div class="wrap split">
+      <div>
+        <div class="kick">Event recordings</div>
+        <h2>missed it? <em>watch</em> it here</h2>
+        <p class="lede">Talks and panels from Turning Life On and our communities.</p>
+        <ul class="recs">
+          <li><b>Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture.</b> Educator and author Stephanie Malia Krauss on why young people thrive when they feel seen, valued and connected, not just evaluated. September 30, 2026. <a href="https://youtu.be/7lMTfK3h4YM" target="_blank" rel="noopener">Watch</a></li>
+          <li><b>The Homework Machine: AI and the future of our schools.</b> MIT Professor Justin Reich, director of the MIT Teaching Systems Lab and host of the podcast <i>The Homework Machine</i>, on what generative AI is doing to teaching, learning and the classrooms our kids walk into. Introduced by TLO board member Jeff Miller. Recorded May 13, 2026, at the Griffin Museum in Winchester.</li>
+          <li><b>Keeping Tech in Check with Culture Reframed.</b> A Culture Reframed webinar with digital wellness experts Julia Storm and Adrienne Principe, moderated by Dr. Mandy Sanchez. It covers how screens affect kids' social and emotional well-being, how to be "smart, not scared," how to keep kids safe online (including what to do if they've seen pornography), and practical ways to keep tech in check at home and in your community. July 2025. <a href="https://www.youtube.com/watch?v=OEJEnMQbaY4" target="_blank" rel="noopener">Watch</a></li>
+          <li><b>Goodnow Community Read: <i>The Anxious Generation</i>.</b> A panel discussion of Jonathan Haidt's book for the Goodnow Library's community read in Sudbury, with Adrienne Principe, Sudbury Officer Kim Mangano, psychiatrist Dr. Allison Baker, and Gabriela Nguyen, founder of APPstinence. February 11, 2025. <a href="https://cloud.castus.tv/vod/sudbury/video/67bbd4e8596e2d00085d731f?page=HOME" target="_blank" rel="noopener">Watch</a></li>
+          <li><b>Solutions to the Social Dilemma.</b> A panel and town hall on what it means to be digitally healthy, and the concrete steps families can take. It opens with teen advocate Aliza Goldie Kopans, co-author of the "Dear Parents" report, followed by a panel with Dr. Criscillia Benford, Dr. Gail Dines of Culture Reframed, Dr. Sharon Maxwell, Chelsea Maxwell, Helena Rampersaud and Jay Vidyarthi. Hosted by Adrienne Principe and psychotherapist Teodora Pavkovic. October 2020. <a href="https://www.youtube.com/watch?v=u0xG7Wz91jo" target="_blank" rel="noopener">Watch</a></li>
+        </ul>
       </div>
-      <p class="evstamp">More recordings coming soon.</p>
+      <figure class="photo" style="margin-top:60px">
+        <img src="assets/img/homework-machine.jpg" width="1000" height="750" loading="lazy" alt="Jeff Miller speaking beside a projected slide that asks How did we get here?">
+        <figcaption>Jeff Miller introduces MIT's Justin Reich at <i>The Homework Machine: AI and the future of our schools</i>, at the Griffin Museum in Winchester, May 13, 2026.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="s mist">
+  <section class="s media" id="books">
     <div class="wrap">
       <div class="kick">Books &amp; films</div>
-      <h2>For your nightstand, your book club, or your next parent night</h2>
+      <h2>for your nightstand, your book club, or your next parent night</h2>
 
-      <figure class="ph photo-wide">
-        <img src="assets/img/your-attention-please.jpg" alt="Eight people on stage after a screening of Your Attention Please">
-        <div class="shot"><b>Photo &middot; assets/img/your-attention-please.jpg</b><span>After a screening of Your Attention Please, with the writer and director.</span></div>
-        <figcaption>After a screening of <i>Your Attention Please</i>. From left: Lauren Feeney (Lexington Observer), Emily Lines, Kerriann Ostlund (Lexington Pediatrics), Adrienne Principe, writer Jack Lemay and director Sara Robin, Wendi Hoffer and Jeff Miller.</figcaption>
-      </figure>
+      <div class="split">
+        <div>
+          <h3>Watch</h3>
+          <ul class="linklist">
+            <li><a href="https://www.yourattentionplz.com/" target="_blank" rel="noopener">Your Attention Please</a> (2026). Parents, Gen Z reformers and tech whistleblowers push back against the attention economy. It's hopeful, not doom and gloom, and it's made by Boston filmmakers.</li>
+            <li><a href="https://www.netflix.com/title/82792555" target="_blank" rel="noopener">The AI Doc: Or How I Became an Apocaloptimist</a> (2026, PG-13, Netflix). An expectant father interviews tech leaders and experts to understand what AI could mean for his child's future.</li>
+            <li><a href="https://www.youtube.com/watch?v=He3IJJhFy-I" target="_blank" rel="noopener">Childhood 2.0</a> (2020, free on YouTube). Parents, kids and experts on what growing up online really looks like.</li>
+            <li><a href="https://www.humanetech.com/the-social-dilemma" target="_blank" rel="noopener">The Social Dilemma</a> (2020, Netflix). Former tech insiders explain how social media is designed to hook us.</li>
+            <li><a href="https://www.netflix.com/title/81756069" target="_blank" rel="noopener">Adolescence</a> (2025, Netflix, rated TV-MA). A gripping drama about a teenage boy and the online world his parents couldn't see. For parents to watch first. It's intense.</li>
+            <li><a href="https://www.bloomberg.com/news/videos/2025-03-21/-can-t-look-away" target="_blank" rel="noopener">Can't Look Away</a> (2025, Bloomberg). Families and lawyers take on social media companies over harm to kids.</li>
+          </ul>
+        </div>
+        <figure class="photo" style="margin-top:56px">
+          <img src="assets/img/your-attention-please.jpg" width="1000" height="750" loading="lazy" alt="Ten people standing together on a stage after a film screening">
+          <figcaption>After a screening of <i>Your Attention Please</i>. From left: Lauren Feeney (Lexington Observer), Emily Lines, Kerriann Ostlund (Lexington Pediatrics), Adrienne Principe, writer Jack Lemay and director Sara Robin, Wendi Hoffer and Jeff Miller.</figcaption>
+        </figure>
+      </div>
 
-      <h3 class="sub">Watch</h3>
-      <ul class="media">
-        <li><b>Your Attention Please</b> (2026). Parents, Gen Z reformers and tech whistleblowers push back against the attention economy. It's hopeful, not doom and gloom, and it's made by Boston filmmakers.</li>
-        <li><b>The AI Doc: Or How I Became an Apocaloptimist</b> (2026, PG-13, Netflix). An expectant father interviews tech leaders and experts to understand what AI could mean for his child's future.</li>
-        <li><b>Childhood 2.0</b> (2020, free on YouTube). Parents, kids and experts on what growing up online really looks like.</li>
-        <li><b>The Social Dilemma</b> (2020, Netflix). Former tech insiders explain how social media is designed to hook us.</li>
-        <li><b>Adolescence</b> (2025, Netflix, rated TV-MA). A gripping drama about a teenage boy and the online world his parents couldn't see. For parents to watch first. It's intense.</li>
-        <li><b>Can't Look Away</b> (2025, Bloomberg). Families and lawyers take on social media companies over harm to kids.</li>
+      <h3>Read</h3>
+      <ul class="linklist">
+        <li><a href="https://amzn.to/4kr59gN" target="_blank" rel="noopener sponsored">The Anxious Generation</a> by Jonathan Haidt. How the shift to a phone-based childhood changed kids' mental health, and four norms to turn it around.</li>
+        <li><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy: Who We Become When We Talk to Machines</a> by Sherry Turkle (new, September 2026). What happens when chatbots stand in for human connection.</li>
+        <li><a href="https://amzn.to/4nDlwd5" target="_blank" rel="noopener sponsored">Reclaiming Conversation: The Power of Talk in a Digital Age</a> by Sherry Turkle. Why face-to-face conversation is where empathy grows.</li>
+        <li><a href="https://amzn.to/44GhSrf" target="_blank" rel="noopener sponsored">The Big Disconnect</a> by Catherine Steiner-Adair, EdD. How technology is changing family relationships, told through kids' own voices.</li>
+        <li><a href="https://amzn.to/4lAOnwv" target="_blank" rel="noopener sponsored">The Cyber Effect</a> by Mary Aiken, PhD. A cyberpsychologist on how online life shapes behavior, especially kids'.</li>
+        <li><a href="https://amzn.to/3ZZcKvN" target="_blank" rel="noopener sponsored">Generations</a> and <a href="https://amzn.to/3TR8Mld" target="_blank" rel="noopener sponsored">iGen</a> by Jean Twenge, PhD. The data behind how each generation, and especially today's kids, is growing up differently.</li>
+        <li><a href="https://amzn.to/4ewQgrK" target="_blank" rel="noopener sponsored">The Shallows: What the Internet Is Doing to Our Brains</a> by Nicholas Carr. How constant connection changes the way we read, think and remember.</li>
+        <li><a href="https://amzn.to/3ZYB4xL" target="_blank" rel="noopener sponsored">Stolen Focus: Why You Can't Pay Attention, and How to Think Deeply Again</a> by Johann Hari. Why attention is harder than ever, and what we can do about it.</li>
       </ul>
 
-      <h3 class="sub">Read</h3>
-      <ul class="media">
-        <li><b>The Anxious Generation</b> by Jonathan Haidt. How the shift to a phone-based childhood changed kids' mental health, and four norms to turn it around.</li>
-        <li><b>Artificial Intimacy: Who We Become When We Talk to Machines</b> by Sherry Turkle (new, September 2026). What happens when chatbots stand in for human connection.</li>
-        <li><b>Reclaiming Conversation: The Power of Talk in a Digital Age</b> by Sherry Turkle. Why face-to-face conversation is where empathy grows.</li>
-        <li><b>The Big Disconnect</b> by Catherine Steiner-Adair, EdD. How technology is changing family relationships, told through kids' own voices.</li>
-        <li><b>The Cyber Effect</b> by Mary Aiken, PhD. A cyberpsychologist on how online life shapes behavior, especially kids'.</li>
-        <li><b>Generations</b> and <b>iGen</b> by Jean Twenge, PhD. The data behind how each generation, and especially today's kids, is growing up differently.</li>
-        <li><b>The Shallows: What the Internet Is Doing to Our Brains</b> by Nicholas Carr. How constant connection changes the way we read, think and remember.</li>
-        <li><b>Stolen Focus: Why You Can't Pay Attention, and How to Think Deeply Again</b> by Johann Hari. Why attention is harder than ever, and what we can do about it.</li>
+      <h3>Listen</h3>
+      <ul class="linklist">
+        <li><a href="https://www.humanetech.com/podcast" target="_blank" rel="noopener">Your Undivided Attention</a> from the Center for Humane Technology. Conversations about building technology that serves people instead of exploiting them.</li>
       </ul>
 
-      <h3 class="sub">Listen</h3>
-      <ul class="media">
-        <li><b>Your Undivided Attention</b> from the Center for Humane Technology. Conversations about building technology that serves people instead of exploiting them.</li>
-      </ul>
-      <p class="evstamp">Titles become links once we have the affiliate addresses. The commission disclosure goes here at the same time.</p>
+      <p class="note aff">Turning Life On may earn a small commission from books purchased through these links, which supports our work in communities across Massachusetts.</p>
+      <div class="btns"><a class="btn btn-teal" href="https://www.fournorms.com/organizations/turning-life-on/library" target="_blank" rel="noopener">Browse the full resource library</a></div>
     </div>
   </section>
 
-  <section class="s" id="library">
-    <div class="wrap">
-      <div class="kick">From our library</div>
-      <h2>Printables and guides</h2>
-      <div class="libfilters" id="libfilters" hidden></div>
-      <div class="libgrid" id="libgrid" aria-live="polite"><p class="mapnote">Loading resources&hellip;</p></div>
-      <p class="evstamp" id="libstamp"></p>
-    </div>
-  </section>
-
-  <section class="s cream">
+  <section class="s" id="join">
     <div class="wrap">
       <div class="kick">Join the movement</div>
-      <h2>Ready to do something with what you've learned?</h2>
+      <h2>ready to do something with what you've learned?</h2>
       <p class="lede">Whether it's one conversation with a teacher or starting a group in your community, there's a first step that fits.</p>
-      <div data-joinform style="margin-top:32px;max-width:720px">
-        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a>.</p></noscript>
+      <div class="btns"><a class="btn btn-orange" href="get-involved.html">Get involved</a></div>
+      <div class="joinwrap" data-joinform>
+        <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
       </div>
     </div>
   </section>
@@ -328,162 +213,28 @@ footer a{color:#c8d3dc} footer a:hover{color:#fff}
 <!--SHELL:footer-->
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Turning Life On</h4>
-        <p>A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
-        <p style="margin-top:14px"><a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="flist">
-          <li><a href="about.html">About</a></li>
-          <li><a href="communities.html">Communities</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
-          <li><a href="attend.html">Attend</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul class="flist">
-          <li>Concord, Massachusetts</li>
-          <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
-          <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
-          <li><a href="privacy/">Privacy policy</a></li>
-        </ul>
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
       </div>
     </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+    </ul>
     <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
   </div>
 </footer>
 <!--/SHELL:footer-->
-<script>
-
-/* The four issue tabs. */
-(function(){
-  var tabs = [].slice.call(document.querySelectorAll('.issuetab'));
-  var panels = [].slice.call(document.querySelectorAll('.issuepanel'));
-  if (!tabs.length) return;
-  tabs.forEach(function(t){
-    t.addEventListener('click', function(){
-      tabs.forEach(function(o){
-        var on = o === t;
-        o.classList.toggle('is-on', on);
-        o.setAttribute('aria-selected', String(on));
-      });
-      panels.forEach(function(pn){ pn.hidden = pn.dataset.i !== t.dataset.i; });
-    });
-  });
-})();
-/* Photo slots. */
-[].slice.call(document.querySelectorAll('.ph img')).forEach(function(img){
-  function ok(){ img.parentNode.classList.add('has-img'); }
-  function bad(){ img.remove(); }
-  if (img.complete) { img.naturalWidth ? ok() : bad(); }
-  else { img.addEventListener('load', ok); img.addEventListener('error', bad); }
-});
-document.getElementById('menubtn').addEventListener('click',function(){
-  var nav=document.getElementById('nav'); nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', nav.classList.contains('open'));
-});
-</script>
 <script src="assets/nearby.js"></script>
-<script>
-/* Resource library.
-   Reads data/library.json, refreshed from Four Norms. Items TLO does not want
-   published are removed when that file is built, so nothing withheld is ever
-   sent to a visitor's browser. */
-(function(){
-  var gridEl = document.getElementById('libgrid');
-  var filtersEl = document.getElementById('libfilters');
-  var stampEl = document.getElementById('libstamp');
-  var items = [];
-  var tag = null;
-
-  /* A plain-words label for what someone is about to download. */
-  function kindOf(url){
-    var u = String(url || '').toLowerCase();
-    if (u.indexOf('docs.google') > -1) return 'Google Doc';
-    if (u.indexOf('.pdf') > -1) return 'PDF';
-    if (/\.(png|jpe?g|gif|webp)(\?|$)/.test(u)) return 'Image';
-    if (u.indexOf('.zip') > -1) return 'Zip folder';
-    return 'Download';
-  }
-
-  /* Show only the opening of a description. Four Norms descriptions sometimes
-     carry trailing notes about how their own library works, which do not
-     belong on a public page. */
-  function intro(text){
-    var t = String(text || '').replace(/\r/g, '').split('\n')[0].trim();
-    if (t.length <= 160) return t;
-    return t.slice(0, 160).replace(/\s+\S*$/, '') + '\u2026';
-  }
-
-  function card(it){
-    var esc = TLO.esc;
-    var tags = (it.tags || []).map(function(t){
-      return '<span class="rtag">' + esc(t) + '</span>';
-    }).join('');
-    return '<article class="res">' +
-      '<div class="kind">' + esc(kindOf(it.url)) + '</div>' +
-      '<h3>' + esc(it.title) + '</h3>' +
-      (it.description ? '<p>' + esc(intro(it.description)) + '</p>' : '') +
-      (tags ? '<div class="rtags">' + tags + '</div>' : '') +
-      '<a class="btn btn-orange btn-sm" href="' + esc(it.url) + '" target="_blank" rel="noopener">' +
-        'Open resource</a>' +
-    '</article>';
-  }
-
-  function render(){
-    var shown = tag ? items.filter(function(it){
-      return (it.tags || []).indexOf(tag) > -1;
-    }) : items;
-
-    if (!shown.length){
-      gridEl.innerHTML = '<p class="mapnote">Nothing here yet. ' +
-        '<a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
-        'More is available in the Community Portal</a>.</p>';
-      return;
-    }
-    gridEl.innerHTML = shown.map(card).join('');
-  }
-
-  function buildFilters(tags){
-    filtersEl.innerHTML =
-      '<button class="libfilter is-on" data-tag="" type="button">All resources</button>' +
-      tags.map(function(t){
-        return '<button class="libfilter" data-tag="' + TLO.esc(t) + '" type="button">' +
-               TLO.esc(t) + '</button>';
-      }).join('');
-    filtersEl.hidden = false;
-
-    filtersEl.addEventListener('click', function(e){
-      var b = e.target.closest('.libfilter');
-      if (!b) return;
-      tag = b.dataset.tag || null;
-      Array.prototype.forEach.call(filtersEl.querySelectorAll('.libfilter'), function(x){
-        x.classList.toggle('is-on', x === b);
-      });
-      render();
-    });
-  }
-
-  TLO.loadJSON('data/library.json').then(function(d){
-    items = d.items || [];
-    render();
-    if ((d.tags || []).length > 1) buildFilters(d.tags);
-    if (d.updated){
-      stampEl.textContent = 'Resources come from the Turning Life On Community Portal. Last updated ' +
-        new Date(d.updated).toLocaleDateString([], {month:'long', day:'numeric', year:'numeric'}) + '.';
-    }
-  }).catch(function(){
-    gridEl.innerHTML = '<p class="mapnote">Our resource library could not be loaded just now. ' +
-      'Please try the <a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">' +
-      'Community Portal</a>.</p>';
-  });
-})();
-</script>
+<script src="assets/join.js"></script>
+<script src="assets/site.js"></script>
+<script>TLO.addLibraryBlurbs('.icard');</script>
 </body></html>
