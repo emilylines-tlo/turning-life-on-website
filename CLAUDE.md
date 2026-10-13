@@ -145,7 +145,11 @@ Then open http://localhost:8000. Stop it with Ctrl-C.
   permission and never recolored. Logos published only in white sit on a dark
   tile (`<li class="dark">`).
 - **Photos are kept small**: resize to at most 1000px on the long side before
-  adding them to `assets/img/`.
+  adding them to `assets/img/`. Full-width hero backgrounds (`about-hero.jpg`,
+  `events-hero.jpg`) are the exception, at up to 1600px.
+- **Issue tabs** (Learn, Get Involved) use the shared `.itabs` / `.ipanel` /
+  `.icards` classes in `site.css` and the tab script in `site.js`, modeled on
+  Tech-Wise Arlington's AI for Parents page. Without JavaScript every panel shows.
 
 ---
 

@@ -66,56 +66,71 @@ details.acc summary em{font-family:'Poppins',sans-serif}
   <section class="s mist" id="issues">
     <div class="wrap">
       <h2>explore the issues</h2>
-      <div class="issues">
-        <details class="acc">
-          <summary><h3>Smartphones and Social Media</h3><p><em>More childhood before the phone.</em> Why so many families are choosing to wait on smartphones until high school and social media until 16, and what the research says about why it matters.</p></summary>
-          <div class="body"><ul class="linklist">
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Simple habits and settings to keep tech in check</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design" target="_blank" rel="noopener">What is addictive design?</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Why delay smartphones?</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></li>
-            <li><a href="smartphone-alternatives/">Smartphone alternatives</a></li>
-          </ul></div>
-        </details>
-        <details class="acc">
-          <summary><h3>Distraction-free learning</h3><p><em>School should be the easy part.</em> Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p></summary>
-          <div class="body"><ul class="linklist">
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters" target="_blank" rel="noopener">Why distraction-free learning matters</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts stands</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts" target="_blank" rel="noopener">Your Consent Counts</a></li>
-            <li>Dr. Jared Cooney Horvath's U.S. Senate testimony (January 2026) <a href="https://www.youtube.com/watch?v=Fd-_VDYit3U" target="_blank" rel="noopener">Watch</a></li>
-          </ul></div>
-        </details>
-        <details class="acc">
-          <summary><h3>AI and childhood</h3><p><em>Powerful, and unsafe for kids.</em> Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p></summary>
-          <div class="body"><ul class="linklist">
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where we stand on AI</a></li>
-          </ul></div>
-        </details>
-        <details class="acc">
-          <summary><h3>Reconnecting our communities</h3><p><em>Busy kids don't miss their screens.</em> When kids' days are full of people, play and things they love, screens lose their pull.</p></summary>
-          <div class="body"><ul class="linklist">
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters" target="_blank" rel="noopener">Why Reconnecting in Real Life Matters</a></li>
-            <li>Sherry Turkle, <a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy</a></li>
-          </ul></div>
-        </details>
-        <details class="acc">
-          <summary><h3>For advocates</h3><p><em>Playbooks for every advocate.</em> Our playbooks give you everything you need to advocate for change in your community. Whether you're just starting out or a seasoned advocate, there's something for everyone, from ditching "free" screen time in a single classroom to advocating for a Tech Advisory Committee.</p></summary>
-          <div class="body"><ul class="linklist">
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook" target="_blank" rel="noopener">Green Tier playbook: easy wins</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac" target="_blank" rel="noopener">Blue Tier playbook: pick up the pace</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks" target="_blank" rel="noopener">Black Tier playbook: steep and technical</a></li>
-            <li><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></li>
-          </ul></div>
-        </details>
+      <div data-tabs>
+        <div class="itabs" role="tablist" aria-label="Explore the issues">
+          <button role="tab" id="lt1" aria-controls="lp1"><b>Smartphones and Social Media</b><span>More childhood before the phone</span></button>
+          <button role="tab" id="lt2" aria-controls="lp2"><b>Distraction-free Schools</b><span>School should be the easy part</span></button>
+          <button role="tab" id="lt3" aria-controls="lp3"><b>AI and Childhood</b><span>Powerful, and unsafe for kids</span></button>
+          <button role="tab" id="lt4" aria-controls="lp4"><b>Reconnecting Communities</b><span>Busy kids don't miss their screens</span></button>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp1" aria-labelledby="lt1">
+          <div class="ieyebrow">Smartphones and Social Media</div>
+          <p class="ilead"><em>More childhood before the phone.</em> Why so many families are choosing to wait on smartphones until high school and social media until 16, and what the research says about why it matters.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Simple habits and settings to keep tech in check</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design" target="_blank" rel="noopener">What is addictive design?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Why delay smartphones?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></h3></li>
+            <li class="icard"><h3><a href="smartphone-alternatives/">Smartphone alternatives</a></h3></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp2" aria-labelledby="lt2">
+          <div class="ieyebrow">Distraction-free Schools</div>
+          <p class="ilead"><em>School should be the easy part.</em> Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters" target="_blank" rel="noopener">Why distraction-free learning matters</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts stands</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts" target="_blank" rel="noopener">Your Consent Counts</a></h3></li>
+            <li class="icard"><h3><a href="https://www.youtube.com/watch?v=Fd-_VDYit3U" target="_blank" rel="noopener">Dr. Jared Cooney Horvath's U.S. Senate testimony (January 2026)</a></h3></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp3" aria-labelledby="lt3">
+          <div class="ieyebrow">AI and Childhood</div>
+          <p class="ilead"><em>Powerful, and unsafe for kids.</em> Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where we stand on AI</a></h3></li>
+          </ol>
+        </div>
+        <div class="ipanel" role="tabpanel" id="lp4" aria-labelledby="lt4">
+          <div class="ieyebrow">Reconnecting Communities</div>
+          <p class="ilead"><em>Busy kids don't miss their screens.</em> When kids' days are full of people, play and things they love, screens lose their pull.</p>
+          <ol class="icards">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters" target="_blank" rel="noopener">Why Reconnecting in Real Life Matters</a></h3></li>
+            <li class="icard"><h3><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy</a></h3><p>Sherry Turkle</p></li>
+          </ol>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="s" id="recordings">
+  <section class="s" id="advocates">
+    <div class="wrap">
+      <div class="kick">For advocates</div>
+      <h2>playbooks for every advocate</h2>
+      <p class="lede">Our playbooks give you everything you need to advocate for change in your community. Whether you're just starting out or a seasoned advocate, there's something for everyone, from ditching "free" screen time in a single classroom to advocating for a Tech Advisory Committee.</p>
+      <ol class="icards">
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook" target="_blank" rel="noopener">Green Tier playbook: easy wins</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac" target="_blank" rel="noopener">Blue Tier playbook: pick up the pace</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks" target="_blank" rel="noopener">Black Tier playbook: steep and technical</a></h3></li>
+        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></h3></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="s mist" id="recordings">
     <div class="wrap split">
       <div>
         <div class="kick">Event recordings</div>
@@ -136,7 +151,7 @@ details.acc summary em{font-family:'Poppins',sans-serif}
     </div>
   </section>
 
-  <section class="s mist media" id="books">
+  <section class="s media" id="books">
     <div class="wrap">
       <div class="kick">Books &amp; films</div>
       <h2>for your nightstand, your book club, or your next parent night</h2>

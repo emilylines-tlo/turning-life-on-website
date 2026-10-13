@@ -1,4 +1,11 @@
 /* Small behaviours shared by every page. */
+
+/* A link to another page always opens at its top, unless it names a section
+   (#join, #zip ...). Some viewers otherwise keep the old scroll position. */
+(function(){
+  if (!location.hash) window.scrollTo(0, 0);
+})();
+
 (function(){
   /* Mobile menu. */
   var btn = document.getElementById('menubtn');

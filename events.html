@@ -8,8 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-.evhero{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:center}
-.evhero figure figcaption{color:rgba(255,255,255,.85)}
+.evpast{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center}
 .expect .card h3{font-size:19px}
 .evgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
 .ev{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
@@ -24,7 +23,7 @@
 .ev .desc{font-size:15px;margin-top:10px}
 .ev .links{margin-top:auto;padding-top:14px}
 .evstamp{font-size:13px;color:var(--muted);margin-top:18px}
-@media (max-width:980px){ .evgrid{grid-template-columns:1fr 1fr} .evhero{grid-template-columns:1fr} .evhero figure{max-width:300px} }
+@media (max-width:980px){ .evgrid{grid-template-columns:1fr 1fr} .evpast{grid-template-columns:1fr} .evpast figure{max-width:300px} }
 @media (max-width:640px){ .evgrid{grid-template-columns:1fr} }
 </style>
 </head><body>
@@ -54,8 +53,8 @@
 <!--/SHELL:nav-->
 <main id="main">
 
-  <section class="hero">
-    <div class="wrap evhero">
+  <section class="hero photo" style="background-image:url('assets/img/events-hero.jpg')">
+    <div class="wrap">
       <div>
         <h1>events</h1>
         <p>Come as you are. You don't need to know the research, have a plan, or be ready to lead anything. Just show up, and you'll find other parents who care about the same things you do.</p>
@@ -64,17 +63,13 @@
           <a class="btn btn-ghost" href="#host">Host your own</a>
         </div>
       </div>
-      <figure class="photo">
-        <img src="assets/img/twenge-concord.jpg" width="360" height="480" alt="Five people standing together on a stage">
-        <figcaption>Emily Lines, Adrienne Principe, Dr. Jean Twenge, Wendi Hoffer and Jeff Miller at a Turning Life On parent night in Concord, October 2025.</figcaption>
-      </figure>
     </div>
   </section>
 
   <section class="s expect">
     <div class="wrap">
       <div class="kick">What to expect</div>
-      <h2>new here? here's what our events are like</h2>
+      <h2>new here? here's what to expect</h2>
       <div class="grid2">
         <div class="card top"><h3>Parent nights and speakers</h3><p>An expert shares the research, and there's time for your questions. You'll leave with ideas you can try at home that same week. Past speakers include psychologist Jean Twenge.</p></div>
         <div class="card top"><h3>Device-free gatherings</h3><p>Play, food, games and conversation, with the phones put away. Fun for the whole family, and usually the best thing on the calendar.</p></div>
@@ -110,10 +105,18 @@
 
   <section class="s">
     <div class="wrap">
-      <div class="kick">Missed one?</div>
-      <h2>catch up on past talks</h2>
-      <p class="lede">Many of our events are recorded, so you can watch on your own time, whether that's after bedtime or on your commute.</p>
-      <div class="btns"><a class="btn btn-teal" href="learn.html#recordings">Watch past events</a></div>
+      <div class="evpast">
+        <div>
+          <div class="kick">Missed one?</div>
+          <h2>catch up on past talks</h2>
+          <p class="lede">Many of our events are recorded, so you can watch on your own time, whether that's after bedtime or on your commute.</p>
+          <div class="btns"><a class="btn btn-teal" href="learn.html#recordings">Watch past events</a></div>
+        </div>
+        <figure class="photo">
+          <img src="assets/img/twenge-concord.jpg" width="360" height="480" loading="lazy" alt="Five people standing together on a stage">
+          <figcaption>Emily Lines, Adrienne Principe, Dr. Jean Twenge, Wendi Hoffer and Jeff Miller at a Turning Life On parent night in Concord, October 2025.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
