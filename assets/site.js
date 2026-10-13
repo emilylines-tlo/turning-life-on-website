@@ -3,7 +3,14 @@
 /* A link to another page always opens at its top, unless it names a section
    (#join, #zip ...). Some viewers otherwise keep the old scroll position. */
 (function(){
-  if (!location.hash) window.scrollTo(0, 0);
+  if (location.hash) return;
+  /* Leave Back and Forward alone, so they still return to where you were. */
+  var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+  if (nav && nav.type === 'back_forward') return;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  var top = function(){ window.scrollTo(0, 0); };
+  top();
+  window.addEventListener('load', top);
 })();
 
 (function(){
