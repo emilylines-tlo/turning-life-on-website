@@ -126,6 +126,32 @@ window.TLO = (function(){
             m.oy - m.k * Math.log(Math.tan(Math.PI / 4 + lat * rad / 2))];
   }
 
+  /* Short descriptions for resource cards, taken from the Four Norms library
+     (data/library.json) so they always match what Four Norms says. Any card
+     in `selector` whose title links to a library item and has no text of its
+     own gets that item's description added under the title. */
+  function addLibraryBlurbs(selector, maxLen){
+    var cards = [].slice.call(document.querySelectorAll(selector));
+    if (!cards.length) return;
+    loadJSON('data/library.json').then(function(d){
+      var bySlug = {};
+      (d.items || []).forEach(function(it){ bySlug[it.slug] = it; });
+      cards.forEach(function(card){
+        if (card.querySelector('p')) return;
+        var a = card.querySelector('a[href*="/library/"]');
+        var m = a && a.getAttribute('href').match(/\/library\/([a-z0-9-]+)/);
+        var item = m && bySlug[m[1]];
+        var text = item && String(item.description || '').replace(/\s+/g, ' ').trim();
+        if (!text) return;
+        var max = maxLen || 170;
+        if (text.length > max) text = text.slice(0, max).replace(/\s+\S*$/, '') + '\u2026';
+        var p = document.createElement('p');
+        p.textContent = text;
+        card.appendChild(p);
+      });
+    }).catch(function(){ /* titles alone still work */ });
+  }
+
   function loadJSON(path){
     return fetch(BASE + path, {cache: 'no-cache'}).then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -134,6 +160,6 @@ window.TLO = (function(){
   }
 
   return {esc: esc, miles: miles, milesLabel: milesLabel, distancePhrase: distancePhrase, lookupZip: lookupZip, place: place,
-          loadCommunities: loadCommunities, maProject: maProject, base: BASE,
+          loadCommunities: loadCommunities, addLibraryBlurbs: addLibraryBlurbs, maProject: maProject, base: BASE,
           byDistance: byDistance, loadJSON: loadJSON};
 })();
