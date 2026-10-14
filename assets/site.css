@@ -227,7 +227,7 @@ details.seemore{margin-top:16px}
 details.seemore>summary{list-style:none;cursor:pointer;display:inline-block;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-d)}
 details.seemore>summary::-webkit-details-marker{display:none}
 details.seemore>summary::after{content:" +"}
-details.seemore[open]>summary::after{content:" \2013"}
+details.seemore[open]>summary::after{content:" \2212"}
 details.seemore>summary:hover{color:var(--teal-d)}
 details.seemore .more-open{display:none}
 details.seemore[open] .more-closed{display:none}
