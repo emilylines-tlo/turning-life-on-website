@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="assets/site.css">
 <style>
 .evpast{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center}
+.expect .grid2{margin-top:28px}
+.missed{margin-top:22px;font-size:16.5px}
+.missed .more{margin-left:6px}
+.expect .quotes{margin-top:48px}
 .expect .card h3{font-size:19px}
 .evgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
 .ev{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
@@ -67,17 +71,40 @@
     </div>
   </section>
 
-  <section class="s expect">
+  <section class="s" id="upcoming">
     <div class="wrap">
-      <div class="kick">What to expect</div>
-      <h2>new here? here's what to expect</h2>
-      <div class="grid2">
-        <div class="card top"><h3>Parent nights and speakers</h3><p>An expert shares the research, and there's time for your questions. You'll leave with ideas you can try at home that same week. Past speakers include psychologist Jean Twenge.</p></div>
-        <div class="card top"><h3>Device-free gatherings</h3><p>Play, food, games and conversation, with the phones put away. Fun for the whole family, and usually the best thing on the calendar.</p></div>
-        <div class="card top"><h3>Coffees and small groups</h3><p>A handful of parents around a table, talking honestly about what's working and what isn't. No agenda, no judgment.</p></div>
-        <div class="card top"><h3>Coalition calls and meetups</h3><p>For community leads and anyone curious about leading. We meet monthly on a call and in person several times a year.</p><div class="links"><a class="more" href="#upcoming">Find the next call</a></div></div>
+      <div class="kick">Upcoming events</div>
+      <h2>what's happening near you</h2>
+      <p class="lede">Parent nights, device-free gatherings, coalition calls and events from partners we trust, all in one place.</p>
+      <div class="evgrid" id="evgrid"><p class="note">Loading events&hellip;</p></div>
+      <details class="seemore" id="evmore" hidden>
+        <summary><span class="more-closed">See more events (<span id="evcount"></span>)</span><span class="more-open">Show fewer events</span></summary>
+        <div class="evgrid seemore-body" id="evlater"></div>
+      </details>
+      <p class="evstamp" id="evstamp"></p>
+    </div>
+  </section>
+
+  <section class="s mist expect">
+    <div class="wrap">
+      <div class="evpast">
+        <div>
+          <div class="kick">What to expect</div>
+          <h2>new here? here's what to expect</h2>
+          <div class="grid2">
+            <div class="card top"><h3>Parent nights and speakers</h3><p>An expert shares the research and takes your questions. Past speakers include psychologist Jean Twenge.</p></div>
+            <div class="card top"><h3>Device-free gatherings</h3><p>Food, games and conversation, with the phones put away. Fun for the whole family.</p></div>
+            <div class="card top"><h3>Coffees and small groups</h3><p>A few parents around a table, talking honestly about what's working. No agenda, no judgment.</p></div>
+            <div class="card top"><h3>Coalition calls and meetups</h3><p>For community leads and anyone curious about leading. Monthly calls, plus meetups in person.</p><div class="links"><a class="more" href="#upcoming">Find the next call</a></div></div>
+          </div>
+          <p class="missed">Missed one? Many of our talks are recorded. <a class="more" href="learn.html#recordings">Watch past events</a></p>
+        </div>
+        <figure class="photo">
+          <img src="assets/img/twenge-concord.jpg" width="360" height="480" loading="lazy" alt="Five people standing together on a stage">
+          <figcaption>Emily Lines, Adrienne Principe, Dr. Jean Twenge, Wendi Hoffer and Jeff Miller at a Turning Life On parent night in Concord, October 2025.</figcaption>
+        </figure>
       </div>
-      <div class="quotes">
+      <div class="quotes two">
         <figure class="quote">
           <p>&ldquo;Thank you so much for sharing your expertise, practical strategies, and thoughtful guidance at last night&rsquo;s Tech Talk. Your insights made the event a real success, and we&rsquo;re incredibly grateful for your time and support.&rdquo;</p>
           <figcaption class="who">Acton Boxborough Parent</figcaption>
@@ -85,37 +112,6 @@
         <figure class="quote">
           <p>&ldquo;Adrienne has had two sessions with our school&rsquo;s parent community! Her presentations are not only informative with the latest science and research, but include strategies for families to negotiate complex social situations.&rdquo;</p>
           <figcaption class="who">Laurel Zolfonoon, Head of School, Concord Montessori School</figcaption>
-        </figure>
-        <figure class="quote">
-          <p>&ldquo;Adrienne&rsquo;s presentation was very well received by an audience of educators, psychologists, social workers and guidance counselors. She is an interactive, informative, and skilled presenter and received countless accolades from our participants&rdquo;</p>
-          <figcaption class="who">Margie Daniels, M.Ed., L.I.C.S.W., Executive Director, Massachusetts Partnerships for Youth, Inc.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="s mist" id="upcoming">
-    <div class="wrap">
-      <div class="kick">Upcoming events</div>
-      <h2>what's happening near you</h2>
-      <p class="lede">Parent nights, device-free gatherings, coalition calls and events from partners we trust, all in one place.</p>
-      <div class="evgrid" id="evgrid"><p class="note">Loading events&hellip;</p></div>
-      <p class="evstamp" id="evstamp"></p>
-    </div>
-  </section>
-
-  <section class="s">
-    <div class="wrap">
-      <div class="evpast">
-        <div>
-          <div class="kick">Missed one?</div>
-          <h2>catch up on past talks</h2>
-          <p class="lede">Many of our events are recorded, so you can watch on your own time, whether that's after bedtime or on your commute.</p>
-          <div class="btns"><a class="btn btn-teal" href="learn.html#recordings">Watch past events</a></div>
-        </div>
-        <figure class="photo">
-          <img src="assets/img/twenge-concord.jpg" width="360" height="480" loading="lazy" alt="Five people standing together on a stage">
-          <figcaption>Emily Lines, Adrienne Principe, Dr. Jean Twenge, Wendi Hoffer and Jeff Miller at a Turning Life On parent night in Concord, October 2025.</figcaption>
         </figure>
       </div>
     </div>
@@ -125,19 +121,19 @@
     <div class="wrap">
       <div class="kick">Host your own</div>
       <h2>want an event like this in your community?</h2>
-      <p class="lede">You don't need experience planning events. Our playbooks walk you through everything, from booking a room to getting people in the door and turning that energy into action. Community Grants can help cover the cost, and we can help you use our 501(c)(3) status to book free space.</p>
+      <p class="lede">Our playbooks walk you through everything, from booking a room to getting people in the door. Community Grants can help cover the cost.</p>
       <div class="btns">
         <a class="btn btn-orange" href="https://www.fournorms.com/playbooks/201/preview" target="_blank" rel="noopener">Host an event</a>
-        <a class="btn btn-ghost" href="mailto:adrienne@turninglifeon.org">Ask us about grants</a>
+        <a class="btn btn-ghost" href="community-grants/">Community Grants</a>
       </div>
     </div>
   </section>
 
   <section class="s" id="join">
     <div class="wrap">
-      <div class="kick">Never miss an event</div>
-      <h2>know what's happening near you</h2>
-      <p class="lede">Choose "Stay in the loop," and we'll let you know when there's an event in your area.</p>
+      <div class="kick">Stay connected</div>
+      <h2>never miss an event</h2>
+      <p class="lede">Choose "Stay in the loop," and we'll let you know when there's an event near you.</p>
       <div class="joinwrap" data-joinform>
         <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
       </div>
@@ -217,17 +213,32 @@
     '</article>';
   }
 
+  /* The main grid holds the next three months; anything later waits under
+     "See more events", which stays hidden when there is nothing to put in it. */
+  var more = document.getElementById('evmore');
+  var later = document.getElementById('evlater');
+
   TLO.loadJSON('data/events.json').then(function(d){
     var now = Date.now();
+    var cutoff = new Date(); cutoff.setMonth(cutoff.getMonth() + 3);
     var list = (d.events || []).filter(function(ev){
       var end = new Date(ev.end_time || ev.start_time).getTime();
       return !isNaN(end) && end >= now;
     });
+    var soon = list.filter(function(ev){ return new Date(ev.start_time) < cutoff; });
+    var rest = list.filter(function(ev){ return new Date(ev.start_time) >= cutoff; });
     if (!list.length){
       grid.innerHTML = '<p class="note">No upcoming events are listed right now. ' +
         '<a href="' + PORTAL + '" target="_blank" rel="noopener">Check the Community Portal</a> for the latest.</p>';
+    } else if (!soon.length){
+      grid.innerHTML = '<p class="note">Nothing is on the calendar for the next three months yet. See what\'s coming later below.</p>';
     } else {
-      grid.innerHTML = list.map(card).join('');
+      grid.innerHTML = soon.map(card).join('');
+    }
+    if (rest.length){
+      later.innerHTML = rest.map(card).join('');
+      document.getElementById('evcount').textContent = rest.length;
+      more.hidden = false;
     }
     if (d.updated){
       stamp.textContent = 'Event listings come from Four Norms. Last updated ' +
