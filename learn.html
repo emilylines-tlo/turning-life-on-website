@@ -8,14 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-.issues{margin-top:30px;max-width:900px}
-details.acc summary em{font-family:'Poppins',sans-serif}
-.recs{list-style:none;display:grid;gap:18px;margin-top:30px;max-width:900px}
-.recs li{background:#fff;border-left:4px solid var(--teal);padding:20px 22px;font-size:16px;color:var(--body)}
-.recs b{color:var(--slate);font-family:'Poppins',sans-serif;font-weight:600}
-.media h3{font-size:22px;margin:40px 0 16px}
-.media .linklist{max-width:900px}
-.media .split{margin-top:10px}
+.stat b{display:block;font-family:'Poppins',sans-serif;font-size:44px;line-height:1;color:var(--orange-d);margin-bottom:12px}
+.stat p{font-size:16px}
+.headlines{list-style:none;display:grid;gap:14px;margin-top:40px;max-width:900px}
+.headlines li{background:var(--mist);border-left:4px solid var(--teal);padding:18px 22px;font-size:16.5px;color:var(--body)}
+.headlines b{color:var(--slate);font-family:'Poppins',sans-serif;font-weight:600}
+.headlines .links{display:flex;margin-top:8px}
+.stand{margin-top:30px;font-size:17px;max-width:75ch}
+.stand .more{margin-left:6px}
+#recordings .linklist{max-width:900px}
+#recordings .linklist li{margin-bottom:6px}
 .aff{margin-top:30px}
 </style>
 </head><body>
@@ -47,157 +49,216 @@ details.acc summary em{font-family:'Poppins',sans-serif}
 
   <section class="hero">
     <div class="wrap">
-      <h1>new to this? <em>begin</em> with the basics</h1>
-      <p>You don't need to read every study to make good decisions for your family. We've done the digging and turned it into short, clear guides, whether you have five minutes or a free evening.</p>
+      <h1>short, clear guides for <em>busy parents</em></h1>
+      <p>You don't need to read every study to make good decisions for your family. We've done the digging, whether you have five minutes or a free evening.</p>
     </div>
   </section>
 
   <section class="s" id="start">
     <div class="wrap">
-      <h2>start here</h2>
-      <div class="grid4">
-        <div class="card top"><h3>Where We Stand on Tech</h3><p>Our platform: where we stand on phones, social media, gaming, school tech and AI, with age-by-age guidance.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Read it</a></div></div>
-        <div class="card top"><h3>Screen Time Recommendations by Stage</h3><p>What your child is developing at each age, and how to support it.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-screen-time-recommendations-by-stage" target="_blank" rel="noopener">Read it</a></div></div>
-        <div class="card top"><h3>Values-Based Parenting</h3><p>Five practices that help kids build an inner compass for a digital world.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-values-based-parenting" target="_blank" rel="noopener">Read it</a></div></div>
-        <div class="card top"><h3>A Holistic Approach to Keeping Tech in Check</h3><p>Developed with Emerson Health, this guide looks at six pillars of digital wellness.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-a-holistic-approach-to-keeping-tech-in-check" target="_blank" rel="noopener">Read it</a></div></div>
+      <div class="kick">Start here</div>
+      <h2>the <em>three</em> guides parents ask for most</h2>
+      <div class="grid3">
+        <div class="card top"><h3>Why Wait?</h3><p>What the research says about delaying smartphones, and how to talk with your kids (and other parents) about it.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Read it</a></div></div>
+        <div class="card top"><h3>Slow Tech at Home</h3><p>Simple habits, phone settings and router settings that help right away.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Read it</a></div></div>
+        <div class="card top"><h3>What Parents Need to Know About AI</h3><p>What it is, why it matters for kids, and what to do about it.</p><div class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">Read it</a></div></div>
       </div>
     </div>
   </section>
 
   <section class="s mist" id="issues">
     <div class="wrap">
+      <div class="kick">Explore by topic</div>
       <h2>explore the issues</h2>
       <div data-tabs>
-        <div class="itabs" role="tablist" aria-label="Explore the issues">
-          <button role="tab" id="lt1" aria-controls="lp1"><b>Smartphones and Social Media</b><span>More childhood before the phone</span></button>
-          <button role="tab" id="lt2" aria-controls="lp2"><b>Distraction-free Schools</b><span>School should be the easy part</span></button>
-          <button role="tab" id="lt3" aria-controls="lp3"><b>AI and Childhood</b><span>Powerful, and unsafe for kids</span></button>
-          <button role="tab" id="lt4" aria-controls="lp4"><b>Reconnecting Communities</b><span>Busy kids don't miss their screens</span></button>
+        <div class="itabs" role="tablist" aria-label="Explore by topic">
+          <button role="tab" id="lt1" aria-controls="lp1"><b>Smartphones &amp; Social Media</b><span>More childhood before the phone</span></button>
+          <button role="tab" id="lt2" aria-controls="lp2"><b>School</b><span>School should be the easy part</span></button>
+          <button role="tab" id="lt3" aria-controls="lp3"><b>AI</b><span>Powerful, and unsafe for kids</span></button>
+          <button role="tab" id="lt4" aria-controls="lp4"><b>Real-Life Connection</b><span>Busy kids don't miss their screens</span></button>
         </div>
         <div class="ipanel" role="tabpanel" id="lp1" aria-labelledby="lt1">
-          <div class="ieyebrow">Smartphones and Social Media</div>
+          <div class="ieyebrow">Smartphones &amp; Social Media</div>
           <p class="ilead"><em>More childhood before the phone.</em> Many families are choosing to wait on smartphones until high school and social media until 16. It's what the research supports. Waiting also gives kids time to develop a sense of life without the demands of technology, so when they have access, they're empowered to make a choice between tech or real life.</p>
           <ol class="icards">
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Simple habits and settings to keep tech in check</a></h3></li>
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design" target="_blank" rel="noopener">What is addictive design?</a></h3></li>
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Why delay smartphones?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-wait" target="_blank" rel="noopener">Why Wait?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-is-addictive-design" target="_blank" rel="noopener">What Is Addictive Design?</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-slow-tech-at-home-a-family-guide" target="_blank" rel="noopener">Slow Tech at Home</a></h3></li>
             <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-digital-device-family-plan" target="_blank" rel="noopener">Family Media Plan</a></h3></li>
-            <li class="icard"><h3><a href="smartphone-alternatives/">Smartphone alternatives</a></h3><p>What each option costs, what it does, and what goes wrong with it.</p></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-screen-time-recommendations-by-stage" target="_blank" rel="noopener">Screen Time Recommendations by Stage</a></h3></li>
+            <li class="icard"><h3><a href="smartphone-alternatives/">Smartphone Alternatives</a></h3><p>What each option costs, what it does, and what goes wrong with it.</p></li>
           </ol>
         </div>
         <div class="ipanel" role="tabpanel" id="lp2" aria-labelledby="lt2">
-          <div class="ieyebrow">Distraction-free Schools</div>
+          <div class="ieyebrow">School</div>
           <p class="ilead"><em>School should be the easy part.</em> Phones in pockets and screens on every desk have changed how kids learn and connect at school. Here's what we know about why distraction-free classrooms work.</p>
           <ol class="icards">
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters" target="_blank" rel="noopener">Why distraction-free learning matters</a></h3></li>
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts stands</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-why-distraction-free-learning-matters" target="_blank" rel="noopener">Why Distraction-Free Learning Matters</a></h3></li>
             <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-your-consent-counts" target="_blank" rel="noopener">Your Consent Counts</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts Stands</a></h3></li>
             <li class="icard"><h3><a href="https://www.youtube.com/watch?v=Fd-_VDYit3U" target="_blank" rel="noopener">Dr. Jared Cooney Horvath's U.S. Senate testimony (January 2026)</a></h3></li>
           </ol>
         </div>
         <div class="ipanel" role="tabpanel" id="lp3" aria-labelledby="lt3">
-          <div class="ieyebrow">AI and Childhood</div>
+          <div class="ieyebrow">AI</div>
           <p class="ilead"><em>Powerful, and unsafe for kids.</em> Using AI well takes the judgment to question what it tells you, and that's exactly what kids are still developing.</p>
           <ol class="icards">
             <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-what-parents-need-to-know-about-ai" target="_blank" rel="noopener">What Parents Need to Know About AI</a></h3></li>
-            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where we stand on AI</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where We Stand on AI</a></h3></li>
+            <li class="icard"><h3><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy</a></h3><p>A book by Sherry Turkle.</p></li>
           </ol>
         </div>
         <div class="ipanel" role="tabpanel" id="lp4" aria-labelledby="lt4">
-          <div class="ieyebrow">Reconnecting Communities</div>
+          <div class="ieyebrow">Real-Life Connection</div>
           <p class="ilead"><em>Busy kids don't miss their screens.</em> When kids' days are full of people, play and things they love, screens lose their pull.</p>
           <ol class="icards">
             <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnecting-in-real-life-matters" target="_blank" rel="noopener">Why Reconnecting in Real Life Matters</a></h3></li>
-            <li class="icard"><h3><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy</a></h3><p>Sherry Turkle</p></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-values-based-parenting" target="_blank" rel="noopener">Values-Based Parenting</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-a-holistic-approach-to-keeping-tech-in-check" target="_blank" rel="noopener">A Holistic Approach to Keeping Tech in Check</a></h3></li>
           </ol>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="s" id="advocates">
+  <section class="s" id="changing">
     <div class="wrap">
-      <div class="kick">For advocates</div>
-      <h2>playbooks for every advocate</h2>
-      <p class="lede">Our playbooks give you everything you need to advocate for change in your community. Whether you're just starting out or a seasoned advocate, there's something for everyone, from ditching "free" screen time in a single classroom to advocating for a Tech Advisory Committee.</p>
-      <ol class="icards">
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a></h3></li>
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities</a></h3></li>
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook" target="_blank" rel="noopener">Green Tier playbook: easy wins</a></h3></li>
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac" target="_blank" rel="noopener">Blue Tier playbook: pick up the pace</a></h3></li>
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks" target="_blank" rel="noopener">Black Tier playbook: steep and technical</a></h3></li>
-        <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></h3></li>
-      </ol>
+      <div class="kick">What's changing</div>
+      <h2>you're <em>not</em> imagining it</h2>
+      <div class="grid3">
+        <div class="stat">
+          <b>77%</b>
+          <p>of high schoolers are on social media several times a day or more.</p>
+          <p class="src">CDC, Youth Risk Behavior Survey, 2023. <a href="https://www.cdc.gov/mmwr/volumes/73/su/su7304a3.htm" target="_blank" rel="noopener">MMWR, October 2024</a></p>
+        </div>
+        <div class="stat">
+          <b>By 12</b>
+          <p>Kids who have a smartphone by 12 have higher odds of depression, obesity and poor sleep, and the earlier they get one, the higher the risk of obesity and poor sleep.</p>
+          <p class="src">Barzilay et al., <i>Pediatrics</i>, December 2025. <a href="https://www.aap.org/en/news-room/news-releases/pediatrics2/2025/early-adoption-of-smartphones-associated-with-depression-obesity-and-insufficient-sleep/" target="_blank" rel="noopener">American Academy of Pediatrics</a></p>
+        </div>
+        <div class="stat">
+          <b>77%</b>
+          <p>of American adults now support phones away during class.</p>
+          <p class="src"><a href="https://www.pewresearch.org/short-reads/2026/07/29/more-americans-now-support-than-oppose-all-day-school-cellphone-bans/" target="_blank" rel="noopener">Pew Research Center, July 2026</a></p>
+        </div>
+      </div>
+      <ul class="headlines">
+        <li><b>Big tech is losing in court.</b> Juries have ruled against Meta, and Meta has settled with state attorneys general over designing its apps to hook young users. <span class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-meta-settlement-briefing" target="_blank" rel="noopener">Read our briefing</a></span></li>
+        <li><b>Phone-free schools are close.</b> Both chambers of the Massachusetts Legislature have voted for bell-to-bell, phone-free schools, but the final bill is stuck in conference committee. <span class="links"><a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-massachusetts-stands-phone-free-schools-and-social-media" target="_blank" rel="noopener">Where Massachusetts stands</a><a class="more" href="https://www.fournorms.com/actions/tlo-finish-phone-free-schools-now" target="_blank" rel="noopener">Take action</a></span></li>
+        <li><b>Big districts are pausing AI.</b> New York City and Los Angeles have paused student AI use. <span class="links"><a class="more" href="https://www.fournorms.com/campaigns/massachusetts-hq-pause-ai-in-all-massachusetts-schools" target="_blank" rel="noopener">Sign the petition</a></span></li>
+      </ul>
+      <p class="src">Sources: <a href="https://www.npr.org/2026/03/25/nx-s1-5746125/meta-youtube-social-media-trial-verdict" target="_blank" rel="noopener">NPR, March 2026</a>; <a href="https://www.mass.gov/news/ag-campbell-reaches-landmark-settlement-with-meta-that-requires-design-changes-to-protect-massachusetts-young-people-from-social-media-harms" target="_blank" rel="noopener">Massachusetts Attorney General's Office, August 2026</a>; <a href="https://malegislature.gov/Bills/194/S2581" target="_blank" rel="noopener">Massachusetts Legislature, S.2581</a>; <a href="https://www.k12dive.com/news/a-summer-of-ai-bans-in-schools/829862/" target="_blank" rel="noopener">K-12 Dive, September 2026</a>.</p>
+      <p class="stand"><b>Where we stand:</b> our platform on phones, social media, gaming, school tech and AI, with age-by-age guidance. <a class="more" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-where-we-stand-on-tech" target="_blank" rel="noopener">Where We Stand on Tech</a></p>
     </div>
   </section>
 
-  <section class="s mist" id="recordings">
-    <div class="wrap split">
-      <div>
-        <div class="kick">Event recordings</div>
-        <h2>missed it? <em>watch</em> it here</h2>
-        <p class="lede">Talks and panels from Turning Life On and our communities.</p>
-        <ul class="recs">
-          <li><b>Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture.</b> Educator and author Stephanie Malia Krauss on why young people thrive when they feel seen, valued and connected, not just evaluated. September 30, 2026. <a href="https://youtu.be/7lMTfK3h4YM" target="_blank" rel="noopener">Watch</a></li>
-          <li><b>The Homework Machine: AI and the future of our schools.</b> MIT Professor Justin Reich, director of the MIT Teaching Systems Lab and host of the podcast <i>The Homework Machine</i>, on what generative AI is doing to teaching, learning and the classrooms our kids walk into. Introduced by TLO board member Jeff Miller. Recorded May 13, 2026, at the Griffin Museum in Winchester.</li>
-          <li><b>Keeping Tech in Check with Culture Reframed.</b> A Culture Reframed webinar with digital wellness experts Julia Storm and Adrienne Principe, moderated by Dr. Mandy Sanchez. It covers how screens affect kids' social and emotional well-being, how to be "smart, not scared," how to keep kids safe online (including what to do if they've seen pornography), and practical ways to keep tech in check at home and in your community. July 2025. <a href="https://www.youtube.com/watch?v=OEJEnMQbaY4" target="_blank" rel="noopener">Watch</a></li>
-          <li><b>Goodnow Community Read: <i>The Anxious Generation</i>.</b> A panel discussion of Jonathan Haidt's book for the Goodnow Library's community read in Sudbury, with Adrienne Principe, Sudbury Officer Kim Mangano, psychiatrist Dr. Allison Baker, and Gabriela Nguyen, founder of APPstinence. February 11, 2025. <a href="https://cloud.castus.tv/vod/sudbury/video/67bbd4e8596e2d00085d731f?page=HOME" target="_blank" rel="noopener">Watch</a></li>
-          <li><b>Solutions to the Social Dilemma.</b> A panel and town hall on what it means to be digitally healthy, and the concrete steps families can take. It opens with teen advocate Aliza Goldie Kopans, co-author of the "Dear Parents" report, followed by a panel with Dr. Criscillia Benford, Dr. Gail Dines of Culture Reframed, Dr. Sharon Maxwell, Chelsea Maxwell, Helena Rampersaud and Jay Vidyarthi. Hosted by Adrienne Principe and psychotherapist Teodora Pavkovic. October 2020. <a href="https://www.youtube.com/watch?v=u0xG7Wz91jo" target="_blank" rel="noopener">Watch</a></li>
-        </ul>
+  <section class="s mist" id="advocates">
+    <div class="wrap">
+      <div class="kick">For advocates</div>
+      <h2>ready to <em>push for change</em> at school?</h2>
+      <p class="lede">Our playbooks walk you through it, from one conversation with a teacher to district-wide policy.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-advocate-toolkit" target="_blank" rel="noopener">Advocate's Toolkit</a>
+        <a class="btn btn-line" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-policy-priorities" target="_blank" rel="noopener">Policy Priorities</a>
+        <a class="btn btn-line" href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-when-they-say-no-answers-to-common-pushback" target="_blank" rel="noopener">When They Say No</a>
       </div>
-      <figure class="photo" style="margin-top:60px">
+      <details class="seemore"><summary><span class="more-closed">See all playbooks</span><span class="more-open">Show fewer</span></summary>
+        <ol class="icards seemore-body">
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-ditch-free-screen-time-phone-free-school-day-healthy-defaults-on-school-devices-playbook" target="_blank" rel="noopener">Green Tier playbook: easy wins</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac" target="_blank" rel="noopener">Blue Tier playbook: pick up the pace</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks" target="_blank" rel="noopener">Black Tier playbook: steep and technical</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-pause-ai-in-your-district" target="_blank" rel="noopener">Pause AI in Your District</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-bring-the-pact-to-your-community" target="_blank" rel="noopener">Bring the Pact to Your Community</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-how-students-get-around-filters-and-what-to-tell-it" target="_blank" rel="noopener">How Students Get Around Filters</a></h3></li>
+            <li class="icard"><h3><a href="https://www.fournorms.com/organizations/turning-life-on/library/tlo-key-terms-in-edtech" target="_blank" rel="noopener">Key Terms</a></h3></li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <section class="s" id="recordings">
+    <div class="wrap">
+      <span id="books"></span>
+      <div class="kick">Watch, read, listen</div>
+      <h2>for your nightstand, your book club, or your next parent night</h2>
+      <div data-tabs>
+        <div class="itabs" role="tablist" aria-label="Watch, read, listen">
+          <button role="tab" id="wt1" aria-controls="wp1"><b>Recordings</b><span>Talks and panels</span></button>
+          <button role="tab" id="wt2" aria-controls="wp2"><b>Films</b><span>To watch together</span></button>
+          <button role="tab" id="wt3" aria-controls="wp3"><b>Books</b><span>For your nightstand</span></button>
+          <button role="tab" id="wt4" aria-controls="wp4"><b>Podcast</b><span>For the car</span></button>
+        </div>
+        <div class="ipanel" role="tabpanel" id="wp1" aria-labelledby="wt1">
+          <div class="split">
+            <div>
+              <ul class="linklist">
+                <li><b>Mattering in a High-Pressure World: Helping Youth Thrive Beyond Achievement Culture.</b> Educator and author Stephanie Malia Krauss on why young people thrive when they feel seen, valued and connected, not just evaluated. September 30, 2026. <a href="https://youtu.be/7lMTfK3h4YM" target="_blank" rel="noopener">Watch</a></li>
+                <li><b>The Homework Machine: AI and the future of our schools.</b> MIT Professor Justin Reich, director of the MIT Teaching Systems Lab and host of the podcast <i>The Homework Machine</i>, on what generative AI is doing to teaching, learning and the classrooms our kids walk into. Introduced by TLO board member Jeff Miller. Recorded May 13, 2026, at the Griffin Museum in Winchester.</li>
+                <li><b>Keeping Tech in Check with Culture Reframed.</b> A Culture Reframed webinar with digital wellness experts Julia Storm and Adrienne Principe, moderated by Dr. Mandy Sanchez. It covers how screens affect kids' social and emotional well-being, how to be "smart, not scared," how to keep kids safe online (including what to do if they've seen pornography), and practical ways to keep tech in check at home and in your community. July 2025. <a href="https://www.youtube.com/watch?v=OEJEnMQbaY4" target="_blank" rel="noopener">Watch</a></li>
+              </ul>
+            <details class="seemore"><summary><span class="more-closed">See all</span><span class="more-open">Show fewer</span></summary>
+              <ul class="linklist seemore-body">
+                
+<li><b>Goodnow Community Read: <i>The Anxious Generation</i>.</b> A panel discussion of Jonathan Haidt's book for the Goodnow Library's community read in Sudbury, with Adrienne Principe, Sudbury Officer Kim Mangano, psychiatrist Dr. Allison Baker, and Gabriela Nguyen, founder of APPstinence. February 11, 2025. <a href="https://cloud.castus.tv/vod/sudbury/video/67bbd4e8596e2d00085d731f?page=HOME" target="_blank" rel="noopener">Watch</a></li>                <li><b>Solutions to the Social Dilemma.</b> A panel and town hall on what it means to be digitally healthy, and the concrete steps families can take. It opens with teen advocate Aliza Goldie Kopans, co-author of the "Dear Parents" report, followed by a panel with Dr. Criscillia Benford, Dr. Gail Dines of Culture Reframed, Dr. Sharon Maxwell, Chelsea Maxwell, Helena Rampersaud and Jay Vidyarthi. Hosted by Adrienne Principe and psychotherapist Teodora Pavkovic. October 2020. <a href="https://www.youtube.com/watch?v=u0xG7Wz91jo" target="_blank" rel="noopener">Watch</a></li>
+              </ul>
+            </details>
+            </div>
+            <figure class="photo">
         <img src="assets/img/homework-machine.jpg" width="1000" height="750" loading="lazy" alt="Jeff Miller speaking beside a projected slide that asks How did we get here?">
         <figcaption>Jeff Miller introduces MIT's Justin Reich at <i>The Homework Machine: AI and the future of our schools</i>, at the Griffin Museum in Winchester, May 13, 2026.</figcaption>
       </figure>
-    </div>
-  </section>
-
-  <section class="s media" id="books">
-    <div class="wrap">
-      <div class="kick">Books &amp; films</div>
-      <h2>for your nightstand, your book club, or your next parent night</h2>
-
-      <div class="split">
-        <div>
-          <h3>Watch</h3>
-          <ul class="linklist">
-            <li><a href="https://www.yourattentionplz.com/" target="_blank" rel="noopener">Your Attention Please</a> (2026). Parents, Gen Z reformers and tech whistleblowers push back against the attention economy. It's hopeful, not doom and gloom, and it's made by Boston filmmakers.</li>
-            <li><a href="https://www.netflix.com/title/82792555" target="_blank" rel="noopener">The AI Doc: Or How I Became an Apocaloptimist</a> (2026, PG-13, Netflix). An expectant father interviews tech leaders and experts to understand what AI could mean for his child's future.</li>
-            <li><a href="https://www.youtube.com/watch?v=He3IJJhFy-I" target="_blank" rel="noopener">Childhood 2.0</a> (2020, free on YouTube). Parents, kids and experts on what growing up online really looks like.</li>
-            <li><a href="https://www.humanetech.com/the-social-dilemma" target="_blank" rel="noopener">The Social Dilemma</a> (2020, Netflix). Former tech insiders explain how social media is designed to hook us.</li>
-            <li><a href="https://www.netflix.com/title/81756069" target="_blank" rel="noopener">Adolescence</a> (2025, Netflix, rated TV-MA). A gripping drama about a teenage boy and the online world his parents couldn't see. For parents to watch first. It's intense.</li>
-            <li><a href="https://www.bloomberg.com/news/videos/2025-03-21/-can-t-look-away" target="_blank" rel="noopener">Can't Look Away</a> (2025, Bloomberg). Families and lawyers take on social media companies over harm to kids.</li>
-          </ul>
+          </div>
         </div>
-        <figure class="photo" style="margin-top:56px">
+        <div class="ipanel" role="tabpanel" id="wp2" aria-labelledby="wt2">
+          <div class="split">
+            <div>
+              <ul class="linklist">
+                <li><a href="https://www.yourattentionplz.com/" target="_blank" rel="noopener">Your Attention Please</a> (2026). Parents, Gen Z reformers and tech whistleblowers push back against the attention economy. It's hopeful, not doom and gloom, and it's made by Boston filmmakers.</li>
+                <li><a href="https://www.youtube.com/watch?v=He3IJJhFy-I" target="_blank" rel="noopener">Childhood 2.0</a> (2020, free on YouTube). Parents, kids and experts on what growing up online really looks like.</li>
+                <li><a href="https://www.humanetech.com/the-social-dilemma" target="_blank" rel="noopener">The Social Dilemma</a> (2020, Netflix). Former tech insiders explain how social media is designed to hook us.</li>
+              </ul>
+            <details class="seemore"><summary><span class="more-closed">See all</span><span class="more-open">Show fewer</span></summary>
+              <ul class="linklist seemore-body">
+                
+<li><a href="https://www.netflix.com/title/82792555" target="_blank" rel="noopener">The AI Doc: Or How I Became an Apocaloptimist</a> (2026, PG-13, Netflix). An expectant father interviews tech leaders and experts to understand what AI could mean for his child's future.</li>                <li><a href="https://www.netflix.com/title/81756069" target="_blank" rel="noopener">Adolescence</a> (2025, Netflix, rated TV-MA). A gripping drama about a teenage boy and the online world his parents couldn't see. For parents to watch first. It's intense.</li>                <li><a href="https://www.bloomberg.com/news/videos/2025-03-21/-can-t-look-away" target="_blank" rel="noopener">Can't Look Away</a> (2025, Bloomberg). Families and lawyers take on social media companies over harm to kids.</li>
+              </ul>
+            </details>
+            </div>
+            <figure class="photo">
           <img src="assets/img/your-attention-please.jpg" width="1000" height="750" loading="lazy" alt="Ten people standing together on a stage after a film screening">
           <figcaption>After a screening of <i>Your Attention Please</i>. From left: Lauren Feeney (Lexington Observer), Emily Lines, Kerriann Ostlund (Lexington Pediatrics), Adrienne Principe, writer Jack Lemay and director Sara Robin, Wendi Hoffer and Jeff Miller.</figcaption>
         </figure>
+          </div>
+        </div>
+        <div class="ipanel" role="tabpanel" id="wp3" aria-labelledby="wt3">
+          <div>
+              <ul class="linklist">
+                <li><a href="https://amzn.to/4kr59gN" target="_blank" rel="noopener sponsored">The Anxious Generation</a> by Jonathan Haidt. How the shift to a phone-based childhood changed kids' mental health, and four norms to turn it around.</li>
+                <li><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy: Who We Become When We Talk to Machines</a> by Sherry Turkle (new, September 2026). What happens when chatbots stand in for human connection.</li>
+                <li><a href="https://amzn.to/4nDlwd5" target="_blank" rel="noopener sponsored">Reclaiming Conversation: The Power of Talk in a Digital Age</a> by Sherry Turkle. Why face-to-face conversation is where empathy grows.</li>
+              </ul>
+            <details class="seemore"><summary><span class="more-closed">See all</span><span class="more-open">Show fewer</span></summary>
+              <ul class="linklist seemore-body">
+                
+<li><a href="https://amzn.to/44GhSrf" target="_blank" rel="noopener sponsored">The Big Disconnect</a> by Catherine Steiner-Adair, EdD. How technology is changing family relationships, told through kids' own voices.</li>                <li><a href="https://amzn.to/4lAOnwv" target="_blank" rel="noopener sponsored">The Cyber Effect</a> by Mary Aiken, PhD. A cyberpsychologist on how online life shapes behavior, especially kids'.</li>                <li><a href="https://amzn.to/3ZZcKvN" target="_blank" rel="noopener sponsored">Generations</a> and <a href="https://amzn.to/3TR8Mld" target="_blank" rel="noopener sponsored">iGen</a> by Jean Twenge, PhD. The data behind how each generation, and especially today's kids, is growing up differently.</li>                <li><a href="https://amzn.to/4ewQgrK" target="_blank" rel="noopener sponsored">The Shallows: What the Internet Is Doing to Our Brains</a> by Nicholas Carr. How constant connection changes the way we read, think and remember.</li>                <li><a href="https://amzn.to/3ZYB4xL" target="_blank" rel="noopener sponsored">Stolen Focus: Why You Can't Pay Attention, and How to Think Deeply Again</a> by Johann Hari. Why attention is harder than ever, and what we can do about it.</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+        <div class="ipanel" role="tabpanel" id="wp4" aria-labelledby="wt4">
+          <div>
+              <ul class="linklist">
+                <li><a href="https://www.humanetech.com/podcast" target="_blank" rel="noopener">Your Undivided Attention</a> from the Center for Humane Technology. Conversations about building technology that serves people instead of exploiting them.</li>
+              </ul>
+          </div>
+        </div>
       </div>
-
-      <h3>Read</h3>
-      <ul class="linklist">
-        <li><a href="https://amzn.to/4kr59gN" target="_blank" rel="noopener sponsored">The Anxious Generation</a> by Jonathan Haidt. How the shift to a phone-based childhood changed kids' mental health, and four norms to turn it around.</li>
-        <li><a href="https://amzn.to/3Tbm4wt" target="_blank" rel="noopener sponsored">Artificial Intimacy: Who We Become When We Talk to Machines</a> by Sherry Turkle (new, September 2026). What happens when chatbots stand in for human connection.</li>
-        <li><a href="https://amzn.to/4nDlwd5" target="_blank" rel="noopener sponsored">Reclaiming Conversation: The Power of Talk in a Digital Age</a> by Sherry Turkle. Why face-to-face conversation is where empathy grows.</li>
-        <li><a href="https://amzn.to/44GhSrf" target="_blank" rel="noopener sponsored">The Big Disconnect</a> by Catherine Steiner-Adair, EdD. How technology is changing family relationships, told through kids' own voices.</li>
-        <li><a href="https://amzn.to/4lAOnwv" target="_blank" rel="noopener sponsored">The Cyber Effect</a> by Mary Aiken, PhD. A cyberpsychologist on how online life shapes behavior, especially kids'.</li>
-        <li><a href="https://amzn.to/3ZZcKvN" target="_blank" rel="noopener sponsored">Generations</a> and <a href="https://amzn.to/3TR8Mld" target="_blank" rel="noopener sponsored">iGen</a> by Jean Twenge, PhD. The data behind how each generation, and especially today's kids, is growing up differently.</li>
-        <li><a href="https://amzn.to/4ewQgrK" target="_blank" rel="noopener sponsored">The Shallows: What the Internet Is Doing to Our Brains</a> by Nicholas Carr. How constant connection changes the way we read, think and remember.</li>
-        <li><a href="https://amzn.to/3ZYB4xL" target="_blank" rel="noopener sponsored">Stolen Focus: Why You Can't Pay Attention, and How to Think Deeply Again</a> by Johann Hari. Why attention is harder than ever, and what we can do about it.</li>
-      </ul>
-
-      <h3>Listen</h3>
-      <ul class="linklist">
-        <li><a href="https://www.humanetech.com/podcast" target="_blank" rel="noopener">Your Undivided Attention</a> from the Center for Humane Technology. Conversations about building technology that serves people instead of exploiting them.</li>
-      </ul>
-
       <p class="note aff">Turning Life On may earn a small commission from books purchased through these links, which supports our work in communities across Massachusetts.</p>
       <div class="btns"><a class="btn btn-teal" href="https://www.fournorms.com/organizations/turning-life-on/library" target="_blank" rel="noopener">Browse the full resource library</a></div>
     </div>
   </section>
 
-  <section class="s" id="join">
+  <section class="s mist" id="join">
     <div class="wrap">
       <div class="kick">Join the movement</div>
       <h2>ready to do something with what you've learned?</h2>

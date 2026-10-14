@@ -219,3 +219,17 @@ footer a{color:#e5ecf0} footer a:hover{color:#fff}
 @media (max-width:980px){ .itabs{grid-template-columns:1fr 1fr} .itabs [role="tab"]{border-radius:10px;border-bottom:1px solid var(--line)} .icards{grid-template-columns:1fr} }
 @media (max-width:640px){ .itabs{grid-template-columns:1fr} }
 [id]{scroll-margin-top:96px}
+
+/* ---- "See more": a collapsed list, opened with one click. Uses <details>,
+       so it works without JavaScript. <summary> holds two spans:
+       <span class="more-closed">See more</span><span class="more-open">See less</span> ---- */
+details.seemore{margin-top:16px}
+details.seemore>summary{list-style:none;cursor:pointer;display:inline-block;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-d)}
+details.seemore>summary::-webkit-details-marker{display:none}
+details.seemore>summary::after{content:" +"}
+details.seemore[open]>summary::after{content:" \2013"}
+details.seemore>summary:hover{color:var(--teal-d)}
+details.seemore .more-open{display:none}
+details.seemore[open] .more-closed{display:none}
+details.seemore[open] .more-open{display:inline}
+details.seemore>.seemore-body{margin-top:16px}
