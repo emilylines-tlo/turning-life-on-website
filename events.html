@@ -213,14 +213,14 @@
     '</article>';
   }
 
-  /* The main grid holds the next three months; anything later waits under
+  /* The main grid holds the next six weeks; anything later waits under
      "See more events", which stays hidden when there is nothing to put in it. */
   var more = document.getElementById('evmore');
   var later = document.getElementById('evlater');
 
   TLO.loadJSON('data/events.json').then(function(d){
     var now = Date.now();
-    var cutoff = new Date(); cutoff.setMonth(cutoff.getMonth() + 3);
+    var cutoff = new Date(Date.now() + 42 * 864e5);
     var list = (d.events || []).filter(function(ev){
       var end = new Date(ev.end_time || ev.start_time).getTime();
       return !isNaN(end) && end >= now;
@@ -231,7 +231,7 @@
       grid.innerHTML = '<p class="note">No upcoming events are listed right now. ' +
         '<a href="' + PORTAL + '" target="_blank" rel="noopener">Check the Community Portal</a> for the latest.</p>';
     } else if (!soon.length){
-      grid.innerHTML = '<p class="note">Nothing is on the calendar for the next three months yet. See what\'s coming later below.</p>';
+      grid.innerHTML = '<p class="note">Nothing is on the calendar for the next six weeks yet. See what\'s coming later below.</p>';
     } else {
       grid.innerHTML = soon.map(card).join('');
     }

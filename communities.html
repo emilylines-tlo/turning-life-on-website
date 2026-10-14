@@ -22,7 +22,6 @@
 .mapbox .pin:hover path,.mapbox .pin:focus path,.mapbox .pin.on path{fill:#c85f00}
 .mapbox .pin:focus{outline:none}
 .mapbox .pin:focus-visible path{stroke:var(--slate);stroke-width:3}
-.mapbox .pin.forming path{fill:#fff;stroke:var(--orange);stroke-width:2.5}
 .pop{position:absolute;z-index:5;width:min(290px,calc(100% - 32px));background:#fff;border:1px solid var(--teal);box-shadow:0 8px 24px rgba(0,0,0,.14);padding:16px 18px;transform:translate(-50%,calc(-100% - 22px))}
 .pop.below{transform:translate(-50%,22px)}
 .pop h3{font-size:16.5px;color:var(--teal-d);padding-right:22px}
@@ -31,7 +30,6 @@
 .pop .x{position:absolute;right:8px;top:6px;background:none;border:0;font-size:20px;line-height:1;cursor:pointer;color:var(--muted);padding:4px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 18px;padding:12px 20px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--orange);margin-right:6px;vertical-align:-1px}
-.legend span.f::before{background:#fff;border:2px solid var(--orange);width:7px;height:7px}
 
 /* ---- ZIP search ---- */
 .zip{margin-top:44px}
@@ -53,7 +51,6 @@
 .comm .loc{font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 .comm .dist{font-size:13.5px;color:var(--orange-d);margin-top:4px}
 .comm .links{margin-top:auto;padding-top:14px;gap:6px 16px}
-.comm .forming{font-size:14px;color:var(--muted);font-style:italic;margin-top:8px}
 .comm.near{border-color:var(--orange);box-shadow:0 0 0 1px var(--orange)}
 .stamp{font-size:13px;color:var(--muted);margin-top:18px}
 .whatgroup{margin-top:26px;font-size:17px;max-width:70ch;color:var(--body)}
@@ -61,6 +58,8 @@
 .already{margin-top:30px;font-size:17px;max-width:70ch}
 .already .more{margin-left:8px}
 .dontsee{margin-top:30px;font-size:18px}
+.heroalready{margin-top:22px;font-size:16.5px}
+.heroalready a{color:#fff;font-weight:700}
 
 .steps{list-style:none;margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
 .steps li{counter-increment:step;background:#fff;border:1px solid var(--line);padding:24px;position:relative}
@@ -114,6 +113,7 @@
         <a class="btn btn-orange" href="#find">Find a group near you</a>
         <a class="btn btn-ghost" href="#start">Start a group</a>
       </div>
+      <p class="heroalready">Already leading a group in Massachusetts? <a href="mailto:adrienne@turninglifeon.org?subject=Joining%20the%20coalition">Join the coalition</a></p>
     </div>
   </section>
 
@@ -125,7 +125,6 @@
       <div class="mapcard">
         <div class="mhead">Active Turning Life On communities</div>
         <div class="mapbox" id="mapbox"><p class="note">Loading map&hellip;</p></div>
-        <div class="legend"><span>Community</span><span class="f">Community getting started</span></div>
       </div>
 
       <p class="whatgroup"><b>What happens in a local group?</b> Parent coffees and device-free events. Families in the same grade waiting on phones together. Sharing what's working at home, and speaking up together at school. Every group is run by local parents who know their schools and their neighbors.</p>
@@ -308,7 +307,7 @@
     list.forEach(function(c, i){
       if (typeof c.lat !== 'number' || typeof c.lon !== 'number') return;
       var p = TLO.maProject(c.lat, c.lon);
-      var pin = el('g', {'class': 'pin' + (c.registered === false ? ' forming' : ''),
+      var pin = el('g', {'class': 'pin',
         transform: 'translate(' + p[0].toFixed(1) + ' ' + p[1].toFixed(1) + ')',
         tabindex: 0, role: 'button', 'aria-label': title(c) + ', ' + c.city});
       pin.appendChild(el('path', {d: 'M0 0C0 0-11-12-11-20A11 11 0 0 1 11-20C11-12 0 0 0 0Z'}));
@@ -339,7 +338,6 @@
     pop.innerHTML = '<button class="x" type="button" aria-label="Close">&times;</button>' +
       '<h3>' + esc(title(c)) + '</h3>' +
       '<div class="loc">' + esc(TLO.place(c)) + '</div>' +
-      (c.registered === false ? '<p class="note" style="margin-top:6px">Getting started</p>' : '') +
       '<div class="links">' + linksHtml(c) + '</div>';
     /* Position over the pin, kept inside the box. */
     var x = Math.min(82, Math.max(18, p[0] / M.w * 100));
@@ -368,7 +366,6 @@
         '<h4>' + esc(title(c)) + '</h4>' +
         '<div class="loc">' + esc(TLO.place(c)) + '</div>' +
         (near && isFinite(c._miles) ? '<div class="dist">' + esc(TLO.distancePhrase(c._miles)) + '</div>' : '') +
-        (c.registered === false ? '<p class="forming">Getting started</p>' : '') +
         '<div class="links">' + linksHtml(c) + '</div>' +
       '</article>';
     }).join('');
