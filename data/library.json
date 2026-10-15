@@ -1,5 +1,5 @@
 {
-  "count": 40,
+  "count": 41,
   "items": [
     {
       "credit": {
@@ -469,6 +469,25 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "3 age groups. 3 lists. Easy ways to get kids off their devices and connecting with themselves, each other and nature.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-reconnect-checklist",
+      "tags": [
+        "Free-play",
+        "For parents"
+      ],
+      "title": "Reconnect Checklist",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-reconnect-checklist"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "Busy kids don't miss their screens. The science of face-to-face connection, conversation and free play, plus the Big Rocks, easy everyday ideas and ways to bring your community together.",
       "publisher": {
         "name": "Turning Life On",
@@ -848,5 +867,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-10-15T07:29:48+00:00"
+  "updated": "2026-10-15T19:22:53+00:00"
 }
