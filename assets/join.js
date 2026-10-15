@@ -8,7 +8,7 @@
    `submitSignup` below is the only function that knows about the Worker.
 */
 (function(){
-  var SIGNUP_URL = 'https://tlo-signup.broad-forest-8301.workers.dev/';
+  var SIGNUP_URL = 'https://tlo-signup.soft-dew-a019.workers.dev/';
   var TEAM_EMAIL = 'info@turninglifeon.org';
   var NETWORK_ERROR = 'We couldn\u2019t send your sign-up just now. Please try again, or email ' + TEAM_EMAIL + '.';
   function base(){ return (window.TLO && window.TLO.base) || ''; }
@@ -56,7 +56,7 @@
         '<input id="' + id + '-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>' +
       '<button class="btn btn-orange submit" type="submit">Keep me posted</button>' +
       '<p class="err" role="alert" data-senderr hidden></p>' +
-      '<p class="fine">You\'ll get a welcome email right away, and a real person reads every note. We never share your info. ' +
+      '<p class="fine">You\'ll hear from us right away, and a real person reads every note. We never share your info. ' +
         '<a href="' + base() + 'privacy/">Privacy policy</a></p>' +
     '</form>';
   }
