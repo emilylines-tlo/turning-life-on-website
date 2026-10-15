@@ -1,7 +1,7 @@
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const path = require('path');
-const A = p => fs.readFileSync(path.join(__dirname, '../site/assets/survey', p), 'utf8');
+const A = p => fs.readFileSync(path.join(__dirname, '../../../assets/survey', p), 'utf8');
 let pass = 0, fail = 0; const t = (n, c) => { console.log((c ? 'PASS ' : 'FAIL ') + n); c ? pass++ : fail++; };
 
 function boot(endpointReply) {

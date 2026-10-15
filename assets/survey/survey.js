@@ -6,6 +6,14 @@
   var S = window.TLO_SURVEY;
   var answers = {};
   var districts = null;
+  /* Bring the top of the survey into view below the site's sticky header.
+     offsetTop is relative to the nearest positioned parent, so measure from
+     the viewport instead. */
+  function scrollToSurvey() {
+    var header = document.querySelector('header');
+    var top = root.getBoundingClientRect().top + (window.pageYOffset || 0) - (header ? header.offsetHeight : 0) - 20;
+    window.scrollTo(0, Math.max(0, top));
+  }
   var step = 0;
   var root;
 
@@ -176,7 +184,7 @@
     root.appendChild(err);
     var last = step === secs.length - 1;
     var nav = el('div', { class: 'sv-nav' });
-    if (step > 0) nav.appendChild(el('button', { type: 'button', class: 'sv-btn sv-back', text: 'Back', onclick: function () { step--; render(); window.scrollTo(0, root.offsetTop - 20); } }));
+    if (step > 0) nav.appendChild(el('button', { type: 'button', class: 'sv-btn sv-back', text: 'Back', onclick: function () { step--; render(); scrollToSurvey(); } }));
     var next = el('button', { type: 'button', class: 'sv-btn sv-next', text: last ? 'Submit' : 'Next' });
     next.addEventListener('click', function () {
       var problem = check(s);
@@ -184,7 +192,7 @@
       if (answers.consent && answers.consent.indexOf('No') === 0) return finish('declined');
       if (answers.in_ma === 'No') return finish('outside');
       if (last) return submit(next, err);
-      step++; render(); window.scrollTo(0, root.offsetTop - 20);
+      step++; render(); scrollToSurvey();
     });
     nav.appendChild(next);
     root.appendChild(nav);
@@ -216,7 +224,7 @@
       root.appendChild(el('p', { class: 'sv-help', text: "The results sign-up is a separate form, so your email can't be connected to anything you answered here." }));
       if (S.dashboardUrl) root.appendChild(el('p', {}, [el('a', { href: S.dashboardUrl, text: 'See what others are saying' })]));
     }
-    window.scrollTo(0, root.offsetTop - 20);
+    scrollToSurvey();
   }
   var sending = false;
   function submit(btn, err) {

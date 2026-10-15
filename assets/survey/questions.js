@@ -11,7 +11,7 @@ window.TLO_SURVEY = (function () {
   return {
     id: 'ma-tech-schools-2026',
     title: 'Technology in Massachusetts Schools: What Families and Educators Think',
-    endpoint: '',      // Google Apps Script web app URL (see brief, step 2)
+    endpoint: 'https://script.google.com/macros/s/AKfycbz8QY7PLMOQ1qm6JeQzLTCOACtsx0MCQj4v7pxuaKRmbX3cWCFwVc-5xT-MwwS8F083Rg/exec',      // Google Apps Script web app URL (see brief, step 2)
     emailFormUrl: '',  // separate Google Form for "send me the results"
     dashboardUrl: '',  // results page, once it exists
     districtsUrl: '../data/ma-districts.json',

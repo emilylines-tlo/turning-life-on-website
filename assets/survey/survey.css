@@ -1,0 +1,36 @@
+/* Survey styles, built on the site's design system (assets/site.css):
+   Poppins headings and buttons, Mulish body, brand orange and teal. */
+#tlo-survey{max-width:760px;padding:0 0 24px}
+.sv-progress{height:6px;background:var(--teal-l);border-radius:6px;overflow:hidden;margin:0 0 28px}
+.sv-progress span{display:block;height:100%;background:var(--orange);transition:width .3s}
+.sv-title{font-size:clamp(26px,3.2vw,34px);margin:0 0 14px}
+.sv-intro,.sv-help,.sv-note,.sv-reminder{line-height:1.6}
+.sv-intro{font-size:17px;color:var(--body);margin:0 0 14px}
+.sv-help{color:var(--muted);font-size:15px;margin:-2px 0 12px}
+.sv-reminder{background:#fff3e6;border-left:4px solid var(--orange);padding:12px 16px;margin:0 0 22px;font-size:16px;color:var(--slate)}
+.sv-note{background:var(--teal-l);border-left:4px solid var(--teal);padding:12px 16px;margin:0 0 22px;font-size:16px;color:var(--slate)}
+.sv-q{border:0;padding:0;margin:0 0 32px;min-width:0}
+.sv-q>legend{font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:var(--slate);margin-bottom:12px;line-height:1.4;padding:0}
+.sv-choice{display:flex;gap:12px;align-items:flex-start;padding:11px 14px;border:1px solid var(--line);border-radius:2px;margin:0 0 8px;cursor:pointer;background:#fff;font-size:16px;color:var(--ink);transition:border-color .15s,background .15s}
+.sv-choice:hover{border-color:var(--teal)}
+.sv-choice:has(input:checked){border-color:var(--teal);background:var(--teal-l)}
+.sv-choice input{margin-top:4px;accent-color:var(--orange);flex:none;width:17px;height:17px}
+.sv-text,.sv-select,.sv-textarea{width:100%;font-family:'Mulish',sans-serif;font-size:16px;color:var(--ink);padding:13px 15px;border:1px solid #cfd4d6;border-radius:2px;background:#fff;box-sizing:border-box}
+.sv-textarea{resize:vertical;min-height:110px}
+.sv-text:focus,.sv-select:focus,.sv-textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(51,151,151,.2)}
+.sv-zip{max-width:9em}
+.sv-other{margin-top:6px}
+.sv-grid-row{border:0;padding:14px 0;margin:0;border-top:1px solid var(--line);min-width:0}
+.sv-grid-row>legend{font-weight:600;font-size:16px;color:var(--slate);margin-bottom:10px;padding:0}
+.sv-grid-opts{display:flex;flex-wrap:wrap;gap:8px}
+.sv-grid-opts .sv-choice{margin:0;padding:7px 12px;font-size:14.5px}
+.sv-error{color:#b3261e;min-height:1.2em;font-weight:600;font-size:15px}
+.sv-nav{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:12px}
+/* Buttons match the site's .btn .btn-orange and .btn-line. */
+.sv-btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:14px 26px;border-radius:2px;border:2px solid var(--orange);cursor:pointer;background:var(--orange);color:#fff;text-decoration:none;text-align:center;transition:background .18s,color .18s,border-color .18s}
+.sv-btn:hover{background:var(--orange-d);border-color:var(--orange-d)}
+.sv-btn.sv-back{background:transparent;color:var(--teal-d);border-color:var(--teal)}
+.sv-btn.sv-back:hover{background:var(--teal);color:#fff}
+.sv-btn[disabled]{opacity:.6;cursor:wait}
+.sv-btn:focus-visible,.sv-choice:focus-within{outline:3px solid rgba(51,151,151,.35);outline-offset:2px}
+.sv-hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
