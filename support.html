@@ -8,17 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;max-width:900px}
-.figs div{border-top:3px solid rgba(255,255,255,.5);padding-top:16px;font-size:17px;color:rgba(255,255,255,.95)}
-.figs b{display:block;font-family:'Poppins',sans-serif;font-size:48px;line-height:1.05;color:#fff}
-.uses{list-style:none;display:grid;gap:14px;margin-top:28px;max-width:860px}
-.uses li{padding-left:22px;position:relative;font-size:16.5px;color:var(--body)}
-.uses li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;background:var(--orange)}
-.uses b{color:var(--slate)}
-.gifts{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
-.gifts li{background:#fff;border-top:4px solid var(--orange);padding:20px;font-size:16.5px;color:var(--body)}
-.gifts b{display:block;font-family:'Poppins',sans-serif;font-size:30px;color:var(--slate)}
-@media (max-width:980px){ .figs,.gifts{grid-template-columns:1fr} }
+.herorow{display:flex;flex-wrap:wrap;align-items:center;gap:28px 56px;margin-top:32px}
+.herorow .btns{margin-top:0}
+.figs{display:grid;grid-template-columns:repeat(3,auto);gap:32px}
+.figs div{border-top:3px solid rgba(255,255,255,.5);padding-top:12px;font-size:15px;color:rgba(255,255,255,.95);max-width:170px}
+.figs b{display:block;font-family:'Poppins',sans-serif;font-size:38px;line-height:1.05;color:#fff}
+.gifts{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.gifts li{background:var(--mist);border-top:4px solid var(--orange);padding:18px;font-size:16px;color:var(--body)}
+.gifts b{display:block;font-family:'Poppins',sans-serif;font-size:28px;color:var(--slate)}
+@media (max-width:980px){ .gifts{grid-template-columns:1fr} }
+@media (max-width:560px){ .figs{grid-template-columns:1fr 1fr 1fr;gap:16px} .figs b{font-size:28px} .figs div{font-size:13.5px} }
 </style>
 </head><body>
 <!--SHELL:nav-->
@@ -51,37 +50,35 @@
     <div class="wrap">
       <h1>every dollar stays <em>close to home</em></h1>
       <p>Turning Life On is a registered 501(c)(3) nonprofit, run by parents who volunteer their time. Your support reaches communities across Massachusetts.</p>
-      <div class="figs">
-        <div><b>20</b>virtual and in-person coalition meetings each year</div>
-        <div><b>17</b>grants awarded</div>
-        <div><b>1,783</b>parents and kids reached</div>
-      </div>
-      <div class="btns">
-        <a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
-        <a class="btn btn-ghost" href="#sponsor">Become a sponsor</a>
+      <div class="herorow">
+        <div class="btns">
+          <a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+          <a class="btn btn-ghost" href="#sponsor">Become a sponsor</a>
+        </div>
+        <div class="figs">
+          <div><b>20</b>coalition meetings a year</div>
+          <div><b>17</b>grants to local groups</div>
+          <div><b>1,783</b>parents and kids reached</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="s">
     <div class="wrap">
-      <div class="kick">Individual donations</div>
-      <h2>what your gift <em>makes possible</em></h2>
-      <p class="lede">Donations fund grants to parent-led communities, so they can bring in speakers, host movie screenings, run device-free gatherings and parent nights, and reach families who wouldn't otherwise hear this conversation. Your gift also supports:</p>
-      <ul class="uses">
-        <li><b>Speakers and screenings:</b> experts, authors and films that bring parents together and spark real conversation</li>
-        <li><b>Events across Massachusetts:</b> rooms, materials and printables for parent nights, coffees and device-free gatherings</li>
-        <li><b>Free resources:</b> guides, playbooks and model policies any family, school or community can use</li>
-        <li><b>A statewide network:</b> monthly coalition calls, meetups, and one-on-one support for community leads</li>
-        <li><b>Advocacy:</b> keeping parents informed and organized when it's time to speak up at the State House</li>
-      </ul>
-      <ul class="gifts">
-        <li><b>$50</b> covers materials for a parent night.</li>
-        <li><b>$250</b> covers the room for a community event.</li>
-        <li><b>$1,000</b> helps bring a speaker to a community that couldn't book one on its own.</li>
-      </ul>
-      <p class="lede">Gifts are tax deductible.</p>
-      <div class="btns"><a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></div>
+      <div>
+        <div class="kick">Individual donations</div>
+        <h2>what your gift <em>makes possible</em></h2>
+        <p class="lede">Donations fund grants to parent-led communities, so they can bring in speakers, host movie screenings, run device-free gatherings and parent nights, and reach families who wouldn't otherwise hear this conversation.</p>
+        <ul class="gifts">
+          <li><b>$50</b> covers materials for a parent night.</li>
+          <li><b>$250</b> covers the room for a community event.</li>
+          <li><b>$1,000</b> helps bring a speaker to a community that couldn't book one on its own.</li>
+        </ul>
+        <p class="lede">Your gift also keeps our guides, playbooks and model policies free for every family and school, and supports our statewide network of parent leaders.</p>
+        <p class="lede">Gifts are tax deductible.</p>
+        <div class="btns"><a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a></div>
+      </div>
     </div>
   </section>
 
