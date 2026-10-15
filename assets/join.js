@@ -56,7 +56,7 @@
         '<input id="' + id + '-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>' +
       '<button class="btn btn-orange submit" type="submit">Keep me posted</button>' +
       '<p class="err" role="alert" data-senderr hidden></p>' +
-      '<p class="fine">A person reads every one of these. You\'ll get a welcome email right away, and a real person reads every note. We never share your info. ' +
+      '<p class="fine">You\'ll get a welcome email right away, and a real person reads every note. We never share your info. ' +
         '<a href="' + base() + 'privacy/">Privacy policy</a></p>' +
     '</form>';
   }
