@@ -219,13 +219,3 @@ footer a{color:#e5ecf0} footer a:hover{color:#fff}
 @media (max-width:980px){ .itabs{grid-template-columns:1fr 1fr} .itabs [role="tab"]{border-radius:10px;border-bottom:1px solid var(--line)} .icards{grid-template-columns:1fr} }
 @media (max-width:640px){ .itabs{grid-template-columns:1fr} }
 [id]{scroll-margin-top:96px}
-
-/* Survey invitation pop-up (site.js). */
-dialog.invite{border:0;border-top:5px solid var(--orange);padding:36px 34px 32px;max-width:min(520px,calc(100vw - 32px));width:100%;margin:auto;background:#fff;color:var(--ink);box-shadow:0 24px 60px rgba(20,40,40,.28);position:fixed}
-dialog.invite::backdrop{background:rgba(25,60,60,.55)}
-dialog.invite h2{font-size:clamp(26px,4vw,32px);margin-top:6px}
-dialog.invite p{font-size:17px;color:var(--body);margin-top:12px}
-dialog.invite .btns{margin-top:24px}
-.invite-x{position:absolute;top:10px;right:12px;width:40px;height:40px;border:0;background:transparent;font-size:28px;line-height:1;color:var(--muted);cursor:pointer}
-.invite-x:hover{color:var(--slate)}
-@media (max-width:480px){ dialog.invite{padding:30px 22px 24px} dialog.invite .btns .btn{width:100%} }
