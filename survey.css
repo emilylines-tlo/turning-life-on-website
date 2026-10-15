@@ -1,0 +1,27 @@
+/* Survey styles. Uses the site's fonts and colors where available. */
+#tlo-survey{max-width:760px;margin:0 auto;padding:8px 0 48px}
+.sv-progress{height:6px;background:#E6EFEF;border-radius:6px;overflow:hidden;margin:0 0 20px}
+.sv-progress span{display:block;height:100%;background:#F67800;transition:width .3s}
+.sv-title{margin:0 0 10px}
+.sv-intro,.sv-help,.sv-note,.sv-reminder{line-height:1.55}
+.sv-help{color:#5B6B6B;font-size:.95em;margin:-2px 0 10px}
+.sv-reminder{background:#FFF6DA;border-left:4px solid #FFC857;padding:10px 14px;border-radius:6px}
+.sv-note{background:#EAF4F4;padding:10px 14px;border-radius:6px}
+.sv-q{border:0;padding:0;margin:0 0 28px}
+.sv-q>legend{font-weight:700;margin-bottom:10px;line-height:1.4;padding:0}
+.sv-choice{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid #D3E3E3;border-radius:8px;margin:0 0 6px;cursor:pointer;background:#fff}
+.sv-choice:hover{border-color:#339797}
+.sv-choice input{margin-top:3px;accent-color:#F67800;flex:none}
+.sv-text,.sv-select,.sv-textarea{width:100%;font:inherit;padding:10px 12px;border:1px solid #B9CFCF;border-radius:8px;background:#fff;box-sizing:border-box}
+.sv-zip{max-width:9em}
+.sv-other{margin-top:4px}
+.sv-grid-row{border:0;padding:12px 0;margin:0;border-top:1px solid #E6EFEF}
+.sv-grid-row>legend{font-weight:400;margin-bottom:8px;padding:0}
+.sv-grid-opts{display:flex;flex-wrap:wrap;gap:6px}
+.sv-grid-opts .sv-choice{margin:0;padding:6px 10px;font-size:.92em}
+.sv-error{color:#B3261E;min-height:1.2em;font-weight:600}
+.sv-nav{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.sv-btn{display:inline-block;font:inherit;font-weight:700;padding:12px 26px;border-radius:6px;border:0;cursor:pointer;background:#F67800;color:#fff;text-decoration:none}
+.sv-btn.sv-back{background:#fff;color:#17504F;border:1px solid #B9CFCF}
+.sv-btn[disabled]{opacity:.6;cursor:wait}
+.sv-hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
