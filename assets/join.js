@@ -2,13 +2,15 @@
    One definition, rendered into every <div data-joinform></div> on the site, so
    the form cannot drift from page to page.
 
-   WHERE SIGN-UPS GO: for now, submitting opens an email to the team. The
-   intended destination is the Four Norms Supporters API, which needs a host
-   that can run server-side code so the API key stays private. GitHub Pages
-   cannot. When that moves, `submitSignup` below is the only function to change.
+   WHERE SIGN-UPS GO: the form posts to a small Cloudflare Worker (SIGNUP_URL),
+   which holds the Four Norms API key and saves the supporter. GitHub Pages
+   cannot keep a key private, so the browser never talks to Four Norms itself.
+   `submitSignup` below is the only function that knows about the Worker.
 */
 (function(){
+  var SIGNUP_URL = 'https://tlo-signup.broad-forest-8301.workers.dev/';
   var TEAM_EMAIL = 'info@turninglifeon.org';
+  var NETWORK_ERROR = 'We couldn\u2019t send your sign-up just now. Please try again, or email ' + TEAM_EMAIL + '.';
   function base(){ return (window.TLO && window.TLO.base) || ''; }
 
   function esc(t){
@@ -46,8 +48,15 @@
         '<select id="' + id + '-grp" name="grp"><option value="">Choose your community</option></select></div>' +
       '<div class="field wide"><label for="' + id + '-nt">What\'s going on? <i>Optional</i></label>' +
         '<textarea id="' + id + '-nt" name="nt"></textarea></div>' +
+      /* Honeypot: people never see or reach this field; bots that fill every
+         input do, and the Worker drops their sign-up. Off-screen rather than
+         display:none, which some bots skip. */
+      '<div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">' +
+        '<label for="' + id + '-website">Website</label>' +
+        '<input id="' + id + '-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>' +
       '<button class="btn btn-orange submit" type="submit">Keep me posted</button>' +
-      '<p class="fine">A person reads every one of these. No automated sequence, and we never share your info. ' +
+      '<p class="err" role="alert" data-senderr hidden></p>' +
+      '<p class="fine">You\'ll get a welcome email right away, and a real person reads every note. We never share your info. ' +
         '<a href="' + base() + 'privacy/">Privacy policy</a></p>' +
     '</form>';
   }
@@ -66,6 +75,7 @@
 
     api.loadCommunities().then(function(groups){
       groups.forEach(function(g){
+        if (g.slug === 'massachusetts-hq') return;
         var name = g.display_name || g.name;
         var o = document.createElement('option');
         o.value = g.slug || name || g.city;
@@ -113,28 +123,29 @@
     return ok;
   }
 
-  /* The one function to replace once sign-ups can reach Four Norms directly. */
+  /* Sends the sign-up to the Worker. Resolves on { ok: true }; otherwise
+     rejects with a message to show the person. */
   function submitSignup(values){
-    var lines = [
-      'How involved: ' + (values.tier === 'involved' ? 'Get involved' : 'Stay in the loop'),
-      'Name: ' + values.fn + ' ' + values.ln,
-      'Email: ' + values.em,
-      'Zip code: ' + values.zip,
-      'Community: ' + (values.grp || 'not given'),
-      ''
-    ];
-    if (values.stuck) lines.push('Feeling stuck: ' + values.stuck, '');
-    if (values.nt) lines.push(values.nt);
-
-    window.location.href = 'mailto:' + TEAM_EMAIL +
-      '?subject=' + encodeURIComponent('Join the movement: ' + (values.tier === 'involved' ? 'Get involved' : 'Stay in the loop')) +
-      '&body=' + encodeURIComponent(lines.join('\n'));
-    return Promise.resolve();
+    return fetch(SIGNUP_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(values)
+    }).then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(data){
+        if (res.ok && data && data.ok === true) return;
+        if (res.status === 403) throw new Error('Sign-ups can\u2019t be sent from this page. Please email ' + TEAM_EMAIL + '.');
+        throw new Error((data && data.error) || NETWORK_ERROR);
+      });
+    }, function(){
+      throw new Error(NETWORK_ERROR);
+    });
   }
 
-  function thanks(form, firstName){
-    form.innerHTML = '<p class="thanks">Thanks, ' + esc(firstName) + '. A real person on our team ' +
-      'will read this, and if you chose "Get involved," we\'ll be in touch soon. In the meantime, ' +
+  function thanks(form, firstName, tier){
+    var next = (tier === 'involved')
+      ? 'Watch your inbox for an invitation from Four Norms, and Adrienne will be in touch personally soon.'
+      : 'Check your inbox for a welcome email from us.';
+    form.innerHTML = '<p class="thanks">Thanks, ' + esc(firstName) + '. ' + next + ' In the meantime, ' +
       '<a href="' + base() + 'communities.html#find">find your local group</a> or ' +
       '<a href="' + base() + 'events.html#upcoming">see upcoming events</a>.</p>';
   }
@@ -154,9 +165,16 @@
 
     form.addEventListener('submit', function(e){
       e.preventDefault();
+      var button = form.querySelector('.submit');
+      var sendErr = form.querySelector('[data-senderr]');
+      if (button.disabled) return;
+      sendErr.hidden = true;
       if (!validate(form)) return;
-      var tier = form.querySelector('.tier[aria-pressed="true"]');
+      var tier = form.querySelector('.tier[aria-pressed="true"]').dataset.t;
       var first = (form.elements.fn.value || '').trim();
+      var label = button.textContent;
+      button.disabled = true;
+      button.textContent = 'Sending\u2026';
       submitSignup({
         fn: first,
         ln: (form.elements.ln.value || '').trim(),
@@ -164,9 +182,16 @@
         zip: (form.elements.zip.value || '').trim(),
         grp: form.elements.grp.value,
         nt: (form.elements.nt.value || '').trim(),
-        tier: tier.dataset.t,
-        stuck: form.dataset.stuck || ''
-      }).then(function(){ thanks(form, first); });
+        tier: tier,
+        website: form.elements.website.value
+      }).then(function(){
+        thanks(form, first, tier);
+      }, function(err){
+        button.disabled = false;
+        button.textContent = label;
+        sendErr.textContent = (err && err.message) || NETWORK_ERROR;
+        sendErr.hidden = false;
+      });
     });
   }
 
