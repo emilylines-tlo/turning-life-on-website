@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 21,
   "groups": [
     {
       "affiliation": null,
@@ -55,6 +55,17 @@
       "slug": "brainfree-braintree",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/brainfree-braintree"
+    },
+    {
+      "affiliation": null,
+      "city": "Chelmsford",
+      "display_name": null,
+      "lat": 42.59733,
+      "lon": -71.351056,
+      "name": "Chelmsford",
+      "slug": "chelmsford",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/chelmsford"
     },
     {
       "affiliation": null,
@@ -222,5 +233,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-10-16T07:27:11+00:00"
+  "updated": "2026-10-16T19:18:48+00:00"
 }
