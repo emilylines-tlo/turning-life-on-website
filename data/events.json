@@ -1,35 +1,6 @@
 {
-  "count": 22,
+  "count": 21,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjcyNiwicHVyIjoiYmxvYl9pZCJ9fQ==--0d03c6b4c3e6510b605c5b52b9b2cfd54c802269/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
-      "description": "Most districts don\u2019t have a clear, current, community-informed way to think through their own technology direction \u2014 decisions get made department by department, often without anyone connecting healthy defaults, social media practices, grade-band device rules, and AI policy into a single, coherent picture. A TAC doesn\u2019t need formal authority to close that gap; it just needs a standing seat and a real line to the Superintendent.\r\n\r\nWe will talk about how to advocate for one in your district, the strategies you can use and the changes you can advocate for through the TAC. Let's do this!",
-      "end_time": "2026-10-19T13:00:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-tech-advisory-committees.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-tech-advisory-committees"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-tech-advisory-committees",
-      "start_time": "2026-10-19T12:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Tech Advisory Committees",
-      "virtual": true,
-      "virtual_link": "https://meet.google.com/rih-ceub-dth"
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMywicHVyIjoiYmxvYl9pZCJ9fQ==--e81557fa2fc50c76b73e6b7b4f88da9861e61c96/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Cover%20for%20Four%20Norms.png",
       "description": "Join local parents, teens, and experts for\r\nan honest, practical, judgment-free conversation about kids and technology. Bring your questions,\r\nconcerns, and experiences. Leave with ideas, resources, and strategies you can actually use at\r\nhome.",
@@ -189,7 +160,7 @@
     },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--a560195490290f87e163a33de3ac3e2c4d9ae1ab/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTAseyJjcm9wIjoibG93In1dfSwicHVyIjoidmFyaWF0aW9uIn19--6d0d4700af244310fff8c0c1f327e2d49a78870b/fournorms-banner-wellesley-1200x400.png",
-      "description": "The Wellesley Mothers Forum Presents: \r\n\r\nDr. Jared Cooney Horvath, Inside the Learning Brain.\r\n\r\nTechnology in kids' lives is changing fast. Learn what the science says you can do about it, from kindergarten through high school:\r\n- Practical ways to support kids' learning and well-being, including about technology. \r\n- How kids' brains grow and learn\r\n- Good stress vs. bad stress\r\n\r\nThis event is also happening in Concord on Tuesday, Nov. 17, 7pm, at Concord Middle School. Visit the event page to register for that event.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this. \r\n\r\nLocal groups hosts: \r\nBeyond Screens Wellesley\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington",
+      "description": "Technology in kids\u2019 lives is changing fast. Find out what the science says and what you can actually do about it. Join Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who researches how children learn and develop and how technology intersects with these processes. Parents will come away with a clearer understanding of how the brain changes throughout childhood, what research tells us about learning and technology, and practical ways to support their children\u2019s cognitive, academic, and emotional growth. \r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
       "end_time": "2026-11-16T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
       "featured": false,
@@ -615,5 +586,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-19T07:37:29+00:00"
+  "updated": "2026-10-19T19:24:05+00:00"
 }
