@@ -1,35 +1,6 @@
 {
-  "count": 21,
+  "count": 20,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMywicHVyIjoiYmxvYl9pZCJ9fQ==--e81557fa2fc50c76b73e6b7b4f88da9861e61c96/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Cover%20for%20Four%20Norms.png",
-      "description": "Join local parents, teens, and experts for\r\nan honest, practical, judgment-free conversation about kids and technology. Bring your questions,\r\nconcerns, and experiences. Leave with ideas, resources, and strategies you can actually use at\r\nhome.",
-      "end_time": "2026-10-20T20:30:00-04:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On | Reconnect Nashoba Valley",
-      "host_slug": "reconnect-nashoba-valley",
-      "host_type": "Group",
-      "host_url": "https://www.fournorms.com/turning-life-on/reconnect-nashoba-valley",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/reconnect-nashoba-valley-raising-kids-in-a-digital-world.json",
-        "web_url": "https://www.fournorms.com/events/reconnect-nashoba-valley-raising-kids-in-a-digital-world"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "reconnect-nashoba-valley-raising-kids-in-a-digital-world",
-      "start_time": "2026-10-20T19:00:00-04:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Speaker Series: Raising Kids in a Digital World ",
-      "virtual": false,
-      "virtual_link": null
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYyMywicHVyIjoiYmxvYl9pZCJ9fQ==--35d8a4996d7f91587b3698967039be33c5fb7947/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/image.webp",
       "description": "This event is presented by Harvard Book Store. The event is free but registration is required through the EVENTBRITE link below.\r\n\r\nHarvard Book Store, the Harvard University Division of Science, and the Harvard Library welcome Natasha Singer\u2014a Pulitzer Prize finalist for National Reporting who has covered tech industry influence in schools for the New York Times for more than a decade\u2014for a discussion of her new book, Coding Kids: Big Tech's Battle to Remake Public Schools. She will be joined in conversation by Cathy O'Neill\u2014CEO of ORCAA, a founder and board member of OCEAN, and author of Weapons of Math Destruction and The Shame Machine. The presentation will take place in Hall E, downstairs at the Harvard Science Center, located at 1 Oxford Street, Cambridge. Elevator access is available for attendees who need it.\r\n\r\nTicketing\r\nRSVP for free to this event or choose the \"Book-Included\" ticket to reserve a copy of Coding Kids and pick it up at the event. Following the presentation will be a book signing.\r\n\r\nNote: Books bundled with tickets may only be picked up at the venue the night of the event, and cannot be picked up in-store beforehand. Ticket holders who purchased a book-included ticket and are unable to attend the event will be able to pick up their book at Harvard Book Store up to 30 days following the event. This offer expires after 30 days. Please note we cannot guarantee signed copies will be available to ticket holders who do not attend the event.\r\n\r\nAbout Coding Kids\r\nThe inside story of how Big Tech catalyzed, co-opted, and ultimately came to capture computer science and AI education in America.\r\nFourth graders doing Google-branded coding lessons. Amazon schooling seventh graders on its warehouse robots. Advanced Placement computing courses from Microsoft and Apple. Many educators and parents would object if Exxon wrote their school\u2019s climate curriculum\u2014or if schools assigned nutrition lessons from Coca-Cola and McDonald\u2019s. Yet today, tech giants influence nearly every step of the education supply chain. They provide the classroom devices and software many students use to do assignments. They sell schools on the latest artificial intelligence tools. And increasingly, tech companies are launching their own corporate-branded school curricula, shaping how and what millions of children learn.\r\n\r\nIn recent years, the tech industry has helped spread computer science and AI education in schools at astonishing speed and scale. In Coding Kids, award-winning New York Times journalist Natasha Singer draws on a decade of reporting to reveal how tech titans used the promise of coding (high-paying jobs! change the world!) to weave rosy industry visions of technology into the very fabric of American education, sometimes sidelining crucial ideas like civics and critical thinking. Along the way, Singer takes readers through the powerful playbook Big Tech used to scale coding lessons nationwide. Then she shows readers how tech companies are now applying the same playbook to mainstream their AI tools in schools.\r\n\r\nA revelatory account of the powerful forces shaping education and our kids\u2019 futures, Coding Kids also offers hope. It tells the compelling stories of pioneering teachers fighting for a broader vision of tech education\u2014one that not only teaches kids algorithms and app-making, but also asks students to grapple with the societal impacts of tech giants and their disruptive digital tools.\r\n\r\nBios\r\nNatasha Singer has covered tech industry influence in schools for the New York Times for more than a decade. Her school tech reporting helped prompt California to enact a landmark student online data protection law. In 2019, she was part of a Times team whose tech coverage won a George Polk Award and was a finalist for a Pulitzer Prize for National Reporting. Photo Credit: Bella Wang Photography\r\n\r\nCathy O\u2019Neil earned a Ph.D. in math from Harvard and worked as a math professor at Barnard College before switching over to the private sector, working as a quant for the hedge fund D.E. Shaw and as a data scientist in the New York start-up scene. In 2016 she wrote the book Weapons of Math Destruction: how big data increases inequality and threatens democracy, and in 2022 she wrote The Shame Machine: who profits in the new age of humiliation. She is the CEO of ORCAA, an algorithmic auditing company and a founder and board member of OCEAN, a non-profit defending the public interest against algorithmic harm.\r\n\r\n",
@@ -160,7 +131,7 @@
     },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--a560195490290f87e163a33de3ac3e2c4d9ae1ab/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTAseyJjcm9wIjoibG93In1dfSwicHVyIjoidmFyaWF0aW9uIn19--6d0d4700af244310fff8c0c1f327e2d49a78870b/fournorms-banner-wellesley-1200x400.png",
-      "description": "Technology in kids\u2019 lives is changing fast. Find out what the science says and what you can actually do about it. Join Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who researches how children learn and develop and how technology intersects with these processes. Parents will come away with a clearer understanding of how the brain changes throughout childhood, what research tells us about learning and technology, and practical ways to support their children\u2019s cognitive, academic, and emotional growth. \r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
+      "description": "Technology in kids\u2019 lives is changing fast. Find out what the science says and what you can actually do about it. Join Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who researches how children learn and develop and how technology intersects with these processes. Parents will come away with a clearer understanding of how the brain changes throughout childhood, what research tells us about learning and technology, and practical ways to support their children\u2019s cognitive, academic, and emotional growth. \r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
       "end_time": "2026-11-16T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
       "featured": false,
@@ -586,5 +557,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-20T19:24:24+00:00"
+  "updated": "2026-10-21T07:33:15+00:00"
 }

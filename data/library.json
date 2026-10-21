@@ -33,8 +33,6 @@
       },
       "slug": "tlo-advocate-toolkit",
       "tags": [
-        "Playbook",
-        "Guide",
         "For advocates"
       ],
       "title": "Advocate Toolkit",
@@ -53,8 +51,9 @@
       },
       "slug": "tlo-black-tier-1-next-steps-on-healthy-defaults-on-school-devices",
       "tags": [
-        "Guide",
-        "Research And Reference"
+        "Distraction Free Schools",
+        "For advocates",
+        "Black"
       ],
       "title": "Black Tier 1: Next steps on healthy defaults on school devices",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-black-tier-1-next-steps-on-healthy-defaults-on-school-devices"
@@ -72,8 +71,9 @@
       },
       "slug": "tlo-black-tier-3-digital-product-standards",
       "tags": [
-        "Guide",
-        "Research And Reference"
+        "Distraction Free Schools",
+        "For advocates",
+        "Black"
       ],
       "title": "Black Tier 3: Digital Product Standards",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-black-tier-3-digital-product-standards"
@@ -91,9 +91,8 @@
       },
       "slug": "tlo-social-media-use-policy-playbook",
       "tags": [
-        "Playbook",
-        "Guide",
-        "Research And Reference",
+        "Distraction Free Schools",
+        "Social Media",
         "For advocates",
         "Blue"
       ],
@@ -113,9 +112,7 @@
       },
       "slug": "tlo-tiered-access-to-screens-by-grade-band-playbook",
       "tags": [
-        "Playbook",
-        "Guide",
-        "Research And Reference",
+        "Distraction Free Schools",
         "For advocates",
         "Blue"
       ],
@@ -135,9 +132,7 @@
       },
       "slug": "tlo-tech-advisory-council-playbook",
       "tags": [
-        "Playbook",
-        "Guide",
-        "Research And Reference",
+        "Distraction Free Schools",
         "For advocates",
         "Blue"
       ],
@@ -157,9 +152,7 @@
       },
       "slug": "tlo-pick-up-the-pace-playbooks-social-media-use-policy-tiered-access-to-screens-by-grade-band-tech-advisorycommittee-tac",
       "tags": [
-        "Playbook",
-        "Guide",
-        "Research And Reference",
+        "Distraction Free Schools",
         "For advocates",
         "Blue"
       ],
@@ -238,8 +231,9 @@
       },
       "slug": "tlo-next-steps-on-defaults-and-digital-product-standards-playbooks",
       "tags": [
-        "Guide",
-        "Research And Reference"
+        "Distraction Free Schools",
+        "For advocates",
+        "Black"
       ],
       "title": "Full Black: Next Steps on Defaults and Digital Product Standards Playbooks",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-next-steps-on-defaults-and-digital-product-standards-playbooks"
@@ -277,9 +271,9 @@
       "slug": "tlo-green-tier-1-ditch-free-screen-time",
       "tags": [
         "Playbook",
-        "Guide",
-        "Research And Reference",
-        "For advocates"
+        "Distraction Free Schools",
+        "For advocates",
+        "Green"
       ],
       "title": "Green Tier 1: Ditch \"Free\" Screen-time",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-green-tier-1-ditch-free-screen-time"
@@ -318,8 +312,8 @@
       },
       "slug": "tlo-green-tier-3-healthy-defaults-on-school-devices",
       "tags": [
-        "Guide",
-        "Research And Reference",
+        "Playbook",
+        "Distraction Free Schools",
         "For advocates",
         "Green"
       ],
@@ -381,6 +375,7 @@
       "slug": "tlo-key-terms-in-edtech",
       "tags": [
         "Playbook",
+        "Distraction Free Schools",
         "Guide",
         "Research And Reference",
         "For advocates"
@@ -458,7 +453,8 @@
       "slug": "tlo-policy-priorities",
       "tags": [
         "Distraction Free Schools",
-        "Research And Reference",
+        "Smartphones",
+        "Social Media",
         "For advocates"
       ],
       "title": "Policy Priorities",
@@ -582,7 +578,8 @@
       },
       "slug": "tlo-tlo-ambassador-guiding-principals",
       "tags": [
-        "Guide"
+        "Guide",
+        "For advocates"
       ],
       "title": "TLO Community Lead Guiding Principles",
       "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-tlo-ambassador-guiding-principals"
@@ -853,6 +850,7 @@
   ],
   "tags": [
     "AI",
+    "Black",
     "Blue",
     "Distraction Free Schools",
     "For advocates",
@@ -867,5 +865,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-10-20T19:24:25+00:00"
+  "updated": "2026-10-21T07:33:16+00:00"
 }
