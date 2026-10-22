@@ -147,7 +147,10 @@ window.TLO = (function(){
         if (text.length > max) text = text.slice(0, max).replace(/\s+\S*$/, '') + '\u2026';
         var p = document.createElement('p');
         p.textContent = text;
-        card.appendChild(p);
+        /* The description belongs above any "Learn more" link, not after it. */
+        var links = card.querySelector('.links');
+        if (links) card.insertBefore(p, links);
+        else card.appendChild(p);
       });
     }).catch(function(){ /* titles alone still work */ });
   }

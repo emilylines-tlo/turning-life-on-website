@@ -139,8 +139,9 @@ Then open http://localhost:8000. Stop it with Ctrl-C.
   with `openssl dgst -sha512 -binary file | openssl base64 -A`.
 - **Photos belong in `assets/img/`.** Do not hot-link images from elsewhere.
 - Fonts are Poppins (headings) and Mulish (body). Brand colors: orange
-  `#F67800`, blue `#339797`, light grey `#F5F5F5`. Italics show in blue.
-  Headings are lower case where the wireframe has them that way.
+  `#F67800`, blue `#339797`, light grey `#F5F5F5`. Emphasized words in headings
+  show in teal, upright (not italic). All buttons are orange. Headings are lower
+  case where the wireframe has them that way.
 - **Partner logos** live in `assets/img/partners/`, used with each partner's
   permission and never recolored. Logos published only in white sit on a dark
   tile (`<li class="dark">`).
