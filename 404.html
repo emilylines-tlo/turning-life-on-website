@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found &middot; Turning Life On</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+.lost{padding:12vh 0 14vh}
+.lost h1{font-size:clamp(30px,4vw,44px);max-width:20ch}
+.lost p{margin-top:18px;font-size:18px;color:var(--body);max-width:56ch}
+.lost .where{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px}
+.lost .where a{background:var(--light);border-radius:4px;padding:20px;color:var(--slate);font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;text-decoration:none}
+.lost .where a:hover{background:var(--orange);color:#fff}
+.lost .where a span{display:block;font-family:'Mulish',sans-serif;font-weight:400;font-size:14.5px;color:var(--body);margin-top:6px}
+.lost .where a:hover span{color:#fff}
+.sending{margin-top:28px;font-size:15px;color:var(--muted)}
+@media (max-width:640px){ .lost .where{grid-template-columns:1fr} }
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!--SHELL:nav-->
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Turning Life On, home">
+      <img src="assets/img/logo.png" width="350" height="80" alt="Turning Life On: keep tech in check">
+    </a>
+    <nav id="nav" aria-label="Main">
+      <button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+      <ul id="navlist">
+        <li><a class="navlink" href="index.html">Home</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
+        <li><a class="navlink" href="communities.html">Communities</a></li>
+        <li><a class="navlink" href="learn.html">Learn</a></li>
+        <li><a class="navlink" href="get-involved.html">Get Involved</a></li>
+        <li><a class="navlink" href="events.html">Events</a></li>
+        <li><a class="navlink" href="support.html">Support</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#join">Join Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--/SHELL:nav-->
+
+<main id="main">
+  <section class="s lost">
+    <div class="wrap">
+      <h1>We moved some things around</h1>
+      <p>Our website was rebuilt recently, and this address no longer exists. Nothing's lost, it's just somewhere new.</p>
+      <p class="sending" id="sending" hidden></p>
+      <div class="where">
+        <a href="/learn.html">Learn<span>Guides on phones, school tech, AI and reconnecting</span></a>
+        <a href="/communities.html">Communities<span>Find a group near you, or start one</span></a>
+        <a href="/get-involved.html">Get Involved<span>Small steps and ways to take action</span></a>
+        <a href="/events.html">Events<span>What's coming up near you</span></a>
+        <a href="/about.html">About<span>Who we are and what we believe</span></a>
+        <a href="/">Home<span>Start from the beginning</span></a>
+      </div>
+      <p style="margin-top:30px">Still stuck? Email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll point you to the right place.</p>
+    </div>
+  </section>
+</main>
+
+<!--SHELL:footer-->
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <p><b>Turning Life On.</b> A registered 501(c)(3) nonprofit. Your support helps us do more in more communities.</p>
+      <div class="fbtns">
+        <a class="btn btn-orange btn-sm" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
+        <a class="btn btn-ghost btn-sm" href="#join">Sign up</a>
+      </div>
+    </div>
+    <ul class="flinks">
+      <li>Concord, MA</li>
+      <li><a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a></li>
+      <li><a href="mailto:adrienne@turninglifeon.org">Talk with us</a></li>
+      <li><a href="https://www.instagram.com/tlo_turninglifeon/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/turninglifeon" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://papa.fournorms.com/turning-life-on" target="_blank" rel="noopener">Community Portal</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+    </ul>
+    <p class="disc">This website is provided for educational and informational purposes only and does not constitute medical advice or professional services. Always seek the advice of your doctor or other qualified health provider regarding a medical condition. If you think you may have a medical emergency, call 911 or go to the nearest emergency room immediately. &copy;2026 Turning Life On.</p>
+  </div>
+</footer>
+<!--/SHELL:footer-->
+
+<script src="/assets/site.js"></script>
+<script>
+/* Old Squarespace addresses that can't exist as files, mostly the resource
+   library's category and tag pages, whose names contain characters a filename
+   cannot hold. Anything recognisable is sent on automatically; anything else
+   gets the choices above. */
+(function(){
+  var path = decodeURIComponent(location.pathname).toLowerCase();
+  var target = null;
+
+  if (path.indexOf('/turning-life-on-resources') === 0) target = '/learn.html';
+  else if (path.indexOf('/events') === 0)               target = '/events.html';
+  else if (path.indexOf('/ambassador') === 0)           target = '/communities.html';
+  else if (path.indexOf('/network') === 0)              target = '/communities.html';
+  else if (path.indexOf('/resources') === 0)            target = '/learn.html';
+  else if (path.indexOf('/action') === 0)               target = '/get-involved.html';
+  else if (path.indexOf('/support') === 0)              target = '/support.html';
+
+  if (!target) return;
+
+  var note = document.getElementById('sending');
+  note.textContent = 'Taking you to the right page…';
+  note.hidden = false;
+  setTimeout(function(){ location.replace(target); }, 1200);
+})();
+</script>
+</body></html>
