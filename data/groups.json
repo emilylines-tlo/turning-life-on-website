@@ -3,17 +3,6 @@
   "groups": [
     {
       "affiliation": null,
-      "city": null,
-      "display_name": null,
-      "lat": null,
-      "lon": null,
-      "name": "Massachusetts HQ",
-      "slug": "massachusetts-hq",
-      "state": null,
-      "web_url": "https://www.fournorms.com/turning-life-on/massachusetts-hq"
-    },
-    {
-      "affiliation": null,
       "city": "Orlando",
       "display_name": null,
       "lat": 28.55546,
@@ -44,6 +33,17 @@
       "slug": "bedford",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/bedford"
+    },
+    {
+      "affiliation": null,
+      "city": "Boston",
+      "display_name": null,
+      "lat": 42.3579557,
+      "lon": -71.0625494,
+      "name": "Massachusetts HQ",
+      "slug": "massachusetts-hq",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/massachusetts-hq"
     },
     {
       "affiliation": null,
@@ -233,5 +233,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-10-22T12:38:13+00:00"
+  "updated": "2026-10-22T21:59:48+00:00"
 }
