@@ -1,31 +1,6 @@
 {
-  "count": 20,
+  "count": 19,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYyMywicHVyIjoiYmxvYl9pZCJ9fQ==--35d8a4996d7f91587b3698967039be33c5fb7947/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/image.webp",
-      "description": "This event is presented by Harvard Book Store. The event is free but registration is required through the EVENTBRITE link below.\r\n\r\nHarvard Book Store, the Harvard University Division of Science, and the Harvard Library welcome Natasha Singer\u2014a Pulitzer Prize finalist for National Reporting who has covered tech industry influence in schools for the New York Times for more than a decade\u2014for a discussion of her new book, Coding Kids: Big Tech's Battle to Remake Public Schools. She will be joined in conversation by Cathy O'Neill\u2014CEO of ORCAA, a founder and board member of OCEAN, and author of Weapons of Math Destruction and The Shame Machine. The presentation will take place in Hall E, downstairs at the Harvard Science Center, located at 1 Oxford Street, Cambridge. Elevator access is available for attendees who need it.\r\n\r\nTicketing\r\nRSVP for free to this event or choose the \"Book-Included\" ticket to reserve a copy of Coding Kids and pick it up at the event. Following the presentation will be a book signing.\r\n\r\nNote: Books bundled with tickets may only be picked up at the venue the night of the event, and cannot be picked up in-store beforehand. Ticket holders who purchased a book-included ticket and are unable to attend the event will be able to pick up their book at Harvard Book Store up to 30 days following the event. This offer expires after 30 days. Please note we cannot guarantee signed copies will be available to ticket holders who do not attend the event.\r\n\r\nAbout Coding Kids\r\nThe inside story of how Big Tech catalyzed, co-opted, and ultimately came to capture computer science and AI education in America.\r\nFourth graders doing Google-branded coding lessons. Amazon schooling seventh graders on its warehouse robots. Advanced Placement computing courses from Microsoft and Apple. Many educators and parents would object if Exxon wrote their school\u2019s climate curriculum\u2014or if schools assigned nutrition lessons from Coca-Cola and McDonald\u2019s. Yet today, tech giants influence nearly every step of the education supply chain. They provide the classroom devices and software many students use to do assignments. They sell schools on the latest artificial intelligence tools. And increasingly, tech companies are launching their own corporate-branded school curricula, shaping how and what millions of children learn.\r\n\r\nIn recent years, the tech industry has helped spread computer science and AI education in schools at astonishing speed and scale. In Coding Kids, award-winning New York Times journalist Natasha Singer draws on a decade of reporting to reveal how tech titans used the promise of coding (high-paying jobs! change the world!) to weave rosy industry visions of technology into the very fabric of American education, sometimes sidelining crucial ideas like civics and critical thinking. Along the way, Singer takes readers through the powerful playbook Big Tech used to scale coding lessons nationwide. Then she shows readers how tech companies are now applying the same playbook to mainstream their AI tools in schools.\r\n\r\nA revelatory account of the powerful forces shaping education and our kids\u2019 futures, Coding Kids also offers hope. It tells the compelling stories of pioneering teachers fighting for a broader vision of tech education\u2014one that not only teaches kids algorithms and app-making, but also asks students to grapple with the societal impacts of tech giants and their disruptive digital tools.\r\n\r\nBios\r\nNatasha Singer has covered tech industry influence in schools for the New York Times for more than a decade. Her school tech reporting helped prompt California to enact a landmark student online data protection law. In 2019, she was part of a Times team whose tech coverage won a George Polk Award and was a finalist for a Pulitzer Prize for National Reporting. Photo Credit: Bella Wang Photography\r\n\r\nCathy O\u2019Neil earned a Ph.D. in math from Harvard and worked as a math professor at Barnard College before switching over to the private sector, working as a quant for the hedge fund D.E. Shaw and as a data scientist in the New York start-up scene. In 2016 she wrote the book Weapons of Math Destruction: how big data increases inequality and threatens democracy, and in 2022 she wrote The Shame Machine: who profits in the new age of humiliation. She is the CEO of ORCAA, an algorithmic auditing company and a founder and board member of OCEAN, a non-profit defending the public interest against algorithmic harm.\r\n\r\n",
-      "end_time": "2026-10-21T19:30:00-04:00",
-      "external_link": "https://www.eventbrite.com/e/natasha-singer-at-the-harvard-science-center-tickets-1997478522030",
-      "featured": true,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coding-kids-big-tech-s-battle-to-remake-public-schools-natasha-singer-in-conversation-with-cathy-o-neill.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-coding-kids-big-tech-s-battle-to-remake-public-schools-natasha-singer-in-conversation-with-cathy-o-neill"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-coding-kids-big-tech-s-battle-to-remake-public-schools-natasha-singer-in-conversation-with-cathy-o-neill",
-      "start_time": "2026-10-21T18:00:00-04:00",
-      "tags": [
-        "Ed Tech"
-      ],
-      "title": "Speaker Series: Coding Kids: Big Tech's Battle to Remake Public Schools - Natasha Singer in Conversation with Cathy O'Neill",
-      "virtual": false,
-      "virtual_link": null
-    },
     {
       "cover_image_url": null,
       "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally.\r\nPlanned for the last Friday of each month at 9am.",
@@ -130,8 +105,8 @@
       "virtual_link": null
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--a560195490290f87e163a33de3ac3e2c4d9ae1ab/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTAseyJjcm9wIjoibG93In1dfSwicHVyIjoidmFyaWF0aW9uIn19--6d0d4700af244310fff8c0c1f327e2d49a78870b/fournorms-banner-wellesley-1200x400.png",
-      "description": "Technology in kids\u2019 lives is changing fast. Find out what the science says and what you can actually do about it. Join Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who researches how children learn and develop and how technology intersects with these processes. Parents will come away with a clearer understanding of how the brain changes throughout childhood, what research tells us about learning and technology, and practical ways to support their children\u2019s cognitive, academic, and emotional growth. \r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODA3NywicHVyIjoiYmxvYl9pZCJ9fQ==--9381bf22c50e2b383f9fcb4213a59b776d63b46a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Wellesley%20header%20(Nov%2016)@1x.png",
+      "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
       "end_time": "2026-11-16T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
       "featured": false,
@@ -150,13 +125,13 @@
       "tags": [
         "Ed Tech"
       ],
-      "title": "Speaker Series: Wellesley Mothers Forum presents Dr. Jared Cooney Horvath - Inside the Learning Brain",
+      "title": "Your Child's Brain in a Screen-Saturated World: An evening with Dr. Jared Cooney Horvath",
       "virtual": false,
       "virtual_link": null
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MSwicHVyIjoiYmxvYl9pZCJ9fQ==--73cf022cce96a4d9e56b6d4c65b35d48e85306d2/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/fournorms-banner-concord-1200x400.png",
-      "description": "Dr. Jared Cooney Horvath, Inside the Learning Brain.\r\n\r\nTechnology in kids' lives is changing fast. Learn what the science says you can do about it, from kindergarten through high school:\r\n- Practical ways to support kids' learning and well-being, including about technology.\r\n- How kids' brains grow and learn\r\n- Good stress vs. bad stress\r\n\r\nThis event is also happening in Wellesley on  Monday, Nov. 16, 7pm. Visit the event page to register.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nLocal groups hosts:\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington\r\nBeyond Screens Wellesley",
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODA3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--ff80d3035257df3670f60609ec15f92472a52846/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Concord%20Registration%20page%20header@1x.png",
+      "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nThis event is also happening in Wellesley on Monday, Nov. 16, 7pm. Visit the event page to register.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nLocal groups hosts:\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington\r\nBeyond Screens Wellesley",
       "end_time": "2026-11-17T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
       "featured": false,
@@ -175,7 +150,7 @@
       "tags": [
         "Ed Tech"
       ],
-      "title": "Speaker Series: Dr. Jared Cooney Horvath - Inside the Learning Brain",
+      "title": "Your Child's Brain in a Screen-Saturated World: An evening with Dr. Jared Cooney Horvath",
       "virtual": false,
       "virtual_link": null
     },
@@ -557,5 +532,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-21T19:23:50+00:00"
+  "updated": "2026-10-22T12:38:12+00:00"
 }
