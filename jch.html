@@ -5,59 +5,162 @@
 <meta name="description" content="Your Child's Brain in a Screen-Saturated World: an evening with neuroscientist Dr. Jared Cooney Horvath. One talk, two nights, in Wellesley and Concord, Massachusetts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,600;1,8..60,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-/* The speaker hero: headshot beside the title rather than a photo background,
-   because the one portrait we have is too small to fill a hero. */
-.spk{background:var(--teal-l);padding:72px 0 64px}
-.spk .inner{display:grid;grid-template-columns:1fr 330px;gap:56px;align-items:center}
-.spk h1{font-size:clamp(34px,5vw,56px);text-transform:lowercase}
-.spk .lede{margin-top:18px;font-size:19px;max-width:56ch}
-.spk figure{margin:0}
-.spk figure img{width:100%;display:block;border:6px solid #fff}
-.spk figcaption{font-size:13.5px;color:var(--muted);margin-top:10px;text-align:center}
+/* ---------------------------------------------------------------------------
+   The speaker landing page.
 
-/* The two nights. Date and time come from data/events.json; the venue does
-   not exist in the Four Norms API, so it is written here. See the note in the
-   script below before changing either. */
-.nights{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
-.night{border:1px solid var(--line);background:#fff;padding:28px 28px 26px;display:flex;flex-direction:column}
-.night .town{font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-d)}
-.night h3{font-size:25px;margin-top:8px}
-.night dl{margin-top:18px;display:grid;grid-template-columns:92px 1fr;gap:9px 16px;font-size:15.5px}
-.night dt{font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding-top:2px}
-.night dd{color:var(--body)}
-.night .btns{margin-top:auto;padding-top:24px}
-.night .host{font-size:14.5px;color:var(--muted);margin-top:16px}
+   This page follows the event design rather than the site's usual look: the
+   headings are a serif, the sections alternate teal and warm cream, and the
+   palette carries two shades the rest of the site does not use. Colours below
+   were sampled from the approved design, not eyeballed. Everything is scoped
+   under .jch so none of it leaks into the other pages.
+   --------------------------------------------------------------------------- */
+.jch{
+  --j-teal:#349697;        /* the teal bands */
+  --j-teal-d:#215F5D;      /* the darker tile and the support band */
+  --j-cream:#F9F8F4;       /* the warm off-white sections */
+  --j-call:#F0E7E2;        /* the callout box */
+  --j-orange-d:#B35702;    /* the darker half of the orange tile */
+  --j-ink:#1D2B2B;
+  --j-serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+.jch h1,.jch h2,.jch h3,.jch .serif{font-family:var(--j-serif);font-weight:700;letter-spacing:-.005em}
+.jch h1 em,.jch h2 em,.jch h3 em{font-style:italic;color:inherit}
+.jch main .wrap{max-width:1080px}   /* the shared header and footer keep the site width */
+.jch .kick{font-family:'Mulish',sans-serif;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
 
-/* Logo strips reuse the partner-row look from the Communities page. */
-.logos{list-style:none;display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:20px}
-.logos li{border:1px solid var(--line);background:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:center;min-height:86px}
-.logos img{max-height:58px;width:auto;display:block}
+/* --- teal sections ------------------------------------------------------- */
+.jch .teal{background:var(--j-teal);color:#fff}
+.jch .teal h1,.jch .teal h2,.jch .teal h3{color:#fff}
+.jch .teal .kick{color:#BFE4E2}
+.jch .teal a{color:#fff}
 
-.media{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
-.media .card{display:flex;flex-direction:column}
-.media .card .when{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-d)}
-.media .card h3{font-size:18px;margin-top:6px}
-.media .card .links{margin-top:auto;padding-top:14px}
+/* --- hero ---------------------------------------------------------------- */
+.jhero{padding:62px 0 58px}
+.jhero .inner{display:grid;grid-template-columns:1fr 300px;gap:62px}
+.jhero h1{font-size:clamp(34px,4.6vw,50px);line-height:1.1;margin-top:14px}
+.jhero h1 .line2{display:inline-block;border-bottom:4px solid var(--orange);padding-bottom:4px}
+.jhero p{margin-top:18px;font-size:17px;max-width:54ch;color:#EAF5F4}
+.jhero p.strong{font-weight:700;color:#fff}
+.jhero p.tiny{font-size:15px;font-weight:700;color:#fff;margin-top:16px}
 
-.bio{display:grid;grid-template-columns:1fr 300px;gap:52px;align-items:start;margin-top:30px}
-.stats{list-style:none;display:grid;gap:18px}
-.stats li{border-left:3px solid var(--orange);padding-left:16px}
-.stats b{display:block;font-family:'Poppins',sans-serif;font-size:30px;line-height:1;color:var(--slate)}
-.stats span{font-size:14.5px;color:var(--muted)}
+/* The portrait sits in an arch with an orange block offset behind it. */
+.jface{position:relative;width:228px}
+.jface img{position:relative;z-index:1;display:block;width:228px;height:270px;object-fit:cover;object-position:50% 20%;border-radius:114px 114px 6px 6px}
+.jface::after{content:"";position:absolute;z-index:0;left:16px;top:18px;width:228px;height:270px;background:var(--orange);border-radius:114px 114px 6px 6px}
+.jcap{margin-top:20px;max-width:270px}
+.jcap b{font-family:var(--j-serif);font-weight:700;font-size:17px;display:block}
+.jcap p{font-size:14.5px;line-height:1.5;color:#DCEDEC;margin-top:7px}
+
+/* The two option boxes inside the hero. */
+.jopts{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
+.jopt{border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.07);padding:16px 20px 18px;min-width:210px}
+.jopt b{font-family:var(--j-serif);font-weight:700;font-size:18px;display:block}
+.jopt .d{font-size:14.5px;color:#DCEDEC;margin-top:5px}
+.jopt .btn{margin-top:12px;padding:7px 14px;font-size:13.5px}
+
+/* --- media tiles --------------------------------------------------------- */
+.jmedia{padding:8px 0 64px}
+.jmedia h2{font-size:clamp(26px,3.2vw,34px);margin-top:10px}
+.jtiles{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
+.jtile{display:block;text-decoration:none;position:relative;aspect-ratio:16/8.2;overflow:hidden}
+.jtile .half{position:absolute;inset:0}
+.jtile .half.l{right:45%;background:var(--j-teal-d)}
+.jtile .half.r{left:55%;background:#2E6F6D;display:flex;align-items:center;justify-content:center}
+.jtile.warm .half.l{background:var(--j-orange-d)}
+.jtile.warm .half.r{background:#C96A10}
+.jtile .lab{position:absolute;z-index:2;top:20px;left:22px;font-family:'Mulish',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.88)}
+.jtile .ttl{position:absolute;z-index:2;left:22px;bottom:20px;right:48%;font-family:var(--j-serif);font-weight:700;font-size:21px;line-height:1.2;color:#fff}
+.jtile .play{position:absolute;z-index:3;left:55%;top:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:rgba(14,38,38,.82);display:flex;align-items:center;justify-content:center}
+.jtile .play svg{width:16px;height:16px;fill:#fff;margin-left:3px}
+.jtile .glyph{width:72px;height:72px;stroke:#fff;fill:none;stroke-width:1.6}
+.jtile:hover .play{background:#0E2626}
+.jmcap{margin-top:14px}
+.jmcap b{font-family:var(--j-serif);font-weight:700;font-size:17.5px;color:#fff;display:block}
+.jmcap p{font-size:14.5px;color:#DCEDEC;margin-top:5px;line-height:1.5}
+.jrows{margin-top:34px;border-top:1px solid rgba(255,255,255,.28)}
+.jrow{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:15px 2px;border-bottom:1px solid rgba(255,255,255,.28);text-decoration:none}
+.jrow span:first-child{font-family:var(--j-serif);font-size:17px;color:#fff}
+.jrow span:last-child{font-size:14px;color:#BFE4E2;flex:none}
+.jrow:hover span:first-child{text-decoration:underline}
+
+/* --- cream sections ------------------------------------------------------ */
+.jch .cream{background:var(--j-cream);color:var(--j-ink)}
+.jch .cream .kick{color:var(--orange-d)}
+.jch .cream h2{font-size:clamp(26px,3.3vw,35px);line-height:1.2;margin-top:10px;color:var(--j-ink)}
+.jch .cream .lead{margin-top:16px;font-size:16.5px;max-width:62ch;color:#4B5555}
+
+.jthree{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px}
+.jthree > div{padding:0 28px}
+.jthree > div + div{border-left:1px solid #E4E0D8}
+.jthree > div:first-child{padding-left:0}
+.jthree ic,.jthree .ic{display:flex;width:38px;height:38px;border-radius:50%;border:1px solid #D7D2C7;align-items:center;justify-content:center}
+.jthree .ic svg{width:18px;height:18px;stroke:var(--orange-d);fill:none;stroke-width:1.6}
+.jthree h3{font-size:18px;margin-top:16px;color:var(--j-ink)}
+.jthree p{font-size:15px;margin-top:9px;color:#4B5555}
+
+.jcall{margin-top:36px;background:var(--j-call);border-left:4px solid var(--orange);padding:20px 24px;max-width:720px;font-size:15.5px}
+
+/* --- the two night cards ------------------------------------------------- */
+.jnights{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+.jnight{background:#fff;border:1px solid #E7E3DA;padding:26px 28px 28px;display:flex;flex-direction:column}
+.jpill{display:inline-block;background:#F6E8DF;color:var(--orange-d);font-family:'Mulish',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 13px;border-radius:999px}
+.jnight h3{font-size:27px;margin-top:16px;color:var(--j-ink)}
+.jnight dl{margin-top:16px;display:grid;grid-template-columns:76px 1fr;gap:8px 14px;font-size:15px}
+.jnight dt{color:#6E7676}
+.jnight dd{color:#394444}
+.jnight .by{font-size:14.5px;color:#6E7676;margin-top:16px}
+.jnight .btn{margin-top:auto;align-self:flex-start;margin-top:22px}
+
+/* --- logo rows ----------------------------------------------------------- */
+.jlogos{list-style:none;display:grid;gap:16px;margin-top:18px}
+.jlogos.two{grid-template-columns:1fr 1fr}
+.jlogos.five{grid-template-columns:repeat(5,1fr)}
+.jlogos li{background:#fff;border:1px solid #E7E3DA;min-height:104px;display:flex;align-items:center;justify-content:center;padding:16px}
+.jlogos.five li{min-height:92px;padding:12px}
+.jlogos img{max-height:62px;width:auto;display:block}
+.jlogos.five img{max-height:58px}
+.jlabel{font-family:'Mulish',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7A7A72;margin-top:34px}
+
+/* --- what's next --------------------------------------------------------- */
+.jnext{display:grid;grid-template-columns:260px 1fr;gap:48px;margin-top:22px}
+.jmonth{font-family:var(--j-serif);font-weight:700;font-size:46px;line-height:1;color:var(--orange)}
+.jnext .sub{font-family:'Mulish',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A7A72;margin-top:10px}
+.jnext h3{font-size:23px;color:var(--j-ink)}
+.jnext p{font-size:15.5px;margin-top:12px;color:#4B5555}
+.jsoon{display:inline-block;margin-top:18px;border:1px solid var(--orange);color:var(--orange-d);font-size:14px;padding:9px 16px}
+
+/* --- about + support ----------------------------------------------------- */
+.jabout{padding:62px 0}
+.jabout h2{font-size:clamp(26px,3.3vw,34px);margin-top:10px}
+.jabout p{font-size:16px;margin-top:14px;max-width:72ch;color:#E4F1F0}
+.jstats{list-style:none;display:flex;flex-wrap:wrap;gap:60px;margin-top:34px;padding-top:28px;border-top:1px solid rgba(255,255,255,.3)}
+.jstats b{font-family:var(--j-serif);font-weight:700;font-size:30px;display:block;color:#fff}
+.jstats span{font-size:14px;color:#BFE4E2}
+.jsupport{background:var(--j-teal-d);color:#fff;padding:38px 0}
+.jsupport .inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.jsupport h3{font-size:22px;color:#fff}
+.jsupport p{font-size:15.5px;color:#CFE6E4;margin-top:8px;max-width:58ch}
 
 @media (max-width:980px){
-  .spk .inner{grid-template-columns:1fr;gap:34px}
-  .spk figure{max-width:280px}
-  .nights{grid-template-columns:1fr}
-  .media{grid-template-columns:1fr 1fr}
-  .bio{grid-template-columns:1fr;gap:32px}
+  .jhero .inner{grid-template-columns:1fr;gap:38px}
+  .jtiles{grid-template-columns:1fr}
+  .jthree{grid-template-columns:1fr;gap:26px}
+  .jthree > div{padding:0}
+  .jthree > div + div{border-left:0;border-top:1px solid #E4E0D8;padding-top:26px}
+  .jnights{grid-template-columns:1fr}
+  .jlogos.five{grid-template-columns:repeat(3,1fr)}
+  .jnext{grid-template-columns:1fr;gap:20px}
+  .jsupport .inner{flex-direction:column;align-items:flex-start}
 }
-@media (max-width:640px){ .media{grid-template-columns:1fr} }
+@media (max-width:620px){
+  .jlogos.two,.jlogos.five{grid-template-columns:1fr 1fr}
+  .jtile .ttl{font-size:18px;right:44%}
+}
 </style>
-</head><body>
+</head><body class="jch">
 <!--SHELL:nav-->
 <a class="skip" href="#main">Skip to content</a>
 <header>
@@ -83,175 +186,218 @@
 <!--/SHELL:nav-->
 <main id="main">
 
-  <section class="spk">
+  <section class="teal jhero">
     <div class="wrap inner">
       <div>
-        <div class="kick">Turning Life On Speaker Series</div>
-        <h1>your child's brain in a <em>screen-saturated</em> world</h1>
-        <p class="lede">An evening with neuroscientist Dr. Jared Cooney Horvath. Raising kids in a fast-changing, tech-driven world can feel overwhelming. You'll leave with clear, research-backed insight into how your child's brain grows and learns, and practical strategies to support them at home and at school, from kindergarten through high school.</p>
-        <p class="lede"><b>One talk, two nights.</b> Open to families from every town &mdash; come to whichever works for you. A 90-minute presentation followed by a 30-minute live Q&amp;A, so bring your questions.</p>
+        <div class="kick">An evening with neuroscientist Jared Cooney Horvath</div>
+        <h1>Your Child's Brain in a<br><em class="line2">Screen-Saturated World</em></h1>
+        <p>Raising kids in a fast-changing, tech-driven world can feel overwhelming. Neuroscientist Dr. Jared Cooney Horvath will give you clear, research-backed insight into how your child's brain grows and learns. You'll leave with practical strategies to support them at home and at school, from kindergarten through high school.</p>
+        <p class="strong">A 90-minute presentation followed by a 30-minute live Q&amp;A. Bring your questions.</p>
+        <p class="tiny">One talk, two nights. Open to families from every town.</p>
+
+        <div class="jopts">
+          <div class="jopt" data-night="wellesley">
+            <b>Option A &middot; Wellesley</b>
+            <div class="d" data-short>See the registration page</div>
+            <a class="btn btn-orange" data-reg href="#attend">Register &rarr;</a>
+          </div>
+          <div class="jopt" data-night="concord">
+            <b>Option B &middot; Concord</b>
+            <div class="d" data-short>See the registration page</div>
+            <a class="btn btn-orange" data-reg href="#attend">Register &rarr;</a>
+          </div>
+        </div>
       </div>
-      <figure>
-        <img src="assets/img/jch-horvath.jpg" width="330" height="387" alt="Dr. Jared Cooney Horvath">
-        <figcaption>Jared Cooney Horvath, PhD, MEd</figcaption>
-      </figure>
+
+      <div>
+        <figure class="jface">
+          <img src="assets/img/jch-horvath.jpg" width="228" height="270" alt="Dr. Jared Cooney Horvath">
+        </figure>
+        <div class="jcap">
+          <b>Jared Cooney Horvath, PhD, MEd</b>
+          <p>Neuroscientist, Harvard educator, and author of the <i>New York Times</i> bestseller <i>The Digital Delusion</i>. Testified before the U.S. Senate on how screens affect children's learning.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="s" id="attend">
+  <section class="teal jmedia" id="listen">
     <div class="wrap">
-      <div class="kick">Choose your night</div>
-      <h2>two evenings, <em>same talk</em></h2>
-      <p class="lede">For parents, caregivers and educators of children in kindergarten through high school. All are welcome at either event, or both.</p>
+      <div class="kick">Meet Dr. Horvath</div>
+      <h2>Hear him in his own words</h2>
 
-      <div class="nights">
-        <article class="night" data-night="wellesley">
-          <div class="town">Option A &middot; Wellesley</div>
-          <h3 data-when>Date and time on the registration page</h3>
-          <dl>
-            <dt>Format</dt><dd>90-minute presentation, then a 30-minute Q&amp;A</dd>
-            <dt>Where</dt><dd>Hardy Elementary School<br>293 Weston Rd, Wellesley, MA</dd>
-          </dl>
-          <p class="host">Presented by Wellesley Mothers Forum</p>
-          <div class="btns">
-            <a class="btn btn-orange" data-reg href="events.html">Register for Wellesley</a>
+      <div class="jtiles">
+        <div>
+          <a class="jtile" href="https://www.youtube.com/watch?v=dwbd2UwYSAc" target="_blank" rel="noopener" aria-label="Watch the Senate testimony">
+            <span class="half l"></span>
+            <span class="half r">
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18 24 7l20 11M8 18v16M16 18v16M24 18v16M32 18v16M40 18v16M5 38h38M3 42h42"/></svg>
+            </span>
+            <span class="lab">U.S. Senate &middot; Jan 2026</span>
+            <span class="ttl">Testimony on screens &amp; kids' learning</span>
+            <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1l11 7-11 7z"/></svg></span>
+          </a>
+          <div class="jmcap">
+            <b>Testifying before the U.S. Senate</b>
+            <p>Senate Commerce Committee hearing on how screens affect children's learning</p>
           </div>
-        </article>
+        </div>
 
-        <article class="night" data-night="concord">
-          <div class="town">Option B &middot; Concord</div>
-          <h3 data-when>Date and time on the registration page</h3>
-          <dl>
-            <dt>Format</dt><dd>90-minute presentation, then a 30-minute Q&amp;A</dd>
-            <dt>Where</dt><dd>Ellen Garrison Building at Concord Middle School<br>923 Old Marlboro Rd, Concord, MA</dd>
-          </dl>
-          <p class="host">In partnership with The Intentional Tech Coalition</p>
-          <div class="btns">
-            <a class="btn btn-orange" data-reg href="events.html">Register for Concord</a>
+        <div>
+          <a class="jtile warm" href="https://lme.global/tedx" target="_blank" rel="noopener" aria-label="Watch the TEDx Youth talk">
+            <span class="half l"></span>
+            <span class="half r">
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><rect x="18" y="5" width="12" height="22" rx="6"/><path d="M11 22a13 13 0 0 0 26 0M24 35v8M17 43h14"/></svg>
+            </span>
+            <span class="lab">TEDx Youth talk</span>
+            <span class="ttl">Your Brain, Your Life</span>
+            <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1l11 7-11 7z"/></svg></span>
+          </a>
+          <div class="jmcap">
+            <b>TEDx Youth: &ldquo;Your Brain, Your Life&rdquo;</b>
+            <p>How the brain makes sense of the world, at TEDx Youth @ Reddam House</p>
           </div>
-        </article>
+        </div>
+      </div>
+
+      <div class="jrows">
+        <a class="jrow" href="https://www.aei.org/events/are-schools-caught-in-a-digital-delusion-a-conversation-with-jared-cooney-horvath/" target="_blank" rel="noopener">
+          <span>&ldquo;Are Schools Caught in a Digital Delusion?&rdquo;</span><span>Conversation at AEI</span>
+        </a>
+        <a class="jrow" href="https://lme.global/media" target="_blank" rel="noopener">
+          <span>More interviews &amp; keynotes</span><span>TV, radio, podcasts</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="s mist" id="takeaways">
+  <section class="cream s" id="takeaways">
     <div class="wrap">
       <div class="kick">What you'll take home</div>
-      <h2>clear answers and <em>practical tools</em></h2>
-      <p class="lede">Dr. Horvath turns decades of brain science into plain language and things you can use right away.</p>
-      <div class="grid3">
-        <div class="card otop">
+      <h2>Clear answers, practical tools, and<br>a new understanding of your child.</h2>
+      <p class="lead">Dr. Horvath turns decades of brain science into plain language and how-tos you can use right away. He'll speak for 90 minutes, then open the floor to your questions. Come curious and ready to engage.</p>
+
+      <div class="jthree">
+        <div>
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4 3 3 0 0 0-1 5.8V15a3 3 0 0 0 3 3h1M12 3a4 4 0 0 1 4 4 3 3 0 0 1 1 5.8V15a3 3 0 0 1-3 3h-1M12 3v18"/></svg></span>
           <h3>How your child's brain grows and learns</h3>
-          <p>What actually builds attention, memory and deep understanding, and what gets in the way.</p>
+          <p>What actually builds attention, memory, and deep understanding, and what gets in the way.</p>
         </div>
-        <div class="card otop">
+        <div>
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M6 10v9h12v-9M10 19v-5h4v5"/></svg></span>
           <h3>Practical ways to support your child</h3>
-          <p>Concrete strategies for learning and well-being, at home and at school, including around technology.</p>
+          <p>Concrete strategies for your child's learning and well-being, at home and at school, including around technology.</p>
         </div>
-        <div class="card otop">
-          <h3>Healthy challenge versus harmful stress</h3>
-          <p>Why some challenge helps children grow, and how to tell when it has tipped into harm.</p>
+        <div>
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h4l2-5 4 10 3-7 2 2h5"/></svg></span>
+          <h3>Good stress vs. bad stress</h3>
+          <p>Why some challenge helps kids grow, and how to tell when it has tipped into harm.</p>
         </div>
       </div>
+
+      <p class="jcall">For parents, caregivers, and educators of kids in kindergarten through high school. All are welcome at either (or both) events!</p>
     </div>
   </section>
 
-  <section class="s" id="speaker">
+  <section class="cream s" id="attend">
     <div class="wrap">
-      <div class="kick">About the speaker</div>
-      <h2>dr. jared cooney <em>horvath</em></h2>
-      <div class="bio">
-        <div class="read">
-          <p>Dr. Jared Cooney Horvath is a cognitive neuroscientist and educator who has conducted research and taught at Harvard University, Harvard Medical School and the University of Melbourne, and has worked with more than 1,000 schools around the world. He is the founder of LME Global and the creator of The Learning Blueprint.</p>
-          <p>His <i>New York Times</i> bestseller <i>The Digital Delusion: How Classroom Technology Harms Our Kids' Learning, and How to Help Them Thrive Again</i> has helped spark a national movement to rethink screens in schools.</p>
-          <p>In January 2026 he testified before the U.S. Senate Committee on Commerce, Science and Transportation at its hearing on the impact of technology on America's youth. His work has been featured by CNN, the BBC, <i>The Atlantic</i>, <i>The New Yorker</i> and C-SPAN.</p>
-          <p class="src">Sources: Penguin Random House, <i>The Digital Delusion</i>, published 18 August 2026; U.S. Senate Committee on Commerce, Science and Transportation, written testimony of Dr. Jared Cooney Horvath, &ldquo;Plugged Out: Examining the Impact of Technology on America's Youth,&rdquo; 15 January 2026.</p>
-        </div>
-        <ul class="stats">
-          <li><b>6</b><span>books published</span></li>
-          <li><b>1,000+</b><span>schools worked with</span></li>
-          <li><b>60+</b><span>research articles</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <div class="kick">Choose your night</div>
+      <h2>One talk, two nights.</h2>
+      <p class="lead">Open to families from every town; pick the night that works for you.</p>
 
-  <section class="s mist" id="listen">
-    <div class="wrap">
-      <div class="kick">Hear him in his own words</div>
-      <h2>before you <em>come along</em></h2>
-      <div class="media">
-        <div class="card">
-          <div class="when">U.S. Senate &middot; Jan 2026</div>
-          <h3>Testimony on screens and children's learning</h3>
-          <p>Before the Senate Commerce Committee, on how screen use in classrooms affects the way children learn.</p>
-          <div class="links">
-            <a class="more" href="https://www.youtube.com/watch?v=dwbd2UwYSAc" target="_blank" rel="noopener">Watch the testimony</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="when">TEDx Youth</div>
-          <h3>Your Brain, Your Life</h3>
-          <p>How the brain makes sense of the world, given at TEDx Youth @ Reddam House.</p>
-          <div class="links">
-            <a class="more" href="https://lme.global/tedx" target="_blank" rel="noopener">Watch the talk</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="when">Interviews &amp; keynotes</div>
-          <h3>Are schools caught in a digital delusion?</h3>
-          <p>A conversation at AEI, plus his wider collection of television, radio and podcast appearances.</p>
-          <div class="links">
-            <a class="more" href="https://www.aei.org/events/are-schools-caught-in-a-digital-delusion-a-conversation-with-jared-cooney-horvath/" target="_blank" rel="noopener">The AEI conversation</a>
-            <a class="more" href="https://lme.global/media" target="_blank" rel="noopener">More media</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="jnights">
+        <article class="jnight" data-night="wellesley">
+          <span class="jpill">Option A in Wellesley</span>
+          <h3 data-when>See the registration page</h3>
+          <dl>
+            <dt>Time</dt><dd data-time>7:00 &ndash; 9:00 PM</dd>
+            <dt>Format</dt><dd>90-minute presentation + 30-minute Q&amp;A</dd>
+            <dt>Where</dt><dd>Hardy Elementary School<br>293 Weston Rd, Wellesley, MA</dd>
+          </dl>
+          <p class="by">Presented by Wellesley Mothers Forum</p>
+          <a class="btn btn-orange" data-reg href="events.html">Register for Wellesley</a>
+        </article>
 
-  <section class="s" id="hosts">
-    <div class="wrap">
-      <div class="kick">Presented by</div>
-      <h2>brought to you by <em>local parents</em></h2>
-      <p class="lede">These evenings happen because community groups and local funders make them happen.</p>
-      <ul class="logos">
-        <li><a href="https://www.wellesleymothersforum.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-mothers-forum.jpg" alt="Wellesley Mothers Forum" loading="lazy"></a></li>
-        <li><img src="assets/img/partners/beyond-screens-wellesley.jpg" alt="Beyond Screens Wellesley" loading="lazy"></li>
-        <li><a href="https://intentionaltechcoalition.org/itc-homepage.html" target="_blank" rel="noopener"><img src="assets/img/partners/intentional-tech-coalition.png" alt="The Intentional Tech Coalition, Concord" loading="lazy"></a></li>
+        <article class="jnight" data-night="concord">
+          <span class="jpill">Option B in Concord</span>
+          <h3 data-when>See the registration page</h3>
+          <dl>
+            <dt>Time</dt><dd data-time>7:00 &ndash; 9:00 PM</dd>
+            <dt>Format</dt><dd>90-minute presentation + 30-minute Q&amp;A</dd>
+            <dt>Where</dt><dd>Ellen Garrison Building at Concord Middle School<br>923 Old Marlboro Rd, Concord, MA</dd>
+          </dl>
+          <p class="by">In partnership with The Intentional Tech Coalition</p>
+          <a class="btn btn-orange" data-reg href="events.html">Register for Concord</a>
+        </article>
+      </div>
+
+      <div class="jlabel">Presented by</div>
+      <ul class="jlogos two">
+        <li><a href="index.html"><img src="assets/img/logo.png" alt="Turning Life On" loading="lazy"></a></li>
         <li><a href="https://www.lexedfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/lexington-education-foundation.png" alt="Lexington Education Foundation" loading="lazy"></a></li>
+      </ul>
+
+      <div class="jlabel">Hosted by</div>
+      <ul class="jlogos five">
+        <li><img src="assets/img/partners/beyond-screens-wellesley.jpg" alt="Beyond Screens Wellesley" loading="lazy"></li>
+        <li><a href="https://www.wellesleymothersforum.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-mothers-forum.jpg" alt="Wellesley Mothers Forum" loading="lazy"></a></li>
+        <li><a href="https://intentionaltechcoalition.org/itc-homepage.html" target="_blank" rel="noopener"><img src="assets/img/partners/intentional-tech-coalition.png" alt="The Intentional Tech Coalition, Concord" loading="lazy"></a></li>
         <li><a href="https://www.lexkidsbekids.org" target="_blank" rel="noopener"><img src="assets/img/partners/lex-kids-be-kids.png" alt="Lex Kids Be Kids" loading="lazy"></a></li>
+        <li><img src="assets/img/partners/open-door-education.png" alt="Open Door Education" loading="lazy"></li>
       </ul>
     </div>
   </section>
 
-  <section class="s mist" id="next">
+  <section class="cream s" id="next">
     <div class="wrap">
       <div class="kick">What's next</div>
-      <h2>coming in <em>february</em></h2>
-      <div class="read">
-        <h3>Natasha Singer</h3>
-        <p>Technology reporter for <i>The New York Times</i> and author of <i>Coding Kids: Big Tech's Battle to Remake Public Schools</i>.</p>
-        <p>For more than a decade, Natasha Singer has investigated how big tech companies shape what happens in America's classrooms. In <i>Coding Kids</i> she traces how the industry lobbied lawmakers, shaped curriculum standards and trained teachers, and shows how the same playbook is now unfolding with AI in schools.</p>
-        <p class="note">Date and location coming soon. <a href="#join">Join our list</a> and we'll let you know first.</p>
-        <p class="src">Source: W. W. Norton &amp; Company, <i>Coding Kids</i>, published 8 September 2026.</p>
+      <div class="jnext">
+        <div>
+          <div class="jmonth">February</div>
+          <div class="sub">Turning Life On Speaker Series</div>
+        </div>
+        <div>
+          <h3>Natasha Singer</h3>
+          <p>Technology reporter, <i>The New York Times</i> &middot; Author of <i>Coding Kids: Big Tech's Battle to Remake Public Schools</i></p>
+          <p>For more than a decade, Natasha Singer has investigated how big tech companies shape what happens in America's classrooms. In <i>Coding Kids</i>, she traces how the industry has lobbied lawmakers, shaped curriculum standards, and trained teachers, and she shows how the same playbook is now unfolding with AI in schools.</p>
+          <span class="jsoon">Date &amp; location coming soon</span>
+          <p class="src">Source: W. W. Norton &amp; Company, <i>Coding Kids</i>, published 8 September 2026.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="s" id="join">
+  <section class="teal jabout" id="speaker">
     <div class="wrap">
-      <h2>not sure where to start? <em>start here</em></h2>
-      <p class="lede">Get one short email a month with events near you, new guides, and simple things you can do.</p>
+      <div class="kick">About the speaker</div>
+      <h2>Dr. Jared Cooney Horvath</h2>
+      <p>Dr. Jared Cooney Horvath is one of the most influential voices on how children learn in the digital age. A cognitive neuroscientist and educator, he has conducted research and taught at Harvard University, Harvard Medical School, and the University of Melbourne. He has worked with more than 1,000 schools around the world.</p>
+      <p>His <i>New York Times</i> bestseller, <i>The Digital Delusion: How Classroom Technology Harms Our Kids' Learning, and How to Help Them Thrive Again</i>, has helped spark a national movement to rethink screens in schools. In January 2026, he testified before the U.S. Senate Committee on Commerce, Science, and Transportation on how screens affect children's cognitive development. His work has appeared in The New Yorker, The Atlantic, The Economist, Harvard Business Review, and PBS's NOVA. He is the creator of The Learning Blueprint, an internationally award-winning program that helps educators and students understand how learning works.</p>
+      <p class="src">Sources: Penguin Random House, <i>The Digital Delusion</i>, published 18 August 2026; U.S. Senate Committee on Commerce, Science and Transportation, written testimony of Dr. Jared Cooney Horvath, &ldquo;Plugged Out: Examining the Impact of Technology on America's Youth,&rdquo; 15 January 2026.</p>
+      <ul class="jstats">
+        <li><b>6</b><span>books published</span></li>
+        <li><b>1,000+</b><span>schools worked with</span></li>
+        <li><b>60+</b><span>research articles</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="jsupport">
+    <div class="wrap inner">
+      <div>
+        <h3>Support Turning Life On</h3>
+        <p>Turning Life On is a registered 501(c)(3). Your donation helps us bring events like this to more communities.</p>
+      </div>
+      <a class="btn btn-orange" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate to Turning Life On</a>
+    </div>
+  </section>
+
+  <section class="cream s" id="join">
+    <div class="wrap">
+      <h2>Hear about the next one first</h2>
+      <p class="lead">Get one short email a month with events near you, new guides, and simple things you can do.</p>
       <div class="joinwrap" data-joinform>
         <noscript><p>Please email <a href="mailto:info@turninglifeon.org">info@turninglifeon.org</a> and we'll be in touch.</p></noscript>
-      </div>
-      <div class="giveline" id="donate">
-        <p>Turning Life On is a registered 501(c)(3). Your gift helps us bring events like this to more communities.</p>
-        <div class="links">
-          <a class="more" href="https://www.paypal.com/donate/?hosted_button_id=89ZVGH9W45QZ6" target="_blank" rel="noopener">Donate</a>
-          <a class="more" href="support.html">Ways to support</a>
-        </div>
       </div>
     </div>
   </section>
@@ -285,11 +431,11 @@
 <script src="assets/site.js"></script>
 <script>
 /* The date, time and registration link for each night are read from
-   data/events.json, so they stay right when Four Norms changes them. The two
-   events are matched by slug.
+   data/events.json, so they follow Four Norms rather than drifting from it.
+   The two events are matched by slug.
 
    The venue is NOT read from the API: Four Norms returns location_name as null
-   for both of these, so the addresses are written into the HTML above. If the
+   for both of these, so the addresses are written into the HTML above. If a
    venue ever moves, edit it there. */
 (function(){
   var NIGHTS = {
@@ -297,14 +443,19 @@
     concord:   'turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain'
   };
 
-  function when(ev){
-    var start = new Date(ev.start_time);
-    if (isNaN(start)) return '';
-    var day = start.toLocaleDateString([], {weekday:'long', month:'long', day:'numeric'});
-    var from = start.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
-    var end = new Date(ev.end_time);
-    var to = isNaN(end) ? '' : ' – ' + end.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
-    return day + ' · ' + from + to;
+  function time(d, withMinutes){
+    return d.toLocaleTimeString([], withMinutes ? {hour:'numeric', minute:'2-digit'} : {hour:'numeric'});
+  }
+  /* "7:00 PM" and "9:00 PM" read better as "7:00 - 9:00 PM", so the meridiem
+     is dropped from the start when both ends share it. */
+  function range(a, b, withMinutes){
+    var s = time(a, withMinutes);
+    if (isNaN(b)) return s;
+    var e = time(b, withMinutes);
+    var m = /\s*([AP]\.?M\.?)$/i;
+    var sm = s.match(m), em = e.match(m);
+    if (sm && em && sm[1].toUpperCase() === em[1].toUpperCase()) s = s.replace(m, '');
+    return s + '–' + e;
   }
 
   TLO.loadJSON('data/events.json').then(function(d){
@@ -313,19 +464,28 @@
 
     Object.keys(NIGHTS).forEach(function(key){
       var ev = byslug[NIGHTS[key]];
-      var el = document.querySelector('[data-night="' + key + '"]');
-      if (!ev || !el) return;
-
-      var text = when(ev);
-      if (text) el.querySelector('[data-when]').textContent = text;
-
-      /* Four Norms' own event page is where people actually register. */
+      if (!ev) return;
+      var start = new Date(ev.start_time);
+      if (isNaN(start)) return;
+      var end = new Date(ev.end_time);
       var href = (ev.links && ev.links.web_url) || '';
-      if (href) el.querySelector('[data-reg]').href = href;
+
+      /* The hero box wants it short; the card below wants it spelled out. */
+      var short = start.toLocaleDateString([], {weekday:'short', month:'short', day:'numeric'}) +
+                  ' · ' + range(start, end, false);
+      var long  = start.toLocaleDateString([], {weekday:'long', month:'long', day:'numeric'});
+      var span  = range(start, end, true).replace('–', ' – ');
+
+      document.querySelectorAll('[data-night="' + key + '"]').forEach(function(el){
+        var s = el.querySelector('[data-short]'); if (s) s.textContent = short;
+        var w = el.querySelector('[data-when]');  if (w) w.textContent = long;
+        var t = el.querySelector('[data-time]');  if (t) t.textContent = span;
+        var r = el.querySelector('[data-reg]');   if (r && href) r.href = href;
+      });
     });
   }).catch(function(){
-    /* The static venue, format and "register" wording above still stand on
-       their own, and the buttons fall back to the events page. */
+    /* The venue, format and "register" wording above still stand on their own,
+       and the buttons fall back to the events page. */
   });
 })();
 </script>

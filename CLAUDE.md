@@ -21,7 +21,7 @@ There is no staging step, so check before you push.
 | `get-involved.html` | Get Involved | Static copy |
 | `events.html` | Events | Live: upcoming events grid |
 | `support.html` | Support | Static copy |
-| `jch.html` | Dr. Jared Cooney Horvath speaker event | Static copy; dates and registration links read from `data/events.json` (not in the navigation) |
+| `jch.html` | Dr. Jared Cooney Horvath speaker event | Static copy; dates and registration links read from `data/events.json` (not in the navigation). **Follows the event design, not the site's usual look** — see below |
 | `community-grants/` | Community Grants | Static copy (not in the navigation) |
 | `privacy/` | Privacy policy | Static copy |
 | `pact/` | Community pact | Placeholder until the statewide pact is live |
@@ -38,6 +38,15 @@ banner on the home page and the two night cards on that page both read their
 dates from `data/events.json` and disappear on their own once the dates pass.
 Each event's **venue** is written into the HTML, because the Four Norms API
 returns `location_name` as null for both.
+
+`jch.html` is also the one page that **deliberately departs from the site's
+visual conventions**, because it follows the approved event design: headings are
+Source Serif 4 rather than Poppins, in sentence case rather than lower case, and
+the sections alternate teal `#349697` with a warm cream `#F9F8F4` instead of the
+usual `#F5F5F5`. The design's other two shades, `#215F5D` and `#B35702`, appear
+nowhere else. Every one of those values was sampled from the design file rather
+than matched by eye. All of it is scoped under `body.jch` so none of it reaches
+another page — keep it that way, and do not copy these styles outwards.
 
 Every page has a `<section id="join">` holding the sign-up form; the **Join Us**
 button in the navigation and **Sign up** in the footer jump to it.
