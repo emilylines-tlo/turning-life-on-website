@@ -160,6 +160,10 @@ details.acc .body{padding:0 0 24px}
 .joinform .fine{grid-column:1/-1;font-size:14.5px;color:var(--muted)}
 .joinform .fine a{color:var(--muted)}
 .joinform .thanks{grid-column:1/-1;background:var(--teal-l);border-left:4px solid var(--teal);padding:18px 20px;font-size:16.5px;color:var(--slate)}
+/* The donate line under the sign-up form. Home and the speaker page. */
+.giveline{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);max-width:760px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 24px}
+.giveline p{font-family:'Poppins',sans-serif;font-weight:500;color:var(--slate)}
+.giveline .links{margin-top:0}
 .joinwrap{max-width:760px;margin-top:34px}
 
 /* ---- footer ---- */

@@ -14,11 +14,39 @@
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero.video::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(25,60,60,.78) 0%,rgba(25,60,60,.55) 60%,rgba(25,60,60,.35) 100%)}
 #issues .card h3{font-size:20px}
-.giveline{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);max-width:760px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 24px}
-.giveline p{font-family:'Poppins',sans-serif;font-weight:500;color:var(--slate)}
-.giveline .links{margin-top:0}
+
+/* The event strip above the header. It stays hidden until the script confirms
+   the event is still ahead of us, so it cannot advertise a date that has
+   already passed. Its inner width runs wider than the site's usual --maxw so
+   the strip reads as a band across the top rather than a boxed-in notice. */
+.evbar{background:var(--teal);color:#fff}
+.evbar-in{max-width:1420px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;gap:26px}
+.evbar-face{width:92px;height:92px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 18%;border:3px solid rgba(255,255,255,.55)}
+.evbar-txt{flex:1 1 auto;min-width:0}
+.evbar .kick{color:#bfe6e6;margin:0}
+.evbar .title{font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;line-height:1.25;margin-top:5px}
+.evbar .when{font-size:16px;color:#d8efef;margin-top:5px}
+.evbar .btn{flex:none}
+@media (max-width:860px){
+  .evbar-in{flex-wrap:wrap;gap:18px;padding:18px 24px}
+  .evbar-face{width:68px;height:68px}
+  .evbar-txt{flex:1 1 200px}
+  .evbar .title{font-size:19px}
+  .evbar .btn{width:100%;text-align:center}
+}
 </style>
 </head><body>
+<aside class="evbar" id="evbar" hidden aria-label="Upcoming speaker event">
+  <div class="evbar-in">
+    <img class="evbar-face" src="assets/img/jch-horvath.jpg" width="92" height="92" alt="Dr. Jared Cooney Horvath">
+    <div class="evbar-txt">
+      <div class="kick">Turning Life On Speaker Series</div>
+      <div class="title">Dr. Jared Cooney Horvath &middot; Your Child's Brain in a Screen-Saturated World</div>
+      <div class="when" id="evbarwhen"></div>
+    </div>
+    <a class="btn btn-orange" href="jch.html">Event details</a>
+  </div>
+</aside>
 <!--SHELL:nav-->
 <a class="skip" href="#main">Skip to content</a>
 <header>
@@ -201,4 +229,53 @@
 <script src="assets/nearby.js"></script>
 <script src="assets/join.js"></script>
 <script src="assets/site.js"></script>
+<script>
+/* The speaker banner under the hero. Everything it says about dates comes from
+   data/events.json, and it only unhides while at least one of the two nights is
+   still ahead, so it retires itself the morning after the last one. */
+(function(){
+  /* Four Norms returns location_name as null for both nights, so the town has
+     to live here. The dates do not — those come from the data below. */
+  var TOWNS = {
+    'turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain': 'Wellesley',
+    'turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain': 'Concord'
+  };
+  var SLUGS = Object.keys(TOWNS);
+  var bar = document.getElementById('evbar');
+  if (!bar) return;
+
+  TLO.loadJSON('data/events.json').then(function(d){
+    var now = Date.now();
+    var nights = (d.events || [])
+      .filter(function(ev){ return SLUGS.indexOf(ev.slug) !== -1; })
+      .filter(function(ev){
+        var end = new Date(ev.end_time || ev.start_time).getTime();
+        return !isNaN(end) && end >= now;
+      })
+      .sort(function(a, b){ return new Date(a.start_time) - new Date(b.start_time); });
+
+    if (!nights.length) return;          /* both nights are behind us */
+
+    var when;
+    if (nights.length > 1){
+      var days = nights.map(function(ev){
+        return new Date(ev.start_time).toLocaleDateString([], {month:'long', day:'numeric'});
+      });
+      var towns = nights.map(function(ev){ return TOWNS[ev.slug]; }).filter(Boolean);
+      when = 'One talk, two nights · ' + days.join(' and ') +
+             (towns.length ? ' · ' + towns.join(' and ') : '');
+    } else {
+      var only = nights[0];
+      var town = TOWNS[only.slug];
+      when = new Date(only.start_time).toLocaleDateString([], {weekday:'long', month:'long', day:'numeric'}) +
+             (town ? ' · ' + town : '');
+    }
+
+    document.getElementById('evbarwhen').textContent = when;
+    bar.hidden = false;
+  }).catch(function(){
+    /* No data, no banner. Better silent than wrong about a date. */
+  });
+})();
+</script>
 </body></html>

@@ -41,7 +41,9 @@ REDIRECTS = {
     "support-letter-landing-page": "get-involved.html#advocates",
 
     # --- one-off event pages ---
-    "jch":                         "events.html",
+    # "jch" is deliberately absent: it is a real page now (jch.html), not a
+    # redirect. Four Norms links both Horvath events straight at /jch, so it
+    # must keep serving the speaker page.
     "growing-up-well":             "events.html",
 
     # --- guides and resources ---
