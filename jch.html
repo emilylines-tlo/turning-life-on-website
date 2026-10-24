@@ -27,7 +27,10 @@
   --j-serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 .jch h1,.jch h2,.jch h3,.jch .serif{font-family:var(--j-serif);font-weight:700;letter-spacing:-.005em}
-.jch h1 em,.jch h2 em,.jch h3 em{font-style:italic;color:inherit}
+/* Site-wide, italics are teal. On this page they are book and newspaper titles
+   set in running text, several of them on a teal band, so they take the colour
+   of the text around them instead. */
+.jch em,.jch i{color:inherit;font-style:italic}
 .jch main .wrap{max-width:1080px}   /* the shared header and footer keep the site width */
 .jch .kick{font-family:'Mulish',sans-serif;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
 
