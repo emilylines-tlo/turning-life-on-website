@@ -21,6 +21,7 @@ There is no staging step, so check before you push.
 | `get-involved.html` | Get Involved | Static copy |
 | `events.html` | Events | Live: upcoming events grid |
 | `support.html` | Support | Static copy |
+| `jch.html` | Dr. Jared Cooney Horvath speaker event | Static copy; dates and registration links read from `data/events.json` (not in the navigation) |
 | `community-grants/` | Community Grants | Static copy (not in the navigation) |
 | `privacy/` | Privacy policy | Static copy |
 | `pact/` | Community pact | Placeholder until the statewide pact is live |
@@ -29,6 +30,14 @@ There is no staging step, so check before you push.
 `attend.html`, `network.html`, `resources.html`, `take-action.html` and
 `turning-life-on-resources/smartphone-alternatives/` are redirects from older
 addresses. Keep them so old links still work.
+
+`jch.html` is the exception among the old addresses: it used to redirect, but
+Four Norms points both Horvath events at `/jch`, so it is a real page again and
+is deliberately absent from the map in `scripts/make-redirects.py`. The event
+banner on the home page and the two night cards on that page both read their
+dates from `data/events.json` and disappear on their own once the dates pass.
+Each event's **venue** is written into the HTML, because the Four Norms API
+returns `location_name` as null for both.
 
 Every page has a `<section id="join">` holding the sign-up form; the **Join Us**
 button in the navigation and **Sign up** in the footer jump to it.
