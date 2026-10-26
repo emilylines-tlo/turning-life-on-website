@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 20,
   "events": [
     {
       "cover_image_url": null,
@@ -445,6 +445,29 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     },
     {
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODE2NSwicHVyIjoiYmxvYl9pZCJ9fQ==--5915a40ce5aaa0530e1f091f5a7c184d8957cfa3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/YAP_Poster_RedPhone_Square.jpg",
+      "description": "Join us for a free screening of the film \"Your Attention Please: Reclaiming Humanity in the Digital Age\", followed by a community discussion led by a panel of local experts. \r\n\r\nA new generation of parents, teens, and reformers are fighting back against Big Tech\u2019s agenda to define the future of human connection. From Kristin, a mother pursuing legislative reform after losing her son, to Trisha, a young programmer building technology to stop cyberbullying, the film reveals how deeply the attention economy is shaping childhood, mental health, and human connection.\r\n\r\nAs lawmakers debate social media reform, Gen Z launches a global Offline Club movement, and a high school dares to go phone-free. What emerges is not a doomsday story, but a hopeful one: proof that the attention crisis is not inevitable and that a cultural shift is already underway.\r\n\r\nBlending intimate human stories with insights from leading experts in tech reform and digital wellbeing, Your Attention Please asks some of the most urgent questions of our time: Can we reclaim our autonomy? Can technology be redesigned to serve humanity? And what does a healthier relationship with the digital world look like for us and our kids?",
+      "end_time": "2027-04-08T21:00:00-04:00",
+      "external_link": null,
+      "featured": true,
+      "host_name": "Turning Life On | Sudbury for Digital Balance",
+      "host_slug": "sudbury-for-digital-balance",
+      "host_type": "Group",
+      "host_url": "https://www.fournorms.com/turning-life-on/sudbury-for-digital-balance",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/sudbury-for-digital-balance-your-attention-please-film-screening-and-community-conversation.json",
+        "web_url": "https://www.fournorms.com/events/sudbury-for-digital-balance-your-attention-please-film-screening-and-community-conversation"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "sudbury-for-digital-balance-your-attention-please-film-screening-and-community-conversation",
+      "start_time": "2027-04-08T18:30:00-04:00",
+      "tags": [],
+      "title": "Your Attention Please: Film Screening and Community Conversation",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
       "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
       "end_time": "2027-04-23T12:00:00-04:00",
@@ -532,5 +555,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-26T13:44:47+00:00"
+  "updated": "2026-10-26T22:56:26+00:00"
 }
