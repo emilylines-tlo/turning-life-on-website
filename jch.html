@@ -120,12 +120,11 @@
 /* --- logo rows ----------------------------------------------------------- */
 .jlogos{list-style:none;display:grid;gap:16px;margin-top:18px}
 .jlogos.two{grid-template-columns:1fr 1fr}
-.jlogos.three{grid-template-columns:repeat(3,1fr)}
-.jlogos.five{grid-template-columns:repeat(5,1fr)}
+.jlogos.hosts{grid-template-columns:repeat(6,1fr)}
 .jlogos li{background:#fff;border:1px solid #E7E3DA;min-height:104px;display:flex;align-items:center;justify-content:center;padding:16px}
-.jlogos.five li{min-height:92px;padding:12px}
+.jlogos.hosts li{min-height:92px;padding:12px}
 .jlogos img{max-height:62px;width:auto;display:block}
-.jlogos.five img{max-height:58px}
+.jlogos.hosts img{max-height:58px}
 .jlabel{font-family:'Mulish',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7A7A72;margin-top:34px}
 
 /* --- what's next --------------------------------------------------------- */
@@ -155,13 +154,12 @@
   .jthree > div{padding:0}
   .jthree > div + div{border-left:0;border-top:1px solid #E4E0D8;padding-top:26px}
   .jnights{grid-template-columns:1fr}
-  .jlogos.three{grid-template-columns:1fr 1fr}
-  .jlogos.five{grid-template-columns:repeat(3,1fr)}
+  .jlogos.hosts{grid-template-columns:repeat(3,1fr)}
   .jnext{grid-template-columns:1fr;gap:20px}
   .jsupport .inner{flex-direction:column;align-items:flex-start}
 }
 @media (max-width:620px){
-  .jlogos.two,.jlogos.three,.jlogos.five{grid-template-columns:1fr 1fr}
+  .jlogos.two,.jlogos.hosts{grid-template-columns:1fr 1fr}
   .jtile .ttl{font-size:18px;right:44%}
 }
 </style>
@@ -337,19 +335,19 @@
       </div>
 
       <div class="jlabel">Presented by</div>
-      <ul class="jlogos three">
+      <ul class="jlogos two">
         <li><a href="index.html"><img src="assets/img/logo.png" alt="Turning Life On" loading="lazy"></a></li>
         <li><a href="https://www.lexedfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/lexington-education-foundation.png" alt="Lexington Education Foundation" loading="lazy"></a></li>
-        <li><a href="https://www.wellesleyeducationfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-education-foundation.png" alt="Wellesley Education Foundation" loading="lazy"></a></li>
       </ul>
 
       <div class="jlabel">Hosted by</div>
-      <ul class="jlogos five">
+      <ul class="jlogos hosts">
         <li><img src="assets/img/partners/beyond-screens-wellesley.jpg" alt="Beyond Screens Wellesley" loading="lazy"></li>
         <li><a href="https://www.wellesleymothersforum.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-mothers-forum.jpg" alt="Wellesley Mothers Forum" loading="lazy"></a></li>
         <li><a href="https://intentionaltechcoalition.org/itc-homepage.html" target="_blank" rel="noopener"><img src="assets/img/partners/intentional-tech-coalition.png" alt="The Intentional Tech Coalition, Concord" loading="lazy"></a></li>
         <li><a href="https://www.lexkidsbekids.org" target="_blank" rel="noopener"><img src="assets/img/partners/lex-kids-be-kids.png" alt="Lex Kids Be Kids" loading="lazy"></a></li>
         <li><img src="assets/img/partners/open-door-education.png" alt="Open Door Education" loading="lazy"></li>
+        <li><a href="https://www.wellesleyeducationfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-education-foundation.png" alt="Wellesley Education Foundation" loading="lazy"></a></li>
       </ul>
     </div>
   </section>
