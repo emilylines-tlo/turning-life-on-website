@@ -120,6 +120,7 @@
 /* --- logo rows ----------------------------------------------------------- */
 .jlogos{list-style:none;display:grid;gap:16px;margin-top:18px}
 .jlogos.two{grid-template-columns:1fr 1fr}
+.jlogos.three{grid-template-columns:repeat(3,1fr)}
 .jlogos.five{grid-template-columns:repeat(5,1fr)}
 .jlogos li{background:#fff;border:1px solid #E7E3DA;min-height:104px;display:flex;align-items:center;justify-content:center;padding:16px}
 .jlogos.five li{min-height:92px;padding:12px}
@@ -154,12 +155,13 @@
   .jthree > div{padding:0}
   .jthree > div + div{border-left:0;border-top:1px solid #E4E0D8;padding-top:26px}
   .jnights{grid-template-columns:1fr}
+  .jlogos.three{grid-template-columns:1fr 1fr}
   .jlogos.five{grid-template-columns:repeat(3,1fr)}
   .jnext{grid-template-columns:1fr;gap:20px}
   .jsupport .inner{flex-direction:column;align-items:flex-start}
 }
 @media (max-width:620px){
-  .jlogos.two,.jlogos.five{grid-template-columns:1fr 1fr}
+  .jlogos.two,.jlogos.three,.jlogos.five{grid-template-columns:1fr 1fr}
   .jtile .ttl{font-size:18px;right:44%}
 }
 </style>
@@ -335,9 +337,10 @@
       </div>
 
       <div class="jlabel">Presented by</div>
-      <ul class="jlogos two">
+      <ul class="jlogos three">
         <li><a href="index.html"><img src="assets/img/logo.png" alt="Turning Life On" loading="lazy"></a></li>
         <li><a href="https://www.lexedfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/lexington-education-foundation.png" alt="Lexington Education Foundation" loading="lazy"></a></li>
+        <li><a href="https://www.wellesleyeducationfoundation.org" target="_blank" rel="noopener"><img src="assets/img/partners/wellesley-education-foundation.png" alt="Wellesley Education Foundation" loading="lazy"></a></li>
       </ul>
 
       <div class="jlabel">Hosted by</div>
