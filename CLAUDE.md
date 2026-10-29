@@ -80,6 +80,13 @@ GitHub Actions (twice daily)
 - `data/zip-coords.json` — US ZIP centroids from the 2023 Census gazetteer,
   used for the "near you" searches. Loaded only when someone searches.
 
+`COVER_OVERRIDES` in `fetch-fournorms.py` lets the site serve an event's cover
+image itself when Four Norms cannot. It currently holds the two Horvath events,
+whose Four Norms image URLs have returned 500 since 29 Oct 2026, leaving an
+empty block on the card. Those images live in `assets/img/events/`. Delete a
+slug from the map once Four Norms serves it again and the upstream image comes
+straight back.
+
 **Apart from `communities-extra.json`, `data/*.json` is generated output. Never edit it by hand** — the next
 scheduled run overwrites your change and no one will know why it reverted.
 To change what ends up there, change `scripts/fetch-fournorms.py`.
