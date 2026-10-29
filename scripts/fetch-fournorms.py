@@ -83,6 +83,13 @@ def fetch_events():
             pass
 
         host = e.get("host") or {}
+        # Four Norms serves cover images through a Rails variant URL, and for
+        # the two Horvath events those URLs have been returning 500 since at
+        # least 29 Oct 2026, so the cards showed an empty block. Where a slug
+        # appears in COVER_OVERRIDES the site serves its own copy instead.
+        # Delete the entry once Four Norms serves the image again, and the
+        # upstream one comes straight back.
+        cover = COVER_OVERRIDES.get(e.get("slug")) or e.get("cover_image_url")
         # An event carries no coordinates of its own. When a local group hosts
         # it, host.url ends with that group's slug, which lets the website place
         # the event at the group's location. Events hosted centrally by TLO or
@@ -102,7 +109,7 @@ def fetch_events():
             "external_link": e.get("external_link"),
             "location_name": e.get("location_name"),
             "location_notes": e.get("location_notes"),
-            "cover_image_url": e.get("cover_image_url"),
+            "cover_image_url": cover,
             "featured": bool(e.get("featured")),
             "host_name": host.get("name"),
             "host_url": host.get("url"),
@@ -169,6 +176,16 @@ def fetch_groups():
 # Resource library items that must NOT appear on the public website.
 # Add a slug here to hide an item; it stays in Four Norms either way.
 # Both entries below are fundraising documents.
+# Cover images the site serves itself, keyed by event slug, because Four Norms
+# cannot serve them. Paths are relative to the site root. See the note where
+# this is used in fetch_events().
+COVER_OVERRIDES = {
+    "turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain":
+        "assets/img/events/horvath-wellesley.png",
+    "turning-life-on-speaker-series-dr-jared-cooney-horvath-inside-the-learning-brain":
+        "assets/img/events/horvath-concord.png",
+}
+
 LIBRARY_EXCLUDE = {
     "tlo-turning-life-on-grant-application",
     "tlo-25-26-concord-carlisle-tech-series-proposal",

@@ -105,7 +105,7 @@
       "virtual_link": null
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODA3NywicHVyIjoiYmxvYl9pZCJ9fQ==--9381bf22c50e2b383f9fcb4213a59b776d63b46a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Wellesley%20header%20(Nov%2016)@1x.png",
+      "cover_image_url": "assets/img/events/horvath-wellesley.png",
       "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
       "end_time": "2026-11-16T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
@@ -130,7 +130,7 @@
       "virtual_link": null
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODA3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--ff80d3035257df3670f60609ec15f92472a52846/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Concord%20Registration%20page%20header@1x.png",
+      "cover_image_url": "assets/img/events/horvath-concord.png",
       "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nThis event is also happening in Wellesley on Monday, Nov. 16, 7pm. Visit the event page to register.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nLocal groups hosts:\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington\r\nBeyond Screens Wellesley",
       "end_time": "2026-11-17T21:00:00-05:00",
       "external_link": "https://www.turninglifeon.org/jch",
@@ -555,5 +555,5 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     }
   ],
-  "updated": "2026-10-29T13:50:51+00:00"
+  "updated": "2026-10-29T23:01:06+00:00"
 }
