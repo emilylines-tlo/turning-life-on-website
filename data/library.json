@@ -1,5 +1,5 @@
 {
-  "count": 41,
+  "count": 42,
   "items": [
     {
       "credit": {
@@ -653,6 +653,24 @@
         "name": "Turning Life On",
         "source_url": ""
       },
+      "description": "A quick lowdown on how we support our community leads.",
+      "publisher": {
+        "name": "Turning Life On",
+        "type": "Organization",
+        "url": "https://www.fournorms.com/turning-life-on"
+      },
+      "slug": "tlo-welcome-community-leads",
+      "tags": [
+        "For advocates"
+      ],
+      "title": "Welcome Community Leads",
+      "url": "https://www.fournorms.com/organizations/turning-life-on/library/tlo-welcome-community-leads"
+    },
+    {
+      "credit": {
+        "name": "Turning Life On",
+        "source_url": ""
+      },
       "description": "It's not you. It's the design. How apps and games are built to capture attention, what the research shows, and what families, schools and communities can do about it.",
       "publisher": {
         "name": "Turning Life On",
@@ -865,5 +883,5 @@
     "Smartphones",
     "Social Media"
   ],
-  "updated": "2026-11-03T14:45:37+00:00"
+  "updated": "2026-11-03T23:47:46+00:00"
 }
