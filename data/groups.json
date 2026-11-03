@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 22,
   "groups": [
     {
       "affiliation": null,
@@ -11,6 +11,17 @@
       "slug": "real-connection-orlando",
       "state": "FL",
       "web_url": "https://www.fournorms.com/turning-life-on/real-connection-orlando"
+    },
+    {
+      "affiliation": null,
+      "city": "Acton",
+      "display_name": null,
+      "lat": 42.486005,
+      "lon": -71.44208,
+      "name": "Acton",
+      "slug": "acton",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/acton"
     },
     {
       "affiliation": null,
@@ -233,5 +244,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-02T16:41:28+00:00"
+  "updated": "2026-11-03T01:24:53+00:00"
 }
