@@ -23,6 +23,7 @@
     return '' +
     '<form class="joinform" id="' + id + '" novalidate>' +
       '<p class="tierq">How involved do you want to be?</p>' +
+      '<p class="tiersub">Choose what feels right for you:</p>' +
       '<div class="tiers">' +
         '<button class="tier" type="button" data-t="loop" aria-pressed="false">' +
           '<b>Stay in the loop.</b>' +
