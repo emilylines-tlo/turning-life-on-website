@@ -150,6 +150,7 @@ details.acc .body{padding:0 0 24px}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(51,151,151,.2)}
 .err{font-size:13.5px;color:#b34a00}
 .tierq{font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:var(--slate);grid-column:1/-1}
+.tiersub{grid-column:1/-1;margin-top:-10px;font-size:15px;color:var(--body)}
 .tiers{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tier{text-align:left;font-family:'Mulish',sans-serif;background:#fff;border:2px solid var(--line);padding:18px;cursor:pointer;display:flex;flex-direction:column;gap:6px}
 .tier:hover{border-color:var(--teal)}
