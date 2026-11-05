@@ -1,5 +1,5 @@
 {
-  "count": 23,
+  "count": 24,
   "groups": [
     {
       "affiliation": null,
@@ -245,6 +245,17 @@
     },
     {
       "affiliation": null,
+      "city": "Worcester",
+      "display_name": null,
+      "lat": 42.26281,
+      "lon": -71.802465,
+      "name": "Worcester",
+      "slug": "worcester",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/worcester"
+    },
+    {
+      "affiliation": null,
       "city": "State College",
       "display_name": null,
       "lat": 40.7967391,
@@ -255,5 +266,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-05T15:02:57+00:00"
+  "updated": "2026-11-05T23:53:14+00:00"
 }
