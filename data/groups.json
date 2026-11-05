@@ -62,10 +62,10 @@
       "display_name": null,
       "lat": 42.2090808,
       "lon": -71.0003433,
-      "name": "Reconnect Braintree",
-      "slug": "reconnect-braintree",
+      "name": "Screen-Free Braintree",
+      "slug": "screen-free-braintree",
       "state": "MA",
-      "web_url": "https://www.fournorms.com/turning-life-on/reconnect-braintree"
+      "web_url": "https://www.fournorms.com/turning-life-on/screen-free-braintree"
     },
     {
       "affiliation": null,
@@ -255,5 +255,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-05T00:02:09+00:00"
+  "updated": "2026-11-05T15:02:57+00:00"
 }
