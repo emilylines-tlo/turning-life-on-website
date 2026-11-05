@@ -1,5 +1,5 @@
 {
-  "count": 22,
+  "count": 23,
   "groups": [
     {
       "affiliation": null,
@@ -168,6 +168,17 @@
     },
     {
       "affiliation": null,
+      "city": "Norwell",
+      "display_name": null,
+      "lat": 42.1724727,
+      "lon": -70.8178017,
+      "name": "Norwell ",
+      "slug": "norwell",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/norwell"
+    },
+    {
+      "affiliation": null,
       "city": "Reading",
       "display_name": null,
       "lat": 42.524835,
@@ -244,5 +255,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-04T14:58:03+00:00"
+  "updated": "2026-11-05T00:02:09+00:00"
 }
