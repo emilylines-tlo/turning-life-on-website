@@ -163,6 +163,8 @@ Then open http://localhost:8000. Stop it with Ctrl-C.
 - **Partner logos** live in `assets/img/partners/`, used with each partner's
   permission and never recolored. Logos published only in white sit on a dark
   tile (`<li class="dark">`).
+- **Team headshots** live in `assets/img/team/` as 400px squares, cropped
+  in close on the face.
 - **Photos are kept small**: resize to at most 1000px on the long side before
   adding them to `assets/img/`. Full-width hero backgrounds (`about-hero.jpg`,
   `events-hero.jpg`) are the exception, at up to 1600px.
@@ -206,5 +208,4 @@ git push
   stale, and send Jeff Miller (Tech-Wise Arlington) changes for an accuracy
   pass. Never change a verdict to suit a discount code. Jeff's build brief is
   internal and stays out of this repo.
-- **Team headshots** live in `assets/img/team/` as 400px squares. Jennifer
-  Henderson still shows initials until her photo arrives.
+
