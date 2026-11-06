@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 26,
   "groups": [
     {
       "affiliation": null,
@@ -146,14 +146,36 @@
     },
     {
       "affiliation": null,
+      "city": "Medfield",
+      "display_name": null,
+      "lat": 42.1884188,
+      "lon": -71.3072294,
+      "name": "Medfield ",
+      "slug": "medfield",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/medfield"
+    },
+    {
+      "affiliation": null,
       "city": "Needham",
       "display_name": null,
       "lat": 42.2781042,
       "lon": -71.2323292,
-      "name": "Let Kids Be Kids- Needham",
-      "slug": "let-kids-be-kids-needham",
+      "name": "Beyond Screens Needham",
+      "slug": "beyond-screens-needham",
       "state": "MA",
-      "web_url": "https://www.fournorms.com/turning-life-on/let-kids-be-kids-needham"
+      "web_url": "https://www.fournorms.com/turning-life-on/beyond-screens-needham"
+    },
+    {
+      "affiliation": null,
+      "city": "North Falmouth",
+      "display_name": null,
+      "lat": 41.639298,
+      "lon": -70.6201994,
+      "name": "Falmouth Unplugged",
+      "slug": "falmouth-unplugged",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/falmouth-unplugged"
     },
     {
       "affiliation": null,
@@ -266,5 +288,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-06T14:42:06+00:00"
+  "updated": "2026-11-06T23:35:32+00:00"
 }
