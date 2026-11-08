@@ -52,7 +52,7 @@
       "virtual_link": null
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--44a68d8304f5df4b298fb19de8ae8822b5bcfeb4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--1500f90e48fbfb6ec0a36a7544311b91dabb5578/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/tlo-dfs-coalition-meetup-banner.png",
       "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
       "end_time": "2026-11-20T12:00:00-05:00",
       "external_link": null,
@@ -197,7 +197,7 @@
       "virtual_link": "https://meet.google.com/rih-ceub-dth"
     },
     {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjQ2MywicHVyIjoiYmxvYl9pZCJ9fQ==--614802d5617767dfeaa81d1319688c871532b995/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--811fac06d87b6010350b820c26b2f0d2b0a4c3e2/images.jpg",
+      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3NiwicHVyIjoiYmxvYl9pZCJ9fQ==--5e0c2e94233823be57fcb95efa39831355ca8a99/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/tlo-dfs-coalition-meetup-banner.png",
       "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
       "end_time": "2026-12-18T12:00:00-05:00",
       "external_link": null,
@@ -597,5 +597,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-08T13:58:08+00:00"
+  "updated": "2026-11-08T22:36:07+00:00"
 }
