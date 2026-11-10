@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 21,
   "events": [
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQ4MywicHVyIjoiYmxvYl9pZCJ9fQ==--cd94ea549c8eff03a7b1f3f2e6e749f774d1a2c0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/cambridge-rally-banner.png",
@@ -102,6 +102,29 @@
         "Ed Tech"
       ],
       "title": "Your Child's Brain in a Screen-Saturated World: An evening with Dr. Jared Cooney Horvath: CONCORD",
+      "virtual": false,
+      "virtual_link": null
+    },
+    {
+      "cover_image_url": null,
+      "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally. Planned for the last Friday of each month at 9am (but moved earlier this month due to holiday).\r\n",
+      "end_time": "2026-11-20T10:00:00-05:00",
+      "external_link": null,
+      "featured": false,
+      "host_name": "Turning Life On | Tech-Wise Arlington",
+      "host_slug": "tech-wise-arlington",
+      "host_type": "Group",
+      "host_url": "https://www.fournorms.com/turning-life-on/tech-wise-arlington",
+      "links": {
+        "api_url": "https://www.fournorms.com/api/v1/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c.json",
+        "web_url": "https://www.fournorms.com/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c"
+      },
+      "location_name": null,
+      "location_notes": null,
+      "slug": "tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c",
+      "start_time": "2026-11-20T09:00:00-05:00",
+      "tags": [],
+      "title": "Tech-Wise Arlington - Monthly Coffee Chat",
       "virtual": false,
       "virtual_link": null
     },
@@ -564,5 +587,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-10T15:19:23+00:00"
+  "updated": "2026-11-10T23:49:43+00:00"
 }
