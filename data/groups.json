@@ -1,5 +1,5 @@
 {
-  "count": 26,
+  "count": 28,
   "groups": [
     {
       "affiliation": null,
@@ -22,6 +22,17 @@
       "slug": "acton",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/acton"
+    },
+    {
+      "affiliation": null,
+      "city": "Andover",
+      "display_name": null,
+      "lat": 42.654745,
+      "lon": -71.157991,
+      "name": "Andover",
+      "slug": "andover",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/andover"
     },
     {
       "affiliation": null,
@@ -102,6 +113,17 @@
     },
     {
       "affiliation": null,
+      "city": "Hanover",
+      "display_name": null,
+      "lat": 42.1264412,
+      "lon": -70.8480884,
+      "name": "Turning Life On Hanover",
+      "slug": "turning-life-on-hanover",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/turning-life-on-hanover"
+    },
+    {
+      "affiliation": null,
       "city": "Kingston",
       "display_name": null,
       "lat": 41.9974713,
@@ -150,10 +172,10 @@
       "display_name": null,
       "lat": 42.1884188,
       "lon": -71.3072294,
-      "name": "Medfield ",
-      "slug": "medfield",
+      "name": "Turning Life On Medfield ",
+      "slug": "turning-life-on-medfield",
       "state": "MA",
-      "web_url": "https://www.fournorms.com/turning-life-on/medfield"
+      "web_url": "https://www.fournorms.com/turning-life-on/turning-life-on-medfield"
     },
     {
       "affiliation": null,
@@ -288,5 +310,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-09T16:59:12+00:00"
+  "updated": "2026-11-10T01:47:57+00:00"
 }
