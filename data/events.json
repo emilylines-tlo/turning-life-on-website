@@ -1,35 +1,6 @@
 {
-  "count": 20,
+  "count": 19,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQyNywicHVyIjoiYmxvYl9pZCJ9fQ==--b81e28ffe8b2a7e8501afd3c8a0eb78481aa21cf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/four-norms-coalition-call-banner.png",
-      "description": "Join our weekly joint call with Turning Life On and MA-Distraction Free Schools. We\u2019ll share an update on our work to drive change from the statehouse to the classroom, including:\r\n\r\n-Recent meetings with state officials and organization leaders\r\n-New resources we\u2019ve created\r\n-Our plans for what comes next\r\n\r\nThen we\u2019ll hear from our community leads. We\u2019ll talk about what\u2019s working, where you\u2019re stuck, and how we can help each other solve problems and keep moving forward.\r\n\r\nAll are welcome. Come listen, share, and connect.",
-      "end_time": "2026-11-13T13:00:00-05:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call",
-      "start_time": "2026-11-13T12:00:00-05:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Turning Life On and Distraction Free Schools MA Joint Call",
-      "virtual": true,
-      "virtual_link": "https://meet.google.com/rih-ceub-dth"
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODI3MiwicHVyIjoiYmxvYl9pZCJ9fQ==--b49821618d666b30f51bcba7a5bab87695001247/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Wellesley_header_Nov_16_with_WEF_ODE.png",
       "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
@@ -562,5 +533,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-13T14:59:39+00:00"
+  "updated": "2026-11-14T00:03:30+00:00"
 }
