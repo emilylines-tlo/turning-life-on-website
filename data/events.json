@@ -1,31 +1,6 @@
 {
-  "count": 19,
+  "count": 18,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODI3MiwicHVyIjoiYmxvYl9pZCJ9fQ==--b49821618d666b30f51bcba7a5bab87695001247/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Wellesley_header_Nov_16_with_WEF_ODE.png",
-      "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nHosted by the Wellesley Mothers Forum and cosponsored by the Wellesley Education Foundation, Beyond Screens Wellesley,  LexKidsBeKids, The Lexington Education Foundation, and Turning Life On.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nThis event is also happening in Concord on Nov. 17, visit the events page to register for that event.\r\n",
-      "end_time": "2026-11-16T21:00:00-05:00",
-      "external_link": "https://www.turninglifeon.org/jch",
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-speaker-series-wellesley-mothers-forum-presents-dr-jared-cooney-horvath-inside-the-learning-brain",
-      "start_time": "2026-11-16T19:00:00-05:00",
-      "tags": [
-        "Ed Tech"
-      ],
-      "title": "Your Child's Brain in a Screen-Saturated World: An evening with Dr. Jared Cooney Horvath: WELLESLEY",
-      "virtual": false,
-      "virtual_link": null
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODI2OSwicHVyIjoiYmxvYl9pZCJ9fQ==--c0519aa71ab48ecca47cf34627cc63a877f69967/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/Concord_header_ITC_lead.png",
       "description": "Raising kids in a fast-changing, tech-driven world can feel overwhelming. Dr. Jared Cooney Horvath, a neuroscientist and Harvard educator who has worked with more than 1,000 schools, offers clear, practical answers for families of kids in K\u201312. Each evening is a 90-minute presentation followed by a 30-minute live Q&A, so bring your questions.\r\n\r\nYou'll leave knowing:\r\n-What builds kids' attention, memory, and real understanding, and what gets in the way\r\n-How to tell healthy challenge from harmful stress\r\n-Concrete things you can do at home, and ask about at school, including around technology\r\n\r\nDr. Horvath (PhD, MEd) is a Harvard-trained neuroscientist and educator and the founder of LME Global. He has worked with schools, universities, and governments in more than 30 countries and is the author of six books, including The Digital Delusion, and more than 60 research articles. His work has been featured by CNN, the BBC, The Atlantic, The Free Press, and C-SPAN.\r\n\r\nThis event is also happening in Wellesley on Monday, Nov. 16, 7pm. Visit the event page to register.\r\n\r\nThis event is financially sponsored by Turning Life On, a MA Coalition of parent-led groups working together to change the norms around how we live with technology. Turning Life On is a registered 501(c)3. Every donation you make helps fund events like this.\r\n\r\nLocal groups hosts:\r\nIntentional Tech Concord\r\nLex Kids be Kids Lexington\r\nBeyond Screens Wellesley",
@@ -533,5 +508,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-16T16:37:22+00:00"
+  "updated": "2026-11-17T02:12:57+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "count": 28,
+  "count": 31,
   "groups": [
     {
       "affiliation": null,
@@ -18,10 +18,10 @@
       "display_name": null,
       "lat": 42.486005,
       "lon": -71.44208,
-      "name": "Acton",
-      "slug": "acton",
+      "name": "Acton Boxborough",
+      "slug": "acton-boxborough",
       "state": "MA",
-      "web_url": "https://www.fournorms.com/turning-life-on/acton"
+      "web_url": "https://www.fournorms.com/turning-life-on/acton-boxborough"
     },
     {
       "affiliation": null,
@@ -55,6 +55,17 @@
       "slug": "bedford",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/bedford"
+    },
+    {
+      "affiliation": null,
+      "city": "Belmont",
+      "display_name": null,
+      "lat": 42.395613,
+      "lon": -71.174548,
+      "name": "Belmont",
+      "slug": "belmont",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/belmont"
     },
     {
       "affiliation": null,
@@ -121,6 +132,17 @@
       "slug": "turning-life-on-hanover",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/turning-life-on-hanover"
+    },
+    {
+      "affiliation": null,
+      "city": "Harvard",
+      "display_name": null,
+      "lat": 42.4967437,
+      "lon": -71.5685533,
+      "name": "CLASS Harvard",
+      "slug": "class-harvard",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/class-harvard"
     },
     {
       "affiliation": null,
@@ -256,6 +278,17 @@
     },
     {
       "affiliation": null,
+      "city": "Stoughton",
+      "display_name": null,
+      "lat": 42.1273128,
+      "lon": -71.1067617,
+      "name": "Stoughton",
+      "slug": "stoughton",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/stoughton"
+    },
+    {
+      "affiliation": null,
       "city": "Stow",
       "display_name": null,
       "lat": 42.4393467,
@@ -310,5 +343,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-16T16:37:22+00:00"
+  "updated": "2026-11-17T02:12:58+00:00"
 }
