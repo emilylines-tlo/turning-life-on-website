@@ -124,6 +124,17 @@
     },
     {
       "affiliation": null,
+      "city": "Falmouth",
+      "display_name": null,
+      "lat": 41.5643399,
+      "lon": -70.6187504,
+      "name": "Falmouth Unplugged",
+      "slug": "falmouth-unplugged",
+      "state": "MA",
+      "web_url": "https://www.fournorms.com/turning-life-on/falmouth-unplugged"
+    },
+    {
+      "affiliation": null,
       "city": "Hanover",
       "display_name": null,
       "lat": 42.1264412,
@@ -209,17 +220,6 @@
       "slug": "beyond-screens-needham",
       "state": "MA",
       "web_url": "https://www.fournorms.com/turning-life-on/beyond-screens-needham"
-    },
-    {
-      "affiliation": null,
-      "city": "North Falmouth",
-      "display_name": null,
-      "lat": 41.639298,
-      "lon": -70.6201994,
-      "name": "Falmouth Unplugged",
-      "slug": "falmouth-unplugged",
-      "state": "MA",
-      "web_url": "https://www.fournorms.com/turning-life-on/falmouth-unplugged"
     },
     {
       "affiliation": null,
@@ -343,5 +343,5 @@
       "web_url": "https://www.fournorms.com/turning-life-on/pennsylvania-turning-life-on-chapter"
     }
   ],
-  "updated": "2026-11-18T01:26:48+00:00"
+  "updated": "2026-11-18T16:03:43+00:00"
 }
