@@ -1,58 +1,6 @@
 {
-  "count": 17,
+  "count": 15,
   "events": [
-    {
-      "cover_image_url": null,
-      "description": "Casual conversation about topics related to tech and childhood - e.g., tech inschool, AI, smartphones. Intended for parents/caregivers in Arlington but welcome to others locally. Planned for the last Friday of each month at 9am (but moved earlier this month due to holiday).\r\n",
-      "end_time": "2026-11-20T10:00:00-05:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On | Tech-Wise Arlington",
-      "host_slug": "tech-wise-arlington",
-      "host_type": "Group",
-      "host_url": "https://www.fournorms.com/turning-life-on/tech-wise-arlington",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c.json",
-        "web_url": "https://www.fournorms.com/events/tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "tech-wise-arlington-tech-wise-arlington-monthly-coffee-chat-0714acba-4d22-43bb-8712-a46d6e3be46c",
-      "start_time": "2026-11-20T09:00:00-05:00",
-      "tags": [],
-      "title": "Tech-Wise Arlington - Monthly Coffee Chat",
-      "virtual": false,
-      "virtual_link": null
-    },
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--1500f90e48fbfb6ec0a36a7544311b91dabb5578/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/tlo-dfs-coalition-meetup-banner.png",
-      "description": "Let's catch up in person to talk intentional tech advocacy. Share your struggles, win, advice with other community leads in a supportive and welcome environment of smart and dedicated advocates. Come for 30 minutes or 2 hours. We'll be here from 10-12 so stop by whenever works for you. Adrienne Principe, Founder of TLO, and other TLO Board Members will be on hand to offer suggestions and gather feedback for future resources. See you there!",
-      "end_time": "2026-11-20T12:00:00-05:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-coalition-meetup-4c2611a2-6dec-4d03-8a7f-6f2c1c4dadd6",
-      "start_time": "2026-11-20T10:00:00-05:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Coalition Meetup ",
-      "virtual": false,
-      "virtual_link": null
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQyOSwicHVyIjoiYmxvYl9pZCJ9fQ==--14fa8d0b04dc35b141f19bfd316a11e12d2f2dc1/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/four-norms-coalition-call-banner.png",
       "description": "Join our weekly joint call with Turning Life On and MA-Distraction Free Schools. We\u2019ll share an update on our work to drive change from the statehouse to the classroom, including:\r\n\r\n-Recent meetings with state officials and organization leaders\r\n-New resources we\u2019ve created\r\n-Our plans for what comes next\r\n\r\nThen we\u2019ll hear from our community leads. We\u2019ll talk about what\u2019s working, where you\u2019re stuck, and how we can help each other solve problems and keep moving forward.\r\n\r\nAll are welcome. Come listen, share, and connect.",
@@ -483,5 +431,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-20T00:58:08+00:00"
+  "updated": "2026-11-20T15:50:30+00:00"
 }
