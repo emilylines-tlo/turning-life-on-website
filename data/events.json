@@ -1,35 +1,6 @@
 {
-  "count": 15,
+  "count": 14,
   "events": [
-    {
-      "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQyOSwicHVyIjoiYmxvYl9pZCJ9fQ==--14fa8d0b04dc35b141f19bfd316a11e12d2f2dc1/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/four-norms-coalition-call-banner.png",
-      "description": "Join our weekly joint call with Turning Life On and MA-Distraction Free Schools. We\u2019ll share an update on our work to drive change from the statehouse to the classroom, including:\n\n-Recent meetings with state officials and organization leaders\n-New resources we\u2019ve created\n-Our plans for what comes next\n\nThen we\u2019ll hear from our community leads. We\u2019ll talk about what\u2019s working, where you\u2019re stuck, and how we can help each other solve problems and keep moving forward.\n\nAll are welcome. Come listen, share, and connect.",
-      "end_time": "2026-11-27T13:00:00-05:00",
-      "external_link": null,
-      "featured": false,
-      "host_name": "Turning Life On",
-      "host_slug": null,
-      "host_type": "Organization",
-      "host_url": "https://www.fournorms.com/turning-life-on",
-      "links": {
-        "api_url": "https://www.fournorms.com/api/v1/events/turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call-73612870-0cc0-4357-9c48-84276033aab7.json",
-        "web_url": "https://www.fournorms.com/events/turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call-73612870-0cc0-4357-9c48-84276033aab7"
-      },
-      "location_name": null,
-      "location_notes": null,
-      "slug": "turning-life-on-turning-life-on-and-distraction-free-schools-ma-joint-call-73612870-0cc0-4357-9c48-84276033aab7",
-      "start_time": "2026-11-27T12:00:00-05:00",
-      "tags": [
-        "Delay Smartphones",
-        "Delay Social Media",
-        "Phone Free Schools",
-        "Independence And Play",
-        "Ed Tech"
-      ],
-      "title": "Turning Life On and Distraction Free Schools MA Joint Call",
-      "virtual": true,
-      "virtual_link": "https://meet.google.com/rih-ceub-dth"
-    },
     {
       "cover_image_url": "https://www.fournorms.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODQzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--7d642733f0c6471e4efc5da82277244bec251396/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzgwMCwyNTBdfSwicHVyIjoidmFyaWF0aW9uIn19--b95e4de5c6cded4ef9b1fab29539fd5e7898712f/four-norms-coalition-call-banner.png",
       "description": "Join our weekly joint call with Turning Life On and MA-Distraction Free Schools. We\u2019ll share an update on our work to drive change from the statehouse to the classroom, including:\n\n-Recent meetings with state officials and organization leaders\n-New resources we\u2019ve created\n-Our plans for what comes next\n\nThen we\u2019ll hear from our community leads. We\u2019ll talk about what\u2019s working, where you\u2019re stuck, and how we can help each other solve problems and keep moving forward.\n\nAll are welcome. Come listen, share, and connect.",
@@ -431,5 +402,5 @@
       "virtual_link": null
     }
   ],
-  "updated": "2026-11-27T01:59:29+00:00"
+  "updated": "2026-11-27T17:05:12+00:00"
 }
